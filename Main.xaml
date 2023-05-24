@@ -1,0 +1,621 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1000,9836.8" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>Microsoft.VisualBasic.CompilerServices</x:String>
+      <x:String>UiPath.CV</x:String>
+      <x:String>UiPath.Shared.ObjectLibrary</x:String>
+      <x:String>UiPath.CV.Activities</x:String>
+      <x:String>UiPath.CV.Activities.Interfaces</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
+      <AssemblyReference>UiPath.CV</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.CV.Activities</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Anlegen" sap:VirtualizedContainerService.HintSize="1010.4,9772" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Default="C:\Users\chris\Documents\studium\semester_7\low_code_no_code\starPlanTest01.xlsx" Name="strExcelPath" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="948,9660" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1" ShowExcelWindow="False">
+      <ueab:ExcelProcessScopeX.Body>
+        <ActivityAction x:TypeArguments="ui:IExcelProcess">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Ausführen" sap:VirtualizedContainerService.HintSize="914.4,9573.6" sap2010:WorkflowViewState.IdRef="Sequence_4">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" CreateNewFile="False" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="852,9461.6" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_2" ResizeWindow="None" WorkbookPath="[strExcelPath]">
+              <ueab:ExcelApplicationCard.Body>
+                <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Ausführen" sap:VirtualizedContainerService.HintSize="818.4,9192" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                    <Sequence.Variables>
+                      <Variable x:TypeArguments="sd:DataTable" Name="Kurse" />
+                    </Sequence.Variables>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ueab:ReadRangeX DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="756,169.6" sap2010:WorkflowViewState.IdRef="ReadRangeX_1" Range="[Excel.Sheet(&quot;DatenIW7&quot;)]" SaveTo="[Kurse]" />
+                    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Öffne StarPlan " sap:VirtualizedContainerService.HintSize="756,8870.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="ad08872b-b465-48f0-a3f0-10ce604fc639" Version="V2">
+                      <uix:NApplicationCard.Body>
+                        <ActivityAction x:TypeArguments="x:Object">
+                          <ActivityAction.Argument>
+                            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                          </ActivityAction.Argument>
+                          <Sequence DisplayName="Ausführen" sap:VirtualizedContainerService.HintSize="722.4,8579.2" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Stammdaten'" sap:VirtualizedContainerService.HintSize="660,157.6" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ad08872b-b465-48f0-a3f0-10ce604fc639" Version="V3">
+                              <uix:NClick.Target>
+                                <uix:TargetAnchorable CvElementArea="10, 66, 120, 31" CvTextArea="45, 76, 70, 11" CvTextArgument="Stammdaten" CvType="Button" DesignTimeRectangle="10, 66, 119, 31" DesignTimeScaleFactor="1.25" ElementType="Button" FriendlyName="'Stammdaten'" Guid="5be2319e-939c-4927-9acc-3648892e9ae3" InformativeScreenshot="1cc4b735be1d1239457cc045b990e26a.png" ScopeSelectorArgument="&lt;wnd app='java*.exe' cls='SunAwtFrame' title='StarPlan (Version 3.4.1.0)' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive">
+                                  <uix:TargetAnchorable.PointOffset>
+                                    <uix:PointOffset X="-4" />
+                                  </uix:TargetAnchorable.PointOffset>
+                                </uix:TargetAnchorable>
+                              </uix:NClick.Target>
+                            </uix:NClick>
+                            <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="660,90.4" sap2010:WorkflowViewState.IdRef="Delay_1" />
+                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Lehrveranstaltungen'" sap:VirtualizedContainerService.HintSize="660,157.6" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ad08872b-b465-48f0-a3f0-10ce604fc639" Version="V3">
+                              <uix:NClick.Target>
+                                <uix:TargetAnchorable CvTextArgument="Lehrveranstaltungen" CvType="Text" DesignTimeRectangle="196, 107, 108, 15" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'Lehrveranstaltungen'" Guid="eb822cf4-f2b1-44eb-a3bf-3c53f7fd0510" InformativeScreenshot="5a874c697b39289f35127da6cf98bb02.png" ScopeSelectorArgument="&lt;wnd app='java*.exe' cls='SunAwtFrame' title='StarPlan (Version 3.4.1.0)' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive">
+                                  <uix:TargetAnchorable.Anchors>
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                      <uix:Target CvType="Icon" DesignTimeRectangle="175, 100, 25, 25" ElementType="Icon" FriendlyName="'javaw.exe StarPlan'" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAKVSURBVEhL7ZLbS5NhHMe7igj6A7rouqC7sou6jS4q6iIszcPSRQQ6I5M8UBJp6tasEM0OOpyHPMwwD3NsSmaKLkVxHpo6N7dSM01UjErIvZ+2N4Jwj6JRN9UPPrw8PM/393l/PM8Wj8fDn+a/ZFP8gxK7w4W6vJNwjYXQLLOQ1KJ2egYdAdkNS9JKO6h66eDripe1ytjlRpXXEpDdkGR0bJwwtQWvJLH4WWJmSWJyQeLNvMT4nMTYrBenD39d01sD8huS2OxOVPdb5SZTixJvfc1dHyQcM16G33sZeuelf/K7RGPoDchvehL/FG7f34/6BPZpL4M+gc0n6J9ckSWpJa8C8utKxl1OKrUp5J/eRUyyWr4Tv+hH+SeyTXhlsb9+6U7qH2aQf3wb2ce2cid4JzEJqYRmmuSXpDO/lhv7a+Hjsry+/ODF5l9XedwRqpOO0podhiZkN3GHthN9YAf6jFhic1uYnv8kN4+4bUFn7BH28LOupDbrHBNWA0t9VQw8zaBLn0hf7V0ycwp4ZBpCoW2izNInzP7MupJinZ6RikS+2OvAUc/ysJGususotSaqn9uEGRFrSlzjbsKSjRjupTGmv8hIWQLOMhV6bTqKlAZ5X5QTIZS43R4uaTtIznNhnoOk+k7iDVZUxVYKbaBSO4jXtsnnRPnVCCV5RRaupjdQOSxxpRsutIHCDGeq4ewTiVsWCWVCDbmFdQFZEULJlHYv3YZcYg0zRDVCZLVESInEKZ3EyccQnD1Lb00+rrQ9AVkRQomrIo7SpEhOxLehtMD5Jog2+fB9I2rhsLKRZzfCGS2PD8iKEN+JcwTHQDeagnYOKs0ERTWzX9FMUKSFfeEmbuY0y/v+c6L8aoSS383fIvHwDX8tfmcJ4I2aAAAAAElFTkSuQmCC" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                                    </scg:List>
+                                  </uix:TargetAnchorable.Anchors>
+                                  <uix:TargetAnchorable.PointOffset>
+                                    <uix:PointOffset X="3" Y="-3" />
+                                  </uix:TargetAnchorable.PointOffset>
+                                </uix:TargetAnchorable>
+                              </uix:NClick.Target>
+                            </uix:NClick>
+                            <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="660,90.4" sap2010:WorkflowViewState.IdRef="Delay_2" />
+                            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[Kurse]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="660,7808" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+                              <ui:ForEachRow.Body>
+                                <ActivityAction x:TypeArguments="sd:DataRow">
+                                  <ActivityAction.Argument>
+                                    <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+                                  </ActivityAction.Argument>
+                                  <Sequence DisplayName="Text" sap:VirtualizedContainerService.HintSize="626.4,7690.4" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Neu'" sap:VirtualizedContainerService.HintSize="564,157.6" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ad08872b-b465-48f0-a3f0-10ce604fc639" Version="V3">
+                                      <uix:NClick.Target>
+                                        <uix:TargetAnchorable CvElementArea="1542, 976, 124, 25" CvTextArea="1601, 982, 23, 12" CvTextArgument="Neu" CvType="Button" DesignTimeRectangle="1542, 976, 124, 25" DesignTimeScaleFactor="1.25" ElementType="Button" FriendlyName="'Neu'" Guid="2c515fc7-1c4a-4b0b-a0d8-4dc57436d144" InformativeScreenshot="0e5343e54b97c6d519bca196405ca89a.png" ScopeSelectorArgument="&lt;wnd app='java*.exe' cls='SunAwtFrame' title='StarPlan (Version 3.4.1.0)' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive" />
+                                      </uix:NClick.Target>
+                                    </uix:NClick>
+                                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Kurzel'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="564,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="ad08872b-b465-48f0-a3f0-10ce604fc639" Text="[CurrentRow.item(&quot;Kürzel&quot;).ToString]" Version="V3">
+                                      <uix:NTypeInto.Target>
+                                        <uix:TargetAnchorable CvType="InputBox" DesignTimeRectangle="152, 730, 291, 24" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'Kurzel'" Guid="76e433a6-9324-4a61-bdc3-37fec9c2091a" InformativeScreenshot="264f366fa3a631b6b9b6b611bd52be2b.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='java*.exe' cls='SunAwtFrame' title='StarPlan (Version 3.4.1.0)' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive">
+                                          <uix:TargetAnchorable.Anchors>
+                                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                              <uix:Target CvTextArgument="Kurzel:" CvType="Text" DesignTimeRectangle="111, 736, 37, 13" ElementType="Text" FriendlyName="'Kurzel'" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                                            </scg:List>
+                                          </uix:TargetAnchorable.Anchors>
+                                        </uix:TargetAnchorable>
+                                      </uix:NTypeInto.Target>
+                                    </uix:NTypeInto>
+                                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Name'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="564,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="ad08872b-b465-48f0-a3f0-10ce604fc639" Text="[CurrentRow.item(&quot;Name&quot;).ToString]" Version="V3">
+                                      <uix:NTypeInto.Target>
+                                        <uix:TargetAnchorable CvType="InputBox" DesignTimeRectangle="589, 729, 238, 25" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'Name'" Guid="172e9139-46b9-4de4-9aed-5fbd8f76560e" InformativeScreenshot="18440012bd61199993c1a46f97198453.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='java*.exe' cls='SunAwtFrame' title='StarPlan (Version 3.4.1.0)' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive">
+                                          <uix:TargetAnchorable.Anchors>
+                                            <scg:List x:TypeArguments="uix:ITarget" Capacity="2">
+                                              <uix:Target CvTextArgument="Name:" CvType="Text" DesignTimeRectangle="550, 737, 36, 12" ElementType="Text" FriendlyName="'Name'" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                                              <uix:Target CvTextArgument="Zyklus:" CvType="Text" DesignTimeRectangle="548, 763, 40, 15" ElementType="Text" FriendlyName="'Zyklus'" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                                            </scg:List>
+                                          </uix:TargetAnchorable.Anchors>
+                                        </uix:TargetAnchorable>
+                                      </uix:NTypeInto.Target>
+                                    </uix:NTypeInto>
+                                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Double" DisplayName="Type Into 'Einheiten pro Woche'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="564,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="ad08872b-b465-48f0-a3f0-10ce604fc639" Text="[CurrentRow.item(&quot;Einheiten pro Woche&quot;).ToString]" Version="V3">
+                                      <uix:NTypeInto.Target>
+                                        <uix:TargetAnchorable CvElementArea="152, 758, 292, 24" CvTextArea="159, 763, 8, 12" CvTextArgument="0" CvType="InputBox" DesignTimeRectangle="152, 758, 292, 24" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'Einheiten pro Woche'" Guid="62dfea7f-efd4-4b95-9af7-fe03215b4a05" InformativeScreenshot="f51fedda946bac40bdeb3689f1d56ee9.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='java*.exe' cls='SunAwtFrame' title='StarPlan (Version 3.4.1.0)' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive">
+                                          <uix:TargetAnchorable.Anchors>
+                                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                              <uix:Target CvTextArgument="Einheiten pro Woche:" CvType="Text" DesignTimeRectangle="35, 763, 114, 15" ElementType="Text" FriendlyName="'Einheiten pro Woche'" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                                            </scg:List>
+                                          </uix:TargetAnchorable.Anchors>
+                                        </uix:TargetAnchorable>
+                                      </uix:NTypeInto.Target>
+                                    </uix:NTypeInto>
+                                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Double" DisplayName="Type Into 'Zyklus'" EmptyFieldMode="None" sap:VirtualizedContainerService.HintSize="564,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_4" ScopeIdentifier="ad08872b-b465-48f0-a3f0-10ce604fc639" Text="[CurrentRow.item(&quot;Zyklus&quot;).ToString + &quot;[k(Enter)]&quot;]" Version="V3">
+                                      <uix:NTypeInto.Target>
+                                        <uix:TargetAnchorable CvElementArea="590, 757, 236, 25" CvTextArea="596, 763, 38, 12" CvTextArgument="immer" CvType="InputBox" DesignTimeRectangle="590, 757, 236, 25" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'Zyklus'" Guid="037a8526-3944-4c74-9b17-b59ed37e0497" InformativeScreenshot="7394d971bce845982d5de2bba00670ba.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='java*.exe' cls='SunAwtFrame' title='StarPlan (Version 3.4.1.0)' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive">
+                                          <uix:TargetAnchorable.Anchors>
+                                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                              <uix:Target CvTextArgument="Zyklus:" CvType="Text" DesignTimeRectangle="548, 763, 40, 15" ElementType="Text" FriendlyName="'Zyklus'" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                                            </scg:List>
+                                          </uix:TargetAnchorable.Anchors>
+                                        </uix:TargetAnchorable>
+                                      </uix:NTypeInto.Target>
+                                    </uix:NTypeInto>
+                                    <If Condition="[CurrentRow.item(&quot;Pflicht&quot;).ToString = &quot;TRUE&quot;]" sap:VirtualizedContainerService.HintSize="564,430.4" sap2010:WorkflowViewState.IdRef="If_1">
+                                      <If.Then>
+                                        <Sequence sap:VirtualizedContainerService.HintSize="376.8,247.2" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Pflicht'" sap:VirtualizedContainerService.HintSize="333.6,157.6" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ad08872b-b465-48f0-a3f0-10ce604fc639" Version="V3">
+                                            <uix:NClick.Target>
+                                              <uix:TargetAnchorable CvType="CheckBox" DesignTimeRectangle="154, 788, 17, 17" DesignTimeScaleFactor="1.25" ElementType="CheckBox" FriendlyName="'/ nein'" Guid="4ec973c2-7ee8-4b10-b5fe-03020ff183ab" InformativeScreenshot="07e561000cdb50a8b66cef1bb0032219.png" ScopeSelectorArgument="&lt;wnd app='java*.exe' cls='SunAwtFrame' title='StarPlan (Version 3.4.1.0)' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive">
+                                                <uix:TargetAnchorable.Anchors>
+                                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                    <uix:Target CvTextArgument="Pflicht:" CvType="Text" DesignTimeRectangle="110, 790, 38, 12" ElementType="Text" FriendlyName="'Pflicht'" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                                                  </scg:List>
+                                                </uix:TargetAnchorable.Anchors>
+                                              </uix:TargetAnchorable>
+                                            </uix:NClick.Target>
+                                          </uix:NClick>
+                                        </Sequence>
+                                      </If.Then>
+                                      <If.Else>
+                                        <Sequence sap:VirtualizedContainerService.HintSize="300,82.4" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                        </Sequence>
+                                      </If.Else>
+                                    </If>
+                                    <If Condition="[CurrentRow.item(&quot;Organisationsart&quot;).ToString = &quot;regelmäßig&quot;]" sap:VirtualizedContainerService.HintSize="564,1652.8" sap2010:WorkflowViewState.IdRef="If_5">
+                                      <If.Then>
+                                        <Sequence sap:VirtualizedContainerService.HintSize="376.8,308" sap2010:WorkflowViewState.IdRef="Sequence_16">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Double" DisplayName="Type Into 'Organisationsart'" EmptyFieldMode="None" sap:VirtualizedContainerService.HintSize="333.6,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_15" ScopeIdentifier="ad08872b-b465-48f0-a3f0-10ce604fc639" Text="r" Version="V3">
+                                            <uix:NTypeInto.Target>
+                                              <uix:TargetAnchorable CvElementArea="590, 784, 237, 24" CvTextArea="596, 790, 62, 16" CvTextArgument="regelmassig" CvType="InputBox" DesignTimeRectangle="590, 784, 237, 24" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'Organisationsart'" Guid="9521a09c-67df-49ec-ba12-129ab1db5eeb" InformativeScreenshot="6e00f00c9eece95eed3e35b5666cc86c.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='java*.exe' cls='SunAwtFrame' title='StarPlan (Version 3.4.1.0)' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive">
+                                                <uix:TargetAnchorable.Anchors>
+                                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                    <uix:Target CvTextArgument="Organisationsart:" CvType="Text" DesignTimeRectangle="495, 791, 90, 13" ElementType="Text" FriendlyName="'Organisationsart'" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                                                  </scg:List>
+                                                </uix:TargetAnchorable.Anchors>
+                                              </uix:TargetAnchorable>
+                                            </uix:NTypeInto.Target>
+                                          </uix:NTypeInto>
+                                        </Sequence>
+                                      </If.Then>
+                                      <If.Else>
+                                        <Sequence sap:VirtualizedContainerService.HintSize="530.4,1161.6" sap2010:WorkflowViewState.IdRef="Sequence_17">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <If Condition="[CurrentRow.item(&quot;Organisationsart&quot;).ToString = &quot;geblockt&quot;]" sap:VirtualizedContainerService.HintSize="487.2,1072" sap2010:WorkflowViewState.IdRef="If_6">
+                                            <If.Then>
+                                              <Sequence sap:VirtualizedContainerService.HintSize="376.8,308" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                                                <sap:WorkflowViewStateService.ViewState>
+                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                  </scg:Dictionary>
+                                                </sap:WorkflowViewStateService.ViewState>
+                                                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Double" DisplayName="Type Into 'Organisationsart'" EmptyFieldMode="None" sap:VirtualizedContainerService.HintSize="333.6,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_14" ScopeIdentifier="ad08872b-b465-48f0-a3f0-10ce604fc639" Text="b" Version="V3">
+                                                  <uix:NTypeInto.Target>
+                                                    <uix:TargetAnchorable CvElementArea="590, 784, 237, 24" CvTextArea="596, 790, 62, 16" CvTextArgument="regelmassig" CvType="InputBox" DesignTimeRectangle="590, 784, 237, 24" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'Organisationsart'" Guid="1f144eff-06c8-4524-83e1-882500a06328" InformativeScreenshot="6e00f00c9eece95eed3e35b5666cc86c.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='java*.exe' cls='SunAwtFrame' title='StarPlan (Version 3.4.1.0)' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive">
+                                                      <uix:TargetAnchorable.Anchors>
+                                                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                          <uix:Target CvTextArgument="Organisationsart:" CvType="Text" DesignTimeRectangle="495, 791, 90, 13" ElementType="Text" FriendlyName="'Organisationsart'" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                                                        </scg:List>
+                                                      </uix:TargetAnchorable.Anchors>
+                                                    </uix:TargetAnchorable>
+                                                  </uix:NTypeInto.Target>
+                                                </uix:NTypeInto>
+                                              </Sequence>
+                                            </If.Then>
+                                            <If.Else>
+                                              <Sequence sap:VirtualizedContainerService.HintSize="453.6,580.8" sap2010:WorkflowViewState.IdRef="Sequence_19">
+                                                <sap:WorkflowViewStateService.ViewState>
+                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                  </scg:Dictionary>
+                                                </sap:WorkflowViewStateService.ViewState>
+                                                <If Condition="[CurrentRow.item(&quot;Organisationsart&quot;).ToString = &quot;einzelne Veranstaltung&quot;]" sap:VirtualizedContainerService.HintSize="410.4,491.2" sap2010:WorkflowViewState.IdRef="If_11">
+                                                  <If.Then>
+                                                    <Sequence sap:VirtualizedContainerService.HintSize="376.8,308" sap2010:WorkflowViewState.IdRef="Sequence_28">
+                                                      <sap:WorkflowViewStateService.ViewState>
+                                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                        </scg:Dictionary>
+                                                      </sap:WorkflowViewStateService.ViewState>
+                                                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Double" DisplayName="Type Into 'Organisationsart'" EmptyFieldMode="None" sap:VirtualizedContainerService.HintSize="333.6,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_13" ScopeIdentifier="ad08872b-b465-48f0-a3f0-10ce604fc639" Text="s" Version="V3">
+                                                        <uix:NTypeInto.Target>
+                                                          <uix:TargetAnchorable CvElementArea="590, 784, 237, 24" CvTextArea="596, 790, 62, 16" CvTextArgument="regelmassig" CvType="InputBox" DesignTimeRectangle="590, 784, 237, 24" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'Organisationsart'" Guid="611d0f12-986d-480a-9e13-200e6b634d7e" InformativeScreenshot="6e00f00c9eece95eed3e35b5666cc86c.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='java*.exe' cls='SunAwtFrame' title='StarPlan (Version 3.4.1.0)' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive">
+                                                            <uix:TargetAnchorable.Anchors>
+                                                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                                <uix:Target CvTextArgument="Organisationsart:" CvType="Text" DesignTimeRectangle="495, 791, 90, 13" ElementType="Text" FriendlyName="'Organisationsart'" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                                                              </scg:List>
+                                                            </uix:TargetAnchorable.Anchors>
+                                                          </uix:TargetAnchorable>
+                                                        </uix:NTypeInto.Target>
+                                                      </uix:NTypeInto>
+                                                    </Sequence>
+                                                  </If.Then>
+                                                  <If.Else>
+                                                    <Sequence sap2010:WorkflowViewState.IdRef="Sequence_29" />
+                                                  </If.Else>
+                                                </If>
+                                              </Sequence>
+                                            </If.Else>
+                                          </If>
+                                        </Sequence>
+                                      </If.Else>
+                                    </If>
+                                    <If Condition="[CurrentRow.item(&quot;PC-Pool&quot;).ToString = &quot;TRUE&quot;]" sap:VirtualizedContainerService.HintSize="564,430.4" sap2010:WorkflowViewState.IdRef="If_7">
+                                      <If.Then>
+                                        <Sequence sap:VirtualizedContainerService.HintSize="376.8,247.2" sap2010:WorkflowViewState.IdRef="Sequence_20">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Braucht PC-Pool'" sap:VirtualizedContainerService.HintSize="333.6,157.6" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ad08872b-b465-48f0-a3f0-10ce604fc639" Version="V3">
+                                            <uix:NClick.Target>
+                                              <uix:TargetAnchorable CvType="CheckBox" DesignTimeRectangle="154, 815, 17, 16" DesignTimeScaleFactor="1.25" ElementType="CheckBox" FriendlyName="'Braucht PC-Pool'" Guid="2261e71f-eceb-4c70-ad1f-dc16bdaf24d8" InformativeScreenshot="019b149349476fe71cd3e03c12001ea5.png" ScopeSelectorArgument="&lt;wnd app='java*.exe' cls='SunAwtFrame' title='StarPlan (Version 3.4.1.0)' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive">
+                                                <uix:TargetAnchorable.Anchors>
+                                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                    <uix:Target CvTextArgument="Braucht PC-Pool:" CvType="Text" DesignTimeRectangle="56, 817, 92, 12" ElementType="Text" FriendlyName="'Braucht PC-Pool'" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                                                  </scg:List>
+                                                </uix:TargetAnchorable.Anchors>
+                                              </uix:TargetAnchorable>
+                                            </uix:NClick.Target>
+                                          </uix:NClick>
+                                        </Sequence>
+                                      </If.Then>
+                                      <If.Else>
+                                        <Sequence sap:VirtualizedContainerService.HintSize="300,82.4" sap2010:WorkflowViewState.IdRef="Sequence_21">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                        </Sequence>
+                                      </If.Else>
+                                    </If>
+                                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'ID in HIS'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="487.2,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_7" ScopeIdentifier="ad08872b-b465-48f0-a3f0-10ce604fc639" Text="[CurrentRow.item(&quot;ID in HIS&quot;).ToString]" Version="V3">
+                                      <uix:NTypeInto.Target>
+                                        <uix:TargetAnchorable CvType="InputBox" DesignTimeRectangle="589, 811, 237, 25" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'ID in HIS'" Guid="50d03ee8-e455-4b28-af5b-e626fe4b85fd" InformativeScreenshot="152862b2691f952d46ce33a1f6aa5ef3.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='java*.exe' cls='SunAwtFrame' title='StarPlan (Version 3.4.1.0)' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive">
+                                          <uix:TargetAnchorable.Anchors>
+                                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                              <uix:Target CvTextArgument="ID in HIS:" CvType="Text" DesignTimeRectangle="538, 817, 49, 12" ElementType="Text" FriendlyName="'ID in HIS'" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                                            </scg:List>
+                                          </uix:TargetAnchorable.Anchors>
+                                        </uix:TargetAnchorable>
+                                      </uix:NTypeInto.Target>
+                                    </uix:NTypeInto>
+                                    <If Condition="[CurrentRow.item(&quot;Activ&quot;).ToString = &quot;FALSE&quot;]" sap:VirtualizedContainerService.HintSize="564,430.4" sap2010:WorkflowViewState.IdRef="If_8">
+                                      <If.Then>
+                                        <Sequence sap:VirtualizedContainerService.HintSize="376.8,247.2" sap2010:WorkflowViewState.IdRef="Sequence_22">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Aktiv'" sap:VirtualizedContainerService.HintSize="333.6,157.6" sap2010:WorkflowViewState.IdRef="NClick_7" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ad08872b-b465-48f0-a3f0-10ce604fc639" Version="V3">
+                                            <uix:NClick.Target>
+                                              <uix:TargetAnchorable CvType="CheckBox" DesignTimeRectangle="155, 843, 17, 16" DesignTimeScaleFactor="1.25" ElementType="CheckBox" FriendlyName="'/ nein'" Guid="c970da58-abbb-4f58-bb54-3573ad074f52" InformativeScreenshot="fb3a62193c507decbae7effb6283c585.png" ScopeSelectorArgument="&lt;wnd app='java*.exe' cls='SunAwtFrame' title='StarPlan (Version 3.4.1.0)' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive">
+                                                <uix:TargetAnchorable.Anchors>
+                                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                    <uix:Target CvTextArgument="Aktiv:" CvType="Text" DesignTimeRectangle="116, 845, 32, 11" ElementType="Text" FriendlyName="'Aktiv'" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                                                  </scg:List>
+                                                </uix:TargetAnchorable.Anchors>
+                                              </uix:TargetAnchorable>
+                                            </uix:NClick.Target>
+                                          </uix:NClick>
+                                        </Sequence>
+                                      </If.Then>
+                                      <If.Else>
+                                        <Sequence sap:VirtualizedContainerService.HintSize="300,82.4" sap2010:WorkflowViewState.IdRef="Sequence_23">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                        </Sequence>
+                                      </If.Else>
+                                    </If>
+                                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Kurzel Prufungsordnung'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="564,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_8" ScopeIdentifier="ad08872b-b465-48f0-a3f0-10ce604fc639" Text="[CurrentRow.item(&quot;Kürzel PO&quot;).ToString]" Version="V3">
+                                      <uix:NTypeInto.Target>
+                                        <uix:TargetAnchorable CvType="InputBox" DesignTimeRectangle="591, 839, 235, 24" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'Kurzel Prufungsordnung'" Guid="fe5dc819-1243-4ed4-adbc-96ec75ed4782" InformativeScreenshot="7adec9a25de4f3793c777ee82200b272.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='java*.exe' cls='SunAwtFrame' title='StarPlan (Version 3.4.1.0)' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive">
+                                          <uix:TargetAnchorable.Anchors>
+                                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                              <uix:Target CvTextArgument="Kurzel Prufungsordnung:" CvType="Text" DesignTimeRectangle="453, 845, 133, 15" ElementType="Text" FriendlyName="'Kurzel Prufungsordnung'" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                                            </scg:List>
+                                          </uix:TargetAnchorable.Anchors>
+                                        </uix:TargetAnchorable>
+                                      </uix:NTypeInto.Target>
+                                    </uix:NTypeInto>
+                                    <If Condition="[CurrentRow.item(&quot;Hochschulweit buchbar&quot;).ToString = &quot;TRUE&quot;]" sap:VirtualizedContainerService.HintSize="487.2,430.4" sap2010:WorkflowViewState.IdRef="If_9">
+                                      <If.Then>
+                                        <Sequence sap:VirtualizedContainerService.HintSize="376.8,247.2" sap2010:WorkflowViewState.IdRef="Sequence_24">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Hochschulweit buchbar'" sap:VirtualizedContainerService.HintSize="333.6,157.6" sap2010:WorkflowViewState.IdRef="NClick_8" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ad08872b-b465-48f0-a3f0-10ce604fc639" Version="V3">
+                                            <uix:NClick.Target>
+                                              <uix:TargetAnchorable CvType="CheckBox" DesignTimeRectangle="155, 868, 17, 17" DesignTimeScaleFactor="1.25" ElementType="CheckBox" FriendlyName="'/ nein'" Guid="d7310b16-a3c8-4d32-ac48-33ac2daa0b65" InformativeScreenshot="35892f539e13410356aab0a820389bc9.png" ScopeSelectorArgument="&lt;wnd app='java*.exe' cls='SunAwtFrame' title='StarPlan (Version 3.4.1.0)' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive">
+                                                <uix:TargetAnchorable.Anchors>
+                                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                    <uix:Target CvTextArgument="Hochschulweit buchbar:" CvType="Text" DesignTimeRectangle="18, 870, 130, 12" ElementType="Text" FriendlyName="'Hochschulweit buchbar'" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                                                  </scg:List>
+                                                </uix:TargetAnchorable.Anchors>
+                                              </uix:TargetAnchorable>
+                                            </uix:NClick.Target>
+                                          </uix:NClick>
+                                        </Sequence>
+                                      </If.Then>
+                                      <If.Else>
+                                        <Sequence sap:VirtualizedContainerService.HintSize="300,82.4" sap2010:WorkflowViewState.IdRef="Sequence_25">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                        </Sequence>
+                                      </If.Else>
+                                    </If>
+                                    <If Condition="[CurrentRow.item(&quot;Archiviert&quot;).ToString = &quot;TRUE&quot;]" sap:VirtualizedContainerService.HintSize="487.2,430.4" sap2010:WorkflowViewState.IdRef="If_10">
+                                      <If.Then>
+                                        <Sequence sap:VirtualizedContainerService.HintSize="376.8,247.2" sap2010:WorkflowViewState.IdRef="Sequence_26">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Archiviert'" sap:VirtualizedContainerService.HintSize="333.6,157.6" sap2010:WorkflowViewState.IdRef="NClick_9" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ad08872b-b465-48f0-a3f0-10ce604fc639" Version="V3">
+                                            <uix:NClick.Target>
+                                              <uix:TargetAnchorable CvType="CheckBox" DesignTimeRectangle="592, 868, 17, 17" DesignTimeScaleFactor="1.25" ElementType="CheckBox" FriendlyName="'/ nein'" Guid="b40c0d3c-9d12-4435-8dcc-ad4f057096d3" InformativeScreenshot="d9d6704ac74c2a20c480eab877b97b52.png" ScopeSelectorArgument="&lt;wnd app='java*.exe' cls='SunAwtFrame' title='StarPlan (Version 3.4.1.0)' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive">
+                                                <uix:TargetAnchorable.Anchors>
+                                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                    <uix:Target CvTextArgument="Archiviert:" CvType="Text" DesignTimeRectangle="530, 870, 56, 13" ElementType="Text" FriendlyName="'Archiviert'" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                                                  </scg:List>
+                                                </uix:TargetAnchorable.Anchors>
+                                              </uix:TargetAnchorable>
+                                            </uix:NClick.Target>
+                                          </uix:NClick>
+                                        </Sequence>
+                                      </If.Then>
+                                      <If.Else>
+                                        <Sequence sap:VirtualizedContainerService.HintSize="300,82.4" sap2010:WorkflowViewState.IdRef="Sequence_27">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                        </Sequence>
+                                      </If.Else>
+                                    </If>
+                                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Lehrplansemester'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="564,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_9" ScopeIdentifier="ad08872b-b465-48f0-a3f0-10ce604fc639" Text="[CurrentRow.item(&quot;Lehrplansemester&quot;).ToString]" Version="V3">
+                                      <uix:NTypeInto.Target>
+                                        <uix:TargetAnchorable CvElementArea="153, 891, 291, 23" CvTextArea="159, 896, 8, 12" CvTextArgument="0" CvType="InputBox" DesignTimeRectangle="153, 890, 291, 24" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'Lehrplansemester'" Guid="0a47592c-d8b7-4786-8b18-85660b05e08e" InformativeScreenshot="cca93596bdebf391c902d1b9f8f1e608.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='java*.exe' cls='SunAwtFrame' title='StarPlan (Version 3.4.1.0)' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive">
+                                          <uix:TargetAnchorable.Anchors>
+                                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                              <uix:Target CvTextArgument="Lehrplansemester:" CvType="Text" DesignTimeRectangle="51, 897, 96, 13" ElementType="Text" FriendlyName="'Lehrplansemester'" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                                            </scg:List>
+                                          </uix:TargetAnchorable.Anchors>
+                                        </uix:TargetAnchorable>
+                                      </uix:NTypeInto.Target>
+                                    </uix:NTypeInto>
+                                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Prufung im Semester'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="564,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_10" ScopeIdentifier="ad08872b-b465-48f0-a3f0-10ce604fc639" Text="[CurrentRow.item(&quot;Prüfung im Semester&quot;).ToString]" Version="V3">
+                                      <uix:NTypeInto.Target>
+                                        <uix:TargetAnchorable CvElementArea="152, 918, 291, 24" CvTextArea="159, 923, 8, 12" CvTextArgument="0" CvType="InputBox" DesignTimeRectangle="152, 918, 291, 24" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'Prufung im Semester'" Guid="4a018dcf-48ed-4516-b2df-fd2658fa425a" InformativeScreenshot="5f9ee064c5cca92f6a57bd2466049106.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='java*.exe' cls='SunAwtFrame' title='StarPlan (Version 3.4.1.0)' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive">
+                                          <uix:TargetAnchorable.Anchors>
+                                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                              <uix:Target CvTextArgument="Prufung im Semester:" CvType="Text" DesignTimeRectangle="33, 923, 115, 15" ElementType="Text" FriendlyName="'Prufung im Semester'" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                                            </scg:List>
+                                          </uix:TargetAnchorable.Anchors>
+                                        </uix:TargetAnchorable>
+                                      </uix:NTypeInto.Target>
+                                    </uix:NTypeInto>
+                                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Fachnummer'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="564,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_11" ScopeIdentifier="ad08872b-b465-48f0-a3f0-10ce604fc639" Text="[CurrentRow.item(&quot;Fachnummer&quot;).ToString]" Version="V3">
+                                      <uix:NTypeInto.Target>
+                                        <uix:TargetAnchorable CvType="InputBox" DesignTimeRectangle="152, 945, 291, 24" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'Fachnummer'" Guid="c4a9774a-e8e1-44d6-92bc-38b2f8515247" InformativeScreenshot="e578c93d06fb0eb673ab454ca09228b6.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='java*.exe' cls='SunAwtFrame' title='StarPlan (Version 3.4.1.0)' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive">
+                                          <uix:TargetAnchorable.Anchors>
+                                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                              <uix:Target CvTextArgument="Fachnummer:" CvType="Text" DesignTimeRectangle="73, 951, 76, 11" ElementType="Text" FriendlyName="'Fachnummer'" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                                            </scg:List>
+                                          </uix:TargetAnchorable.Anchors>
+                                        </uix:TargetAnchorable>
+                                      </uix:NTypeInto.Target>
+                                    </uix:NTypeInto>
+                                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Auswahlen...'" sap:VirtualizedContainerService.HintSize="564,157.6" sap2010:WorkflowViewState.IdRef="NClick_10" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ad08872b-b465-48f0-a3f0-10ce604fc639" Version="V3">
+                                      <uix:NClick.Target>
+                                        <uix:TargetAnchorable CvElementArea="836, 917, 120, 25" CvTextArea="870, 923, 68, 12" CvTextArgument="Auswahlen..." CvType="Button" DesignTimeRectangle="836, 917, 120, 25" DesignTimeScaleFactor="1.25" ElementType="Button" FriendlyName="'Auswahlen...'" Guid="995d4921-c673-4635-965c-6a92484bee19" InformativeScreenshot="974eef42ae7d4ec0208d8a45dc2c2240.png" ScopeSelectorArgument="&lt;wnd app='java*.exe' cls='SunAwtFrame' title='StarPlan (Version 3.4.1.0)' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive">
+                                          <uix:TargetAnchorable.Anchors>
+                                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                              <uix:Target CvTextArgument="Abteilung:" CvType="Text" DesignTimeRectangle="529, 923, 57, 15" ElementType="Text" FriendlyName="'Abteilung'" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                                            </scg:List>
+                                          </uix:TargetAnchorable.Anchors>
+                                        </uix:TargetAnchorable>
+                                      </uix:NClick.Target>
+                                    </uix:NClick>
+                                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Filter'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="564,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_12" ScopeIdentifier="ad08872b-b465-48f0-a3f0-10ce604fc639" Text="[CurrentRow.item(&quot;Abteilung&quot;).ToString]" Version="V3">
+                                      <uix:NTypeInto.Target>
+                                        <uix:TargetAnchorable DesignTimeRectangle="47, 35, 319, 22" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'text'" FullSelectorArgument="&lt;java cls='JTextField' role='text' /&gt;" FuzzySelectorArgument="&lt;java cls='JTextField' role='text' /&gt;" Guid="13151790-b2a3-44df-9707-db8032ba71c9" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAUMAAAAaCAYAAAAtxT6MAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAACfSURBVHhe7dyxDcJQEERB2nc3iDacIRqgA+skx9/7ExKwC+BmpJddvOHdqmpIUveMoSSlzxgu95cktevnGD6e21jfuyT9fXPvTsdwHgB0MPfOGALtGUOAMIYAYQwBwhgChDEECGMIEMYQIIwhQBhDgDCGAGEMAcIYAoQxBAhjCBDGECCMIUBcjqG3/5K6dPn2X5K69TWGktQ5YyhJVeMAx4h80xrJWQ0AAAAASUVORK5CYII=" InformativeScreenshot="f3fdeb06ef5cc9aefb2df25f18fe075b.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='java*.exe' cls='SunAwtDialog' title='Abteilung auswählen' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Version="V2" Visibility="Interactive">
+                                          <uix:TargetAnchorable.Anchors>
+                                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                              <uix:Target DesignTimeRectangle="14, 38, 29, 16" ElementType="Text" FriendlyName="'Filter'" FullSelectorArgument="&lt;java name='Filter:' role='label' /&gt;" FuzzySelectorArgument="&lt;java name='Filter:' role='label' check:text='Filter:' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACEAAAAUCAYAAAADU1RxAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAEESURBVEhL7ZRRDoMgDEC51LjO5DDzLhtXUU4Colygs2gVGeqmcdkSP14sNWlfWpRprcEY46mqCqy1A3VdL9I0zWaccwOnxCmBLEqEIqnGIanin/AiofUdrowBC+B5CbbMgTMOeYliErI+PlDiArfCzE4ilMBYYKy2y/yXRNwY41uBz2B1QvqitcLVUV6A9PKdrBDc5x4yA8ZzUO27GYmgcEsmx8bxnYgnQc2GsxTtnVJ9Hu+XGvIrEt0k6CuZm8QkpqaTKfS0E4rlYg6Q6FYQNvmuRDR2IrUmWgeed0ngO5mNY/cN4pUk1rEogVDzUGINLLSHVYnUvyJFqvi7nBLEj0g4eAINUgA86aHWqQAAAABJRU5ErkJggg==" SearchSteps="Selector, FuzzySelector, Image" />
+                                            </scg:List>
+                                          </uix:TargetAnchorable.Anchors>
+                                        </uix:TargetAnchorable>
+                                      </uix:NTypeInto.Target>
+                                    </uix:NTypeInto>
+                                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Im Web sichtbar'" sap:VirtualizedContainerService.HintSize="564,157.6" sap2010:WorkflowViewState.IdRef="NClick_15" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ad08872b-b465-48f0-a3f0-10ce604fc639" Version="V3">
+                                      <uix:NClick.Target>
+                                        <uix:TargetAnchorable DesignTimeRectangle="497, 88, 121, 16" DesignTimeScaleFactor="1" ElementType="CheckBox" FriendlyName="'Checkbox'" FullSelectorArgument="&lt;java cls='MyJXTable' role='table' /&gt;&lt;java role='check box' tableCol='4' tableRow='0' /&gt;" FuzzySelectorArgument="&lt;java cls='MyJXTable' role='table' /&gt;&lt;java role='check box' /&gt;" Guid="0dcdcfe7-10f1-4e01-9a8c-b988a17d5a7b" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAH0AAAAUCAYAAACgezK3AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAFfSURBVGhD7ZlLS8NAEID7CwXBiyCIJ/+CR+/evYmKWgRFELx4EgTxIBWfJ1EEcdtUWkmaNU1oHZ3priYRTK6zOx9MktnHJV82k0cDvlFK4U5wHOu5gQcS/gRJx00URZQI7qO1dl/6fSeFhd0uTK21a8V8M4Cr19TMdg8vpKPwh7fMZNU89TIS7ypeSMfVW0WcjmG7NaA9UmcOV0S6YfUspHGbF5PzINKZUyXw/DmB6fU2LO51ZaW7wn8C+x9jmNsJSHq+7ot05liB5bqNLB/3qX//OjYtE0Q6c6zA5uWAjrF+I4d3MeVLRz0Y/V4HhEhnjhWYZJ9UtzE/uIlhZqMDs1sBqHBE/XlEOnPyAm9VSrmN08fE9BQR6cwpC7SvZysn76blLyKdOWWBeJvHB7cwKRXyHCKdOfIZtogX0vGHC0rE1VsncGzrZWhmu4cX0oUiJB2FS/gTPytd8AetNXwB/U5YLnxcCL8AAAAASUVORK5CYII=" InformativeScreenshot="5fa16a3088b4c2c4c23d190123c4aa1d.png" ScopeSelectorArgument="&lt;wnd app='java*.exe' cls='SunAwtDialog' title='Abteilung auswählen' /&gt;" SearchSteps="FuzzySelector, Image" Version="V2" Visibility="Interactive">
+                                          <uix:TargetAnchorable.Anchors>
+                                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                              <uix:Target DesignTimeRectangle="497, 63, 122, 25" FriendlyName="'Im Web sichtbar'" FullSelectorArgument="&lt;java cls='JXTableHeader' hasTableAncestor='0' role='tableheader' /&gt;&lt;java name='Im Web sichtbar' role='headercell' /&gt;" FuzzySelectorArgument="&lt;java cls='JXTableHeader' hasTableAncestor='0' role='tableheader' /&gt;&lt;java name='Im Web sichtbar' role='headercell' check:text='Im Web sichtbar' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAH4AAAAdCAYAAABsQ9h8AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAKQSURBVGhD7Zs7buMwEIZ1LV0iVwjS8Di6wbaLbd0Irn2CAMY27tfxujTgIm5mOSRH4vBl2bECrTk/wFh8zIiaj0OySXM6nUBKfaXZbDYgpb7SgNZ+v8cf0ZPL5yzgK5KAr1QCvlIJ+Eol4CuVgK9UAr5SPQB8D6pR+u/96lUDijlAny10O1dF9QoaPihQwmaqdh20V21v8f+FuXyTFgE+gmpANNB6kdt1LavHmjvYJf9h3/eAv1wu7ul2LQM8gm47oDghZNXptmEx7KBrrwWyLvDH4xFWqxUcDgfXcpseDN59cG8zttEF2SFIfMaSzlofLD2Hfr3F5XYE6zP/7vy7yJaOGGc7DC+Mifxj+zjW7lzlueDRxsebVmOjFMaqnEgIve972G635vce+DOA1x9D2YtbuP/Rpp7+qPGc1z6cfa+DYGPrHwUuqBRH3ccA0Ltz53Z4rBj5Pi30eNGkvi1YdIPJxLkwO2sTv5eLoBPssD5V82Q8C0Cp7omAeGDoXGfnO8t2V8z42Hd8adRy9jzAnq3pTy3O0reU+qzYXMyiofnnfMTKQb4H/nLAY8B1hvR4vlOAsE113jHg2iaBsZkbgXei48f2e7azgPfmwvxje84HF17k1ut1Fi7Cx/6pF77lgHfBGTMAheOxzQdh23JbMd8ZUgBHjTuJP6/SVp/7llRfZi6Y7ckjIPQR6xrUW275CwJvQQxBcTIXoTBtTcBoq6R+69tejmx7MtvZNluaN41J7ApGvD5c2K7OhRa4Lq3S9xnyEfqfVw8AL/ofJeArlYCvVAK+Ugn4SiXgK5WAr1QMPFak1FNIJuPxX2pEdeh8Ppvy9OB/Hz7h7dcRXn58TCqvP//C+59PZ/18suDP8A+m9MStiPTf3gAAAABJRU5ErkJggg==" SearchSteps="Selector, FuzzySelector, Image" />
+                                            </scg:List>
+                                          </uix:TargetAnchorable.Anchors>
+                                        </uix:TargetAnchorable>
+                                      </uix:NClick.Target>
+                                    </uix:NClick>
+                                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'OK'" sap:VirtualizedContainerService.HintSize="564,157.6" sap2010:WorkflowViewState.IdRef="NClick_14" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ad08872b-b465-48f0-a3f0-10ce604fc639" Version="V3">
+                                      <uix:NClick.Target>
+                                        <uix:TargetAnchorable DesignTimeRectangle="413, 459, 108, 22" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'OK'" FullSelectorArgument="&lt;java hasTableAncestor='0' name='OK' role='push button' /&gt;" FuzzySelectorArgument="&lt;java hasTableAncestor='0' name='OK' role='push button' check:text='OK' /&gt;" Guid="2c7db21e-829e-4dae-9959-1feaf5deeb69" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHAAAAAaCAYAAABvj9h3AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAPdSURBVGhD7ZrZTxNBHMf9XySIL2qUmEDsg/qgJMZ4RSU1KlIQUKAcoqiACWqBRaJG7jRCjChyLCC1YJS1BSwglhbtAWJxg9HEg9jGxHjg151tWmpdML7t4Db5pNuZ2XnoJ9/d+e3OMp/PBwV6UQRSTlCg1+vF9PQ0xsbGYLVaFWSIzWaDx+MRXf0hkMhzuVyYnZ0NdirIC+LG7XaLEgNtQYEkeYo8+UMckSQGfgcFkogGjhXkTagragR6Pk6ieaoG2uHdUHOxiH+4HimmLbjhuIypd07Jc5Yq1Ak0vzYixRKHXHM8briq0D51U6TRWYm03h3Y0xWNnsk2yXOXIlQJNM/cg9q8AZetRTDyLPTuqyi2nhQhxwa+HczQKcQ2RMLgbJWcY6lBjUDPh0kkDWwV5RFRp0fTkTeShuyhFOQKnBDIHz6G7ulWlA7kYWPDWrjfLH459dpZlJeXB9Fz/Hyf1w6W0YPj/ct0r5cHp2fAsPbgGDlAjcAm9zVouX1i8og8Ik5rSULGYCIyBo4gayARfUJCCy2ZMAgSDzZvxSVTieRcBCKPkRAUkBgu0M7O98kJagSm9ceh0VWJetcV5A2nIvOxRhCXgMx+AXMCHr3uBfm8+TyDWrvwZ1sZqKpjJecKyGLt80Ww2M5z0DMs7EJxHCqQ5/SyS14AagTuNK5C58tbODeajRxLspDEDjhnx6E1JYKb6RHl/Zj7jlpbOQpNqWh3NSLy/HLJuUJF/dYuivVLCwrkhKTqOfBhY+UCNQLjOlaAnWpC0YgW50Zy4P36SZT28ct78ZvIq3pagqxeNQr6joJ1NSCyaBGBElJCk+kXyIj3xvCkyglqBKrvqnB9/Arqnl9Cbr8GuuF8fP7mE+XN/ZxD1ZOLSDfuQ7YgsHr0AuosOqhKYyTn+qcE2slYf1voWLlAjcCaJ6XQdGxD98s7yDdpkNV3CBcGT2Diw3PUPi3D8Xt7kWHYj1zjAXRPNmF7/UaUGnSSc/3rPdC/4PlTuBygRuDEWyc2C6WBzpyNrhe3cfLBYeTcPwBtTzwyDQQiT427EzdR1JOK6MI1cPILlxHhUgKXzIVWoeJCRob3QmoEEjrHW7GyIgLFfekwCBJrRnUoeJCMs/c1QkIvoluQV2BMRmTWcrQN/b2QD68DQxMZLpBASgm5SaRKIKHd1oroijXY1bAJdSM6tDyrR8t4PaosxdhWrcK6M6vRZvk/nsIQqBNIcMw4UNZbAhUTg6j8CETlRUBVHIOyrhI4Xjkkz1mqUClQYR5JgcoLXTpY8IWusqVC/hA3C26pUDY1yZ9FNzUp0IkikGp8+AXM5EvYI41tlwAAAABJRU5ErkJggg==" InformativeScreenshot="6025afa00239b12eb8959332dffdd8bc.png" ScopeSelectorArgument="&lt;wnd app='java*.exe' cls='SunAwtDialog' title='Abteilung auswählen' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Version="V2" Visibility="Interactive">
+                                          <uix:TargetAnchorable.Anchors>
+                                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                              <uix:Target DesignTimeRectangle="528, 459, 108, 22" ElementType="Button" FriendlyName="'Abbrechen'" FullSelectorArgument="&lt;java hasTableAncestor='0' name='Abbrechen' role='push button' /&gt;" FuzzySelectorArgument="&lt;java hasTableAncestor='0' name='Abbrechen' role='push button' check:text='Abbrechen' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHAAAAAaCAYAAABvj9h3AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAPESURBVGhD7ZrpShtRFMfzVVQsKloq0tJVW0VxocatoJa40Vq7KLVSuk2Xh8nj+ABiPriAot+CT+BSSSSZmWRm/j1nMpNkssxo7EAC9w+HMPfce6LnN+eeO2QC8XgcwmrXBMAatyzAWCyG4+NjRCIRbG5uCqtC29raQjQaNVkVAWR4BwcHUBQFQtUpVVVxeHhoQiwCyJUn4FW/GCJXYhFALlGh2hCz8hdgSwsQCGRNzzf2Cd1I/gJsbQWePQZ+fwJ+rcH4+RHGj1UY3z7A+PIO2pP7SDc2WpOFKpF/AG14f9aB0DSMoSEYAwPQ+/uh9/ZCGx+Btv4aqUd3ofBcoYrkD8B8eGurwP4+jOVl6H190Ht6oC0swNjbQ3pxFumVOagPOpG8AsQNKYCAtGFd2dqAFAgiHLUuHXLz3VR+xr66/AHI/Y63TKo8hofLS+D8HNriIrT5eeDsDPRFMHZ2kOp7itSbKVzyGjdFwwgGJUjBwqQJgL4ANPvd4CD0pSUTng3RNIZHEFOTk1Da26G+eoGYB8BoOIggZcv+zEkA/O8A+YRpfF/J9TvaMm1wphE8dWICSlsbZDqJKgvjHgCjCNuVZ1ZimEZsWYncoHGKESDLAfb2SVKQxiW6InFsa152zBR/vz0eQGYXd4tNKhnLWhOWsrGcN+P15R/Ar+8z/a67G9rsrAMgV586Ogq5uRnJpiYosyPuAB3Q8mCa4qRQMmy/mTjb7+0rgp29lCxfBl5xogti0/wiUEWxrDV2H3esqUy+AdQ/L0Pr6oIWCmV7Hn8yPMRiME5OINPJNFFfD+XlMC5oTTkVbpt8nTvMFCSLxIcdR5VcxeeoGMt4ojleKsmFsfOuy8VyW1OhfAGYpj9Yp0eE9PMBGLu7mao7PYU6NgaFqofhGQRRj0SQ7LwNeXrQBSD/kwXJMK3M3W5VTGmALr5yoCoGeM01FcoXgCr1NX6+S6/OIx2agr69bcLjfpe8dQsyH24InjzcD3lmCPGOVlzQYaakeJtx9DxWIYi8Lc6RPC9fYTJLbZVuW2g5GOViua2pTL4AZCkEi5/vUm9noHY/zPa7REMDEnV1SHTQAYYqL+YGj8RbXnEimIW9jWaSkDmMZKozA5bl7XOENgHnVXl2Ms/NjeduHBcYJWN5rKlAvgFkJQli4t4dqIvjUOZGoYRGzH4nTw9BnhrwhCfkLV8BsuIEkU+YtnGvYzsn+0tVKXQz+Q5QyF+VBCh+0K0Nlf1B136lgicIVaeYzdHRUelXKsRLTdVvri81CatNEwBr2uL4B/Ubq8fdkdHVAAAAAElFTkSuQmCC" SearchSteps="Selector, FuzzySelector, Image" />
+                                            </scg:List>
+                                          </uix:TargetAnchorable.Anchors>
+                                        </uix:TargetAnchorable>
+                                      </uix:NClick.Target>
+                                    </uix:NClick>
+                                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Speichern'" sap:VirtualizedContainerService.HintSize="564,157.6" sap2010:WorkflowViewState.IdRef="NClick_16" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ad08872b-b465-48f0-a3f0-10ce604fc639" Version="V3">
+                                      <uix:NClick.Target>
+                                        <uix:TargetAnchorable CvElementArea="1669, 977, 123, 25" CvTextArea="1713, 982, 55, 15" CvTextArgument="Speichern" CvType="Button" DesignTimeRectangle="1669, 977, 123, 25" DesignTimeScaleFactor="1.25" ElementType="Button" FriendlyName="'Speichern'" Guid="60f350d4-352f-4e6a-a631-7d79766cca4b" InformativeScreenshot="a6cb5eb193fa3f5b8eb6ae2f22a5857e.png" ScopeSelectorArgument="&lt;wnd app='java*.exe' cls='SunAwtFrame' title='StarPlan (Version 3.4.1.0)' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive">
+                                          <uix:TargetAnchorable.Anchors>
+                                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                              <uix:Target CvElementArea="1542, 976, 124, 25" CvTextArea="1601, 982, 23, 12" CvTextArgument="Neu" CvType="Button" DesignTimeRectangle="1542, 976, 124, 25" ElementType="Button" FriendlyName="'Neu'" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                                            </scg:List>
+                                          </uix:TargetAnchorable.Anchors>
+                                        </uix:TargetAnchorable>
+                                      </uix:NClick.Target>
+                                    </uix:NClick>
+                                  </Sequence>
+                                </ActivityAction>
+                              </ui:ForEachRow.Body>
+                            </ui:ForEachRow>
+                          </Sequence>
+                        </ActivityAction>
+                      </uix:NApplicationCard.Body>
+                      <uix:NApplicationCard.TargetApp>
+                        <uix:TargetApp Area="-9, -9, 1938, 1038" Arguments="-Xms128m -Xmx2581m -Dsun.java2d.d3d=false -Dsun.java2d.uiScale.enabled=false -jar &quot;&quot;C:\Users\chris\Desktop\StarPlanJS.exe&quot;&quot; https://splan.hdm-stuttgart.de/splan/webstart/splan.jnlp" FilePath="C:\Program Files\Java\jre-1.8\bin\javaw.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAbNSURBVFhH7Zd7UFRVHMed6W+n6aliikZk+YgoDa20MjMzUVOwpsyWgBLwWYHJo8AwxReiII/Md0pIoMAiCyQPAXdBdpfHwgrLQ5Z1gYXdfKDUJN/Oud57YLtAUqlN42/mO3vv93zvuZ8995xzd4fcq3t1rwZR3jukc1yDUyR3SpKNUklwlHQ4f/uBa653ePB0yVa84nbnNEOyBU7vhRglvlv+GnLC22sb33QPRVLAN/jpy2Arpe+MEXknQsKQuilc5KdHiLP9+QnbojFquiemOK+U8Bj919hXP2lc4BWG/CWLkbvQ2UrqQH+RV+S2DMUrvER+X9n+/LyAQIx8yR1jpr7/PwI8t2YVd+Pe0kaEizyV/zpUfBMi8vvK9ufLt4cPDnCRz1Zc6+jAtfZ2K3VduiTyrpvN6LJYRH5f2f58o944+BFsLS9Hi1rN1FhSit37pFiyKgKTXYLw7Hw/zJWEYFvEETSpK1iuLK8IPoFx8PgyGu6+kfiYyMMvEmu/ikFs3HE0VVRZ9UtVqyr/Z4C18hLMfD8INi+6YZjTMoyYJsHwqR9xx1ShYftYNjLqGPNpRsgJx0/P9sbJhHSW5/rnAD8eHGBbRQUHSfV5UBS76VSX9QiPSca23fFY4rWZgw4KjWPZXZFHWXaa63p4BcRi6ertsH/di/l2r32Kinw5u0ZHnsCgABd6h+E6mVd0flE5LV7HOs/JVzKfSqXSQlOpY+exR9JZdnlgNPPraxowYc4K1ha5P5W1XeTm4CBHsLOtDVdbWzmNn7OSdXxSeob5VJ0mE7eghPOYg6ksu9w/yiq76usY1vbZhu+Yr2/Q/zPAeR6hrGP6qGIOpcFsuMi1DQZwRVA0a/MPO8D8vwXIbTO8pJlnrRYF1cS5q7A1OhEdxlZ0/fILy8YelrLM8oA9zDc06q2exNGk0z1tTYbBA5qqqmDSaJgi98TDdoYHu4GgFxb54ly+guV2kZzQNvujEETEJmPjrkTM+OBr9iUd561Gs7qMXVNXriGA7pjlvPSLjI2LnuNR+i4BkK6u3lsBlaa4DGsCIkEyDILqJRc/NCtVXCZi9w/Mp0C9tyQbMkpOi9cjLz2HZG/mqYRtJi141pXsg5v9eZS+ayBAi07HfVYXFsN97TYGQpWWmMG19QYc/9YazPwwBG+5b4Ln+ljE7U9DY/nNjbr+mD8unE7ijmuV5Vjr6QLL3mnIS/4+mEfpuygg3WYs9fWw1NVZ6YrBwI47COwL7/gymENH0jg/Ki6ReZ/47mR5QbQPM7nWeNwbnfsno0m2F0ZVDjrT3kZb2ATkp8av4FH6LmEEhVVsNhhxIF7GrVq6Nworz3LRCId5axiMLFvB+QOtYiqhj9a0lUDyM/jtqAOuZy8ETk6DYZM9CnNODbxQ/gyoVlZxN3Oc/zk2Rh5HkrQQJzIUWOrb83aZNHc190Vo/lYB22Q+QPp4IIVINhk4PhHmAw64pvas/r3EJfdqpkulOnFDCo/VU38G1FXXcROd3pCb9OTVRlccPaZ6YpYPpLKzDOCWRzDTAzg9Dsh4koCSz9SngKznCewU/PqjA/K2L4C2qsqPx+opYQ7Sn0F0E6aSZhZh4affYuxMb9i+uhx2b6yE4+JAeAUfgEpdw72uhOwJ8qZxmO8Lx0X+CNuTxHxBXeZG/Gragm6zM6AgYLl2wM/2BI6AEtgbSfYo3jEFSnl+PI9kXcII9rWKW7Q1UObKoc5TQF96c5ug+1i7VivK0oVg7clxuSEM3V3vAKapQAUBK7EF5GOAorHAGTt0Zz0Obaw9CjITqk0m01AeybrGDAAobDO9dauAuoJsKBJm46piOFBpA2geA8pHAerRQClRMYEtHAPN0Zeh1+sn8Tjiul2ARpUKmpwc5P/kB33WCHRrCWgtAdWO7IFVjUZntg2k3727gMcR17g3fBpfX0b+HqblQJpqLZmsUOSdkuYh49QZkS/LFGepUlJPozTXFbCQUbswDGggoLoRQDWRhgArbaA+NukUjyOuF5f4BdtOdyPvXffborGvuMFw4XEC+Ci6LzwIXHwE3bqHUZcxEvUZdmjKGIXKxNE4eThwHI8kLonvjjn0T/Rzzt7/uvbsdU7s/m0ELuseRMNZMnrtD6BTez+yUvw7lEplglwuP6M8V5DfUFPmxOPc2bpqcVScV9oiR/bV7+eKwq/caB+K2oKhKFVkhfKRu1e1mg0Tzha4QiGXlTU1NU05f77Sw9QwDEVZM9DS0jKRj929MhhqHevr6z0B3EfPm5ubH6rRuF7P/Xmdlgv8F6u0JCq5pCRr4J9Yd7PIG8PGbDbfz5/eq9tUQ4b8AfdcAy9PK85tAAAAAElFTkSuQmCC" InformativeScreenshot="36067f0abde53c658ee2cca0ab50de35.png" Selector="&lt;wnd app='java*.exe' cls='SunAwtFrame' title='StarPlan (Version 3.4.1.0)' /&gt;" Title="StarPlan (Version 3.4.1.0)" />
+                      </uix:NApplicationCard.TargetApp>
+                    </uix:NApplicationCard>
+                  </Sequence>
+                </ActivityAction>
+              </ueab:ExcelApplicationCard.Body>
+            </ueab:ExcelApplicationCard>
+          </Sequence>
+        </ActivityAction>
+      </ueab:ExcelProcessScopeX.Body>
+    </ueab:ExcelProcessScopeX>
+  </Sequence>
+</Activity>
