@@ -1,0 +1,359 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Splan_buchung" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1234,5663" sap2010:WorkflowViewState.IdRef="Splan_buchung_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Splan_buchung" sap:VirtualizedContainerService.HintSize="896,5598" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="834,5487" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_2" ShowExcelWindow="False">
+      <ueab:ExcelProcessScopeX.Body>
+        <ActivityAction x:TypeArguments="ui:IExcelProcess">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Ausführen" sap:VirtualizedContainerService.HintSize="800,5400" sap2010:WorkflowViewState.IdRef="Sequence_19">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="exlFile">
+                <Variable.Default>
+                  <Literal x:TypeArguments="x:String">C:\Users\zai\Desktop\Projekte\Selma_RPA\Splan_buchung1.xlsx</Literal>
+                </Variable.Default>
+              </Variable>
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" CreateNewFile="False" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="738,5289" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_2" ResizeWindow="None" WorkbookPath="[exlFile]">
+              <ueab:ExcelApplicationCard.Body>
+                <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Ausführen" sap:VirtualizedContainerService.HintSize="704,5020" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                    <Sequence.Variables>
+                      <Variable x:TypeArguments="sd:DataTable" Name="Kurse" />
+                    </Sequence.Variables>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ueab:ReadRangeX DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="642,169" sap2010:WorkflowViewState.IdRef="ReadRangeX_2" Range="[Excel.Sheet(&quot;Buchung&quot;)]" SaveTo="[Kurse]" />
+                    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Öffne StarPlan " sap:VirtualizedContainerService.HintSize="642,4700" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" ScopeGuid="ad08872b-b465-48f0-a3f0-10ce604fc639" Version="V2">
+                      <uix:NApplicationCard.Body>
+                        <ActivityAction x:TypeArguments="x:Object">
+                          <ActivityAction.Argument>
+                            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                          </ActivityAction.Argument>
+                          <Sequence DisplayName="Ausführen" sap:VirtualizedContainerService.HintSize="608,4409" sap2010:WorkflowViewState.IdRef="Sequence_32">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Stammdaten'" sap:VirtualizedContainerService.HintSize="546,157" sap2010:WorkflowViewState.IdRef="NClick_13" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ad08872b-b465-48f0-a3f0-10ce604fc639" Version="V3">
+                              <uix:NClick.Target>
+                                <uix:TargetAnchorable CvElementArea="10, 66, 120, 31" CvTextArea="45, 76, 70, 11" CvTextArgument="Stammdaten" CvType="Button" DesignTimeRectangle="10, 66, 119, 31" DesignTimeScaleFactor="1.25" ElementType="Button" FriendlyName="'Stammdaten'" Guid="5be2319e-939c-4927-9acc-3648892e9ae3" InformativeScreenshot="1cc4b735be1d1239457cc045b990e26a.png" ScopeSelectorArgument="&lt;wnd app='java*.exe' cls='SunAwtFrame' title='StarPlan (Version 3.4.1.0)' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive">
+                                  <uix:TargetAnchorable.PointOffset>
+                                    <uix:PointOffset X="-4" />
+                                  </uix:TargetAnchorable.PointOffset>
+                                </uix:TargetAnchorable>
+                              </uix:NClick.Target>
+                            </uix:NClick>
+                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Planungseinheiten'" sap:VirtualizedContainerService.HintSize="546,157" sap2010:WorkflowViewState.IdRef="NClick_14" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ad08872b-b465-48f0-a3f0-10ce604fc639" Version="V3">
+                              <uix:NClick.Target>
+                                <uix:TargetAnchorable CvElementArea="7, 101, 157, 30" CvTextArea="45, 109, 99, 15" CvTextArgument="Planungseinheiten" CvType="Button" DesignTimeRectangle="8, 100, 152, 31" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Planungseinheiten'" Guid="45c73626-0731-4561-b639-0da00add7c1b" InformativeScreenshot="19f3d751c14156db9a8b5732e762b57f.png" ScopeSelectorArgument="&lt;wnd app='java*.exe' cls='SunAwtFrame' title='StarPlan (Version 3.4.1.0)' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive" />
+                              </uix:NClick.Target>
+                            </uix:NClick>
+                            <uix:NClick ActivateBefore="True" ClickType="Double" DisplayName="Click 'N-SoSe 2023'" sap:VirtualizedContainerService.HintSize="546,157" sap2010:WorkflowViewState.IdRef="NClick_15" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ad08872b-b465-48f0-a3f0-10ce604fc639" Version="V3">
+                              <uix:NClick.Target>
+                                <uix:TargetAnchorable CvTextArgument="N-SoSe 2023" CvType="Text" DesignTimeRectangle="16, 226, 67, 12" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'N-SoSe 2023'" Guid="baedf902-120e-4b1f-bf0f-00ee68ac7569" InformativeScreenshot="f69578350f29573f0b1830a1e97c9670.png" ScopeSelectorArgument="&lt;wnd app='java*.exe' cls='SunAwtFrame' title='StarPlan (Version 3.4.1.0)' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive">
+                                  <uix:TargetAnchorable.Anchors>
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                      <uix:Target CvTextArgument="Sommersemester 2023" CvType="Text" DesignTimeRectangle="158, 226, 121, 12" ElementType="Text" FriendlyName="'Sommersemester 2023'" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                                    </scg:List>
+                                  </uix:TargetAnchorable.Anchors>
+                                </uix:TargetAnchorable>
+                              </uix:NClick.Target>
+                            </uix:NClick>
+                            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[Kurse]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="546,3703" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
+                              <ui:ForEachRow.Body>
+                                <ActivityAction x:TypeArguments="sd:DataRow">
+                                  <ActivityAction.Argument>
+                                    <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+                                  </ActivityAction.Argument>
+                                  <Sequence sap:VirtualizedContainerService.HintSize="512,3586" sap2010:WorkflowViewState.IdRef="Sequence_31">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <Sequence DisplayName="Text" sap:VirtualizedContainerService.HintSize="450,3471" sap2010:WorkflowViewState.IdRef="Sequence_30">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Neu'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_43" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ad08872b-b465-48f0-a3f0-10ce604fc639" Version="V3">
+                                        <uix:NClick.Target>
+                                          <uix:TargetAnchorable CvElementArea="1543, 996, 123, 24" CvTextArea="1602, 1002, 24, 12" CvTextArgument="Neu" CvType="Button" DesignTimeRectangle="1543, 996, 123, 24" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Neu'" Guid="eb43282f-efc1-4afc-98fb-f69d3cb66fdc" InformativeScreenshot="db325a509b7e6606fd0bd0dded9907d8.png" ScopeSelectorArgument="&lt;wnd app='java*.exe' cls='SunAwtFrame' title='StarPlan (Version 3.4.1.0)' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive" />
+                                        </uix:NClick.Target>
+                                      </uix:NClick>
+                                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Neu'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_42" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ad08872b-b465-48f0-a3f0-10ce604fc639" Version="V3">
+                                        <uix:NClick.Target>
+                                          <uix:TargetAnchorable CvElementArea="1543, 996, 123, 24" CvTextArea="1602, 1002, 24, 12" CvTextArgument="Neu" CvType="Button" DesignTimeRectangle="1543, 996, 123, 24" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Neu'" Guid="49a96f1e-d704-42ea-ad89-85380f2209bf" InformativeScreenshot="8ca270ef17ebe9777d5e731fc1eb669f.png" ScopeSelectorArgument="&lt;wnd app='java*.exe' cls='SunAwtFrame' title='StarPlan (Version 3.4.1.0)' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive">
+                                            <uix:TargetAnchorable.Anchors>
+                                              <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                                <uix:Target CvElementArea="1670, 996, 123, 25" CvTextArea="1714, 1002, 53, 14" CvTextArgument="Speichern" CvType="Button" DesignTimeRectangle="1670, 996, 123, 25" ElementType="Button" FriendlyName="'Speichern'" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                                              </scg:List>
+                                            </uix:TargetAnchorable.Anchors>
+                                          </uix:TargetAnchorable>
+                                        </uix:NClick.Target>
+                                      </uix:NClick>
+                                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Allgemein'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_39" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ad08872b-b465-48f0-a3f0-10ce604fc639" Version="V3">
+                                        <uix:NClick.Target>
+                                          <uix:TargetAnchorable CvTextArgument="Allgemein" CvType="Text" DesignTimeRectangle="44, 717, 56, 15" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Allgemein'" Guid="db18c22f-9e78-4bdf-a1e5-9d9170b0e30e" InformativeScreenshot="258f94d2256af9c4503f1133b00ea798.png" ScopeSelectorArgument="&lt;wnd app='java*.exe' cls='SunAwtFrame' title='StarPlan (Version 3.4.1.0)' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive">
+                                            <uix:TargetAnchorable.Anchors>
+                                              <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                                <uix:Target CvType="Icon" DesignTimeRectangle="29, 712, 23, 21" ElementType="Icon" FriendlyName="'javaw.exe StarPlan'" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABcAAAAVCAYAAACt4nWrAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGqSURBVEhL7ZPtK0NRHMf9i4tYkodIXsiwqG0iLayUIhGZhGjY8pgQYSVPkaE8vtydcdvd3dPbr9/vbtHZ2VbEu9369D3n/M75dDrn3JJYLIb/oijPiST37d1ieOMVjsUX2BeI+SfYZh/QOXOPjuk7WN0BtE9eo3XiCpaxCzSPnqHHfWKsy3ZJ8n7vK0Z23n5M6/CR4GEkOe/4NzQOHgoeRpLb55+RSqV+TP3AvuBhJLlt7hHJZBIJgwQSCYLafr8/L0maU9u3K3gYWU6Xx2l2Br6IU58l+b54PI7q3m3Bw0hyfhVRXYceJfRoJvWCcq5XdW8JHkaS83OLRDRommakgRahjNBYOr/hOo0TlV3rgoeR5NapG6iqio8M3FY/VOGMs+F5Zvuq4GEkuWX8EuFwWDhz7rMk3/f+HkZZx4rgYSR5y+g5QqEQ8ZbJNIXkXC+1LgkeRpI3j5wiGFSIIBSCM016zEiFagr3FUqep8DU7hE8jCR3uY/RNOQ3/rgG1wHq+vZQ49yh17BpXJrZsYYKmw/lnV46imXasQemNo+xLtslyf+SojwHMXwC7LXfmR5hm+cAAAAASUVORK5CYII=" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                                              </scg:List>
+                                            </uix:TargetAnchorable.Anchors>
+                                          </uix:TargetAnchorable>
+                                        </uix:NClick.Target>
+                                      </uix:NClick>
+                                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Kurzel'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,218" sap2010:WorkflowViewState.IdRef="NTypeInto_23" ScopeIdentifier="ad08872b-b465-48f0-a3f0-10ce604fc639" Text="[CurrentRow.item(&quot;Kürzel&quot;).ToString]" Version="V3">
+                                        <uix:NTypeInto.Target>
+                                          <uix:TargetAnchorable CvType="InputBox" DesignTimeRectangle="169, 744, 289, 24" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'Kurzel'" Guid="9c5d0e5f-9508-4f41-9d92-2eaf4242a9e8" InformativeScreenshot="693c1fe04c2e525849df7045e4f4b68b.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='java*.exe' cls='SunAwtFrame' title='StarPlan (Version 3.4.1.0)' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive">
+                                            <uix:TargetAnchorable.Anchors>
+                                              <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                                <uix:Target CvTextArgument="Kurzel:" CvType="Text" DesignTimeRectangle="128, 750, 36, 12" ElementType="Text" FriendlyName="'Kurzel'" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                                              </scg:List>
+                                            </uix:TargetAnchorable.Anchors>
+                                          </uix:TargetAnchorable>
+                                        </uix:NTypeInto.Target>
+                                      </uix:NTypeInto>
+                                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Name'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,218" sap2010:WorkflowViewState.IdRef="NTypeInto_24" ScopeIdentifier="ad08872b-b465-48f0-a3f0-10ce604fc639" Text="[CurrentRow.item(&quot;Name&quot;).ToString]" Version="V3">
+                                        <uix:NTypeInto.Target>
+                                          <uix:TargetAnchorable CvType="InputBox" DesignTimeRectangle="650, 744, 237, 25" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'Name'" Guid="60878de3-4872-4b52-948f-e4e89b7860af" InformativeScreenshot="3ad6dfa28d77b1c483988750785c2419.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='java*.exe' cls='SunAwtFrame' title='StarPlan (Version 3.4.1.0)' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive">
+                                            <uix:TargetAnchorable.Anchors>
+                                              <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                                <uix:Target CvTextArgument="Name:" CvType="Text" DesignTimeRectangle="611, 750, 36, 12" ElementType="Text" FriendlyName="'Name'" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                                              </scg:List>
+                                            </uix:TargetAnchorable.Anchors>
+                                          </uix:TargetAnchorable>
+                                        </uix:NTypeInto.Target>
+                                      </uix:NTypeInto>
+                                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Speichern'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_40" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ad08872b-b465-48f0-a3f0-10ce604fc639" Version="V3">
+                                        <uix:NClick.Target>
+                                          <uix:TargetAnchorable CvElementArea="1670, 996, 123, 24" CvTextArea="1714, 1002, 53, 15" CvTextArgument="Speichern" CvType="Button" DesignTimeRectangle="1670, 996, 123, 25" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Speichern'" Guid="51268763-ef49-4796-85ce-77aad5ea2977" InformativeScreenshot="e460818e93c19515a6dc92e9e2bcf17a.png" ScopeSelectorArgument="&lt;wnd app='java*.exe' cls='SunAwtFrame' title='StarPlan (Version 3.4.1.0)' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive">
+                                            <uix:TargetAnchorable.Anchors>
+                                              <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                                <uix:Target CvElementArea="1797, 996, 123, 25" CvTextArea="1831, 1002, 72, 12" CvTextArgument="Zurucksetzen" CvType="Button" DesignTimeRectangle="1797, 996, 123, 25" ElementType="Button" FriendlyName="'Zurucksetzen'" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                                              </scg:List>
+                                            </uix:TargetAnchorable.Anchors>
+                                          </uix:TargetAnchorable>
+                                        </uix:NClick.Target>
+                                      </uix:NClick>
+                                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Planungsgruppen und'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_41" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ad08872b-b465-48f0-a3f0-10ce604fc639" Version="V3">
+                                        <uix:NClick.Target>
+                                          <uix:TargetAnchorable CvTextArgument="Planungsgruppen und Lehrveranstaltungen (0)" CvType="Text" DesignTimeRectangle="162, 717, 247, 15" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Planungsgruppen und'" Guid="bf33eb59-77d5-4a71-a2e1-3a61a114eb56" InformativeScreenshot="563d40c43185b1e1c7ca2fd24678596c.png" ScopeSelectorArgument="&lt;wnd app='java*.exe' cls='SunAwtFrame' title='StarPlan (Version 3.4.1.0)' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive">
+                                            <uix:TargetAnchorable.Anchors>
+                                              <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                                <uix:Target CvType="Icon" DesignTimeRectangle="145, 710, 25, 25" ElementType="Icon" FriendlyName="'javaw.exe StarPlan'" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKtSURBVEhL7ZJrSBRRFMfFICQKyoToe6VQhmRGWh+ECCofmG0+1gxXe+oK6rIuZJaoKebWSmsrVtKmprkbausjNQjzQ5uCqGVq64vy1ZqoTFRCzv03O80Q4xisG/bJHxxm5t5zzu/eudeJoiisdqxJVhT/RwI7ichtsjv+SVL1yoKfizQ3Iqa+fdRxCb9CmhDMfyewUgTjcwQfZwlGZggGp2kMMWEjTW92XCK/28q+T8wTfGKaD38hsFhp9H+m0TtJo2f8tyTP0Om4hN+JbRejzOo/MIK+KRrvGEE3I+gZX2Rz00vfiCU+yj3s5HKc2+eKpINuuBO0BZdSc9gzsYl4bDvqHqNZsY2/nonnNXd4KXaxSUtRHXaFLsAF6hPrcUuyHfGKdETkNLKNSprec1nA3NcF9pvfsUiSVJsI38s+XLoQjb8LjKrjaFVLkRfujkS/DZD5bMKVEA+22dTsN0FzHpFEpovBiC6YmxaiDd2KMbMBVFcV3j69gXZ9Krpqb0ORoUZxY6+oOY9IItVIMXk/kJsWcjpQgoFKJX70PQMsJiz016O9PA0R2aZlm/OIJMoLGRh5GMlN/2FbYAWcvItg0GRiUH8RA+UKDJXLoc/PgrNXIdyOFnOZYkQSblzA5mNVWHfICJV2GE0zzAUwvUaywQz5IzMedAPxuRY4HyjDRv8irkKIXRLf0JtQZtXhST9BSgdwvg04y/ydMCMQ+Zggu5lAllINv6CrXIUQuyQT+bvRYdAiwWBFTAMQbSQILyUILSEIvgdI1NPorNZhONODqxBil2RIF4AyVTSCktsQ2wzEtQCyRiaY55la4EhsA2quR2GgcPlbaZfEUpGAFwVx8A6rwM5TdfCMasZeaQs8w59jR4gJ+0+W4GVBDCyVcq5CiEiydGA1Yk2ygqDwCwajwLRWivoVAAAAAElFTkSuQmCC" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                                              </scg:List>
+                                            </uix:TargetAnchorable.Anchors>
+                                          </uix:TargetAnchorable>
+                                        </uix:NClick.Target>
+                                      </uix:NClick>
+                                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Hinzufugen...'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_32" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ad08872b-b465-48f0-a3f0-10ce604fc639" Version="V3">
+                                        <uix:NClick.Target>
+                                          <uix:TargetAnchorable CvElementArea="1539, 964, 123, 24" CvTextArea="1574, 970, 72, 15" CvTextArgument="Hinzufugen..." CvType="Button" DesignTimeRectangle="1539, 964, 122, 24" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Hinzufugen...'" Guid="d3929830-9698-4945-b4bb-47c2037d3c63" InformativeScreenshot="a30d57e97a00c6d9b585b160baf8b4c5.png" ScopeSelectorArgument="&lt;wnd app='java*.exe' cls='SunAwtFrame' title='StarPlan (Version 3.4.1.0)' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive" />
+                                        </uix:NClick.Target>
+                                      </uix:NClick>
+                                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Filter'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,218" sap2010:WorkflowViewState.IdRef="NTypeInto_11" ScopeIdentifier="ad08872b-b465-48f0-a3f0-10ce604fc639" Text="[CurrentRow.item(&quot;Fach&quot;).ToString]" Version="V3">
+                                        <uix:NTypeInto.Target>
+                                          <uix:TargetAnchorable DesignTimeRectangle="51, 73, 559, 22" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'text'" FullSelectorArgument="&lt;java role='page tab list' /&gt;&lt;java name='Planungsgruppen' role='page tab' /&gt;&lt;java cls='JTextField' role='text' /&gt;" FuzzySelectorArgument="&lt;java role='page tab list' /&gt;&lt;java name='Planungsgruppen' role='page tab' /&gt;&lt;java cls='JTextField' role='text' /&gt;" Guid="3070e297-265f-4cca-b498-b04283be4ded" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAjMAAAAaCAYAAABCbt0VAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADHSURBVHhe7daxCcJQAEVR13cbyRp24gJuED5YR76FjcY6F86B270B3mmMsUmSJFVzZiRJUrrPmTlf7pIkSZl+npnltm7Xx1OSJOmwzb+ye2bmAADgyOZfcWYAgCxnBgBIc2YAgDRnBgBIc2YAgDRnBgBIc2YAgDRnBgBIc2YAgDRnBgBIc2YAgDRnBgBIc2YAgDRnBgBIc2YAgDRnBgBIc2YAgLS/Z2a5re+BJEnSUZt/ZffMSJIkVfo6M5IkScWcGUmSFG5sL/XDoBXVOtarAAAAAElFTkSuQmCC" InformativeScreenshot="34ec817ded77dbb53a28b08d90ac11a1.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='java*.exe' cls='SunAwtDialog' title='Planungsgruppe und Lehrveranstaltung auswählen ' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Version="V2" Visibility="Interactive">
+                                            <uix:TargetAnchorable.Anchors>
+                                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                <uix:Target DesignTimeRectangle="18, 76, 29, 16" ElementType="Text" FriendlyName="'Filter'" FullSelectorArgument="&lt;java role='page tab list' /&gt;&lt;java name='Planungsgruppen' role='page tab' /&gt;&lt;java name='Filter:' role='label' /&gt;" FuzzySelectorArgument="&lt;java role='page tab list' /&gt;&lt;java name='Planungsgruppen' role='page tab' /&gt;&lt;java name='Filter:' role='label' check:text='Filter:' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACEAAAAUCAYAAAADU1RxAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADBSURBVEhL7ZLREcMgCIaZynnKMnWYMkudRRegEeUkOU0f6l3SOx/+CyDgFxBSSny1FoRqQajuBREjMQIwGDkfOAbPDhz7EGtOsW2TX3WAOL/A5swE+g+I3sXPd/6a1SGVXFmdxpEpthpEJ7EXPRic57Cd6R2nbwJp/8cju9Ubn7C8qdo32xr/AtGa9OIjW/J2U6jaJjTqazUZoqxgVG/jVvMgxG9j79WLP3Md+YywjV1yjyvprOMU4kotCNWCKEr8AZoaDXYToCItAAAAAElFTkSuQmCC" SearchSteps="Selector, FuzzySelector, Image" />
+                                              </scg:List>
+                                            </uix:TargetAnchorable.Anchors>
+                                          </uix:TargetAnchorable>
+                                        </uix:NTypeInto.Target>
+                                      </uix:NTypeInto>
+                                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Baumansicht'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_34" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ad08872b-b465-48f0-a3f0-10ce604fc639" Version="V3">
+                                        <uix:NClick.Target>
+                                          <uix:TargetAnchorable DesignTimeRectangle="94, 444, 66, 20" DesignTimeScaleFactor="1" ElementType="CheckBox" FriendlyName="'ja / nein'" FullSelectorArgument="&lt;java role='page tab list' /&gt;&lt;java name='Planungsgruppen' role='page tab' /&gt;&lt;java hasTableAncestor='0' name='ja / nein' role='check box' /&gt;" FuzzySelectorArgument="&lt;java role='page tab list' /&gt;&lt;java name='Planungsgruppen' role='page tab' /&gt;&lt;java hasTableAncestor='0' name='ja / nein' role='check box' check:fulltext='ja / nein' /&gt;" Guid="c50472e6-c7fb-4f9f-919f-388d0a7e6e7a" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEYAAAAYCAYAAABHqosDAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJGSURBVFhH7ZfNattAEMf1VHqMQCCXQijRKa/QY2869J5baUri9lBRCOTSUyH04xAa0SSnhJiekrjFNiubmpik08xoN1prZ3dlWw510cAfSzs7q52fZscoyLIMGplqwFjUgLGoAWNRA8YiFsxhuw8bbzuw8vKqkp62ruHLed9YZ5nFgkEo57/GUNXa3THB4dZaVrFgsAp8Nry5g91vA/pFwxhurWXVzGC2Pgua9/owo3sOjEhjCIMQ4lQYPp9EEkEQJaxvGs26h5nAfP0xgtVXV7D57udCKkaIFOJwNqB1aWowvd93sN7qEBi9D9UKBt9yDdUyj5xgyn0E7fmHHvmT70M5khsHRogEIq2MkyiAIJByJJ7GIUSJWS0P68X3x0yuE8Zp4adjo54RQSLExB588bqcYN4cDega+wna3umQ7p/td+G2YEVWBYxvvPDlSfG+Air1IQaA8mHS+rgrXj1DyQlmNP5DfQTv3x8PYW37Gp7sdOBS3JJftypg8o2oN2oBIxMqj5OvvJ6e9ES1SN0DMMHw8fpzUN4ec3J5Q/dKBxcj6Zk0H5h84+rt8s3V13Rdienr22Jc8XoMqlLzVX/NLz725YhpXjBYLWEMKYKhJMwN0bij97gSy6/NnmHO4eP1GFQlMHiksNmKUamxaOYFQ9UgSzyMIGIqw9Z0lXyJGcep7qNU1ydB/mC+uZVFc2VFcf7HFgsGPyIxUayCKsK5n87Mj8iHN+dROe5fEAtmXhUlzZfpMmghYP4HNWAsasBY1IBhlcFfybnUTippj1kAAAAASUVORK5CYII=" InformativeScreenshot="d7efad3eacc3ac786bcea024a3547059.png" ScopeSelectorArgument="&lt;wnd app='java*.exe' cls='SunAwtDialog' title='Planungsgruppe und Lehrveranstaltung auswählen ' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Version="V2" Visibility="Interactive">
+                                            <uix:TargetAnchorable.Anchors>
+                                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                <uix:Target DesignTimeRectangle="18, 446, 72, 16" ElementType="Text" FriendlyName="'Baumansicht'" FullSelectorArgument="&lt;java role='page tab list' /&gt;&lt;java name='Planungsgruppen' role='page tab' /&gt;&lt;java hasTableAncestor='0' name='Baumansicht:' role='label' /&gt;" FuzzySelectorArgument="&lt;java role='page tab list' /&gt;&lt;java name='Planungsgruppen' role='page tab' /&gt;&lt;java hasTableAncestor='0' name='Baumansicht:' role='label' check:text='Baumansicht:' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEwAAAAUCAYAAAAnStuxAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAF4SURBVFhH7VXtkcQgCLUq+7Eam7EXazENsBGjEj/YsDd3szfDjzcTBR74FGKO4wDFc6hgQqhgQqhgQqhgQqhgQjTBUgrgjAFD4EKaAr4ZKXqwxoKP+7rLOXkfDoNgnagkdxDS/xLtHTjBnoi5F+yHN/Gt+D3BggPjQnMMjrTrtc+J3L5Dfqm9xaO3jcf6+Izfn7UMMSlF8LbHZO65HsaH1JU5y373zTWgBtZDJF3GzLB1O9Ki5gJH28lzJcTk57odGNdzjiVHFZDEjBc6xxax6KV0n7Gui5PEo2+28YIR52GAFuIqJj0Q8bkVvLct11J+rO8uyGznL2SKGWwrMDOs3BA+Y5K87K8TcMlZ3w/48zqjtvjYkn8vGCa8iMjTvO0TUTEGX8k6OVvolp/nqMii9TlUY7mWXHNONlJXjWdmGCUtyXHfOnDXC0AbbSV32nbJ2ULX/GwMzbubQbiuPrsfw33dfj7vhr7iGVQwIVQwIVQwIVQwEQ54AYanyyUvBTTYAAAAAElFTkSuQmCC" SearchSteps="Selector, FuzzySelector, Image" />
+                                              </scg:List>
+                                            </uix:TargetAnchorable.Anchors>
+                                          </uix:TargetAnchorable>
+                                        </uix:NClick.Target>
+                                      </uix:NClick>
+                                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'WI7-3'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_35" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ad08872b-b465-48f0-a3f0-10ce604fc639" Version="V3">
+                                        <uix:NClick.Target>
+                                          <uix:TargetAnchorable DesignTimeRectangle="19, 126, 121, 17" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'WI7-3'" FullSelectorArgument="&lt;java role='page tab list' /&gt;&lt;java name='Planungsgruppen' role='page tab' /&gt;&lt;java cls='MyJXTable' role='table' /&gt;&lt;java role='label' tableCol='0' tableRow='0' /&gt;" FuzzySelectorArgument="&lt;java role='page tab list' /&gt;&lt;java name='Planungsgruppen' role='page tab' /&gt;&lt;java cls='MyJXTable' role='table' /&gt;&lt;java role='label' check:text='WI7-3' /&gt;" Guid="50422700-d8b4-4e7d-a4ad-a65942a1973a" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAH0AAAAVCAYAAABrJ+ESAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFiSURBVGhD7ZfbkYQgEEVJi4QIh3AIwDAMwABMoIdGQB6i7pbOx/Q9VYyijH4cLo1qXVeaponA77MsSzhm6XwBTUZD0gXBrhlIFwSkCwTSBXIq3RlFxsVOwJFRmuwcu4wzpMIgvmf8L9FsNSmlmrbd65nJ6n1c/T7wBudJz0IjsyXtxejCOgve+rv0ln3MEY5c+lN4/mhygKc4l84StPVZTF1NxvpreSJwSlPyR9LHk6HnL2PBfzmXXklN56WY0XmBXy3GKW9oVxbwChfS2UOqs15qTL0zcSJUko6kl5NmTN4DQPhXuJSexRaCU42ua/WBdC4Ppci4Jxhu7Pgd7UYRPM619FjXHdfzZCnItE2Ke+lhD9CZPaf/YgBPcy09LNGczFZwm9ZW+r2lnbfu9TOQ9Le5IX1LrCp28Qwnsq7BrfQ++YdUSz5S/g1uSQe/BaQLBNIFAukC6aTzEU1GQ9LFQfQBNJjCtUEro4MAAAAASUVORK5CYII=" InformativeScreenshot="b524c9fc4085a21ad2ff6aadbce29381.png" ScopeSelectorArgument="&lt;wnd app='java*.exe' cls='SunAwtDialog' title='Planungsgruppe und Lehrveranstaltung auswählen ' /&gt;" SearchSteps="FuzzySelector, Image" Version="V2" Visibility="Interactive">
+                                            <uix:TargetAnchorable.Anchors>
+                                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                <uix:Target DesignTimeRectangle="19, 101, 122, 25" FriendlyName="'Kürzel'" FullSelectorArgument="&lt;java role='page tab list' /&gt;&lt;java name='Planungsgruppen' role='page tab' /&gt;&lt;java cls='JXTableHeader' hasTableAncestor='0' role='tableheader' /&gt;&lt;java name='Kürzel' role='headercell' /&gt;" FuzzySelectorArgument="&lt;java role='page tab list' /&gt;&lt;java name='Planungsgruppen' role='page tab' /&gt;&lt;java cls='JXTableHeader' hasTableAncestor='0' role='tableheader' /&gt;&lt;java name='Kürzel' role='headercell' check:text='Kürzel' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAH4AAAAdCAYAAABsQ9h8AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGVSURBVGhD7ZZBroQgDEC5FhfiOFzgn8INce0V3HkAY1zO0k0/RVBEmXF+/iQw7UuaERRn8dpa8Xg8gINeOPFd13EQi0088/2M4+ivgMVTgsUThcUThcUThcUThcUThcUTpTLxBpSQoAe/hAG0FCCU8etPkP7nd1C1eKMEyIORNREwD873/sp74pdl8VdlU634QcsPV3rgvvh5nqFpGpimye+US53itQIhta3vmFRQvF6vlbLJIhT8YNII+4kIERJo0CC3fWVPIffEo3RjDPR9735Ll1+h+FXMudhfib9q/bifEWyUfz5975kgPchO1yVSZ8UbrMxURiooXl/LwzlgS6BDtftwN5+Lz0kuXX69w52tyL0dI2+Kx/Nx23Di4/cF8uJxkGvbNisX5eP9Ege+esVb3IC3fev3id7hEiMnHtepZNzLfQ6uxSOvpJY65VctHsF2vcl3skObVtGzx3PuTHgOI5xP2/2NVl8rlYln/gsWTxQWTxQWTxQWTxQWTxQWT5RL8bjJQSe44gmBrgMsnhC7eIBf/0wqhjOlFBMAAAAASUVORK5CYII=" SearchSteps="Selector, FuzzySelector, Image" />
+                                              </scg:List>
+                                            </uix:TargetAnchorable.Anchors>
+                                          </uix:TargetAnchorable>
+                                        </uix:NClick.Target>
+                                      </uix:NClick>
+                                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'text'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,218" sap2010:WorkflowViewState.IdRef="NTypeInto_22" ScopeIdentifier="ad08872b-b465-48f0-a3f0-10ce604fc639" Text="[CurrentRow.item(&quot;HIS&quot;).ToString]" Version="V3">
+                                        <uix:NTypeInto.Target>
+                                          <uix:TargetAnchorable DesignTimeRectangle="51, 518, 559, 22" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'text'" FullSelectorArgument="&lt;java hasTableAncestor='0' idx='2' role='page tab list' /&gt;&lt;java name='Lehrveranstaltungen' role='page tab' /&gt;&lt;java cls='JTextField' role='text' /&gt;" FuzzySelectorArgument="&lt;java hasTableAncestor='0' role='page tab list' /&gt;&lt;java name='Lehrveranstaltungen' role='page tab' /&gt;&lt;java cls='JTextField' role='text' /&gt;" Guid="6d3b8679-70a9-4b22-ad69-87e749e1ff35" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAjMAAAAaCAYAAABCbt0VAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACgSURBVHhe7dZBDYBAEMBA/MtaSWvg+PEBBDSZSeqh1+4eSZKkamZGkiSle2ZmZiRJkjJ9zgwAQIGZAQDSzAwAkGZmAIA0MwMApJkZACDNzAAAaWYGAEgzMwBAmpkBANLMDACQZmYAgDQzAwCkmRkAIM3MAABpZgYASDMzAECamQEA0swMAJBmZgCAtN+ZkSRJqvSaGUmSpGJmRpIkhdtzAwAHQBR7UPBaAAAAAElFTkSuQmCC" InformativeScreenshot="dbab4a9cdccb9ad5a590a616e1deea6b.png" ScopeSelectorArgument="&lt;wnd app='java*.exe' cls='SunAwtDialog' title='Planungsgruppe und Lehrveranstaltung auswählen ' /&gt;" SearchSteps="FuzzySelector, Image" Version="V2" Visibility="Interactive">
+                                            <uix:TargetAnchorable.Anchors>
+                                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                <uix:Target DesignTimeRectangle="13, 481, 152, 31" ElementType="TabPage" FriendlyName="'Lehrveranstaltungen'" FullSelectorArgument="&lt;java hasTableAncestor='0' idx='2' role='page tab list' /&gt;&lt;java name='Lehrveranstaltungen' role='page tab' /&gt;" FuzzySelectorArgument="&lt;java hasTableAncestor='0' role='page tab list' /&gt;&lt;java name='Lehrveranstaltungen' role='page tab' check:text='Lehrveranstaltungen' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAJwAAAAjCAYAAABhJGPtAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAUUSURBVHhe7ZffbxRVFMf3yRgT/wBffNXER+s+qG8+idEHQgCxxU4RTbCYlMaWqERplWlpgURLDcRqLbXQ3U0FhNJfJnUbLa3AFgX6G6gtlG1Lu7tGJZGdr3Pv7OzO7t6Z7k7bQdczySe7c+8959x75jvn3nFFIhEQhFOQ4AhHIcERjkKCIxyFBEc4CgmOcBQSHOEoJDjCUUhwhKOsquBm5xdx0HcB+fu7sFnuELL3WD8mpueE9kTus6qCk08MovWHMfx9Pwqz68zADbxT3yu0J3KfVRPc/N0QtlR1IqooCP2pIBhRMLOkYGpRwfUFBeNzUUyosOv9xn6hDyL3WTXB3by9gOLDvVxQt0IKflOFNjmvYCwYxfCdKK7cjuLyjCa4as9FoQ8i91mTCseq2w21qo2qYrs2G8WvqtiGVLFdnrnPBben6XyafTjsg+RyQw6E0/pEZDv+v0Qur23FggstLeJUXQU+3/g4duyu4mc4Jjr9YpVuaDrKRcguszPc/0Fwmc7ZOC7XxLdiwfU0HUL9Sw+jdt1DOLDhMewo3YPN+9r5F2lDx1UuMnYt/X6P35ce9Qu/UklwCUhwFnh3rYO3/EX01m5B9aYnsPPZRyA98yhaakqwUz3TzS7+wYVWUNOFlu+vCn0wrBIbDshwu1xwcST4woYH4Uv0ueVAki9Jcqvt61HodkHyJfyGfRJcbhkB5sfCt2avtfkkfYyK5EuKI8uqv1hfYg4ByGpcvb3Qy8Ym7nUfVn73XUq3iceM5cl4bzUfPtawVrcsJ/uxyrGJPzusWHDtB7Zjut+DSKAVv/g+wUBjGQInD2L/4a9wpP0KtqpCa+sbFdoaSU2kWTsTC1u01q4mQRcOE1FSogwPn/XFHiaDPWQmwOV8i5JrtInPQReKcQ4pMVNtje2pfWb/RT7Sx5rMJ9anv3gBmb1MJjFS8iDyx+7tsPIKd9yDkeNl+OvaKWDsNO4Nn8FA8wfYVnsO7efHhTYiUhcdb09682KoCUhLkuFe3GdIvLC6mfvmPniy9XFWcWJ9Md9G0drxaxUj9d6yj80ntm5hX3wOMZbJMbu3w4oEtxQKo+ijHngOVWC88S2MNJdiorkYjTWVeHNvN+8X2YkwW4yWjPS3yioZIl/sjWYPX//lNpn6NozTtkpxHLO47AEKK2oGfpeLkelYHstScNnl2DguG2wLLhyOoLzuEnbXTaJjASg//RNKPP0o/rofXwwBxVVjeK/uZz5OZJ+K2WK09vTtzSoZIl9awiW1uiUSm7FvVoWSqqI4jiguQxe5Hb/pMbSzob41ahXSbGyqH6stNbscG8dlg23Bfdnah3crv8OJYQW7BoHtfmBrB7DRC7z6jYKPOxUUlbahoaVbaJ+KvmhjWU+uRIa+LLdUrT92iI+dR+LtGfk2fABw0YrjJM0haatMiDz+kcDjZObXaMPjGH1Lqp0e02I+qXbWHw3M779sS71V8xQGPZ/hbU8QhWeBAq+CTU0K1jcoeOUosKF2Dhfb6jFZ8aTQnniwaAJL30bXGtuCm/KW4Fh5AV4u8aOoE9jWBUjtKupv/knghaKz+PbD13DdWya0Jx4svGoaznROYVtwobtB3Lk5gk+bL+C5N7qQV9iNvNd7kFfQiafzz6H6SB+CU6N8nMiecJak7ZvjfHVj2BYcQdiBBEc4CgmOcBQSHOEoJDjCUUhwhKPEBfd85Y8EsWaQ4AhHIcERjuL3+zl0hiMcJIJ/AFOl74k46LNnAAAAAElFTkSuQmCC" SearchSteps="Selector, FuzzySelector, Image" />
+                                              </scg:List>
+                                            </uix:TargetAnchorable.Anchors>
+                                          </uix:TargetAnchorable>
+                                        </uix:NTypeInto.Target>
+                                      </uix:NTypeInto>
+                                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Einträge aus'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_36" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ad08872b-b465-48f0-a3f0-10ce604fc639" Version="V3">
+                                        <uix:NClick.Target>
+                                          <uix:TargetAnchorable DesignTimeRectangle="94, 885, 66, 20" DesignTimeScaleFactor="1" ElementType="CheckBox" FriendlyName="'ja / nein'" FullSelectorArgument="&lt;java hasTableAncestor='0' idx='2' role='page tab list' /&gt;&lt;java name='Lehrveranstaltungen' role='page tab' /&gt;&lt;java hasTableAncestor='0' name='ja / nein' role='check box' /&gt;" FuzzySelectorArgument="&lt;java hasTableAncestor='0' role='page tab list' /&gt;&lt;java name='Lehrveranstaltungen' role='page tab' /&gt;&lt;java hasTableAncestor='0' name='ja / nein' role='check box' check:fulltext='ja / nein' /&gt;" Guid="057f88f3-ac8d-46e0-a7c9-7c180b60d4a2" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEYAAAAYCAYAAABHqosDAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJGSURBVFhH7ZfNattAEMf1VHqMQCCXQijRKa/QY2869J5baUri9lBRCOTSUyH04xAa0SSnhJiekrjFNiubmpik08xoN1prZ3dlWw510cAfSzs7q52fZscoyLIMGplqwFjUgLGoAWNRA8YiFsxhuw8bbzuw8vKqkp62ruHLed9YZ5nFgkEo57/GUNXa3THB4dZaVrFgsAp8Nry5g91vA/pFwxhurWXVzGC2Pgua9/owo3sOjEhjCIMQ4lQYPp9EEkEQJaxvGs26h5nAfP0xgtVXV7D57udCKkaIFOJwNqB1aWowvd93sN7qEBi9D9UKBt9yDdUyj5xgyn0E7fmHHvmT70M5khsHRogEIq2MkyiAIJByJJ7GIUSJWS0P68X3x0yuE8Zp4adjo54RQSLExB588bqcYN4cDega+wna3umQ7p/td+G2YEVWBYxvvPDlSfG+Air1IQaA8mHS+rgrXj1DyQlmNP5DfQTv3x8PYW37Gp7sdOBS3JJftypg8o2oN2oBIxMqj5OvvJ6e9ES1SN0DMMHw8fpzUN4ec3J5Q/dKBxcj6Zk0H5h84+rt8s3V13Rdienr22Jc8XoMqlLzVX/NLz725YhpXjBYLWEMKYKhJMwN0bij97gSy6/NnmHO4eP1GFQlMHiksNmKUamxaOYFQ9UgSzyMIGIqw9Z0lXyJGcep7qNU1ydB/mC+uZVFc2VFcf7HFgsGPyIxUayCKsK5n87Mj8iHN+dROe5fEAtmXhUlzZfpMmghYP4HNWAsasBY1IBhlcFfybnUTippj1kAAAAASUVORK5CYII=" InformativeScreenshot="79549c441581e2765712263ca53806a4.png" ScopeSelectorArgument="&lt;wnd app='java*.exe' cls='SunAwtDialog' title='Planungsgruppe und Lehrveranstaltung auswählen ' /&gt;" SearchSteps="FuzzySelector, Image" Version="V2" Visibility="Interactive">
+                                            <uix:TargetAnchorable.Anchors>
+                                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                <uix:Target DesignTimeRectangle="165, 887, 297, 16" ElementType="Text" FriendlyName="'Einträge aus'" FullSelectorArgument="&lt;java hasTableAncestor='0' idx='2' role='page tab list' /&gt;&lt;java name='Lehrveranstaltungen' role='page tab' /&gt;&lt;java hasTableAncestor='0' name='Einträge aus übergeordneten Abteilungen unterdrücken:' role='label' /&gt;" FuzzySelectorArgument="&lt;java hasTableAncestor='0' role='page tab list' /&gt;&lt;java name='Lehrveranstaltungen' role='page tab' /&gt;&lt;java hasTableAncestor='0' name='Einträge aus übergeordneten Abteilungen unterdrücken:' role='label' check:text='Einträge aus übergeordneten Abteilungen unterdrücken:' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAS0AAAAUCAYAAADY4Ws/AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAQxSURBVHhe7VnpuawgDLUq+7Eai3n2Mq1cpwEfWzAECMtsMpMf57sKWU4SCDh3ut/vh0AgEIwCaVoCgWAoSNMSCARDQZqWQCAYCtK0BALBUJCmJRAIhoJvWvu+Hcs0HRPCsu3HfluPeZqP9bZHyr8Im6ex8nFlztui1tqyBWPP4IvX7Yg1eyeenZ9X55s0rX5HNfr7thzTvB43s6CWY9uvu4j2/Xass23cemPN682Nj7cB3lHbHpjGMi/HMoe2OX89XEasWQ2eFVfJTm4v5PDqfL+1aX0DRozzqrW9rbPZAPAXxjl/PVxGrFkNnhXXs/Pz6nwXmxYe98+rujG5T0i92Ow4+rRU132QXZZZjdlblfkUQDLeh7l52fF5XQMeeA7sgB4gZZfGE8ZhTw7Q0ScItsfruucNc0YbLsEXdHAuemIOx0/eLfY9f1LDHP9/f1oe3hUgvwmOJdsYtgaOk7alb+AQZybHdhx8KtRwwTGT58BXY25qalay5+12cLLj4E+hIhct6wNkbf3T3Ox7vJewjOfZuW7815mS0+8azG9aueKrOSCgDSbksL1SkUAONqA+dadgDtlU/lL2ALFdysfNad4uhhRYXfOscuASaYuQ8en4go4vhHtviZnqxH5b7FfWMPCNxlm5tG39jmH4Qw5RAzNzYKcmxyyXWIfTt89cbvpqVspHpI/eORucHshiHvr5lOPXRyib42YbFsgCThk779cstVWRJ/PMN63TYGo8clo5520ZMoqcgdNDizeyaRYryDu4wDCSdjmuzi5NNoDVJXMa+qanC5PjG9nriNmOhwve+22xT2VrfKfs18iRdwy9UXD+zcZxtU3psbEWuOSeqS92jsvpg/lg/bbMtdSvY31EssZfvgnPpKE9mifA25oWDrDq0wDmEknByNot8NGwJ8x5EgA43XjuPE1yfCOdjphT469pWpX8a+TIeyhHFq+BtRnbQTnu4JJ75uSiOS6nT8lHxm/LXEv9Xt60VMNSexEOIjP+YJ4A72ta6JpnyWO9s3FwV9UU8nbJ1dTcxk4+AHria3C6lBMuRI5vlIuOmKlO7LfFPpWt8R3br5M7370cqpkfixoTl+M2LuFzqbbUNp7rqVnaXij3CCc6V1+/uvXBcbNznD99sPo6NvFzPhJrhflNyxoPDDDG9bsmaHSTVz4boJkn/+a2iQCf3A+cCqhzt9idFjUHceDxROdndV1c9odKOw8FNXoJvjQX1H5tzOE4km+wH9eFvGd849rm5Eq2AXghY5jNg+zkctzKJeJVqG2Of2vNSvYwejn11IX649YHlcXczJyRd3MKuk7Yht+fwcXilC/lyfjONa2rwAaVbiTfil+MeXRIzT6HyzUtc3KQzvrt+MWYR4fU7HP4eNMKPu8Mvv/0+sWYR4fU7Dq43E1LIBAIOEjTEggEA+F+/AesDgEUEougPgAAAABJRU5ErkJggg==" SearchSteps="Selector, FuzzySelector, Image" />
+                                              </scg:List>
+                                            </uix:TargetAnchorable.Anchors>
+                                          </uix:TargetAnchorable>
+                                        </uix:NClick.Target>
+                                      </uix:NClick>
+                                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '12345a'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_38" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ad08872b-b465-48f0-a3f0-10ce604fc639" Version="V3">
+                                        <uix:NClick.Target>
+                                          <uix:TargetAnchorable DesignTimeRectangle="630, 571, 74, 17" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'12345a'" FullSelectorArgument="&lt;java hasTableAncestor='0' idx='2' role='page tab list' /&gt;&lt;java name='Lehrveranstaltungen' role='page tab' /&gt;&lt;java cls='MyJXTable' role='table' /&gt;&lt;java role='label' tableCol='7' tableRow='0' /&gt;" FuzzySelectorArgument="&lt;java hasTableAncestor='0' role='page tab list' /&gt;&lt;java name='Lehrveranstaltungen' role='page tab' /&gt;&lt;java cls='MyJXTable' role='table' /&gt;&lt;java role='label' check:text='12345a' /&gt;" Guid="418d0952-1237-4211-b0ad-af8db05d7307" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAE4AAAAVCAYAAADo49gpAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFeSURBVFhH7ZaNjYQgEIVpi4KOcujmKMYCLMAGZnnIz4wrWWU3F24zL5ko44Dh8wEailrXFRfVBRVWBjca9yM5btu2RFH1WoWVgrspBTcoBTeoa+CCI2MchdyEgjMxt4f1S84u5G3LO94ha/GWjPWxkrVz/fEdM+sFuAzCOXJ8UosnXxshPrO0swsUSj7W2CcQqI3jMXD4AGeAZ9c1x6UJ99wAuAUc13MfuMv5CFSAO+s7vz4ArvMMy5tbCQ5EG9cKTi7ttuTRveXFOJPobXCYIJ9w3bPEZJkrBTguvKPn3Plc+Qa43S0cmlA6UPYJA2at64I7fITUv7jua8D19jUpgPj5Rd8CgMUJvHpQiIPl2rv+WmPgjvtXUTxSW7azxHqOS7ByPcYvNTw/kYbAyX+vPdISS5NsudM9XYCTbmz17NCw8Vfo/zpOdZSCG5SCG5SCG1QFhxuN+5Ecp7orogevlUn7OV6yJAAAAABJRU5ErkJggg==" InformativeScreenshot="30caa6dd66bb9cde60f16783b5a81439.png" ScopeSelectorArgument="&lt;wnd app='java*.exe' cls='SunAwtDialog' title='Planungsgruppe und Lehrveranstaltung auswählen ' /&gt;" SearchSteps="FuzzySelector, Image" Version="V2" Visibility="Interactive">
+                                            <uix:TargetAnchorable.Anchors>
+                                              <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                                <uix:Target DesignTimeRectangle="630, 546, 75, 25" FriendlyName="'ID in HIS'" FullSelectorArgument="&lt;java hasTableAncestor='0' idx='2' role='page tab list' /&gt;&lt;java name='Lehrveranstaltungen' role='page tab' /&gt;&lt;java cls='JXTableHeader' hasTableAncestor='0' role='tableheader' /&gt;&lt;java name='ID in HIS' role='headercell' /&gt;" FuzzySelectorArgument="&lt;java hasTableAncestor='0' role='page tab list' /&gt;&lt;java name='Lehrveranstaltungen' role='page tab' /&gt;&lt;java cls='JXTableHeader' hasTableAncestor='0' role='tableheader' /&gt;&lt;java name='ID in HIS' role='headercell' check:text='ID in HIS' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAE8AAAAdCAYAAADrcjF6AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFhSURBVGhD7ZrhccMgDEZZi4U8DuN4AI+RATyAF1AkEjeKLLeY70J7V707EsCYiGeQ/yRt20ZR+kpaloWi9JVEzLqu8hU0oF2FvIuEPICQBxDyAEIeQMgDCHkAH5A305Qm/tzriZIqudzqlQO3QjllOrvsI/N79+h+HQ8zTyoe1d/BAHl6cdLmoCckZI2df0f3q3jqA1LCuF2AUAbLY+wCIC7Kk12XCx2GdzJeHodecqLj5rML5np5HTH/uHvzC3YuHc83qeMif1ieOt41T3m79TnOLZ484fH7MgbNHr8kz/YJeqy9z5tHaOmXuiO+pg9M4Hh5pznPLljf58xTaemXuvd7EkqGXl6D5Un77GnbBdv7fpKksXM945n57fo19nF8kfw3QJ6XhzzsgvVY295p6Zf6STxg0vuAvP9DyAMIeQAhDyDkAYQ8gJAH8CZPGlH6St158teBoA3tKuRd5OWK6A7g2gSvvCA1SQAAAABJRU5ErkJggg==" SearchSteps="Selector, FuzzySelector, Image" />
+                                              </scg:List>
+                                            </uix:TargetAnchorable.Anchors>
+                                          </uix:TargetAnchorable>
+                                        </uix:NClick.Target>
+                                      </uix:NClick>
+                                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'OK'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_29" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ad08872b-b465-48f0-a3f0-10ce604fc639" Version="V3">
+                                        <uix:NClick.Target>
+                                          <uix:TargetAnchorable DesignTimeRectangle="662, 915, 108, 22" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'OK'" FullSelectorArgument="&lt;java hasTableAncestor='0' name='OK' role='push button' /&gt;" FuzzySelectorArgument="&lt;java hasTableAncestor='0' name='OK' role='push button' check:text='OK' /&gt;" Guid="520294c6-a1ad-40fd-9c5d-b1b78af13be1" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHAAAAAaCAYAAABvj9h3AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAPZSURBVGhD7ZrrTxNZGIf7v7hA9MNG45JNU0mj8cOyms2uCV5Zb9RxQYFSEISINUHsKtqCkWtjsNnoelkBV6YFQgqU1nKT1GKs1Bpoihojmm2jEVT8OedQ5DKV1U/OkXmSXzo5551PT94zczpHEYlEIIfdyAIZz0eB4XAYgUAALpcLDodDjgTjdDrh9/upK5FAIs/j8WBiYgIy0mRychJer5dKFAkknSfLkz5EIulEkUDSojJsQFwxJ/DpxCM0heqh609BaqcK2+0/IqM7GVcD1XjyKhitWhowJ7D/eSfSe35GnmMb/vJVoSFwkcZyrxIZrb8i5WYiukLWaPW3D1MC+8c7kNqdhPJBPWzBRpy/fxYlgwU05JoPNqCs5zBUlgTYR/joXd82zAh8+voROFcylUdEFQ1kIr8vA7qeP5An5JCQwt4DaB75Byed+VhnWY1Q+H+WUysHhULxMUqjPzpBsIJTKDE75IdRKdRx0upuZgReHzFD27GFdh6RR8Rp3fuQ5UpDlnMvcpxpsAtL51F3NnhB4s4rP+Fcjyl6dwyoPLGgWYnzBVq5hYKlATMCD7o2wOKrhNlXgfzedGTf0gji9iC7W4hjDzrHWmnd45ch1N4pw/nBMqhr19AxMdOyRM3kN0Kp4AR1hFmBfqNScp03AzMCf7N9jxsP/8axAR1y3ZzQiU2498ILbVcaOkIttObd1FvUek7jaFc6GnwWxB9fRsdFzBM1FyJ2puuiAo1CpyqNwow0YUZgclMCGgOXoO/T4lhfLsKT/9Hx56+f0V8ir+r2n8hp3YFi+340+i4gXr+IwJhS5nYmETj9bJRo81GYEfg7r0a9twJ1d88gr1sDQ28hXr6J0Lmp91Oo6j+BTNsW6ASB1QOlqHMboC5T0XkRX9KBVlI7MyY9mBFY7y2Hpmkjmh9eRWGXBjn2XSh1HcLw+F3U3j6Fg9bNyOK3Is+Wimb/JfxiXovydmP07oV82TNw+oUnlvCvDzMCxyJBrBe2BgaHDv8+uIyC9t3IbUuFtmUbsnkSIm8Hbg5fhL4lHYn6VQiOL7KNEEmZXjI/9RZKX2Qk+CxkRiCh7QGPFaY4lNgzwQsSawYMKG7ncKRNgxphCW0W5BXbOCTovoP1zmds5BfsA+d35HyBBLKVkJpEpgQSbMM8Ek2rsOnCOtT1GXBtyIxrXjOq3CXYWJ2EH46shNWzNP6FITAnkDD6YhQVnSaoz6iwvCgOywvioC5VoaLVhNFno9GqpQGTAmVmiSlQ/qDLBp/8oDtzpIIUyEgT4mZoaCj2kQr5UJP0s+ihJjlsRhbIdCL4AJX1CPTxS1yfAAAAAElFTkSuQmCC" InformativeScreenshot="19ac6a96cf665f4b1c053d32f89c5c6e.png" ScopeSelectorArgument="&lt;wnd app='java*.exe' cls='SunAwtDialog' title='Planungsgruppe und Lehrveranstaltung auswählen ' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Version="V2" Visibility="Interactive" />
+                                        </uix:NClick.Target>
+                                      </uix:NClick>
+                                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Speichern'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_30" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ad08872b-b465-48f0-a3f0-10ce604fc639" Version="V3">
+                                        <uix:NClick.Target>
+                                          <uix:TargetAnchorable CvElementArea="1669, 996, 123, 25" CvTextArea="1714, 1002, 53, 15" CvTextArgument="Speichern" CvType="Button" DesignTimeRectangle="1669, 996, 124, 25" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Speichern'" Guid="49d2531d-477c-49ff-a6b5-5b8c0bab82b9" InformativeScreenshot="69cd7db0c63982e5be6582fc9f7e5789.png" ScopeSelectorArgument="&lt;wnd app='java*.exe' cls='SunAwtFrame' title='StarPlan (Version 3.4.1.0)' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive" />
+                                        </uix:NClick.Target>
+                                      </uix:NClick>
+                                    </Sequence>
+                                  </Sequence>
+                                </ActivityAction>
+                              </ui:ForEachRow.Body>
+                            </ui:ForEachRow>
+                          </Sequence>
+                        </ActivityAction>
+                      </uix:NApplicationCard.Body>
+                      <uix:NApplicationCard.TargetApp>
+                        <uix:TargetApp Area="-9, -9, 1938, 1038" Arguments="-Xms128m -Xmx2581m -Dsun.java2d.d3d=false -Dsun.java2d.uiScale.enabled=false -jar &quot;&quot;C:\Users\chris\Desktop\StarPlanJS.exe&quot;&quot; https://splan.hdm-stuttgart.de/splan/webstart/splan.jnlp" FilePath="C:\Program Files\Java\jre-1.8\bin\javaw.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAbNSURBVFhH7Zd7UFRVHMed6W+n6aliikZk+YgoDa20MjMzUVOwpsyWgBLwWYHJo8AwxReiII/Md0pIoMAiCyQPAXdBdpfHwgrLQ5Z1gYXdfKDUJN/Oud57YLtAUqlN42/mO3vv93zvuZ8995xzd4fcq3t1rwZR3jukc1yDUyR3SpKNUklwlHQ4f/uBa653ePB0yVa84nbnNEOyBU7vhRglvlv+GnLC22sb33QPRVLAN/jpy2Arpe+MEXknQsKQuilc5KdHiLP9+QnbojFquiemOK+U8Bj919hXP2lc4BWG/CWLkbvQ2UrqQH+RV+S2DMUrvER+X9n+/LyAQIx8yR1jpr7/PwI8t2YVd+Pe0kaEizyV/zpUfBMi8vvK9ufLt4cPDnCRz1Zc6+jAtfZ2K3VduiTyrpvN6LJYRH5f2f58o944+BFsLS9Hi1rN1FhSit37pFiyKgKTXYLw7Hw/zJWEYFvEETSpK1iuLK8IPoFx8PgyGu6+kfiYyMMvEmu/ikFs3HE0VVRZ9UtVqyr/Z4C18hLMfD8INi+6YZjTMoyYJsHwqR9xx1ShYftYNjLqGPNpRsgJx0/P9sbJhHSW5/rnAD8eHGBbRQUHSfV5UBS76VSX9QiPSca23fFY4rWZgw4KjWPZXZFHWXaa63p4BcRi6ertsH/di/l2r32Kinw5u0ZHnsCgABd6h+E6mVd0flE5LV7HOs/JVzKfSqXSQlOpY+exR9JZdnlgNPPraxowYc4K1ha5P5W1XeTm4CBHsLOtDVdbWzmNn7OSdXxSeob5VJ0mE7eghPOYg6ksu9w/yiq76usY1vbZhu+Yr2/Q/zPAeR6hrGP6qGIOpcFsuMi1DQZwRVA0a/MPO8D8vwXIbTO8pJlnrRYF1cS5q7A1OhEdxlZ0/fILy8YelrLM8oA9zDc06q2exNGk0z1tTYbBA5qqqmDSaJgi98TDdoYHu4GgFxb54ly+guV2kZzQNvujEETEJmPjrkTM+OBr9iUd561Gs7qMXVNXriGA7pjlvPSLjI2LnuNR+i4BkK6u3lsBlaa4DGsCIkEyDILqJRc/NCtVXCZi9w/Mp0C9tyQbMkpOi9cjLz2HZG/mqYRtJi141pXsg5v9eZS+ayBAi07HfVYXFsN97TYGQpWWmMG19QYc/9YazPwwBG+5b4Ln+ljE7U9DY/nNjbr+mD8unE7ijmuV5Vjr6QLL3mnIS/4+mEfpuygg3WYs9fWw1NVZ6YrBwI47COwL7/gymENH0jg/Ki6ReZ/47mR5QbQPM7nWeNwbnfsno0m2F0ZVDjrT3kZb2ATkp8av4FH6LmEEhVVsNhhxIF7GrVq6Nworz3LRCId5axiMLFvB+QOtYiqhj9a0lUDyM/jtqAOuZy8ETk6DYZM9CnNODbxQ/gyoVlZxN3Oc/zk2Rh5HkrQQJzIUWOrb83aZNHc190Vo/lYB22Q+QPp4IIVINhk4PhHmAw64pvas/r3EJfdqpkulOnFDCo/VU38G1FXXcROd3pCb9OTVRlccPaZ6YpYPpLKzDOCWRzDTAzg9Dsh4koCSz9SngKznCewU/PqjA/K2L4C2qsqPx+opYQ7Sn0F0E6aSZhZh4affYuxMb9i+uhx2b6yE4+JAeAUfgEpdw72uhOwJ8qZxmO8Lx0X+CNuTxHxBXeZG/Gragm6zM6AgYLl2wM/2BI6AEtgbSfYo3jEFSnl+PI9kXcII9rWKW7Q1UObKoc5TQF96c5ug+1i7VivK0oVg7clxuSEM3V3vAKapQAUBK7EF5GOAorHAGTt0Zz0Obaw9CjITqk0m01AeybrGDAAobDO9dauAuoJsKBJm46piOFBpA2geA8pHAerRQClRMYEtHAPN0Zeh1+sn8Tjiul2ARpUKmpwc5P/kB33WCHRrCWgtAdWO7IFVjUZntg2k3727gMcR17g3fBpfX0b+HqblQJpqLZmsUOSdkuYh49QZkS/LFGepUlJPozTXFbCQUbswDGggoLoRQDWRhgArbaA+NukUjyOuF5f4BdtOdyPvXffborGvuMFw4XEC+Ci6LzwIXHwE3bqHUZcxEvUZdmjKGIXKxNE4eThwHI8kLonvjjn0T/Rzzt7/uvbsdU7s/m0ELuseRMNZMnrtD6BTez+yUvw7lEplglwuP6M8V5DfUFPmxOPc2bpqcVScV9oiR/bV7+eKwq/caB+K2oKhKFVkhfKRu1e1mg0Tzha4QiGXlTU1NU05f77Sw9QwDEVZM9DS0jKRj929MhhqHevr6z0B3EfPm5ubH6rRuF7P/Xmdlgv8F6u0JCq5pCRr4J9Yd7PIG8PGbDbfz5/eq9tUQ4b8AfdcAy9PK85tAAAAAElFTkSuQmCC" InformativeScreenshot="36067f0abde53c658ee2cca0ab50de35.png" Selector="&lt;wnd app='java*.exe' cls='SunAwtFrame' title='StarPlan (Version 3.4.1.0)' /&gt;" Title="StarPlan (Version 3.4.1.0)" />
+                      </uix:NApplicationCard.TargetApp>
+                    </uix:NApplicationCard>
+                  </Sequence>
+                </ActivityAction>
+              </ueab:ExcelApplicationCard.Body>
+            </ueab:ExcelApplicationCard>
+          </Sequence>
+        </ActivityAction>
+      </ueab:ExcelProcessScopeX.Body>
+    </ueab:ExcelProcessScopeX>
+  </Sequence>
+</Activity>
