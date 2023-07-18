@@ -48,6 +48,7 @@
       <x:String>UiPath.OCR.Activities</x:String>
       <x:String>UiPath.OCR.Contracts.Activities</x:String>
       <x:String>System.Activities.Runtime.Collections</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -129,39 +130,43 @@
           <Literal x:TypeArguments="x:Boolean" />
         </Variable.Default>
       </Variable>
+      <Variable x:TypeArguments="x:Boolean" Name="BaumstrukturPressed">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:Boolean" />
+        </Variable.Default>
+      </Variable>
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="1094,11994.666666666666" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_2" ShowExcelWindow="False">
+    <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="1094,13936" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_2" ShowExcelWindow="False">
       <ueab:ExcelProcessScopeX.Body>
         <ActivityAction x:TypeArguments="ui:IExcelProcess">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Ausführen" sap:VirtualizedContainerService.HintSize="1060,11907.333333333334" sap2010:WorkflowViewState.IdRef="Sequence_19">
+          <Sequence DisplayName="Ausführen" sap:VirtualizedContainerService.HintSize="1060,13848.666666666666" sap2010:WorkflowViewState.IdRef="Sequence_19">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:String" Name="exlFile">
                 <Variable.Default>
                   <Literal x:TypeArguments="x:String">C:\Users\aziz-\Dropbox\Mein PC (LAPTOP-48RO2IT6)\Downloads\Splan_buchung1.xlsx</Literal>
                 </Variable.Default>
               </Variable>
-              <Variable x:TypeArguments="x:String" Name="variable1" />
             </Sequence.Variables>
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" CreateNewFile="False" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="998,11796.666666666666" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_2" ResizeWindow="None" WorkbookPath="[exlFile]">
+            <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" CreateNewFile="False" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="998,13738" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_2" ResizeWindow="None" WorkbookPath="[exlFile]">
               <ueab:ExcelApplicationCard.Body>
                 <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Ausführen" sap:VirtualizedContainerService.HintSize="964,11522.666666666666" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                  <Sequence DisplayName="Ausführen" sap:VirtualizedContainerService.HintSize="964,13464" sap2010:WorkflowViewState.IdRef="Sequence_18">
                     <Sequence.Variables>
                       <Variable x:TypeArguments="sd:DataTable" Name="Kurse" />
                     </Sequence.Variables>
@@ -171,13 +176,13 @@
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                     <ueab:ReadRangeX DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="902,171.33333333333334" sap2010:WorkflowViewState.IdRef="ReadRangeX_2" Range="[Excel.Sheet(&quot;Buchung&quot;)]" SaveTo="[Kurse]" />
-                    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Öffne StarPlan " sap:VirtualizedContainerService.HintSize="902,11200.666666666666" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" ScopeGuid="ad08872b-b465-48f0-a3f0-10ce604fc639" Version="V2">
+                    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Öffne StarPlan " sap:VirtualizedContainerService.HintSize="902,13142" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" ScopeGuid="ad08872b-b465-48f0-a3f0-10ce604fc639" Version="V2">
                       <uix:NApplicationCard.Body>
                         <ActivityAction x:TypeArguments="x:Object">
                           <ActivityAction.Argument>
                             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                           </ActivityAction.Argument>
-                          <Sequence DisplayName="Ausführen" sap:VirtualizedContainerService.HintSize="868,10906.666666666666" sap2010:WorkflowViewState.IdRef="Sequence_32">
+                          <Sequence DisplayName="Ausführen" sap:VirtualizedContainerService.HintSize="868,12848" sap2010:WorkflowViewState.IdRef="Sequence_32">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -208,19 +213,19 @@
                                 </uix:TargetAnchorable>
                               </uix:NClick.Target>
                             </uix:NClick>
-                            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[Kurse]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="806,10194.666666666666" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
+                            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[Kurse]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="806,12136" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
                               <ui:ForEachRow.Body>
                                 <ActivityAction x:TypeArguments="sd:DataRow">
                                   <ActivityAction.Argument>
                                     <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
                                   </ActivityAction.Argument>
-                                  <Sequence sap:VirtualizedContainerService.HintSize="772,10076" sap2010:WorkflowViewState.IdRef="Sequence_31">
+                                  <Sequence sap:VirtualizedContainerService.HintSize="772,12017.333333333334" sap2010:WorkflowViewState.IdRef="Sequence_31">
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
-                                    <If Condition="[String.IsNullOrEmpty(CurrentRow.item(&quot;ID&quot;).ToString()) = true]" sap:VirtualizedContainerService.HintSize="710,9960" sap2010:WorkflowViewState.IdRef="If_1">
+                                    <If Condition="[String.IsNullOrEmpty(CurrentRow.item(&quot;ID&quot;).ToString()) = true]" sap:VirtualizedContainerService.HintSize="710,11904" sap2010:WorkflowViewState.IdRef="If_1">
                                       <If.Then>
                                         <Sequence sap:VirtualizedContainerService.HintSize="376,178.66666666666666" sap2010:WorkflowViewState.IdRef="Sequence_35">
                                           <sap:WorkflowViewStateService.ViewState>
@@ -232,13 +237,21 @@
                                         </Sequence>
                                       </If.Then>
                                       <If.Else>
-                                        <Sequence sap:VirtualizedContainerService.HintSize="676,9598" sap2010:WorkflowViewState.IdRef="Sequence_36">
+                                        <Sequence sap:VirtualizedContainerService.HintSize="676,11542" sap2010:WorkflowViewState.IdRef="Sequence_36">
                                           <sap:WorkflowViewStateService.ViewState>
                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                             </scg:Dictionary>
                                           </sap:WorkflowViewStateService.ViewState>
-                                          <Sequence DisplayName="Text" sap:VirtualizedContainerService.HintSize="634,9510.666666666666" sap2010:WorkflowViewState.IdRef="Sequence_30">
+                                          <Sequence DisplayName="Text" sap:VirtualizedContainerService.HintSize="634,11454.666666666666" sap2010:WorkflowViewState.IdRef="Sequence_30">
+                                            <Sequence.Variables>
+                                              <Variable x:TypeArguments="x:String" Name="variable1" />
+                                              <Variable x:TypeArguments="x:String" Name="RaumNr">
+                                                <Variable.Default>
+                                                  <VisualBasicValue x:TypeArguments="x:String" ExpressionText="CurrentRow.item(&quot;Raum&quot;).ToString" />
+                                                </Variable.Default>
+                                              </Variable>
+                                            </Sequence.Variables>
                                             <sap:WorkflowViewStateService.ViewState>
                                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -331,253 +344,273 @@
                                                 </uix:TargetAnchorable>
                                               </uix:NTypeInto.Target>
                                             </uix:NTypeInto>
-                                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Baumansicht'" sap:VirtualizedContainerService.HintSize="572,158.66666666666666" sap2010:WorkflowViewState.IdRef="NClick_34" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ad08872b-b465-48f0-a3f0-10ce604fc639" Version="V3">
-                                              <uix:NClick.Target>
-                                                <uix:TargetAnchorable DesignTimeRectangle="94, 444, 66, 20" DesignTimeScaleFactor="1" ElementType="CheckBox" FriendlyName="'ja / nein'" FullSelectorArgument="&lt;java role='page tab list' /&gt;&lt;java name='Planungsgruppen' role='page tab' /&gt;&lt;java hasTableAncestor='0' name='ja / nein' role='check box' /&gt;" FuzzySelectorArgument="&lt;java role='page tab list' /&gt;&lt;java name='Planungsgruppen' role='page tab' /&gt;&lt;java hasTableAncestor='0' name='ja / nein' role='check box' check:fulltext='ja / nein' /&gt;" Guid="c50472e6-c7fb-4f9f-919f-388d0a7e6e7a" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEYAAAAYCAYAAABHqosDAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJGSURBVFhH7ZfNattAEMf1VHqMQCCXQijRKa/QY2869J5baUri9lBRCOTSUyH04xAa0SSnhJiekrjFNiubmpik08xoN1prZ3dlWw510cAfSzs7q52fZscoyLIMGplqwFjUgLGoAWNRA8YiFsxhuw8bbzuw8vKqkp62ruHLed9YZ5nFgkEo57/GUNXa3THB4dZaVrFgsAp8Nry5g91vA/pFwxhurWXVzGC2Pgua9/owo3sOjEhjCIMQ4lQYPp9EEkEQJaxvGs26h5nAfP0xgtVXV7D57udCKkaIFOJwNqB1aWowvd93sN7qEBi9D9UKBt9yDdUyj5xgyn0E7fmHHvmT70M5khsHRogEIq2MkyiAIJByJJ7GIUSJWS0P68X3x0yuE8Zp4adjo54RQSLExB588bqcYN4cDega+wna3umQ7p/td+G2YEVWBYxvvPDlSfG+Air1IQaA8mHS+rgrXj1DyQlmNP5DfQTv3x8PYW37Gp7sdOBS3JJftypg8o2oN2oBIxMqj5OvvJ6e9ES1SN0DMMHw8fpzUN4ec3J5Q/dKBxcj6Zk0H5h84+rt8s3V13Rdienr22Jc8XoMqlLzVX/NLz725YhpXjBYLWEMKYKhJMwN0bij97gSy6/NnmHO4eP1GFQlMHiksNmKUamxaOYFQ9UgSzyMIGIqw9Z0lXyJGcep7qNU1ydB/mC+uZVFc2VFcf7HFgsGPyIxUayCKsK5n87Mj8iHN+dROe5fEAtmXhUlzZfpMmghYP4HNWAsasBY1IBhlcFfybnUTippj1kAAAAASUVORK5CYII=" InformativeScreenshot="d7efad3eacc3ac786bcea024a3547059.png" ScopeSelectorArgument="&lt;wnd app='java*.exe' cls='SunAwtDialog' title='Planungsgruppe und Lehrveranstaltung auswählen ' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Version="V2" Visibility="Interactive">
-                                                  <uix:TargetAnchorable.Anchors>
-                                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                                                      <uix:Target DesignTimeRectangle="18, 446, 72, 16" ElementType="Text" FriendlyName="'Baumansicht'" FullSelectorArgument="&lt;java role='page tab list' /&gt;&lt;java name='Planungsgruppen' role='page tab' /&gt;&lt;java hasTableAncestor='0' name='Baumansicht:' role='label' /&gt;" FuzzySelectorArgument="&lt;java role='page tab list' /&gt;&lt;java name='Planungsgruppen' role='page tab' /&gt;&lt;java hasTableAncestor='0' name='Baumansicht:' role='label' check:text='Baumansicht:' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEwAAAAUCAYAAAAnStuxAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAF4SURBVFhH7VXtkcQgCLUq+7Eam7EXazENsBGjEj/YsDd3szfDjzcTBR74FGKO4wDFc6hgQqhgQqhgQqhgQqhgQjTBUgrgjAFD4EKaAr4ZKXqwxoKP+7rLOXkfDoNgnagkdxDS/xLtHTjBnoi5F+yHN/Gt+D3BggPjQnMMjrTrtc+J3L5Dfqm9xaO3jcf6+Izfn7UMMSlF8LbHZO65HsaH1JU5y373zTWgBtZDJF3GzLB1O9Ki5gJH28lzJcTk57odGNdzjiVHFZDEjBc6xxax6KV0n7Gui5PEo2+28YIR52GAFuIqJj0Q8bkVvLct11J+rO8uyGznL2SKGWwrMDOs3BA+Y5K87K8TcMlZ3w/48zqjtvjYkn8vGCa8iMjTvO0TUTEGX8k6OVvolp/nqMii9TlUY7mWXHNONlJXjWdmGCUtyXHfOnDXC0AbbSV32nbJ2ULX/GwMzbubQbiuPrsfw33dfj7vhr7iGVQwIVQwIVQwIVQwEQ54AYanyyUvBTTYAAAAAElFTkSuQmCC" SearchSteps="Selector, FuzzySelector, Image" />
-                                                    </scg:List>
-                                                  </uix:TargetAnchorable.Anchors>
-                                                </uix:TargetAnchorable>
-                                              </uix:NClick.Target>
-                                            </uix:NClick>
-                                            <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="536,609.3333333333334" sap2010:WorkflowViewState.IdRef="TryCatch_1">
-                                              <TryCatch.Try>
-                                                <p:CVScope ContinueOnError="{x:Null}" DelayBefore="{x:Null}" ScopeId="{x:Null}" Server="{x:Null}" CvMethod="ElementDetection, OCR" DesignTimeCacheId="b98ebd08-6e14-42e6-95b2-9024b4b77a12" DisplayName="CV Screen Scope 'table'" sap:VirtualizedContainerService.HintSize="434,500" sap2010:WorkflowViewState.IdRef="CVScope_2" SendOnPremData="False" Version="V6">
-                                                  <p:CVScope.Body>
-                                                    <ActivityAction x:TypeArguments="x:Object">
-                                                      <ActivityAction.Argument>
-                                                        <DelegateInArgument x:TypeArguments="x:Object" Name="CVSessionData" />
-                                                      </ActivityAction.Argument>
-                                                      <Sequence DisplayName="Do" sap2010:WorkflowViewState.IdRef="Sequence_34">
-                                                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'WI7 (3. Semester)'" sap:VirtualizedContainerService.HintSize="400,158.66666666666666" sap2010:WorkflowViewState.IdRef="NClick_56" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ad08872b-b465-48f0-a3f0-10ce604fc639" Version="V3">
+                                            <If Condition="[BaumstrukturPressed=True]" sap:VirtualizedContainerService.HintSize="572,510" sap2010:WorkflowViewState.IdRef="If_5">
+                                              <If.Then>
+                                                <Sequence sap:VirtualizedContainerService.HintSize="300,80.66666666666667" sap2010:WorkflowViewState.IdRef="Sequence_46">
+                                                  <sap:WorkflowViewStateService.ViewState>
+                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                    </scg:Dictionary>
+                                                  </sap:WorkflowViewStateService.ViewState>
+                                                </Sequence>
+                                              </If.Then>
+                                              <If.Else>
+                                                <Sequence sap:VirtualizedContainerService.HintSize="376,246" sap2010:WorkflowViewState.IdRef="Sequence_47">
+                                                  <sap:WorkflowViewStateService.ViewState>
+                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                    </scg:Dictionary>
+                                                  </sap:WorkflowViewStateService.ViewState>
+                                                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Baumansicht'" sap:VirtualizedContainerService.HintSize="334,158.66666666666666" sap2010:WorkflowViewState.IdRef="NClick_34" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ad08872b-b465-48f0-a3f0-10ce604fc639" Version="V3">
+                                                    <uix:NClick.Target>
+                                                      <uix:TargetAnchorable DesignTimeRectangle="94, 444, 66, 20" DesignTimeScaleFactor="1" ElementType="CheckBox" FriendlyName="'ja / nein'" FullSelectorArgument="&lt;java role='page tab list' /&gt;&lt;java name='Planungsgruppen' role='page tab' /&gt;&lt;java hasTableAncestor='0' name='ja / nein' role='check box' /&gt;" FuzzySelectorArgument="&lt;java role='page tab list' /&gt;&lt;java name='Planungsgruppen' role='page tab' /&gt;&lt;java hasTableAncestor='0' name='ja / nein' role='check box' check:fulltext='ja / nein' /&gt;" Guid="c50472e6-c7fb-4f9f-919f-388d0a7e6e7a" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEYAAAAYCAYAAABHqosDAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJGSURBVFhH7ZfNattAEMf1VHqMQCCXQijRKa/QY2869J5baUri9lBRCOTSUyH04xAa0SSnhJiekrjFNiubmpik08xoN1prZ3dlWw510cAfSzs7q52fZscoyLIMGplqwFjUgLGoAWNRA8YiFsxhuw8bbzuw8vKqkp62ruHLed9YZ5nFgkEo57/GUNXa3THB4dZaVrFgsAp8Nry5g91vA/pFwxhurWXVzGC2Pgua9/owo3sOjEhjCIMQ4lQYPp9EEkEQJaxvGs26h5nAfP0xgtVXV7D57udCKkaIFOJwNqB1aWowvd93sN7qEBi9D9UKBt9yDdUyj5xgyn0E7fmHHvmT70M5khsHRogEIq2MkyiAIJByJJ7GIUSJWS0P68X3x0yuE8Zp4adjo54RQSLExB588bqcYN4cDega+wna3umQ7p/td+G2YEVWBYxvvPDlSfG+Air1IQaA8mHS+rgrXj1DyQlmNP5DfQTv3x8PYW37Gp7sdOBS3JJftypg8o2oN2oBIxMqj5OvvJ6e9ES1SN0DMMHw8fpzUN4ec3J5Q/dKBxcj6Zk0H5h84+rt8s3V13Rdienr22Jc8XoMqlLzVX/NLz725YhpXjBYLWEMKYKhJMwN0bij97gSy6/NnmHO4eP1GFQlMHiksNmKUamxaOYFQ9UgSzyMIGIqw9Z0lXyJGcep7qNU1ydB/mC+uZVFc2VFcf7HFgsGPyIxUayCKsK5n87Mj8iHN+dROe5fEAtmXhUlzZfpMmghYP4HNWAsasBY1IBhlcFfybnUTippj1kAAAAASUVORK5CYII=" InformativeScreenshot="d7efad3eacc3ac786bcea024a3547059.png" ScopeSelectorArgument="&lt;wnd app='java*.exe' cls='SunAwtDialog' title='Planungsgruppe und Lehrveranstaltung auswählen ' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Version="V2" Visibility="Interactive">
+                                                        <uix:TargetAnchorable.Anchors>
+                                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                            <uix:Target DesignTimeRectangle="18, 446, 72, 16" ElementType="Text" FriendlyName="'Baumansicht'" FullSelectorArgument="&lt;java role='page tab list' /&gt;&lt;java name='Planungsgruppen' role='page tab' /&gt;&lt;java hasTableAncestor='0' name='Baumansicht:' role='label' /&gt;" FuzzySelectorArgument="&lt;java role='page tab list' /&gt;&lt;java name='Planungsgruppen' role='page tab' /&gt;&lt;java hasTableAncestor='0' name='Baumansicht:' role='label' check:text='Baumansicht:' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEwAAAAUCAYAAAAnStuxAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAF4SURBVFhH7VXtkcQgCLUq+7Eam7EXazENsBGjEj/YsDd3szfDjzcTBR74FGKO4wDFc6hgQqhgQqhgQqhgQqhgQjTBUgrgjAFD4EKaAr4ZKXqwxoKP+7rLOXkfDoNgnagkdxDS/xLtHTjBnoi5F+yHN/Gt+D3BggPjQnMMjrTrtc+J3L5Dfqm9xaO3jcf6+Izfn7UMMSlF8LbHZO65HsaH1JU5y373zTWgBtZDJF3GzLB1O9Ki5gJH28lzJcTk57odGNdzjiVHFZDEjBc6xxax6KV0n7Gui5PEo2+28YIR52GAFuIqJj0Q8bkVvLct11J+rO8uyGznL2SKGWwrMDOs3BA+Y5K87K8TcMlZ3w/48zqjtvjYkn8vGCa8iMjTvO0TUTEGX8k6OVvolp/nqMii9TlUY7mWXHNONlJXjWdmGCUtyXHfOnDXC0AbbSV32nbJ2ULX/GwMzbubQbiuPrsfw33dfj7vhr7iGVQwIVQwIVQwIVQwEQ54AYanyyUvBTTYAAAAAElFTkSuQmCC" SearchSteps="Selector, FuzzySelector, Image" />
+                                                          </scg:List>
+                                                        </uix:TargetAnchorable.Anchors>
+                                                      </uix:TargetAnchorable>
+                                                    </uix:NClick.Target>
+                                                  </uix:NClick>
+                                                </Sequence>
+                                              </If.Else>
+                                            </If>
+                                            <p:CVScope ContinueOnError="{x:Null}" DelayBefore="{x:Null}" ScopeId="{x:Null}" Server="{x:Null}" CvMethod="ElementDetection, OCR" DesignTimeCacheId="b98ebd08-6e14-42e6-95b2-9024b4b77a12" DisplayName="CV Screen Scope 'table'" sap:VirtualizedContainerService.HintSize="572,758.6666666666666" sap2010:WorkflowViewState.IdRef="CVScope_2" SendOnPremData="False" Version="V6">
+                                              <p:CVScope.Body>
+                                                <ActivityAction x:TypeArguments="x:Object">
+                                                  <ActivityAction.Argument>
+                                                    <DelegateInArgument x:TypeArguments="x:Object" Name="CVSessionData" />
+                                                  </ActivityAction.Argument>
+                                                  <Sequence DisplayName="Do" sap2010:WorkflowViewState.IdRef="Sequence_34">
+                                                    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="438.6666666666667,417.3333333333333" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+                                                      <TryCatch.Try>
+                                                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'WI7 (3. Semester)'" sap:VirtualizedContainerService.HintSize="334,158.66666666666666" sap2010:WorkflowViewState.IdRef="NClick_56" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ad08872b-b465-48f0-a3f0-10ce604fc639" Version="V3">
                                                           <uix:NClick.Target>
                                                             <uix:TargetAnchorable DesignTimeRectangle="141, 126, 121, 17" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'WI7 (3. Semester)'" FullSelectorArgument="&lt;java role='page tab list' /&gt;&lt;java name='Planungsgruppen' role='page tab' /&gt;&lt;java cls='MyJXTable' role='table' /&gt;&lt;java role='label' tableCol='1' tableRow='0' /&gt;" FuzzySelectorArgument="&lt;java role='page tab list' /&gt;&lt;java name='Planungsgruppen' role='page tab' /&gt;&lt;java cls='MyJXTable' role='table' /&gt;&lt;java role='label' check:text='WI7 (3. Semester)' /&gt;" Guid="46790cf4-9528-4ad5-97bb-0b8dcbbf09e6" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAH0AAAAVCAYAAABrJ+ESAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJxSURBVGhD7ZeLkesgDEVpywUt5bibpZgUkALSAKsr/jIfT3ZsZ2LOjN8aDJLQBZGnLPF8PvFn8uUEnRVe5nOvh0/66/XiHTD5boLOU/QbMUW/IVP0G9IV3WhltfENxlitFrs+fBMYbRUPwjdN/1r7WBerlBKP+ybhsTz/YdcljS/9NoDvgf1PBbldikSeR/+kR0E9j9UulOA8WIjm2kl0SRojgL1lJbmBsSZMZj8DEeUYaq/dCUdROQi7wCZ/Z97/6YteiILmYvVKfXEj5IG3RH9jM3TmRLAhs9iu413RCXmoTqIveiFqeM8Fab1n0MLqwnZ2+q5kwF+jRHIVkGXfi2PSN7jg68W3C1tVG4g59Cn78+tiCO0Yc8e/1vDn+8ShOouB6Mh/uF8paB+gocA5P4U4WJQUvSNsZXwUYCh4IImQprjkRp9x06GfxoYkI3ZqR6G5XQq0sVGsNyDGDvwXG4v7ZM6OZyh6XGi24FCWy/JcWQB2clPAzoLhq0jkAH+y2FVxyvzDH4QYvXbLhu/fCpfZ2e0f9A7FcYxFxyLodBgSOOqHPk0/nIqAsajtyY1zNmzH52z/59CHq0QUpmZXJr3TbtpwhIrk4hN2dvsH6Gv7OYqx6LGEygShLw9YLmC0i8V3+ule2grfaski6G5OfS7GdhkF0k6v3bKRSFWuZmePf8IfqLaXY9ghulug/KWMkxjKvQOL6m2CLSlx3CjKYjJdSRbjkluWUI+wVS+vg3bNBl87oS+tjXMRxoBd/onsyjyTXaIfxkU7/TO45j4H14pOxLv4Zmwr5XlcLvrkfKboNySKjpf53Ovhkz65E9b+AZPwKv20oFJTAAAAAElFTkSuQmCC" InformativeScreenshot="0fbd2a3d048eb65fa7ceac03087e4cae.png" ScopeSelectorArgument="&lt;wnd app='java*.exe' cls='SunAwtDialog' title='Planungsgruppe und Lehrveranstaltung auswählen ' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Version="V2" Visibility="Interactive" />
                                                           </uix:NClick.Target>
                                                         </uix:NClick>
-                                                      </Sequence>
-                                                    </ActivityAction>
-                                                  </p:CVScope.Body>
-                                                  <p:CVScope.DesignTimeCache>
-                                                    <uc:CVCache CvUiElements="{x:Null}" OcrTexts="{x:Null}" DataSent="False" />
-                                                  </p:CVScope.DesignTimeCache>
-                                                  <p:CVScope.DesignTimeCacheContainer>
-                                                    <uc:CvCacheContainer>
-                                                      <uc:CvCacheContainer.Caches>
-                                                        <scg:List x:TypeArguments="uc:CVCache" Capacity="1">
-                                                          <uc:CVCache DataSent="False" DisplayName="Main Screen" Id="b98ebd08-6e14-42e6-95b2-9024b4b77a12" InformativeScreenshot="531f7baa16c3879c1a084823b44f9e3a" LogicalPosition="524, 113" OcrText="Filter: WI7-3 Gross/Klein beachtet/ignoriert UND/ODER Kurzel ^ Name Abteilung Ubergeordnete Gruppe Gesch. Anzahl Horer Im Web sichtbar WI7-3 WI7 (3. Semester) WI7 WI7 37 Baumansicht: ja / nein 1 gefilterte aus 557" Position="524, 113" ScreenshotGuid="9aab635b-7b99-434c-8ee9-b8410e3800fe" ServerVersion="1">
-                                                            <uc:CVCache.CvAnchorRelations>
-                                                              <scg:List x:TypeArguments="uc:AnchorRelationInfo" Capacity="4">
-                                                                <uc:AnchorRelationInfo IsTargetText="False" Target="3">
-                                                                  <uc:AnchorRelationInfo.Anchors>
-                                                                    <x:Array Type="x:Int32">
-                                                                      <x:Int32>4</x:Int32>
-                                                                    </x:Array>
-                                                                  </uc:AnchorRelationInfo.Anchors>
-                                                                </uc:AnchorRelationInfo>
-                                                                <uc:AnchorRelationInfo IsTargetText="False" Target="2">
-                                                                  <uc:AnchorRelationInfo.Anchors>
-                                                                    <x:Array Type="x:Int32">
-                                                                      <x:Int32>2</x:Int32>
-                                                                      <x:Int32>3</x:Int32>
-                                                                    </x:Array>
-                                                                  </uc:AnchorRelationInfo.Anchors>
-                                                                </uc:AnchorRelationInfo>
-                                                                <uc:AnchorRelationInfo IsTargetText="False" Target="4">
-                                                                  <uc:AnchorRelationInfo.Anchors>
-                                                                    <x:Array Type="x:Int32">
-                                                                      <x:Int32>24</x:Int32>
-                                                                    </x:Array>
-                                                                  </uc:AnchorRelationInfo.Anchors>
-                                                                </uc:AnchorRelationInfo>
-                                                                <uc:AnchorRelationInfo IsTargetText="False" Target="0">
-                                                                  <uc:AnchorRelationInfo.Anchors>
-                                                                    <x:Array Type="x:Int32">
-                                                                      <x:Int32>0</x:Int32>
-                                                                    </x:Array>
-                                                                  </uc:AnchorRelationInfo.Anchors>
-                                                                </uc:AnchorRelationInfo>
-                                                              </scg:List>
-                                                            </uc:CVCache.CvAnchorRelations>
-                                                            <uc:CVCache.CvTables>
-                                                              <x:Array Type="uc:CvTableInfo">
-                                                                <uc:CvTableInfo>
-                                                                  <uc:CvTableInfo.Columns>
-                                                                    <x:Array Type="x:Int32">
-                                                                      <x:Int32>3</x:Int32>
-                                                                      <x:Int32>125</x:Int32>
-                                                                      <x:Int32>247</x:Int32>
-                                                                      <x:Int32>370</x:Int32>
-                                                                      <x:Int32>545</x:Int32>
-                                                                      <x:Int32>706</x:Int32>
-                                                                      <x:Int32>850</x:Int32>
-                                                                    </x:Array>
-                                                                  </uc:CvTableInfo.Columns>
-                                                                  <uc:CvTableInfo.Rows>
-                                                                    <x:Array Type="x:Int32">
-                                                                      <x:Int32>30</x:Int32>
-                                                                      <x:Int32>55</x:Int32>
-                                                                      <x:Int32>75</x:Int32>
-                                                                    </x:Array>
-                                                                  </uc:CvTableInfo.Rows>
-                                                                </uc:CvTableInfo>
-                                                              </x:Array>
-                                                            </uc:CVCache.CvTables>
-                                                            <uc:CVCache.CvUiElements>
-                                                              <scg:List x:TypeArguments="uc:CvElementInfo" Capacity="32">
-                                                                <uc:CvElementInfo Category="InputBox" Region="36, 4, 562, 25" />
-                                                                <uc:CvElementInfo Category="CheckBox" Region="772, 58, 16, 16" />
-                                                                <uc:CvElementInfo Category="CheckBox" Region="603, 8, 17, 17" />
-                                                                <uc:CvElementInfo Category="CheckBox" Region="786, 8, 17, 17" />
-                                                                <uc:CvElementInfo Category="CheckBox" Region="81, 377, 18, 17" />
-                                                                <uc:CvElementInfo Category="Icon" Region="851, 36, 14, 16" />
-                                                                <uc:CvElementInfo Category="ArrowButton" Region="77, 39, 15, 12" />
-                                                                <uc:CvElementInfo Category="Cell" Region="545, 55, 161, 20" />
-                                                                <uc:CvElementInfo Category="Cell" Region="247, 55, 123, 20" />
-                                                                <uc:CvElementInfo Category="Cell" Region="706, 55, 144, 20" />
-                                                                <uc:CvElementInfo Category="Cell" Region="3, 30, 122, 25" />
-                                                                <uc:CvElementInfo Category="Cell" Region="370, 55, 175, 20" />
-                                                                <uc:CvElementInfo Category="Cell" Region="125, 30, 122, 25" />
-                                                                <uc:CvElementInfo Category="Cell" Region="545, 30, 161, 25" />
-                                                                <uc:CvElementInfo Category="Cell" Region="706, 30, 144, 25" />
-                                                                <uc:CvElementInfo Category="Cell" Region="247, 30, 123, 25" />
-                                                                <uc:CvElementInfo Category="Cell" Region="125, 55, 122, 20" />
-                                                                <uc:CvElementInfo Category="Cell" Region="3, 55, 122, 20" />
-                                                                <uc:CvElementInfo Category="Cell" Region="370, 30, 175, 25" />
-                                                                <uc:CvElementInfo Category="Icon" Confidence="Runtime" Region="80, 376, 20, 19" />
-                                                                <uc:CvElementInfo Category="ArrowButton" Confidence="Runtime" Region="851, 37, 14, 15" />
-                                                                <uc:CvElementInfo Category="Icon" Confidence="Runtime" Region="78, 41, 15, 11" />
-                                                                <uc:CvElementInfo Category="RadioButton" Confidence="Runtime" Region="78, 41, 14, 10" />
-                                                                <uc:CvElementInfo Category="Button" Confidence="Runtime" Region="850, 34, 17, 21" />
-                                                                <uc:CvElementInfo Category="Icon" Confidence="Runtime" Region="785, 7, 19, 18" />
-                                                                <uc:CvElementInfo Category="Cell" Confidence="Runtime" Region="262, 254, 116, 114" />
-                                                                <uc:CvElementInfo Category="Cell" Confidence="Runtime" Region="0, 332, 853, 36" />
-                                                              </scg:List>
-                                                            </uc:CVCache.CvUiElements>
-                                                            <uc:CVCache.OcrTexts>
-                                                              <scg:List x:TypeArguments="uc:OcrTextInfo" Capacity="32">
-                                                                <uc:OcrTextInfo Region="4, 10, 30, 12" Text="Filter:" />
-                                                                <uc:OcrTextInfo Region="43, 10, 34, 12" Text="WI7-3" />
-                                                                <uc:OcrTextInfo Region="621, 10, 58, 12" Text="Gross/Klein" />
-                                                                <uc:OcrTextInfo Region="681, 10, 99, 15" Text="beachtet/ignoriert" />
-                                                                <uc:OcrTextInfo Region="803, 10, 63, 13" Text="UND/ODER" />
-                                                                <uc:OcrTextInfo Region="43, 39, 33, 12" Text="Kurzel" />
-                                                                <uc:OcrTextInfo Region="79, 41, 12, 8" Text="^" />
-                                                                <uc:OcrTextInfo Region="172, 39, 34, 12" Text="Name" />
-                                                                <uc:OcrTextInfo Region="283, 39, 54, 15" Text="Abteilung" />
-                                                                <uc:OcrTextInfo Region="399, 38, 81, 16" Text="Ubergeordnete" />
-                                                                <uc:OcrTextInfo Region="481, 39, 41, 15" Text="Gruppe" />
-                                                                <uc:OcrTextInfo Region="574, 39, 37, 12" Text="Gesch." />
-                                                                <uc:OcrTextInfo Region="611, 39, 38, 12" Text="Anzahl" />
-                                                                <uc:OcrTextInfo Region="651, 39, 32, 12" Text="Horer" />
-                                                                <uc:OcrTextInfo Region="735, 39, 15, 12" Text="Im" />
-                                                                <uc:OcrTextInfo Region="751, 39, 26, 12" Text="Web" />
-                                                                <uc:OcrTextInfo Region="778, 39, 45, 12" Text="sichtbar" />
-                                                                <uc:OcrTextInfo Region="7, 60, 33, 12" Text="WI7-3" />
-                                                                <uc:OcrTextInfo Region="130, 60, 22, 12" Text="WI7" />
-                                                                <uc:OcrTextInfo Region="153, 60, 14, 14" Text="(3." />
-                                                                <uc:OcrTextInfo Region="169, 60, 53, 14" Text="Semester)" />
-                                                                <uc:OcrTextInfo Region="252, 60, 22, 12" Text="WI7" />
-                                                                <uc:OcrTextInfo Region="374, 60, 23, 12" Text="WI7" />
-                                                                <uc:OcrTextInfo Region="692, 60, 14, 12" Text="37" />
-                                                                <uc:OcrTextInfo Region="4, 380, 73, 12" Text="Baumansicht:" />
-                                                                <uc:OcrTextInfo Region="98, 381, 13, 14" Text="ja" />
-                                                                <uc:OcrTextInfo Region="112, 380, 8, 13" Text="/" />
-                                                                <uc:OcrTextInfo Region="121, 380, 25, 12" Text="nein" />
-                                                                <uc:OcrTextInfo Region="768, 380, 6, 12" Text="1" />
-                                                                <uc:OcrTextInfo Region="777, 380, 49, 15" Text="gefilterte" />
-                                                                <uc:OcrTextInfo Region="827, 383, 20, 9" Text="aus" />
-                                                                <uc:OcrTextInfo Region="848, 380, 20, 12" Text="557" />
-                                                              </scg:List>
-                                                            </uc:CVCache.OcrTexts>
-                                                          </uc:CVCache>
-                                                        </scg:List>
-                                                      </uc:CvCacheContainer.Caches>
-                                                    </uc:CvCacheContainer>
-                                                  </p:CVScope.DesignTimeCacheContainer>
-                                                  <p:CVScope.OCREngine>
-                                                    <ActivityFunc x:TypeArguments="sd1:Image, scg:IEnumerable(scg:KeyValuePair(sd2:Rectangle, x:String))">
-                                                      <ActivityFunc.Argument>
-                                                        <DelegateInArgument x:TypeArguments="sd1:Image" Name="Image" />
-                                                      </ActivityFunc.Argument>
-                                                      <p1:UiPathScreenOCR ApiKey="{x:Null}" Endpoint="{x:Null}" Output="{x:Null}" PredictionId="{x:Null}" Text="{x:Null}" UseLocalServer="{x:Null}" ComputeSkewAngle="False" ExtractWords="True" sap:VirtualizedContainerService.HintSize="200,25.333333333333332" sap2010:WorkflowViewState.IdRef="UiPathScreenOCR_1" Image="[Image]" Language="en" Profile="Screen" Scale="1" Timeout="100000" />
-                                                    </ActivityFunc>
-                                                  </p:CVScope.OCREngine>
-                                                  <p:CVScope.Target>
-                                                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="93e4cafe-e6da-4c90-bfee-b119c468dc1e" InformativeScreenshot="e982acd89bd4faea164dc1e0e88a9913" Selector="&lt;wnd app='java*.exe' cls='SunAwtDialog' title='Planungsgruppe und Lehrveranstaltung auswählen ' /&gt;&lt;java role='page tab list' /&gt;&lt;java name='Planungsgruppen' role='page tab' /&gt;&lt;java cls='JPanel' role='panel' /&gt;" WaitForReady="INTERACTIVE">
-                                                      <ui:Target.TimeoutMS>
-                                                        <InArgument x:TypeArguments="x:Int32" />
-                                                      </ui:Target.TimeoutMS>
-                                                    </ui:Target>
-                                                  </p:CVScope.Target>
-                                                  <p:CVScope.UseLocalServer>
-                                                    <InArgument x:TypeArguments="x:Boolean" />
-                                                  </p:CVScope.UseLocalServer>
-                                                </p:CVScope>
-                                              </TryCatch.Try>
-                                              <TryCatch.Catches>
-                                                <Catch x:TypeArguments="ui:SelectorNotFoundException" sap:VirtualizedContainerService.HintSize="502,21.333333333333332" sap2010:WorkflowViewState.IdRef="Catch`1_1">
-                                                  <sap:WorkflowViewStateService.ViewState>
-                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                                    </scg:Dictionary>
-                                                  </sap:WorkflowViewStateService.ViewState>
-                                                  <ActivityAction x:TypeArguments="ui:SelectorNotFoundException">
-                                                    <ActivityAction.Argument>
-                                                      <DelegateInArgument x:TypeArguments="ui:SelectorNotFoundException" Name="exception" />
-                                                    </ActivityAction.Argument>
-                                                    <Sequence sap:VirtualizedContainerService.HintSize="496,346" sap2010:WorkflowViewState.IdRef="Sequence_37">
-                                                      <sap:WorkflowViewStateService.ViewState>
-                                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                                        </scg:Dictionary>
-                                                      </sap:WorkflowViewStateService.ViewState>
-                                                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,110.66666666666667" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Warn" Message="[&quot;Das Fach für die Buchung mit der der ID:&quot; + CurrentRow.item(&quot;ID&quot;).ToString +&#xD;&#xA;&quot;existiert noch nicht. Der Buchung wurde keine Lehrveranstaltung hinzugefügt.&#xD;&#xA;Die Buchung wurde dem Arbeitsblatt 'Buchung ohne Lehrveranstaltung' hinzugefügt &quot;]" />
-                                                      <Assign sap:VirtualizedContainerService.HintSize="434,84.66666666666667" sap2010:WorkflowViewState.IdRef="Assign_1">
-                                                        <Assign.To>
-                                                          <OutArgument x:TypeArguments="x:Boolean">[FachError]</OutArgument>
-                                                        </Assign.To>
-                                                        <Assign.Value>
-                                                          <InArgument x:TypeArguments="x:Boolean">True</InArgument>
-                                                        </Assign.Value>
-                                                      </Assign>
-                                                    </Sequence>
-                                                  </ActivityAction>
-                                                </Catch>
-                                                <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="502,416" sap2010:WorkflowViewState.IdRef="Catch`1_2">
-                                                  <sap:WorkflowViewStateService.ViewState>
-                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                                    </scg:Dictionary>
-                                                  </sap:WorkflowViewStateService.ViewState>
-                                                  <ActivityAction x:TypeArguments="s:Exception">
-                                                    <ActivityAction.Argument>
-                                                      <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
-                                                    </ActivityAction.Argument>
-                                                    <Sequence sap:VirtualizedContainerService.HintSize="496,346" sap2010:WorkflowViewState.IdRef="Sequence_38">
-                                                      <sap:WorkflowViewStateService.ViewState>
-                                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                                        </scg:Dictionary>
-                                                      </sap:WorkflowViewStateService.ViewState>
-                                                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,110.66666666666667" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Error" Message="[&quot;Es gab wohl einen Fehler beim hinzufügen des Faches zu der Buchung mit der ID:&quot; + CurrentRow.item(&quot;ID&quot;).ToString]" />
-                                                      <Assign sap:VirtualizedContainerService.HintSize="434,84.66666666666667" sap2010:WorkflowViewState.IdRef="Assign_4">
-                                                        <Assign.To>
-                                                          <OutArgument x:TypeArguments="x:Boolean">[FachError]</OutArgument>
-                                                        </Assign.To>
-                                                        <Assign.Value>
-                                                          <InArgument x:TypeArguments="x:Boolean">True</InArgument>
-                                                        </Assign.Value>
-                                                      </Assign>
-                                                    </Sequence>
-                                                  </ActivityAction>
-                                                </Catch>
-                                              </TryCatch.Catches>
-                                            </TryCatch>
-                                            <If Condition="[FachError=True]" sap:VirtualizedContainerService.HintSize="572,2116" sap2010:WorkflowViewState.IdRef="If_2">
+                                                      </TryCatch.Try>
+                                                      <TryCatch.Catches>
+                                                        <Catch x:TypeArguments="ui:SelectorNotFoundException" sap:VirtualizedContainerService.HintSize="404.6666666666667,21.333333333333332" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+                                                          <sap:WorkflowViewStateService.ViewState>
+                                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                            </scg:Dictionary>
+                                                          </sap:WorkflowViewStateService.ViewState>
+                                                          <ActivityAction x:TypeArguments="ui:SelectorNotFoundException">
+                                                            <ActivityAction.Argument>
+                                                              <DelegateInArgument x:TypeArguments="ui:SelectorNotFoundException" Name="exception" />
+                                                            </ActivityAction.Argument>
+                                                            <Sequence sap:VirtualizedContainerService.HintSize="496,346" sap2010:WorkflowViewState.IdRef="Sequence_37">
+                                                              <sap:WorkflowViewStateService.ViewState>
+                                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                </scg:Dictionary>
+                                                              </sap:WorkflowViewStateService.ViewState>
+                                                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,110.66666666666667" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Warn" Message="[&quot;Das Fach für die Buchung mit der der ID:&quot; + CurrentRow.item(&quot;ID&quot;).ToString +&#xD;&#xA;&quot;existiert noch nicht. Der Buchung wurde keine Lehrveranstaltung hinzugefügt.&#xD;&#xA;Die Buchung wurde dem Arbeitsblatt 'Buchung ohne Lehrveranstaltung' hinzugefügt &quot;]" />
+                                                              <Assign sap:VirtualizedContainerService.HintSize="434,84.66666666666667" sap2010:WorkflowViewState.IdRef="Assign_1">
+                                                                <Assign.To>
+                                                                  <OutArgument x:TypeArguments="x:Boolean">[FachError]</OutArgument>
+                                                                </Assign.To>
+                                                                <Assign.Value>
+                                                                  <InArgument x:TypeArguments="x:Boolean">True</InArgument>
+                                                                </Assign.Value>
+                                                              </Assign>
+                                                            </Sequence>
+                                                          </ActivityAction>
+                                                        </Catch>
+                                                        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="404.6666666666667,21.333333333333332" sap2010:WorkflowViewState.IdRef="Catch`1_2">
+                                                          <sap:WorkflowViewStateService.ViewState>
+                                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                            </scg:Dictionary>
+                                                          </sap:WorkflowViewStateService.ViewState>
+                                                          <ActivityAction x:TypeArguments="s:Exception">
+                                                            <ActivityAction.Argument>
+                                                              <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                                                            </ActivityAction.Argument>
+                                                            <Sequence sap:VirtualizedContainerService.HintSize="496,346" sap2010:WorkflowViewState.IdRef="Sequence_38">
+                                                              <sap:WorkflowViewStateService.ViewState>
+                                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                </scg:Dictionary>
+                                                              </sap:WorkflowViewStateService.ViewState>
+                                                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,110.66666666666667" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Error" Message="[&quot;Es gab wohl einen Fehler beim hinzufügen des Faches zu der Buchung mit der ID:&quot; + CurrentRow.item(&quot;ID&quot;).ToString]" />
+                                                              <Assign sap:VirtualizedContainerService.HintSize="434,84.66666666666667" sap2010:WorkflowViewState.IdRef="Assign_4">
+                                                                <Assign.To>
+                                                                  <OutArgument x:TypeArguments="x:Boolean">[FachError]</OutArgument>
+                                                                </Assign.To>
+                                                                <Assign.Value>
+                                                                  <InArgument x:TypeArguments="x:Boolean">True</InArgument>
+                                                                </Assign.Value>
+                                                              </Assign>
+                                                            </Sequence>
+                                                          </ActivityAction>
+                                                        </Catch>
+                                                      </TryCatch.Catches>
+                                                    </TryCatch>
+                                                  </Sequence>
+                                                </ActivityAction>
+                                              </p:CVScope.Body>
+                                              <p:CVScope.DesignTimeCache>
+                                                <uc:CVCache CvUiElements="{x:Null}" OcrTexts="{x:Null}" DataSent="False" />
+                                              </p:CVScope.DesignTimeCache>
+                                              <p:CVScope.DesignTimeCacheContainer>
+                                                <uc:CvCacheContainer>
+                                                  <uc:CvCacheContainer.Caches>
+                                                    <scg:List x:TypeArguments="uc:CVCache" Capacity="1">
+                                                      <uc:CVCache DataSent="False" DisplayName="Main Screen" Id="b98ebd08-6e14-42e6-95b2-9024b4b77a12" InformativeScreenshot="531f7baa16c3879c1a084823b44f9e3a" LogicalPosition="524, 113" OcrText="Filter: WI7-3 Gross/Klein beachtet/ignoriert UND/ODER Kurzel ^ Name Abteilung Ubergeordnete Gruppe Gesch. Anzahl Horer Im Web sichtbar WI7-3 WI7 (3. Semester) WI7 WI7 37 Baumansicht: ja / nein 1 gefilterte aus 557" Position="524, 113" ScreenshotGuid="9aab635b-7b99-434c-8ee9-b8410e3800fe" ServerVersion="1">
+                                                        <uc:CVCache.CvAnchorRelations>
+                                                          <scg:List x:TypeArguments="uc:AnchorRelationInfo" Capacity="4">
+                                                            <uc:AnchorRelationInfo IsTargetText="False" Target="3">
+                                                              <uc:AnchorRelationInfo.Anchors>
+                                                                <x:Array Type="x:Int32">
+                                                                  <x:Int32>4</x:Int32>
+                                                                </x:Array>
+                                                              </uc:AnchorRelationInfo.Anchors>
+                                                            </uc:AnchorRelationInfo>
+                                                            <uc:AnchorRelationInfo IsTargetText="False" Target="2">
+                                                              <uc:AnchorRelationInfo.Anchors>
+                                                                <x:Array Type="x:Int32">
+                                                                  <x:Int32>2</x:Int32>
+                                                                  <x:Int32>3</x:Int32>
+                                                                </x:Array>
+                                                              </uc:AnchorRelationInfo.Anchors>
+                                                            </uc:AnchorRelationInfo>
+                                                            <uc:AnchorRelationInfo IsTargetText="False" Target="4">
+                                                              <uc:AnchorRelationInfo.Anchors>
+                                                                <x:Array Type="x:Int32">
+                                                                  <x:Int32>24</x:Int32>
+                                                                </x:Array>
+                                                              </uc:AnchorRelationInfo.Anchors>
+                                                            </uc:AnchorRelationInfo>
+                                                            <uc:AnchorRelationInfo IsTargetText="False" Target="0">
+                                                              <uc:AnchorRelationInfo.Anchors>
+                                                                <x:Array Type="x:Int32">
+                                                                  <x:Int32>0</x:Int32>
+                                                                </x:Array>
+                                                              </uc:AnchorRelationInfo.Anchors>
+                                                            </uc:AnchorRelationInfo>
+                                                          </scg:List>
+                                                        </uc:CVCache.CvAnchorRelations>
+                                                        <uc:CVCache.CvTables>
+                                                          <x:Array Type="uc:CvTableInfo">
+                                                            <uc:CvTableInfo>
+                                                              <uc:CvTableInfo.Columns>
+                                                                <x:Array Type="x:Int32">
+                                                                  <x:Int32>3</x:Int32>
+                                                                  <x:Int32>125</x:Int32>
+                                                                  <x:Int32>247</x:Int32>
+                                                                  <x:Int32>370</x:Int32>
+                                                                  <x:Int32>545</x:Int32>
+                                                                  <x:Int32>706</x:Int32>
+                                                                  <x:Int32>850</x:Int32>
+                                                                </x:Array>
+                                                              </uc:CvTableInfo.Columns>
+                                                              <uc:CvTableInfo.Rows>
+                                                                <x:Array Type="x:Int32">
+                                                                  <x:Int32>30</x:Int32>
+                                                                  <x:Int32>55</x:Int32>
+                                                                  <x:Int32>75</x:Int32>
+                                                                </x:Array>
+                                                              </uc:CvTableInfo.Rows>
+                                                            </uc:CvTableInfo>
+                                                          </x:Array>
+                                                        </uc:CVCache.CvTables>
+                                                        <uc:CVCache.CvUiElements>
+                                                          <scg:List x:TypeArguments="uc:CvElementInfo" Capacity="32">
+                                                            <uc:CvElementInfo Category="InputBox" Region="36, 4, 562, 25" />
+                                                            <uc:CvElementInfo Category="CheckBox" Region="772, 58, 16, 16" />
+                                                            <uc:CvElementInfo Category="CheckBox" Region="603, 8, 17, 17" />
+                                                            <uc:CvElementInfo Category="CheckBox" Region="786, 8, 17, 17" />
+                                                            <uc:CvElementInfo Category="CheckBox" Region="81, 377, 18, 17" />
+                                                            <uc:CvElementInfo Category="Icon" Region="851, 36, 14, 16" />
+                                                            <uc:CvElementInfo Category="ArrowButton" Region="77, 39, 15, 12" />
+                                                            <uc:CvElementInfo Category="Cell" Region="545, 55, 161, 20" />
+                                                            <uc:CvElementInfo Category="Cell" Region="247, 55, 123, 20" />
+                                                            <uc:CvElementInfo Category="Cell" Region="706, 55, 144, 20" />
+                                                            <uc:CvElementInfo Category="Cell" Region="3, 30, 122, 25" />
+                                                            <uc:CvElementInfo Category="Cell" Region="370, 55, 175, 20" />
+                                                            <uc:CvElementInfo Category="Cell" Region="125, 30, 122, 25" />
+                                                            <uc:CvElementInfo Category="Cell" Region="545, 30, 161, 25" />
+                                                            <uc:CvElementInfo Category="Cell" Region="706, 30, 144, 25" />
+                                                            <uc:CvElementInfo Category="Cell" Region="247, 30, 123, 25" />
+                                                            <uc:CvElementInfo Category="Cell" Region="125, 55, 122, 20" />
+                                                            <uc:CvElementInfo Category="Cell" Region="3, 55, 122, 20" />
+                                                            <uc:CvElementInfo Category="Cell" Region="370, 30, 175, 25" />
+                                                            <uc:CvElementInfo Category="Icon" Confidence="Runtime" Region="80, 376, 20, 19" />
+                                                            <uc:CvElementInfo Category="ArrowButton" Confidence="Runtime" Region="851, 37, 14, 15" />
+                                                            <uc:CvElementInfo Category="Icon" Confidence="Runtime" Region="78, 41, 15, 11" />
+                                                            <uc:CvElementInfo Category="RadioButton" Confidence="Runtime" Region="78, 41, 14, 10" />
+                                                            <uc:CvElementInfo Category="Button" Confidence="Runtime" Region="850, 34, 17, 21" />
+                                                            <uc:CvElementInfo Category="Icon" Confidence="Runtime" Region="785, 7, 19, 18" />
+                                                            <uc:CvElementInfo Category="Cell" Confidence="Runtime" Region="262, 254, 116, 114" />
+                                                            <uc:CvElementInfo Category="Cell" Confidence="Runtime" Region="0, 332, 853, 36" />
+                                                          </scg:List>
+                                                        </uc:CVCache.CvUiElements>
+                                                        <uc:CVCache.OcrTexts>
+                                                          <scg:List x:TypeArguments="uc:OcrTextInfo" Capacity="32">
+                                                            <uc:OcrTextInfo Region="4, 10, 30, 12" Text="Filter:" />
+                                                            <uc:OcrTextInfo Region="43, 10, 34, 12" Text="WI7-3" />
+                                                            <uc:OcrTextInfo Region="621, 10, 58, 12" Text="Gross/Klein" />
+                                                            <uc:OcrTextInfo Region="681, 10, 99, 15" Text="beachtet/ignoriert" />
+                                                            <uc:OcrTextInfo Region="803, 10, 63, 13" Text="UND/ODER" />
+                                                            <uc:OcrTextInfo Region="43, 39, 33, 12" Text="Kurzel" />
+                                                            <uc:OcrTextInfo Region="79, 41, 12, 8" Text="^" />
+                                                            <uc:OcrTextInfo Region="172, 39, 34, 12" Text="Name" />
+                                                            <uc:OcrTextInfo Region="283, 39, 54, 15" Text="Abteilung" />
+                                                            <uc:OcrTextInfo Region="399, 38, 81, 16" Text="Ubergeordnete" />
+                                                            <uc:OcrTextInfo Region="481, 39, 41, 15" Text="Gruppe" />
+                                                            <uc:OcrTextInfo Region="574, 39, 37, 12" Text="Gesch." />
+                                                            <uc:OcrTextInfo Region="611, 39, 38, 12" Text="Anzahl" />
+                                                            <uc:OcrTextInfo Region="651, 39, 32, 12" Text="Horer" />
+                                                            <uc:OcrTextInfo Region="735, 39, 15, 12" Text="Im" />
+                                                            <uc:OcrTextInfo Region="751, 39, 26, 12" Text="Web" />
+                                                            <uc:OcrTextInfo Region="778, 39, 45, 12" Text="sichtbar" />
+                                                            <uc:OcrTextInfo Region="7, 60, 33, 12" Text="WI7-3" />
+                                                            <uc:OcrTextInfo Region="130, 60, 22, 12" Text="WI7" />
+                                                            <uc:OcrTextInfo Region="153, 60, 14, 14" Text="(3." />
+                                                            <uc:OcrTextInfo Region="169, 60, 53, 14" Text="Semester)" />
+                                                            <uc:OcrTextInfo Region="252, 60, 22, 12" Text="WI7" />
+                                                            <uc:OcrTextInfo Region="374, 60, 23, 12" Text="WI7" />
+                                                            <uc:OcrTextInfo Region="692, 60, 14, 12" Text="37" />
+                                                            <uc:OcrTextInfo Region="4, 380, 73, 12" Text="Baumansicht:" />
+                                                            <uc:OcrTextInfo Region="98, 381, 13, 14" Text="ja" />
+                                                            <uc:OcrTextInfo Region="112, 380, 8, 13" Text="/" />
+                                                            <uc:OcrTextInfo Region="121, 380, 25, 12" Text="nein" />
+                                                            <uc:OcrTextInfo Region="768, 380, 6, 12" Text="1" />
+                                                            <uc:OcrTextInfo Region="777, 380, 49, 15" Text="gefilterte" />
+                                                            <uc:OcrTextInfo Region="827, 383, 20, 9" Text="aus" />
+                                                            <uc:OcrTextInfo Region="848, 380, 20, 12" Text="557" />
+                                                          </scg:List>
+                                                        </uc:CVCache.OcrTexts>
+                                                      </uc:CVCache>
+                                                    </scg:List>
+                                                  </uc:CvCacheContainer.Caches>
+                                                </uc:CvCacheContainer>
+                                              </p:CVScope.DesignTimeCacheContainer>
+                                              <p:CVScope.OCREngine>
+                                                <ActivityFunc x:TypeArguments="sd1:Image, scg:IEnumerable(scg:KeyValuePair(sd2:Rectangle, x:String))">
+                                                  <ActivityFunc.Argument>
+                                                    <DelegateInArgument x:TypeArguments="sd1:Image" Name="Image" />
+                                                  </ActivityFunc.Argument>
+                                                  <p1:UiPathScreenOCR ApiKey="{x:Null}" Endpoint="{x:Null}" Output="{x:Null}" PredictionId="{x:Null}" Text="{x:Null}" UseLocalServer="{x:Null}" ComputeSkewAngle="False" ExtractWords="True" sap:VirtualizedContainerService.HintSize="200,25.333333333333332" sap2010:WorkflowViewState.IdRef="UiPathScreenOCR_1" Image="[Image]" Language="en" Profile="Screen" Scale="1" Timeout="100000" />
+                                                </ActivityFunc>
+                                              </p:CVScope.OCREngine>
+                                              <p:CVScope.Target>
+                                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="93e4cafe-e6da-4c90-bfee-b119c468dc1e" InformativeScreenshot="e982acd89bd4faea164dc1e0e88a9913" Selector="&lt;wnd app='java*.exe' cls='SunAwtDialog' title='Planungsgruppe und Lehrveranstaltung auswählen ' /&gt;&lt;java role='page tab list' /&gt;&lt;java name='Planungsgruppen' role='page tab' /&gt;&lt;java cls='JPanel' role='panel' /&gt;" WaitForReady="INTERACTIVE">
+                                                  <ui:Target.TimeoutMS>
+                                                    <InArgument x:TypeArguments="x:Int32" />
+                                                  </ui:Target.TimeoutMS>
+                                                </ui:Target>
+                                              </p:CVScope.Target>
+                                              <p:CVScope.UseLocalServer>
+                                                <InArgument x:TypeArguments="x:Boolean" />
+                                              </p:CVScope.UseLocalServer>
+                                            </p:CVScope>
+                                            <If Condition="[FachError=True]" sap:VirtualizedContainerService.HintSize="572,2427.3333333333335" sap2010:WorkflowViewState.IdRef="If_2">
                                               <If.Then>
                                                 <Sequence sap:VirtualizedContainerService.HintSize="476,370.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_39">
                                                   <sap:WorkflowViewStateService.ViewState>
@@ -607,19 +640,33 @@
                                                 </Sequence>
                                               </If.Then>
                                               <If.Else>
-                                                <Sequence sap:VirtualizedContainerService.HintSize="538,1562" sap2010:WorkflowViewState.IdRef="Sequence_40">
+                                                <Sequence sap:VirtualizedContainerService.HintSize="538,1873.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_40">
+                                                  <Sequence.Variables>
+                                                    <Variable x:TypeArguments="x:String" Name="RaumNr">
+                                                      <Variable.Default>
+                                                        <VisualBasicValue x:TypeArguments="x:String" ExpressionText="CurrentRow.item(&quot;Raum&quot;).ToString" />
+                                                      </Variable.Default>
+                                                    </Variable>
+                                                  </Sequence.Variables>
                                                   <sap:WorkflowViewStateService.ViewState>
                                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                     </scg:Dictionary>
                                                   </sap:WorkflowViewStateService.ViewState>
-                                                  <Sequence sap:VirtualizedContainerService.HintSize="496,1474.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_41">
+                                                  <Sequence sap:VirtualizedContainerService.HintSize="496,1786" sap2010:WorkflowViewState.IdRef="Sequence_41">
+                                                    <Sequence.Variables>
+                                                      <Variable x:TypeArguments="x:String" Name="HIS">
+                                                        <Variable.Default>
+                                                          <VisualBasicValue x:TypeArguments="x:String" ExpressionText="CurrentRow.item(&quot;HIS&quot;).ToString" />
+                                                        </Variable.Default>
+                                                      </Variable>
+                                                    </Sequence.Variables>
                                                     <sap:WorkflowViewStateService.ViewState>
                                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                       </scg:Dictionary>
                                                     </sap:WorkflowViewStateService.ViewState>
-                                                    <p:CVScope ContinueOnError="{x:Null}" DelayBefore="{x:Null}" ScopeId="{x:Null}" Server="{x:Null}" CvMethod="ElementDetection, OCR" DesignTimeCacheId="e0e25832-c544-4ba9-ae12-8585e5877347" DisplayName="CV Screen Scope 'panel'" sap:VirtualizedContainerService.HintSize="434,569.3333333333334" sap2010:WorkflowViewState.IdRef="CVScope_1" SendOnPremData="False" Version="V6">
+                                                    <p:CVScope ContinueOnError="{x:Null}" DelayBefore="{x:Null}" ScopeId="{x:Null}" Server="{x:Null}" CvMethod="ElementDetection, OCR" DesignTimeCacheId="e0e25832-c544-4ba9-ae12-8585e5877347" DisplayName="CV Screen Scope 'panel'" sap:VirtualizedContainerService.HintSize="434,529.3333333333334" sap2010:WorkflowViewState.IdRef="CVScope_1" SendOnPremData="False" Version="V6">
                                                       <p:CVScope.Body>
                                                         <ActivityAction x:TypeArguments="x:Object">
                                                           <ActivityAction.Argument>
@@ -1147,26 +1194,40 @@
                                                         <InArgument x:TypeArguments="x:Boolean" />
                                                       </p:CVScope.UseLocalServer>
                                                     </p:CVScope>
-                                                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Einträge aus'" sap:VirtualizedContainerService.HintSize="434,158.66666666666666" sap2010:WorkflowViewState.IdRef="NClick_36" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ad08872b-b465-48f0-a3f0-10ce604fc639" Version="V3">
+                                                    <If Condition="[BaumstrukturPressed=True]" sap:VirtualizedContainerService.HintSize="434,510" sap2010:WorkflowViewState.IdRef="If_4">
+                                                      <If.Then>
+                                                        <Sequence sap:VirtualizedContainerService.HintSize="300,80.66666666666667" sap2010:WorkflowViewState.IdRef="Sequence_44">
+                                                          <sap:WorkflowViewStateService.ViewState>
+                                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                            </scg:Dictionary>
+                                                          </sap:WorkflowViewStateService.ViewState>
+                                                        </Sequence>
+                                                      </If.Then>
+                                                      <If.Else>
+                                                        <Sequence sap:VirtualizedContainerService.HintSize="376,246" sap2010:WorkflowViewState.IdRef="Sequence_45">
+                                                          <sap:WorkflowViewStateService.ViewState>
+                                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                            </scg:Dictionary>
+                                                          </sap:WorkflowViewStateService.ViewState>
+                                                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Einträge aus'" sap:VirtualizedContainerService.HintSize="334,158.66666666666666" sap2010:WorkflowViewState.IdRef="NClick_36" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ad08872b-b465-48f0-a3f0-10ce604fc639" Version="V3">
+                                                            <uix:NClick.Target>
+                                                              <uix:TargetAnchorable DesignTimeRectangle="94, 885, 66, 20" DesignTimeScaleFactor="1" ElementType="CheckBox" FriendlyName="'ja / nein'" FullSelectorArgument="&lt;java hasTableAncestor='0' idx='2' role='page tab list' /&gt;&lt;java name='Lehrveranstaltungen' role='page tab' /&gt;&lt;java hasTableAncestor='0' name='ja / nein' role='check box' /&gt;" FuzzySelectorArgument="&lt;java hasTableAncestor='0' role='page tab list' /&gt;&lt;java name='Lehrveranstaltungen' role='page tab' /&gt;&lt;java hasTableAncestor='0' name='ja / nein' role='check box' check:fulltext='ja / nein' /&gt;" Guid="057f88f3-ac8d-46e0-a7c9-7c180b60d4a2" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEYAAAAYCAYAAABHqosDAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJGSURBVFhH7ZfNattAEMf1VHqMQCCXQijRKa/QY2869J5baUri9lBRCOTSUyH04xAa0SSnhJiekrjFNiubmpik08xoN1prZ3dlWw510cAfSzs7q52fZscoyLIMGplqwFjUgLGoAWNRA8YiFsxhuw8bbzuw8vKqkp62ruHLed9YZ5nFgkEo57/GUNXa3THB4dZaVrFgsAp8Nry5g91vA/pFwxhurWXVzGC2Pgua9/owo3sOjEhjCIMQ4lQYPp9EEkEQJaxvGs26h5nAfP0xgtVXV7D57udCKkaIFOJwNqB1aWowvd93sN7qEBi9D9UKBt9yDdUyj5xgyn0E7fmHHvmT70M5khsHRogEIq2MkyiAIJByJJ7GIUSJWS0P68X3x0yuE8Zp4adjo54RQSLExB588bqcYN4cDega+wna3umQ7p/td+G2YEVWBYxvvPDlSfG+Air1IQaA8mHS+rgrXj1DyQlmNP5DfQTv3x8PYW37Gp7sdOBS3JJftypg8o2oN2oBIxMqj5OvvJ6e9ES1SN0DMMHw8fpzUN4ec3J5Q/dKBxcj6Zk0H5h84+rt8s3V13Rdienr22Jc8XoMqlLzVX/NLz725YhpXjBYLWEMKYKhJMwN0bij97gSy6/NnmHO4eP1GFQlMHiksNmKUamxaOYFQ9UgSzyMIGIqw9Z0lXyJGcep7qNU1ydB/mC+uZVFc2VFcf7HFgsGPyIxUayCKsK5n87Mj8iHN+dROe5fEAtmXhUlzZfpMmghYP4HNWAsasBY1IBhlcFfybnUTippj1kAAAAASUVORK5CYII=" InformativeScreenshot="79549c441581e2765712263ca53806a4.png" ScopeSelectorArgument="&lt;wnd app='java*.exe' cls='SunAwtDialog' title='Planungsgruppe und Lehrveranstaltung auswählen ' /&gt;" SearchSteps="FuzzySelector, Image" Version="V2" Visibility="Interactive">
+                                                                <uix:TargetAnchorable.Anchors>
+                                                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                                    <uix:Target DesignTimeRectangle="165, 887, 297, 16" ElementType="Text" FriendlyName="'Einträge aus'" FullSelectorArgument="&lt;java hasTableAncestor='0' idx='2' role='page tab list' /&gt;&lt;java name='Lehrveranstaltungen' role='page tab' /&gt;&lt;java hasTableAncestor='0' name='Einträge aus übergeordneten Abteilungen unterdrücken:' role='label' /&gt;" FuzzySelectorArgument="&lt;java hasTableAncestor='0' role='page tab list' /&gt;&lt;java name='Lehrveranstaltungen' role='page tab' /&gt;&lt;java hasTableAncestor='0' name='Einträge aus übergeordneten Abteilungen unterdrücken:' role='label' check:text='Einträge aus übergeordneten Abteilungen unterdrücken:' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAS0AAAAUCAYAAADY4Ws/AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAQxSURBVHhe7VnpuawgDLUq+7Eai3n2Mq1cpwEfWzAECMtsMpMf57sKWU4SCDh3ut/vh0AgEIwCaVoCgWAoSNMSCARDQZqWQCAYCtK0BALBUJCmJRAIhoJvWvu+Hcs0HRPCsu3HfluPeZqP9bZHyr8Im6ex8nFlztui1tqyBWPP4IvX7Yg1eyeenZ9X55s0rX5HNfr7thzTvB43s6CWY9uvu4j2/Xass23cemPN682Nj7cB3lHbHpjGMi/HMoe2OX89XEasWQ2eFVfJTm4v5PDqfL+1aX0DRozzqrW9rbPZAPAXxjl/PVxGrFkNnhXXs/Pz6nwXmxYe98+rujG5T0i92Ow4+rRU132QXZZZjdlblfkUQDLeh7l52fF5XQMeeA7sgB4gZZfGE8ZhTw7Q0ScItsfruucNc0YbLsEXdHAuemIOx0/eLfY9f1LDHP9/f1oe3hUgvwmOJdsYtgaOk7alb+AQZybHdhx8KtRwwTGT58BXY25qalay5+12cLLj4E+hIhct6wNkbf3T3Ox7vJewjOfZuW7815mS0+8azG9aueKrOSCgDSbksL1SkUAONqA+dadgDtlU/lL2ALFdysfNad4uhhRYXfOscuASaYuQ8en4go4vhHtviZnqxH5b7FfWMPCNxlm5tG39jmH4Qw5RAzNzYKcmxyyXWIfTt89cbvpqVspHpI/eORucHshiHvr5lOPXRyib42YbFsgCThk779cstVWRJ/PMN63TYGo8clo5520ZMoqcgdNDizeyaRYryDu4wDCSdjmuzi5NNoDVJXMa+qanC5PjG9nriNmOhwve+22xT2VrfKfs18iRdwy9UXD+zcZxtU3psbEWuOSeqS92jsvpg/lg/bbMtdSvY31EssZfvgnPpKE9mifA25oWDrDq0wDmEknByNot8NGwJ8x5EgA43XjuPE1yfCOdjphT469pWpX8a+TIeyhHFq+BtRnbQTnu4JJ75uSiOS6nT8lHxm/LXEv9Xt60VMNSexEOIjP+YJ4A72ta6JpnyWO9s3FwV9UU8nbJ1dTcxk4+AHria3C6lBMuRI5vlIuOmKlO7LfFPpWt8R3br5M7370cqpkfixoTl+M2LuFzqbbUNp7rqVnaXij3CCc6V1+/uvXBcbNznD99sPo6NvFzPhJrhflNyxoPDDDG9bsmaHSTVz4boJkn/+a2iQCf3A+cCqhzt9idFjUHceDxROdndV1c9odKOw8FNXoJvjQX1H5tzOE4km+wH9eFvGd849rm5Eq2AXghY5jNg+zkctzKJeJVqG2Of2vNSvYwejn11IX649YHlcXczJyRd3MKuk7Yht+fwcXilC/lyfjONa2rwAaVbiTfil+MeXRIzT6HyzUtc3KQzvrt+MWYR4fU7HP4eNMKPu8Mvv/0+sWYR4fU7Dq43E1LIBAIOEjTEggEA+F+/AesDgEUEougPgAAAABJRU5ErkJggg==" SearchSteps="Selector, FuzzySelector, Image" />
+                                                                  </scg:List>
+                                                                </uix:TargetAnchorable.Anchors>
+                                                              </uix:TargetAnchorable>
+                                                            </uix:NClick.Target>
+                                                          </uix:NClick>
+                                                        </Sequence>
+                                                      </If.Else>
+                                                    </If>
+                                                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '123469a'" sap:VirtualizedContainerService.HintSize="434,158.66666666666666" sap2010:WorkflowViewState.IdRef="NClick_38" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ad08872b-b465-48f0-a3f0-10ce604fc639" Version="V3">
                                                       <uix:NClick.Target>
-                                                        <uix:TargetAnchorable DesignTimeRectangle="94, 885, 66, 20" DesignTimeScaleFactor="1" ElementType="CheckBox" FriendlyName="'ja / nein'" FullSelectorArgument="&lt;java hasTableAncestor='0' idx='2' role='page tab list' /&gt;&lt;java name='Lehrveranstaltungen' role='page tab' /&gt;&lt;java hasTableAncestor='0' name='ja / nein' role='check box' /&gt;" FuzzySelectorArgument="&lt;java hasTableAncestor='0' role='page tab list' /&gt;&lt;java name='Lehrveranstaltungen' role='page tab' /&gt;&lt;java hasTableAncestor='0' name='ja / nein' role='check box' check:fulltext='ja / nein' /&gt;" Guid="057f88f3-ac8d-46e0-a7c9-7c180b60d4a2" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEYAAAAYCAYAAABHqosDAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJGSURBVFhH7ZfNattAEMf1VHqMQCCXQijRKa/QY2869J5baUri9lBRCOTSUyH04xAa0SSnhJiekrjFNiubmpik08xoN1prZ3dlWw510cAfSzs7q52fZscoyLIMGplqwFjUgLGoAWNRA8YiFsxhuw8bbzuw8vKqkp62ruHLed9YZ5nFgkEo57/GUNXa3THB4dZaVrFgsAp8Nry5g91vA/pFwxhurWXVzGC2Pgua9/owo3sOjEhjCIMQ4lQYPp9EEkEQJaxvGs26h5nAfP0xgtVXV7D57udCKkaIFOJwNqB1aWowvd93sN7qEBi9D9UKBt9yDdUyj5xgyn0E7fmHHvmT70M5khsHRogEIq2MkyiAIJByJJ7GIUSJWS0P68X3x0yuE8Zp4adjo54RQSLExB588bqcYN4cDega+wna3umQ7p/td+G2YEVWBYxvvPDlSfG+Air1IQaA8mHS+rgrXj1DyQlmNP5DfQTv3x8PYW37Gp7sdOBS3JJftypg8o2oN2oBIxMqj5OvvJ6e9ES1SN0DMMHw8fpzUN4ec3J5Q/dKBxcj6Zk0H5h84+rt8s3V13Rdienr22Jc8XoMqlLzVX/NLz725YhpXjBYLWEMKYKhJMwN0bij97gSy6/NnmHO4eP1GFQlMHiksNmKUamxaOYFQ9UgSzyMIGIqw9Z0lXyJGcep7qNU1ydB/mC+uZVFc2VFcf7HFgsGPyIxUayCKsK5n87Mj8iHN+dROe5fEAtmXhUlzZfpMmghYP4HNWAsasBY1IBhlcFfybnUTippj1kAAAAASUVORK5CYII=" InformativeScreenshot="79549c441581e2765712263ca53806a4.png" ScopeSelectorArgument="&lt;wnd app='java*.exe' cls='SunAwtDialog' title='Planungsgruppe und Lehrveranstaltung auswählen ' /&gt;" SearchSteps="FuzzySelector, Image" Version="V2" Visibility="Interactive">
-                                                          <uix:TargetAnchorable.Anchors>
-                                                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                                                              <uix:Target DesignTimeRectangle="165, 887, 297, 16" ElementType="Text" FriendlyName="'Einträge aus'" FullSelectorArgument="&lt;java hasTableAncestor='0' idx='2' role='page tab list' /&gt;&lt;java name='Lehrveranstaltungen' role='page tab' /&gt;&lt;java hasTableAncestor='0' name='Einträge aus übergeordneten Abteilungen unterdrücken:' role='label' /&gt;" FuzzySelectorArgument="&lt;java hasTableAncestor='0' role='page tab list' /&gt;&lt;java name='Lehrveranstaltungen' role='page tab' /&gt;&lt;java hasTableAncestor='0' name='Einträge aus übergeordneten Abteilungen unterdrücken:' role='label' check:text='Einträge aus übergeordneten Abteilungen unterdrücken:' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAS0AAAAUCAYAAADY4Ws/AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAQxSURBVHhe7VnpuawgDLUq+7Eai3n2Mq1cpwEfWzAECMtsMpMf57sKWU4SCDh3ut/vh0AgEIwCaVoCgWAoSNMSCARDQZqWQCAYCtK0BALBUJCmJRAIhoJvWvu+Hcs0HRPCsu3HfluPeZqP9bZHyr8Im6ex8nFlztui1tqyBWPP4IvX7Yg1eyeenZ9X55s0rX5HNfr7thzTvB43s6CWY9uvu4j2/Xass23cemPN682Nj7cB3lHbHpjGMi/HMoe2OX89XEasWQ2eFVfJTm4v5PDqfL+1aX0DRozzqrW9rbPZAPAXxjl/PVxGrFkNnhXXs/Pz6nwXmxYe98+rujG5T0i92Ow4+rRU132QXZZZjdlblfkUQDLeh7l52fF5XQMeeA7sgB4gZZfGE8ZhTw7Q0ScItsfruucNc0YbLsEXdHAuemIOx0/eLfY9f1LDHP9/f1oe3hUgvwmOJdsYtgaOk7alb+AQZybHdhx8KtRwwTGT58BXY25qalay5+12cLLj4E+hIhct6wNkbf3T3Ox7vJewjOfZuW7815mS0+8azG9aueKrOSCgDSbksL1SkUAONqA+dadgDtlU/lL2ALFdysfNad4uhhRYXfOscuASaYuQ8en4go4vhHtviZnqxH5b7FfWMPCNxlm5tG39jmH4Qw5RAzNzYKcmxyyXWIfTt89cbvpqVspHpI/eORucHshiHvr5lOPXRyib42YbFsgCThk779cstVWRJ/PMN63TYGo8clo5520ZMoqcgdNDizeyaRYryDu4wDCSdjmuzi5NNoDVJXMa+qanC5PjG9nriNmOhwve+22xT2VrfKfs18iRdwy9UXD+zcZxtU3psbEWuOSeqS92jsvpg/lg/bbMtdSvY31EssZfvgnPpKE9mifA25oWDrDq0wDmEknByNot8NGwJ8x5EgA43XjuPE1yfCOdjphT469pWpX8a+TIeyhHFq+BtRnbQTnu4JJ75uSiOS6nT8lHxm/LXEv9Xt60VMNSexEOIjP+YJ4A72ta6JpnyWO9s3FwV9UU8nbJ1dTcxk4+AHria3C6lBMuRI5vlIuOmKlO7LfFPpWt8R3br5M7370cqpkfixoTl+M2LuFzqbbUNp7rqVnaXij3CCc6V1+/uvXBcbNznD99sPo6NvFzPhJrhflNyxoPDDDG9bsmaHSTVz4boJkn/+a2iQCf3A+cCqhzt9idFjUHceDxROdndV1c9odKOw8FNXoJvjQX1H5tzOE4km+wH9eFvGd849rm5Eq2AXghY5jNg+zkctzKJeJVqG2Of2vNSvYwejn11IX649YHlcXczJyRd3MKuk7Yht+fwcXilC/lyfjONa2rwAaVbiTfil+MeXRIzT6HyzUtc3KQzvrt+MWYR4fU7HP4eNMKPu8Mvv/0+sWYR4fU7Dq43E1LIBAIOEjTEggEA+F+/AesDgEUEougPgAAAABJRU5ErkJggg==" SearchSteps="Selector, FuzzySelector, Image" />
-                                                            </scg:List>
-                                                          </uix:TargetAnchorable.Anchors>
-                                                        </uix:TargetAnchorable>
-                                                      </uix:NClick.Target>
-                                                    </uix:NClick>
-                                                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '12345a'" sap:VirtualizedContainerService.HintSize="434,158.66666666666666" sap2010:WorkflowViewState.IdRef="NClick_38" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ad08872b-b465-48f0-a3f0-10ce604fc639" Version="V3">
-                                                      <uix:NClick.Target>
-                                                        <uix:TargetAnchorable DesignTimeRectangle="630, 571, 74, 17" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'12345a'" FullSelectorArgument="&lt;java hasTableAncestor='0' idx='2' role='page tab list' /&gt;&lt;java name='Lehrveranstaltungen' role='page tab' /&gt;&lt;java cls='MyJXTable' role='table' /&gt;&lt;java role='label' tableCol='7' tableRow='0' /&gt;" FuzzySelectorArgument="&lt;java hasTableAncestor='0' role='page tab list' /&gt;&lt;java name='Lehrveranstaltungen' role='page tab' /&gt;&lt;java cls='MyJXTable' role='table' /&gt;&lt;java role='label' check:text='12345a' /&gt;" Guid="418d0952-1237-4211-b0ad-af8db05d7307" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAE4AAAAVCAYAAADo49gpAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFeSURBVFhH7ZaNjYQgEIVpi4KOcujmKMYCLMAGZnnIz4wrWWU3F24zL5ko44Dh8wEailrXFRfVBRVWBjca9yM5btu2RFH1WoWVgrspBTcoBTeoa+CCI2MchdyEgjMxt4f1S84u5G3LO94ha/GWjPWxkrVz/fEdM+sFuAzCOXJ8UosnXxshPrO0swsUSj7W2CcQqI3jMXD4AGeAZ9c1x6UJ99wAuAUc13MfuMv5CFSAO+s7vz4ArvMMy5tbCQ5EG9cKTi7ttuTRveXFOJPobXCYIJ9w3bPEZJkrBTguvKPn3Plc+Qa43S0cmlA6UPYJA2at64I7fITUv7jua8D19jUpgPj5Rd8CgMUJvHpQiIPl2rv+WmPgjvtXUTxSW7azxHqOS7ByPcYvNTw/kYbAyX+vPdISS5NsudM9XYCTbmz17NCw8Vfo/zpOdZSCG5SCG5SCG1QFhxuN+5Ecp7orogevlUn7OV6yJAAAAABJRU5ErkJggg==" InformativeScreenshot="30caa6dd66bb9cde60f16783b5a81439.png" ScopeSelectorArgument="&lt;wnd app='java*.exe' cls='SunAwtDialog' title='Planungsgruppe und Lehrveranstaltung auswählen ' /&gt;" SearchSteps="FuzzySelector, Image" Version="V2" Visibility="Interactive">
-                                                          <uix:TargetAnchorable.Anchors>
-                                                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                                                              <uix:Target DesignTimeRectangle="630, 546, 75, 25" FriendlyName="'ID in HIS'" FullSelectorArgument="&lt;java hasTableAncestor='0' idx='2' role='page tab list' /&gt;&lt;java name='Lehrveranstaltungen' role='page tab' /&gt;&lt;java cls='JXTableHeader' hasTableAncestor='0' role='tableheader' /&gt;&lt;java name='ID in HIS' role='headercell' /&gt;" FuzzySelectorArgument="&lt;java hasTableAncestor='0' role='page tab list' /&gt;&lt;java name='Lehrveranstaltungen' role='page tab' /&gt;&lt;java cls='JXTableHeader' hasTableAncestor='0' role='tableheader' /&gt;&lt;java name='ID in HIS' role='headercell' check:text='ID in HIS' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAE8AAAAdCAYAAADrcjF6AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFhSURBVGhD7ZrhccMgDEZZi4U8DuN4AI+RATyAF1AkEjeKLLeY70J7V707EsCYiGeQ/yRt20ZR+kpaloWi9JVEzLqu8hU0oF2FvIuEPICQBxDyAEIeQMgDCHkAH5A305Qm/tzriZIqudzqlQO3QjllOrvsI/N79+h+HQ8zTyoe1d/BAHl6cdLmoCckZI2df0f3q3jqA1LCuF2AUAbLY+wCIC7Kk12XCx2GdzJeHodecqLj5rML5np5HTH/uHvzC3YuHc83qeMif1ieOt41T3m79TnOLZ484fH7MgbNHr8kz/YJeqy9z5tHaOmXuiO+pg9M4Hh5pznPLljf58xTaemXuvd7EkqGXl6D5Un77GnbBdv7fpKksXM945n57fo19nF8kfw3QJ6XhzzsgvVY295p6Zf6STxg0vuAvP9DyAMIeQAhDyDkAYQ8gJAH8CZPGlH6St158teBoA3tKuRd5OWK6A7g2gSvvCA1SQAAAABJRU5ErkJggg==" SearchSteps="Selector, FuzzySelector, Image" />
-                                                            </scg:List>
-                                                          </uix:TargetAnchorable.Anchors>
-                                                        </uix:TargetAnchorable>
+                                                        <uix:TargetAnchorable CvTextArgument="[HIS]" CvType="Text" DesignTimeRectangle="847, 598, 99, 26" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'123469a'" FullSelectorArgument="&lt;java hasTableAncestor='0' idx='2' role='page tab list' /&gt;&lt;java name='Lehrveranstaltungen' role='page tab' /&gt;&lt;java cls='MyJXTable' role='table' /&gt;&lt;java role='label' tableCol='7' tableRow='0' /&gt;" FuzzySelectorArgument="&lt;java hasTableAncestor='0' role='page tab list' /&gt;&lt;java name='Lehrveranstaltungen' role='page tab' /&gt;&lt;java cls='MyJXTable' role='table' /&gt;&lt;java role='label' check:text='123469a' /&gt;" Guid="09ce4b0d-6bea-4265-929b-e0e404907f76" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGcAAAAeCAYAAAAxbADwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAbCSURBVGhD7ZiHS1dfGMb7K4IoIpPAhkQ2aWHZNooWQYuiiMqW7bDU9qCptoN2tDcVTaNIzZBs772XqZXtNz5PXrl+fwP5UX3vL+4DB/2ec+6557zP+77Pe24pK0R+fr69fPnSPn/+XNjjI5iAB58cj0LkQArt9evX9vz5c8vLy9NvvwW3wUMpooX24sULkcNfp89vwWvwUIrwob1//15sffz4Ub/9FtwGD0Wa8+HDB3v79q19/fq1sMdHMAEPPjkehU+Oh+GT42H45HgYPjkeRonJ+fbtm3369Mnu3btnqamptmTJEjt9+nTh6A8UFBTYtWvXbMeOHTZ79my1nTt32s2bN7U2YP309HRbvXq1TZs2zWbMmGFbt261y5cv6/lAUNofO3bMtm3bZgcOHLA3b94UjvzAkydP7NSpU7Zs2TKbOXOmzZkzx/bt22d37tzRObjMsc+lS5fa9OnTbcGCBVrr0aNHKlW9jBKTg+GuX7+ug0+aNMmqVq0q47uRk5Nje/bssWHDhln9+vWtdu3a1rdvX1u/fr29evVKc7hcrVu3zvr06WMRERFq3bp1k/G4ALtBrQ+xI0eOtC5dutjQoUPt/v37GmOP7969k6MkJiZamzZtrE6dOhYZGWlTpkyxjIwMjZ87d06ktWjRwmrVqmUNGjSwXr162aFDh+zp06day6soMTlEzJAhQ2zs2LE2depUK1++vE2ePLlw9Acgh0jZv3+/omPXrl16plOnTjIywOAQhGdjuIMHD9qgQYOsZcuWIt+NZ8+eabx9+/YWFRVVjBzH8Oyla9eutmXLFjtz5oxdvXrVHj9+rHM8ePDARo0aZSNGjBD5EIZj8JtzHDlyRGt5FSUmB8/ftGmT7d2717Zv326hoaHyWDeIritXrtjDhw9lPIw0fvx4q1evnvoDwReJ8+fP25gxY6xVq1ZF5Dgp9Pjx44pSSOnZs2cxcogyUhl7mDdvnsgPTIuk2ObNm2t9J20yj0hu166drVy5Ut8TSXOkO4gm6latWqVUiC2CiRKT48bFixeV1gLJcePLly/SB4zbqFEjeTRgbYjDq8+ePSvDTJw4Ud5MH0ALiCy8vX///jJifHx8MXIYJ2XSf/ToUUURDnD79m29F3IhpGbNmjZhwgTLzc3VntCgkydPKp2iQbxz9OjRSns1atTQufifZ3gHzwQLv4wchByjJSQkWExMjNIigBhIwZurVasm4xFdpEHHUxF5dAJvRsOIVlKomxzIhvTo6GgR27hxY+lJjx49VDgQtURi69atbeDAgUphEHTp0iWtW7FiRUUJjgBBzIVgtKhfv37SL54hsoKFX0IOKZD8zvisWbNkXKfKwhh3795VxIwbN8569+5tw4cPtxUrVugrLN4KIRiO9EkagmR+u8nByNWrV5cWEZ2Mx8bGyrAUEIcPH5ZmLVy4UM8NGDBA0cA8CpZy5crpfyIMZyCNUUESxRQzISEhtmHDhqL3BQM/lRyeQ0eysrJs+fLlMggHJIoC0wO6AmF4KkVDhw4dRATVIL8xpCPya9asUR9VVlpamp6DnPDwcBUbkEkxQlojFRJBkMJ5iIj58+crVZHKqPqI5EqVKslxiCaKDghmLaKxbNmyKni4LgQWKb8TP5UciLlw4YItWrRI3ktuR7ghBjICQT/GQTdII2gE5Xnp0qWtTJkySj2VK1e2ChUqqA+DQRBpCyLq1q1rcXFxijiqQASfiEU7uENxDs5EyYyRWR+yKWyoANEyNKp79+7WuXPnIv1C5/44cjAClRMGJiVhtH9by6nuEOSmTZuquqJCY12noUfciZo0aSJdSU5OlgNgVIgiwkhJCD3piSjC+4kWN9gHc0h3pDNSKlHL+0ljkEX1hx4SpX8cOTdu3LC2bdvqDoHAUyYzF6OjQ+iNozkYhTmkIYwxePDgoqLBDQx64sSJv2gOepKSkiIjM8ZXAoghYtAxvjoQTbwXHcvOzlYkM07RQDnNftkbxHfs2FGpkHsa438cOU7pSkoKCwuzKlWqaF6zZs2USiCFhhahC6QfbvRUdGgJ7w7EP5HDXjEulRcXWG7/DRs2VDTt3r1b8yBm48aNIovigfsW96WkpCS7deuW1uAzDuegsGDv/M/Xhv8tOegIukIKcoP+xYsX64DuRorJzMzUlwEMhtcixngx3o/xKVn/7k7hRBpz3N/W2CMah4ZQ6fGNjvdQRECMcxY0iCoMckm3mzdvVslMSQ+YQwRz8Zw7d65S3dq1a4vtOVj4T+T4+D3wyfEwfHI8DJ8cD8Mnx8MQOZBCo4KhdOVy6PT5LXitoKDAvgND6Rx4OT+6ywAAAABJRU5ErkJggg==" InformativeScreenshot="aa06c852f591abb957ccd1f4e9107151.png" ScopeSelectorArgument="&lt;wnd app='java*.exe' cls='SunAwtDialog' title='Planungsgruppe und Lehrveranstaltung auswählen ' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V2" Visibility="Interactive" />
                                                       </uix:NClick.Target>
                                                     </uix:NClick>
                                                     <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'OK'" sap:VirtualizedContainerService.HintSize="434,158.66666666666666" sap2010:WorkflowViewState.IdRef="NClick_29" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ad08872b-b465-48f0-a3f0-10ce604fc639" Version="V3">
@@ -1227,7 +1288,7 @@
                                                 </uix:TargetAnchorable>
                                               </uix:NClick.Target>
                                             </uix:NClick>
-                                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'OK'" sap:VirtualizedContainerService.HintSize="496,158.66666666666666" sap2010:WorkflowViewState.IdRef="NClick_47" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ad08872b-b465-48f0-a3f0-10ce604fc639" Version="V3">
+                                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'OK'" sap:VirtualizedContainerService.HintSize="572,158.66666666666666" sap2010:WorkflowViewState.IdRef="NClick_47" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ad08872b-b465-48f0-a3f0-10ce604fc639" Version="V3">
                                               <uix:NClick.Target>
                                                 <uix:TargetAnchorable DesignTimeRectangle="258, 503, 108, 22" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'OK'" FullSelectorArgument="&lt;java hasTableAncestor='0' name='OK' role='push button' /&gt;" FuzzySelectorArgument="&lt;java hasTableAncestor='0' name='OK' role='push button' check:text='OK' /&gt;" Guid="53d866af-1696-44c8-aac8-728689faee12" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHAAAAAaCAYAAABvj9h3AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAPJSURBVGhD7ZrpTxNBGIf7vygS/WA0SkxTSaPxg6gxarxQPKmroEAplxixJohV0RaMgqVBqMZbAZVtgZBy1pZDomisFAg09SKiaNV44s+dbSvCVtRP7jT7JL+0mXnn05N3dqcdmc/ngxR6IwmkPD8Fjrzx4axzBGvPvcDy0udSRJjV5S9gtI9geOSdUCCRF2qRFPGFSBQIDHbe0LtvkBAnxA1xRDpRIDBoV0LcBD1RJ3Do01NUecug6ViDuEYFNtjmIbElBlf7ivH8gydQFf5QKbDjVSMSnEuQ3hyL864iVPRd4GN+dBqJtSuw5nYUmryWQHV4Q53AjuEGxLVEo6BLC6unEqWPTyK3K4sP+c56KpDv3AuFORK2ATawKnyhSuDQx6dg7DG8PCJqX2cSMtsToXHuQjqXDC7ZbbtRPXAdR1szsdA8B963f9hOLQxkMtnPyPXuwATBAkYmx9iQG3o5V8eIp7upEnhjwAR1wzq+84g8Ik7t2IFkezySW7cjtTUeNm7rPOBIActJ3HxlMU45DYHVIeDlCQWNSRwv0MJMFPz/oUrgHvtSmF2nYXIVIrMtASl3VJy4bUhp4dK8DY1Pavm6Z++9MN7PR2lXPpTG+fyYEL8sQTO59ZDLGE4dYUygWy8XVecFoUrgSutM3Oy/hIOdGqQ5GK4Tq/DodTfUTfFo8NbwNd9Gv8J47zgONCWgwmXGtENT+HEB40T9ChEb7LqAQD3XqXI9NyM+qBIYUxWJyr6L0LarcbA9DW8/v+HHX318yX8SeUV3jyC1diNybDtR6SrHNO0kAkNK+bUziUD/s1GEzcdDlcBNrBJl3YUoeXgC6S0q6Nqy8f6Lj58b/T6Koo7DSLKug4YTWNyZhxKHDsp8BT8v4F860EJqg2PigiqBZd0FUFUtQ3X/VWQ3qZBq24I8ewZ6hh/CePcY9ljWIpldj3RrHKrdF7HctAAF9frA6on82zPQ/8ITSvj/hSqBT3weLOKOBrpmDW71XkZW/Vak1cVBXROLFJaEyNuI2z0XoK1JQJR2NjzDkxwjBFL8W+bv3kL5FxmRPQupEkio62UxwxCBXFsSWE7imU4dcuoZ7K9T4Qy3hVZz8nKsDCI1U2G5/xcH+QnnwPEdOV4ggRwlxCSROoEEaw+LKMNsrCpfiJJ2Ha49MOFatwlFjlwsK47G3P2zYLkX/r/CEKgUSBh8PYjCRgOUJxSYvi8C07MioMxToLDWgMGXg4Gq8IdagRJ+fitQ+kNX/Ez6h650pYKehLxSIV1qEn8mvdQkhc5IAqmODz8Ae4V43t0j+r0AAAAASUVORK5CYII=" InformativeScreenshot="84c0065d1927d22c9ad5f80d2128b32f.png" ScopeSelectorArgument="&lt;wnd app='java*.exe' cls='SunAwtDialog' title='Beteiligte Dozenten mit Lehranteil auswählen' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Version="V2" Visibility="Interactive">
                                                   <uix:TargetAnchorable.Anchors>
@@ -1238,7 +1299,7 @@
                                                 </uix:TargetAnchorable>
                                               </uix:NClick.Target>
                                             </uix:NClick>
-                                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Speichern'" sap:VirtualizedContainerService.HintSize="496,158.66666666666666" sap2010:WorkflowViewState.IdRef="NClick_48" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ad08872b-b465-48f0-a3f0-10ce604fc639" Version="V3">
+                                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Speichern'" sap:VirtualizedContainerService.HintSize="572,158.66666666666666" sap2010:WorkflowViewState.IdRef="NClick_48" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ad08872b-b465-48f0-a3f0-10ce604fc639" Version="V3">
                                               <uix:NClick.Target>
                                                 <uix:TargetAnchorable CvElementArea="1669, 996, 123, 25" CvTextArea="1714, 1002, 53, 15" CvTextArgument="Speichern" CvType="Button" DesignTimeRectangle="1671, 997, 120, 22" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Speichern'" FullSelectorArgument="&lt;java hasTableAncestor='0' idx='14' role='page tab list' /&gt;&lt;java name='*Buchungen ' role='page tab' /&gt;&lt;java hasTableAncestor='0' name='Speichern' role='push button' /&gt;" FuzzySelectorArgument="&lt;java hasTableAncestor='0' role='page tab list' /&gt;&lt;java name='*Buchungen ' role='page tab' /&gt;&lt;java hasTableAncestor='0' name='Speichern' role='push button' check:text='Speichern' /&gt;" Guid="bf882813-dd4b-46bc-8ba6-36e7607300c4" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHwAAAAaCAYAAAB1szj5AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAARzSURBVGhD7Zr9T1tVGMf7vygj8wfjosQ0dWlc/EF0Mbpkzjl8mdSr4IBSGMgy1iWIVXEtGAeDZmGN2dRNAR23BUIKlNbyNtKVZZWuCzRsmmVssc3MQMWv95ze0tvbt9Gtu7PcT/IEzjnPOWnOp+e5bXMU4XAYcmyekIVvslgXHgqFEAgE4HK54HA45MiDcDqd8Pv91G2CcCLb4/FgZWUFMvnB6uoqvF4vlZ4gnJxsWXb+QaSTk54gnJQAmfyEuJVc+I2V6+hb6oZuejdKRlV40/4syseLcTbQgd//DPJZMg8CyYVP3xpF2cRLqHXsxTe+dvQETtOwXD6O8sFXsft8EcaWrHy2zP0iqfDp5RGUjG9H66wetmAvTv76FZpm62mQ/9lgD1omPobKUgj7AsvPkrkfJBN+4+51MK5iKpuIPTRTgbqpcugmPkQtFwe5aJj8CP0LP+BzZx12WJ7GUihNebcyUCgUfDDIuib4jVAqlDD6+XZSrGAy5jyaSCb8xwUztCN76Mkmsolorft9VLpKUel8D9XOUti5Un7EXQWWk/729y/i6wkTP1sElSSQzLWNOX0KyMI3zAHXy7D4jsPsa0PdZBmqftFwovejapwLx36MXhukeb/dWULnxRacnG2BuvM52pcAOd1KIx7e/svCN8xrtifx09VvcXRGhxo3w530Ply+7YV2rBQjSwM055+1v9Hp+RJHxsrQ47NgyyeP0f5EiAAFlAkGeDFWUgEi5T4uh1YG8WNALNMPozKaowBDk7Jfl2GUtI+NrmGMPYoSX/+DRzLhxX2F6A2cgX5Ki6NTNQit/kH7b929Sf8S2e0XPkP14D402j9Ar+8UtuhTCSfExESkEMimcn3R0x/3fBaJ5apEZMOF/ZE1k7+RBOvSzw8p3jBx6wrX4teIvti4NXKHZMLfYtXo9rah69Ix1I5rYJhswJ2/wnRs7d81tE9/igrbHug44R0zzehyG6BuUdHxtPCnK+4kCnxZGX4s7hTyQQcEc2hOMgnidcVzMqxLydTODZIJ7/a2QtO3E/1Xz6JhTINq+ztodh3E/PIldF74Agesr6OSfQO1thL0+8/gFfPzaB028rPT4zdyZTPpJkdObEx4BplZC9/gHIq4nRskE34tHMQL3Fctg0OHn698h/rhd1EzVALtwF5UsSSI7H04P38a+oEyFOm3Ibic4msZ9yyNbZSwDJNNFJTROBmisXWEG5+upKeSdS/rEjK1c4NkwglDV1g8YSpAk70CLCf9xIwBjcMMDg9pcIIr6f2c7EYbg0Ld47BeTPfDS2ST40totD/6QSkytj5EEJfflKU3lhOZnyxH0L7nddO1c4Okwgm2eRZFpm3YdWoHuqYMODdnxjmvGe3uJuzs2I5nDj8FqyfbX9kezib+n5BcOGHx9iLaRk1QH1Nh66ECbK0vgLpZhbZBExZvLvJZ2SALF/NICM8dsnAxSYXLFyDyk5QXIKJXnEiCTH5AXM7NzSW/4iRfYsy/SHuJUY7NEbLwTRVh/AeZrskGJ3CTxwAAAABJRU5ErkJggg==" InformativeScreenshot="74c1bfc03786ef4e6888b5f4ebc4d7b4.png" ScopeSelectorArgument="&lt;wnd app='java*.exe' cls='SunAwtFrame' title='StarPlan (Version 3.4.5.0)' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
                                                   <uix:TargetAnchorable.Anchors>
@@ -1249,7 +1310,7 @@
                                                 </uix:TargetAnchorable>
                                               </uix:NClick.Target>
                                             </uix:NClick>
-                                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Termine und Raume (0)'" sap:VirtualizedContainerService.HintSize="496,158.66666666666666" sap2010:WorkflowViewState.IdRef="NClick_49" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ad08872b-b465-48f0-a3f0-10ce604fc639" Version="V3">
+                                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Termine und Raume (0)'" sap:VirtualizedContainerService.HintSize="572,158.66666666666666" sap2010:WorkflowViewState.IdRef="NClick_49" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ad08872b-b465-48f0-a3f0-10ce604fc639" Version="V3">
                                               <uix:NClick.Target>
                                                 <uix:TargetAnchorable CvTextArgument="Termine und Raume (0)" CvType="Text" DesignTimeRectangle="630, 713, 126, 14" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Termine und Raume (0)'" Guid="abc1b94a-0256-4021-9297-f496906655c6" InformativeScreenshot="87abfabe051f51561dac6c560825ba07.png" ScopeSelectorArgument="&lt;wnd app='java*.exe' cls='SunAwtFrame' title='StarPlan (Version 3.4.5.0)' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive">
                                                   <uix:TargetAnchorable.Anchors>
@@ -1260,7 +1321,7 @@
                                                 </uix:TargetAnchorable>
                                               </uix:NClick.Target>
                                             </uix:NClick>
-                                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Hinzufügen…'" sap:VirtualizedContainerService.HintSize="496,158.66666666666666" sap2010:WorkflowViewState.IdRef="NClick_50" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ad08872b-b465-48f0-a3f0-10ce604fc639" Version="V3">
+                                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Hinzufügen…'" sap:VirtualizedContainerService.HintSize="572,158.66666666666666" sap2010:WorkflowViewState.IdRef="NClick_50" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ad08872b-b465-48f0-a3f0-10ce604fc639" Version="V3">
                                               <uix:NClick.Target>
                                                 <uix:TargetAnchorable CvElementArea="1411, 964, 123, 24" CvTextArea="1446, 970, 72, 15" CvTextArgument="Hinzufugen..." CvType="Button" DesignTimeRectangle="1412, 965, 121, 22" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Hinzufügen…'" FullSelectorArgument="&lt;java hasTableAncestor='0' idx='14' role='page tab list' /&gt;&lt;java name='  Buchungen ' role='page tab' /&gt;&lt;java hasTableAncestor='0' idx='7' role='page tab list' /&gt;&lt;java hasTableAncestor='0' name='Termine und Räume (0)' role='page tab' /&gt;&lt;java hasTableAncestor='0' name='Hinzufügen…' role='push button' /&gt;" FuzzySelectorArgument="&lt;java hasTableAncestor='0' role='page tab list' /&gt;&lt;java name='  Buchungen ' role='page tab' /&gt;&lt;java hasTableAncestor='0' role='page tab list' /&gt;&lt;java hasTableAncestor='0' name='Termine und Räume (0)' role='page tab' /&gt;&lt;java hasTableAncestor='0' name='Hinzufügen…' role='push button' check:text='Hinzufügen…' /&gt;" Guid="53b91aa5-a94d-43b4-9e3d-86a0f47e2acf" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAH0AAAAaCAYAAACacVPHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAR3SURBVGhD7Zr9T1NXGMfvP7VlzbYsuplsyZYsMUw2zF4yVhxsqHtR6qhMHEwKLYnagvEl7IVuK2TNlJYWsUptRUYRbIvKtVWm84X4srVLFvjpu3tuz+3L6b2tWTio7f0kT3rPeZ5zevN873nObXOEdDoN3arLdNGr0LKip1IpJBIJhMNhBINB3SrEQqEQRFGU9S0SnQg+NzeH5eVl6FQOKysriEajsvBFopMVrgtemRDhyYovEp2UAp3KhejLVfS//r2PcNIP+5l2dI5uR7unGRa/CWOXfsO9f5ZolM5awlX0haWLOHC6DT9eOIjp22cRvzeLC0tT8CXdaPN/ipZft2BmcZJG66wV3EQngvec3IGTCTcW0wmc+tOLwauHMbDggPv6IMJ3z8ASNMH4fS1+vxamo3TWAi6ik5JOVvio6EIidQVHr+zHgZl9sEW+gSPeDXvcAlt0L0YX3TD7m9DwQx3upm7T0SxeGAUDbCJtZsnrF20wqMasAl4jBEGAYLCBx/SPAy6ihxI+9E124PLDqLSy7TgYs6DrfBv1Ah0zJrSebcLuya3wXB/GpmMb8NPUd9TL8giic4N8hwCjlzZlRNgMmT6vUYCB7w1wgYvo9tPt8CaHpTLuRM/0HnROtcJ0qpl6gcbhOuwcfx+fj23GoYvd2B/+Gh8cq6VelsctOu/vWHu4iL5XekMP3PCib75bEnwX7S1mm+9t7J74GK74UbzW+xLtZXkU0VWubbQsS6asRtFmyPbJJi9hdv5M27pAPnOxmTnUY7NteZtR4m2aPkEwSiMJdLzKvfKEi+htxxtxIvkLLLNm7Il8SXuLIaKbAw0Yih/BKz3P016WwuQXmpLU/OTTeKUmy3uykmQFEsMkPptrdi4tH4GNzW0FmQdMYx7pnnIPUbl7XX24iL7PtxP9EQscsS7sOteEbRMf4qOhGurNiE3sM38d+iIdsAa+Qo3jDeplYROtwCZcI8Eq48lerOS5dHy5ufLaZCUXvOwxvuyDSq1Elcm1+cBFdN+8G1uGNmIk6YJpoh7bA+/Je7gCEbzZU4svRjdjRHTi5d7ncHiij3pZtBKR3691TWDaZDXlFJcoFV9mrvx2WdHVVnC5+fnARXTyT9uO4Qbp51gjjl/9OfvSRsTe6iFGBK/DiYVBfOJ6R9rP1+Pmwxt0NItWIvL7ta4JrI9Nfu5tXEYusVpzlYstVd7V9mt2/rx2/oOidf0/4SI6IbJ4DvUDNWgZqYdHEr4/8i3M40a0jtWjf7oTI5LgTa5avNj5DMbn/XSUGmxiFPL7ta4JuTYp6wUlVlmZsni0z2gsMZeEZmyhr/SLHBlLZNO+16dSdMLUtZAk/Ca8eWgdeoNmOOcccM460BVowXrrs3jVuq6M4E8xqyAOL7iKTrjz9y04zw/g3SNvyT/LNlhfwEb769Ie3o+bD/6gUZWHXFWe0H/xuItePWT2+2z5fkJXOUFVdP0QReWieYhCOS5FAnQqB6JnLBZTPy6lH4ysTCt5MFK36jFd9KqzNP4DGknaD4ZC8VIAAAAASUVORK5CYII=" InformativeScreenshot="e2d1d1db655eab6ebc787e4a9514cb4e.png" ScopeSelectorArgument="&lt;wnd app='java*.exe' cls='SunAwtFrame' title='StarPlan (Version 3.4.5.0)' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
                                                   <uix:TargetAnchorable.Anchors>
@@ -1271,7 +1332,7 @@
                                                 </uix:TargetAnchorable>
                                               </uix:NClick.Target>
                                             </uix:NClick>
-                                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ContinueOnError="False" DelayAfter="0.5" DisplayName="Type Into 'Von (Tag)'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="496,220" sap2010:WorkflowViewState.IdRef="NTypeInto_26" ScopeIdentifier="ad08872b-b465-48f0-a3f0-10ce604fc639" Text="[CurrentRow.Item(&quot;VonTag&quot;).ToString]" Version="V3">
+                                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ContinueOnError="False" DelayAfter="0.5" DisplayName="Type Into 'Von (Tag)'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="572,220" sap2010:WorkflowViewState.IdRef="NTypeInto_26" ScopeIdentifier="ad08872b-b465-48f0-a3f0-10ce604fc639" Text="[CurrentRow.Item(&quot;VonTag&quot;).ToString]" Version="V3">
                                               <uix:NTypeInto.Target>
                                                 <uix:TargetAnchorable DesignTimeRectangle="90, 451, 60, 16" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'text'" FullSelectorArgument="&lt;java role='page tab list' /&gt;&lt;java name='Termine' role='page tab' /&gt;&lt;java hasTableAncestor='0' name='datePicker' role='AWT component' /&gt;&lt;java cls='DefaultEditor' role='text' /&gt;" FuzzySelectorArgument="&lt;java role='page tab list' /&gt;&lt;java name='Termine' role='page tab' /&gt;&lt;java hasTableAncestor='0' name='datePicker' role='AWT component' /&gt;&lt;java cls='DefaultEditor' role='text' /&gt;" Guid="f68e81d9-ef0e-481c-8ca0-13e2e08d8976" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEAAAAAUCAYAAAA9djs/AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABLSURBVFhH7dghAQAgFMRQ+pciBRVogP4UWINNPHNy8tY+b8zWvTNmBaDRpAA0mhSARpMC0GhSABpNCkCjSQFoNCkAjSYFoJvI480HNyTSD9Rjz/4AAAAASUVORK5CYII=" InformativeScreenshot="7a2c1d564dc45678183809f95e7c17aa.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='java*.exe' cls='SunAwtDialog' title='Termin und Raum zuordnen' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Version="V2" Visibility="Interactive">
                                                   <uix:TargetAnchorable.Anchors>
@@ -1293,7 +1354,7 @@
                                                 </uix:TargetAnchorable>
                                               </uix:NTypeInto.Target>
                                             </uix:NTypeInto>
-                                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Von'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="496,220" sap2010:WorkflowViewState.IdRef="NTypeInto_28" ScopeIdentifier="ad08872b-b465-48f0-a3f0-10ce604fc639" Text="[CurrentRow.item(&quot;VonZeit2&quot;).ToString + &quot;[k(Tab)]&quot; + &quot;[k(Tab)]&quot;]" Version="V3">
+                                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Von'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="572,220" sap2010:WorkflowViewState.IdRef="NTypeInto_28" ScopeIdentifier="ad08872b-b465-48f0-a3f0-10ce604fc639" Text="[CurrentRow.item(&quot;VonZeit2&quot;).ToString + &quot;[k(Tab)]&quot; + &quot;[k(Tab)]&quot;]" Version="V3">
                                               <uix:NTypeInto.Target>
                                                 <uix:TargetAnchorable DesignTimeRectangle="317, 449, 50, 20" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'00'" FullSelectorArgument="&lt;java role='page tab list' /&gt;&lt;java name='Termine' role='page tab' /&gt;&lt;java cls='SPlanComboBox' hasTableAncestor='0' idx='3' role='combo box' /&gt;&lt;java role='text' /&gt;" FuzzySelectorArgument="&lt;java role='page tab list' /&gt;&lt;java name='Termine' role='page tab' /&gt;&lt;java cls='SPlanComboBox' hasTableAncestor='0' role='combo box' /&gt;&lt;java role='text' /&gt;" Guid="04f6eb38-b98a-45ad-bb5f-e727e489bad9" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADYAAAAYCAYAAACx4w6bAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADWSURBVFhH7Zg9CgIxEEZzrVwod7FJ4wE8gWC1WEcQxFYQoiAWgp0QsdlmdmezCv4MJNWQMQ++ZfmqeUzYhagQAkjMIHa83GC6PMBksROTQQylZusrbM+P4jNf7WFzukcxNMRSAs45aNu2ihVDFSuNPLHGgFJqiLZ+LHuonpEMsQaMMv3z+a4hOlA9L+liuBUTx0e81XE7VM9MstjXwKMQ1XNTxcSKfQ78EqJ6ZtLFvAX96+tH9cykiyG4nfF/9XbaqJ6RPLGCqGKl8R9iYq8GxF7myEuADubJ+bEHFSc5AAAAAElFTkSuQmCC" InformativeScreenshot="5caa889daf1d21327b11e571721f9c3c.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='java*.exe' cls='SunAwtDialog' title='Termin und Raum zuordnen' /&gt;" SearchSteps="FuzzySelector, Image" Version="V2" Visibility="Interactive">
                                                   <uix:TargetAnchorable.Anchors>
@@ -1305,7 +1366,7 @@
                                                 </uix:TargetAnchorable>
                                               </uix:NTypeInto.Target>
                                             </uix:NTypeInto>
-                                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Bis'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="496,220" sap2010:WorkflowViewState.IdRef="NTypeInto_29" ScopeIdentifier="ad08872b-b465-48f0-a3f0-10ce604fc639" Text="[CurrentRow.item(&quot;BisZeit1&quot;).ToString + &quot;[k(Tab)]&quot;]" Version="V3">
+                                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Bis'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="572,220" sap2010:WorkflowViewState.IdRef="NTypeInto_29" ScopeIdentifier="ad08872b-b465-48f0-a3f0-10ce604fc639" Text="[CurrentRow.item(&quot;BisZeit1&quot;).ToString + &quot;[k(Tab)]&quot;]" Version="V3">
                                               <uix:NTypeInto.Target>
                                                 <uix:TargetAnchorable DesignTimeRectangle="234, 476, 50, 20" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'10'" FullSelectorArgument="&lt;java role='page tab list' /&gt;&lt;java name='Termine' role='page tab' /&gt;&lt;java cls='SPlanComboBox' hasTableAncestor='0' idx='4' role='combo box' /&gt;&lt;java role='text' /&gt;" FuzzySelectorArgument="&lt;java role='page tab list' /&gt;&lt;java name='Termine' role='page tab' /&gt;&lt;java cls='SPlanComboBox' hasTableAncestor='0' role='combo box' /&gt;&lt;java role='text' /&gt;" Guid="d566e7a7-33e2-43d7-bf99-79024e2f49c1" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADYAAAAYCAYAAACx4w6bAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADUSURBVFhH7ZixCsIwEIbzWnmhvItLFh/AJxCcinMEQVwFIQriILgJEZcsv7lYbNWpdWhyzQc/5K5LPi5tIcI5B46JYsfLDdPlAZPFjk2iGEnN1ldsz4/sM1/tsTndX2JkSE0OGGPgvS9i2VDEcqO7WKUghEJVl5HYEzFS27o5LB3ELLQMm1cK6kOsatW0lkjBrcdRbIsEaFqq0bRaJjG1v8V+RL5Eh6KINYxEjO07Fkwg3zU94/JVJGhq9X8sgVMY6SGWB0UsN8YhxvZqgO1lDr84PAF3lBN6LQgdqwAAAABJRU5ErkJggg==" InformativeScreenshot="1d3ccbe83cd05cecddd0a80604886788.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='java*.exe' cls='SunAwtDialog' title='Termin und Raum zuordnen' /&gt;" SearchSteps="FuzzySelector, Image" Version="V2" Visibility="Interactive">
                                                   <uix:TargetAnchorable.Anchors>
@@ -1316,7 +1377,7 @@
                                                 </uix:TargetAnchorable>
                                               </uix:NTypeInto.Target>
                                             </uix:NTypeInto>
-                                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Bis'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="496,220" sap2010:WorkflowViewState.IdRef="NTypeInto_30" ScopeIdentifier="ad08872b-b465-48f0-a3f0-10ce604fc639" Text="[CurrentRow.item(&quot;BisZeit2&quot;).ToString + &quot;[k(Tab)]&quot;]" Version="V3">
+                                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Bis'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="572,220" sap2010:WorkflowViewState.IdRef="NTypeInto_30" ScopeIdentifier="ad08872b-b465-48f0-a3f0-10ce604fc639" Text="[CurrentRow.item(&quot;BisZeit2&quot;).ToString + &quot;[k(Tab)]&quot;]" Version="V3">
                                               <uix:NTypeInto.Target>
                                                 <uix:TargetAnchorable DesignTimeRectangle="317, 476, 50, 20" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'30'" FullSelectorArgument="&lt;java role='page tab list' /&gt;&lt;java name='Termine' role='page tab' /&gt;&lt;java cls='SPlanComboBox' hasTableAncestor='0' idx='5' role='combo box' /&gt;&lt;java role='text' /&gt;" FuzzySelectorArgument="&lt;java role='page tab list' /&gt;&lt;java name='Termine' role='page tab' /&gt;&lt;java cls='SPlanComboBox' hasTableAncestor='0' role='combo box' /&gt;&lt;java role='text' /&gt;" Guid="a137704a-2927-4dcb-8126-8bdda3b7005c" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADYAAAAYCAYAAACx4w6bAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADuSURBVFhH7ZixCsIwEIbzWnmhvItLFh/AJxCcgnMFQVwFIQriILgJEZcuZy+tNbagJEtzZz84KDf14y5/IMI5BxzLix0vN5guDzBZ7NiUF0Op2foK2/ODfM1Xe9ic7rUYGmKTA0VRQFmWoxgZRjFqRIhZ0FKAEHUp07QRo9q+1LZpDkuEmAHzkrEapFBVBzGgPr4l5OCWuIqBDE4rGJ/VMouppYkFMj2RjuhQRImhhD9L3yZEUazFh0V9lniJVRjVJGNHhN4ZqyLx/ftB+vUSkloqeoHf91gGW+hJXsXcGcWo8R9ibJ8G2D7m8CsHT+/DAzs/6ofaAAAAAElFTkSuQmCC" InformativeScreenshot="888cf223a67a8ccfc9fb2f1c367d3d00.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='java*.exe' cls='SunAwtDialog' title='Termin und Raum zuordnen' /&gt;" SearchSteps="FuzzySelector, Image" Version="V2" Visibility="Interactive">
                                                   <uix:TargetAnchorable.Anchors>
@@ -1328,7 +1389,7 @@
                                                 </uix:TargetAnchorable>
                                               </uix:NTypeInto.Target>
                                             </uix:NTypeInto>
-                                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Einheit'" EmptyFieldMode="None" sap:VirtualizedContainerService.HintSize="496,220" sap2010:WorkflowViewState.IdRef="NTypeInto_31" ScopeIdentifier="ad08872b-b465-48f0-a3f0-10ce604fc639" Text="[CurrentRow.item(&quot;Einheit&quot;).ToString + &quot;[k(Tab)]&quot;]" Version="V3">
+                                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Einheit'" EmptyFieldMode="None" sap:VirtualizedContainerService.HintSize="572,220" sap2010:WorkflowViewState.IdRef="NTypeInto_31" ScopeIdentifier="ad08872b-b465-48f0-a3f0-10ce604fc639" Text="[CurrentRow.item(&quot;Einheit&quot;).ToString + &quot;[k(Tab)]&quot;]" Version="V3">
                                               <uix:NTypeInto.Target>
                                                 <uix:TargetAnchorable DesignTimeRectangle="233, 502, 182, 22" DesignTimeScaleFactor="1" ElementType="DropDown" FriendlyName="'WEEK'" FullSelectorArgument="&lt;java role='page tab list' /&gt;&lt;java name='Termine' role='page tab' /&gt;&lt;java cls='SPlanComboBox' hasTableAncestor='0' idx='6' role='combo box' /&gt;" FuzzySelectorArgument="&lt;java role='page tab list' /&gt;&lt;java name='Termine' role='page tab' /&gt;&lt;java cls='SPlanComboBox' hasTableAncestor='0' role='combo box' /&gt;" Guid="68ab1cdb-62dd-41ff-b7fe-465c5179b44c" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAALoAAAAaCAYAAAAAEkYfAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJhSURBVHhe7Zu7TsMwFIbzWn6hvAuLJcTUKUh9AabAE2RhZSHAEKkgmECRGDoZH8dO7FzcxG1pm/yfdER8O7HEF+eoUqKyLAUCMfeA6IhFRC366/u3uHl4EVd3TwjExcf1/bN4+/jpik6SJ9mneCx+EYiLj9vsS8neEZ2eApoAwBwgl8lpiA5mDUQHiwCig0UA0cEiCBI9jSMRp7qhSEUcMcFz3STSWETupAn05DsoVv6cC7bzXsfeDzg2YSd6W2IlSySYZULOmdXOBWfVw0EPiT2vn0OL1c43NT9EPye2262+6qdvPEx0Eptxqa9pMhFz2VfLT2LvIwZEB/2QxOv1WhRFoXtcNpuNGm/LHia6I7K5JhliqQRhX0v0iR/pcCua6rR3x7RYabPOeQs4+ex7yjVcvm2cNdRv5spQN9BzVUr7mgjYD/hXSOYkSTqyD/UTgaLLf31dp0sJ9OmexloYp7SpRKubTk1cSdWVploTmbcG5WsLbZbIMUdocyPfGqdtX4fsB5yCttQ+yYlg0WuZzV+Jqcud+lyJ7UpRPyQ9YxUeMVtvBxUqmWfN2LGQ/YCTYeTOsswrOREuOkkhT7iU6nNjBvXFXJcyVt/BRZ8q48ixoNzglJDsq9XKKzkRLrp+zUcdAajPlqXqcx6GetxXKgyJVeWbvmbMWMh+wKnZ9SsMsYfo5Cxr6lYNndZNfa5RcusyoyMISWPGrLrfJ5aTT4Za5F+j9tU7t29dk3vUfsDZs5foAFwKEB0sAogOFgFEB4tgUHR8SoeYUwx+SoePoxFzisGPoxGIOQdERywgSvEHQVS88KbCWE0AAAAASUVORK5CYII=" InformativeScreenshot="9cc49dff838335cb03bfb65d4d184623.png" ScopeSelectorArgument="&lt;wnd app='java*.exe' cls='SunAwtDialog' title='Termin und Raum zuordnen' /&gt;" SearchSteps="FuzzySelector, Image" Version="V2" Visibility="Interactive">
                                                   <uix:TargetAnchorable.Anchors>
@@ -1339,7 +1400,7 @@
                                                 </uix:TargetAnchorable>
                                               </uix:NTypeInto.Target>
                                             </uix:NTypeInto>
-                                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'push button'" sap:VirtualizedContainerService.HintSize="496,158.66666666666666" sap2010:WorkflowViewState.IdRef="NClick_51" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ad08872b-b465-48f0-a3f0-10ce604fc639" Version="V3">
+                                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'push button'" sap:VirtualizedContainerService.HintSize="572,158.66666666666666" sap2010:WorkflowViewState.IdRef="NClick_51" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ad08872b-b465-48f0-a3f0-10ce604fc639" Version="V3">
                                               <uix:NClick.Target>
                                                 <uix:TargetAnchorable DesignTimeRectangle="155, 502, 22, 22" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'push button'" FullSelectorArgument="&lt;java role='page tab list' /&gt;&lt;java name='Termine' role='page tab' /&gt;&lt;java cls='SPJButton' hasTableAncestor='0' idx='2' role='push button' /&gt;" FuzzySelectorArgument="&lt;java role='page tab list' /&gt;&lt;java name='Termine' role='page tab' /&gt;&lt;java cls='SPJButton' hasTableAncestor='0' role='push button' /&gt;" Guid="a93cb254-b4f4-4c50-8fbf-50790455fdc2" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALRSURBVEhLvZbZTxNRFMb9v4wvvvjkC8EdqQsmBIWK0ARIUGMIGEAgAhUhiAgqYCmFUlGQJdDSNgUsLcpWRCpbZ0A6A9KFh8+7TB8MJI6A/ZKTe8/kfOeXc2eSOydkWUY8Iv4gSZLg8/lgs9kwPDx8pLBarZibm2M994EoxO12IxwO46iKRCLweDwMtg9EJzkOSEwURifbB6IjH7doz7+CPEshGBwSGoY2UT8govaTCH1vAJU9a6iwrKK0axmPO/woMHzHw9YF5L/2Qf/er7i5VIFaRrewE9r7p8hpmlHcXKpALwY3mBnNt4CmFODlNfLwKvD8IqBPBCrOAiVngILTwINTrFZbN6W4uVSB6vpFBUQg/blAnw74mAl8SAfMqYDpOvDuMvCWQPNPstq0Z5OKm0sVqIa8jz8menUDaCTNGzRAfRJQSyA1F4BqAqpKYLUplROKm0sVqIq8dGp+MxJgeat1na1tozw32HlucvBVlELQlLvYPiZVoPLuFci7UdbYQMMuoN0egNEZgIlEpukOMjrSkN6eCsvYOr6tybhU7FDcXKpApZ0/IBGQ0Smw3KSsZhefKKtTi2pPGbQdt1k+vyLhXOEo28ekClRkXEJwJ4oulwDzmIA8iw65lmzkdGehZ0KAznwX2V1a3OvMgJEcn3NaQGKhVXFzqQI9alvE1naENaWioLqpKgaj6v0skKPdQ3A7CteMiIVVGZonhzi6+y0LDNTrFtFHgoJi0T8pwjIusInHZkXML0uQyD6p+BBHl9c8i58ENOARWT7o5euQsraTj2N8doNBgqRuS45AU3oIkK5xGptyGEIwhNXNXfiFHfJlbbPGM/4gHF8F+FbIPUYmoSD5VxTJJTbFzaUKVNm9iOz6L0jVT+Lm0wkkl7lwpdiJ80V2JBSMHBj5jW7FzaUKdBw6EBS3iy92ldOCo4r28Hq9B1/lcfs5+d8RJ5CM36u5p/uRUdK/AAAAAElFTkSuQmCC" InformativeScreenshot="81e9f2f3e6d73ac51af8bd8dadc5dd90.png" ScopeSelectorArgument="&lt;wnd app='java*.exe' cls='SunAwtDialog' title='Termin und Raum zuordnen' /&gt;" SearchSteps="FuzzySelector, Image" Version="V2" Visibility="Interactive">
                                                   <uix:TargetAnchorable.Anchors>
@@ -1362,25 +1423,43 @@
                                                 </uix:TargetAnchorable>
                                               </uix:NTypeInto.Target>
                                             </uix:NTypeInto>
-                                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Baumansicht'" sap:VirtualizedContainerService.HintSize="572,158.66666666666666" sap2010:WorkflowViewState.IdRef="NClick_52" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ad08872b-b465-48f0-a3f0-10ce604fc639" Version="V3">
+                                            <If Condition="[BaumstrukturPressed=True]" sap:VirtualizedContainerService.HintSize="572,510" sap2010:WorkflowViewState.IdRef="If_3">
+                                              <If.Then>
+                                                <Sequence sap:VirtualizedContainerService.HintSize="300,80.66666666666667" sap2010:WorkflowViewState.IdRef="Sequence_42">
+                                                  <sap:WorkflowViewStateService.ViewState>
+                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                    </scg:Dictionary>
+                                                  </sap:WorkflowViewStateService.ViewState>
+                                                </Sequence>
+                                              </If.Then>
+                                              <If.Else>
+                                                <Sequence sap:VirtualizedContainerService.HintSize="376,246" sap2010:WorkflowViewState.IdRef="Sequence_43">
+                                                  <sap:WorkflowViewStateService.ViewState>
+                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                    </scg:Dictionary>
+                                                  </sap:WorkflowViewStateService.ViewState>
+                                                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Baumansicht'" sap:VirtualizedContainerService.HintSize="334,158.66666666666666" sap2010:WorkflowViewState.IdRef="NClick_52" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ad08872b-b465-48f0-a3f0-10ce604fc639" Version="V3">
+                                                    <uix:NClick.Target>
+                                                      <uix:TargetAnchorable DesignTimeRectangle="94, 885, 66, 20" DesignTimeScaleFactor="1" ElementType="CheckBox" FriendlyName="'ja / nein'" FullSelectorArgument="&lt;java hasTableAncestor='0' idx='2' role='page tab list' /&gt;&lt;java name='Räume' role='page tab' /&gt;&lt;java hasTableAncestor='0' name='ja / nein' role='check box' /&gt;" FuzzySelectorArgument="&lt;java hasTableAncestor='0' role='page tab list' /&gt;&lt;java name='Räume' role='page tab' /&gt;&lt;java hasTableAncestor='0' name='ja / nein' role='check box' check:fulltext='ja / nein' /&gt;" Guid="b7785f16-4144-4142-ae3b-b858c302f278" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEYAAAAYCAYAAABHqosDAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJGSURBVFhH7ZfNattAEMf1VHqMQCCXQijRKa/QY2869J5baUri9lBRCOTSUyH04xAa0SSnhJiekrjFNiubmpik08xoN1prZ3dlWw510cAfSzs7q52fZscoyLIMGplqwFjUgLGoAWNRA8YiFsxhuw8bbzuw8vKqkp62ruHLed9YZ5nFgkEo57/GUNXa3THB4dZaVrFgsAp8Nry5g91vA/pFwxhurWXVzGC2Pgua9/owo3sOjEhjCIMQ4lQYPp9EEkEQJaxvGs26h5nAfP0xgtVXV7D57udCKkaIFOJwNqB1aWowvd93sN7qEBi9D9UKBt9yDdUyj5xgyn0E7fmHHvmT70M5khsHRogEIq2MkyiAIJByJJ7GIUSJWS0P68X3x0yuE8Zp4adjo54RQSLExB588bqcYN4cDega+wna3umQ7p/td+G2YEVWBYxvvPDlSfG+Air1IQaA8mHS+rgrXj1DyQlmNP5DfQTv3x8PYW37Gp7sdOBS3JJftypg8o2oN2oBIxMqj5OvvJ6e9ES1SN0DMMHw8fpzUN4ec3J5Q/dKBxcj6Zk0H5h84+rt8s3V13Rdienr22Jc8XoMqlLzVX/NLz725YhpXjBYLWEMKYKhJMwN0bij97gSy6/NnmHO4eP1GFQlMHiksNmKUamxaOYFQ9UgSzyMIGIqw9Z0lXyJGcep7qNU1ydB/mC+uZVFc2VFcf7HFgsGPyIxUayCKsK5n87Mj8iHN+dROe5fEAtmXhUlzZfpMmghYP4HNWAsasBY1IBhlcFfybnUTippj1kAAAAASUVORK5CYII=" InformativeScreenshot="e92c269748fea17ffa60a0097ac7a03c.png" ScopeSelectorArgument="&lt;wnd app='java*.exe' cls='SunAwtDialog' title='Termin und Raum zuordnen' /&gt;" SearchSteps="FuzzySelector, Image" Version="V2" Visibility="Interactive">
+                                                        <uix:TargetAnchorable.Anchors>
+                                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                            <uix:Target DesignTimeRectangle="18, 887, 72, 16" ElementType="Text" FriendlyName="'Baumansicht'" FullSelectorArgument="&lt;java hasTableAncestor='0' idx='2' role='page tab list' /&gt;&lt;java name='Räume' role='page tab' /&gt;&lt;java hasTableAncestor='0' name='Baumansicht:' role='label' /&gt;" FuzzySelectorArgument="&lt;java hasTableAncestor='0' role='page tab list' /&gt;&lt;java name='Räume' role='page tab' /&gt;&lt;java hasTableAncestor='0' name='Baumansicht:' role='label' check:text='Baumansicht:' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEwAAAAUCAYAAAAnStuxAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAF4SURBVFhH7VXtkcQgCLUq+7Eam7EXazENsBGjEj/YsDd3szfDjzcTBR74FGKO4wDFc6hgQqhgQqhgQqhgQqhgQjTBUgrgjAFD4EKaAr4ZKXqwxoKP+7rLOXkfDoNgnagkdxDS/xLtHTjBnoi5F+yHN/Gt+D3BggPjQnMMjrTrtc+J3L5Dfqm9xaO3jcf6+Izfn7UMMSlF8LbHZO65HsaH1JU5y373zTWgBtZDJF3GzLB1O9Ki5gJH28lzJcTk57odGNdzjiVHFZDEjBc6xxax6KV0n7Gui5PEo2+28YIR52GAFuIqJj0Q8bkVvLct11J+rO8uyGznL2SKGWwrMDOs3BA+Y5K87K8TcMlZ3w/48zqjtvjYkn8vGCa8iMjTvO0TUTEGX8k6OVvolp/nqMii9TlUY7mWXHNONlJXjWdmGCUtyXHfOnDXC0AbbSV32nbJ2ULX/GwMzbubQbiuPrsfw33dfj7vhr7iGVQwIVQwIVQwIVQwEQ54AYanyyUvBTTYAAAAAElFTkSuQmCC" SearchSteps="Selector, FuzzySelector, Image" />
+                                                          </scg:List>
+                                                        </uix:TargetAnchorable.Anchors>
+                                                      </uix:TargetAnchorable>
+                                                    </uix:NClick.Target>
+                                                  </uix:NClick>
+                                                </Sequence>
+                                              </If.Else>
+                                            </If>
+                                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 's004'" sap:VirtualizedContainerService.HintSize="572,158.66666666666666" sap2010:WorkflowViewState.IdRef="NClick_53" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ad08872b-b465-48f0-a3f0-10ce604fc639" Version="V3">
                                               <uix:NClick.Target>
-                                                <uix:TargetAnchorable DesignTimeRectangle="94, 885, 66, 20" DesignTimeScaleFactor="1" ElementType="CheckBox" FriendlyName="'ja / nein'" FullSelectorArgument="&lt;java hasTableAncestor='0' idx='2' role='page tab list' /&gt;&lt;java name='Räume' role='page tab' /&gt;&lt;java hasTableAncestor='0' name='ja / nein' role='check box' /&gt;" FuzzySelectorArgument="&lt;java hasTableAncestor='0' role='page tab list' /&gt;&lt;java name='Räume' role='page tab' /&gt;&lt;java hasTableAncestor='0' name='ja / nein' role='check box' check:fulltext='ja / nein' /&gt;" Guid="b7785f16-4144-4142-ae3b-b858c302f278" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEYAAAAYCAYAAABHqosDAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJGSURBVFhH7ZfNattAEMf1VHqMQCCXQijRKa/QY2869J5baUri9lBRCOTSUyH04xAa0SSnhJiekrjFNiubmpik08xoN1prZ3dlWw510cAfSzs7q52fZscoyLIMGplqwFjUgLGoAWNRA8YiFsxhuw8bbzuw8vKqkp62ruHLed9YZ5nFgkEo57/GUNXa3THB4dZaVrFgsAp8Nry5g91vA/pFwxhurWXVzGC2Pgua9/owo3sOjEhjCIMQ4lQYPp9EEkEQJaxvGs26h5nAfP0xgtVXV7D57udCKkaIFOJwNqB1aWowvd93sN7qEBi9D9UKBt9yDdUyj5xgyn0E7fmHHvmT70M5khsHRogEIq2MkyiAIJByJJ7GIUSJWS0P68X3x0yuE8Zp4adjo54RQSLExB588bqcYN4cDega+wna3umQ7p/td+G2YEVWBYxvvPDlSfG+Air1IQaA8mHS+rgrXj1DyQlmNP5DfQTv3x8PYW37Gp7sdOBS3JJftypg8o2oN2oBIxMqj5OvvJ6e9ES1SN0DMMHw8fpzUN4ec3J5Q/dKBxcj6Zk0H5h84+rt8s3V13Rdienr22Jc8XoMqlLzVX/NLz725YhpXjBYLWEMKYKhJMwN0bij97gSy6/NnmHO4eP1GFQlMHiksNmKUamxaOYFQ9UgSzyMIGIqw9Z0lXyJGcep7qNU1ydB/mC+uZVFc2VFcf7HFgsGPyIxUayCKsK5n87Mj8iHN+dROe5fEAtmXhUlzZfpMmghYP4HNWAsasBY1IBhlcFfybnUTippj1kAAAAASUVORK5CYII=" InformativeScreenshot="e92c269748fea17ffa60a0097ac7a03c.png" ScopeSelectorArgument="&lt;wnd app='java*.exe' cls='SunAwtDialog' title='Termin und Raum zuordnen' /&gt;" SearchSteps="FuzzySelector, Image" Version="V2" Visibility="Interactive">
+                                                <uix:TargetAnchorable CvTextArgument="[RaumNr]" CvType="Text" DesignTimeRectangle="31, 680, 154, 26" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'s004'" FullSelectorArgument="&lt;java hasTableAncestor='0' idx='2' role='page tab list' /&gt;&lt;java name='Räume' role='page tab' /&gt;&lt;java cls='MyJXTable' role='table' /&gt;&lt;java role='label' tableCol='0' tableRow='0' /&gt;" FuzzySelectorArgument="&lt;java hasTableAncestor='0' role='page tab list' /&gt;&lt;java name='Räume' role='page tab' /&gt;&lt;java cls='MyJXTable' role='table' /&gt;&lt;java role='label' check:text='s004' /&gt;" Guid="deb5c62c-2c82-4f3b-b4fd-d29663cfce73" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAJ4AAAAeCAYAAADdNaejAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAQ0SURBVHhe7ZvZK21xFMc98C/wJg9KIkIKRXkiIYXiRRkiykyizCEyFAop8YAUXiTlwRgylDJnHh6MSeZ53b7rnnOSe2vvunanu1ufWjl+Z53tPHxav99av1iQIGjM29sbXV1d0d3dnWGFSMQTNOev4mFRQkLLeH5+psvLS7q9vTWtWcBECQktA9Kdn5/TxcWFac0C5U9CQstApbu+vqabmxvTmpzxBM35+Pig+/t73nKNiHiC5oh4glkQ8QSzIOIJZkHEE8zCj4iH4R/mMAcHB7SxsUHr6+u0t7dHZ2dn9PLyQp+fn6pyvoJ8zHlOTk7o9PSUXl9fDe8IeuBHxINQXV1dFBcXR56enuTm5kaRkZFUX1/P4ry/v6vK+Qqka2xspNzcXKqsrGT5BP3wz+JBmuHhYcrIyKC0tDQqKiriSElJoaSkJOrp6aGxsTHFnO3tbcMTiYeLCwsLFBsbS8HBwfyZ4+Njw7uCHlAt3uPjI1chCLK5uUn7+/v8ofHxcSooKKCEhATq7e1laZA7ODhIiYmJLFZ2drZiztDQEP8dfKGtrS3q7Oyk8PBwCgwMFPF0iGrxVldXqampiQICAsjb25tiYmJYPgiCLbO7u5t2dnZ4y8RD8R4qGcTx8vJSzGlpaeG1p6cnljM+Pp6qq6spKytLxNMhqsWDIGFhYRQVFcUydHR08EVvXV0d+fr60szMDN+3GcFDZ2dnWTobGxvFHEiGeztUvubmZqqtrWUBS0pKRDwdolq8qqoqcnBwoNLSUpqfn+cuE51oWVkZubi40Nra2h+dKTpXV1dXsrKyUszJy8ujlZUV/tnW1kZLS0s0OjpK5eXlIp4OUS0eZMAWGxoaSu3t7aYRB0Q0SvUdo1SWlpaKOWgisJU3NDTQ1NQUV9OJiQkRT6eoFm9xcZG3P3SaaAjw+vDwkCoqKljIubk5enh4MGQTv0ZlxBaLrVYpx9nZmfz9/SkoKIifn5+fz38La35+fiwlzpmCPlAtHqrb0dERn7/QYLi7u9Pk5CTP4UJCQqivr4+Hw3ggAq/7+/u5qfDx8VHMwWzPycnJFI6OjmRnZ0fW1tZka2vLzczIyIjh2wj/O6rFw9kMHSfkS09PJ3t7exYJTQZ+T05O5vEIqhgCrzGnQ+XCuU0pB8/CVmwMzPEwcE5NTWXpUC3RfAj6QLV46D5ramqouLiYKxQq2PT0NC0vL9PAwAALgigsLOSczMxMysnJ4cExzmxKOd/PcOh+UVHljKdPVIuHeR3OWthiIyIiuAnAPSsegEYDc7jo6Gi+CvPw8ODzGSoWrsrU5HwHFRGdbWtrq1yZ6RDV4kEO3Cjggn93d5elM17c4yf+aQMDYXSpyMH5DZ/BZb/anK/gi0E+fMbYQQv6QbV4gvCTiHiCWRDxBLMg4glm4a/iYVFCQstAQwnxMBv+vfZBvwAUEcnRHp+PdgAAAABJRU5ErkJggg==" InformativeScreenshot="76d3775d8a743dcc68f4e5304c3b8a4c.png" ScopeSelectorArgument="&lt;wnd app='java*.exe' cls='SunAwtDialog' title='Termin und Raum zuordnen' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
                                                   <uix:TargetAnchorable.Anchors>
-                                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                                                      <uix:Target DesignTimeRectangle="18, 887, 72, 16" ElementType="Text" FriendlyName="'Baumansicht'" FullSelectorArgument="&lt;java hasTableAncestor='0' idx='2' role='page tab list' /&gt;&lt;java name='Räume' role='page tab' /&gt;&lt;java hasTableAncestor='0' name='Baumansicht:' role='label' /&gt;" FuzzySelectorArgument="&lt;java hasTableAncestor='0' role='page tab list' /&gt;&lt;java name='Räume' role='page tab' /&gt;&lt;java hasTableAncestor='0' name='Baumansicht:' role='label' check:text='Baumansicht:' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEwAAAAUCAYAAAAnStuxAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAF4SURBVFhH7VXtkcQgCLUq+7Eam7EXazENsBGjEj/YsDd3szfDjzcTBR74FGKO4wDFc6hgQqhgQqhgQqhgQqhgQjTBUgrgjAFD4EKaAr4ZKXqwxoKP+7rLOXkfDoNgnagkdxDS/xLtHTjBnoi5F+yHN/Gt+D3BggPjQnMMjrTrtc+J3L5Dfqm9xaO3jcf6+Izfn7UMMSlF8LbHZO65HsaH1JU5y373zTWgBtZDJF3GzLB1O9Ki5gJH28lzJcTk57odGNdzjiVHFZDEjBc6xxax6KV0n7Gui5PEo2+28YIR52GAFuIqJj0Q8bkVvLct11J+rO8uyGznL2SKGWwrMDOs3BA+Y5K87K8TcMlZ3w/48zqjtvjYkn8vGCa8iMjTvO0TUTEGX8k6OVvolp/nqMii9TlUY7mWXHNONlJXjWdmGCUtyXHfOnDXC0AbbSV32nbJ2ULX/GwMzbubQbiuPrsfw33dfj7vhr7iGVQwIVQwIVQwIVQwEQ54AYanyyUvBTTYAAAAAElFTkSuQmCC" SearchSteps="Selector, FuzzySelector, Image" />
-                                                    </scg:List>
-                                                  </uix:TargetAnchorable.Anchors>
-                                                </uix:TargetAnchorable>
-                                              </uix:NClick.Target>
-                                            </uix:NClick>
-                                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '999'" sap:VirtualizedContainerService.HintSize="572,158.66666666666666" sap2010:WorkflowViewState.IdRef="NClick_53" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ad08872b-b465-48f0-a3f0-10ce604fc639" Version="V3">
-                                              <uix:NClick.Target>
-                                                <uix:TargetAnchorable DesignTimeRectangle="19, 658, 105, 17" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'999'" FullSelectorArgument="&lt;java hasTableAncestor='0' idx='2' role='page tab list' /&gt;&lt;java name='Räume' role='page tab' /&gt;&lt;java cls='MyJXTable' role='table' /&gt;&lt;java role='label' tableCol='0' tableRow='0' /&gt;" FuzzySelectorArgument="&lt;java hasTableAncestor='0' role='page tab list' /&gt;&lt;java name='Räume' role='page tab' /&gt;&lt;java cls='MyJXTable' role='table' /&gt;&lt;java role='label' check:text='999' /&gt;" Guid="69e6ce36-9dd9-44b2-8562-4ffd79c8143e" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAG0AAAAVCAYAAABMiWD6AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADaSURBVGhD7dfRDYMwDARQr+WFPE7GyQCMkQEYgAVcnEAprRSwyEct3ZMsxP2enAAty6LTNCn8v3me6/NdmgWYGINNC8S6MigtEJQWEEoL6Lq0LEpEdTiVLVx5cximX1pJyiSa60tWIdbagzeHobqllcSnbdnfvTmMhdIC6pbW7qf9uCuaeLunvDkM1S9tZdvSPixYRY7N8eYwzmVpn7KQSlujE28Oz9wvzY4+Tuuh98Wbw2MXpdlne/vnOu4q481hpPubBn8DpQWE0gJCaQH9lGZPTIzBpoWj+gKO+q7SbSpEGgAAAABJRU5ErkJggg==" InformativeScreenshot="fb4bf953f76d1e3de1dc0ed6b0e28068.png" ScopeSelectorArgument="&lt;wnd app='java*.exe' cls='SunAwtDialog' title='Termin und Raum zuordnen' /&gt;" SearchSteps="FuzzySelector, Image" Version="V2" Visibility="Interactive">
-                                                  <uix:TargetAnchorable.Anchors>
-                                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="3">
-                                                      <uix:Target DesignTimeRectangle="19, 633, 106, 25" FriendlyName="'Kürzel'" FullSelectorArgument="&lt;java hasTableAncestor='0' idx='2' role='page tab list' /&gt;&lt;java name='Räume' role='page tab' /&gt;&lt;java cls='JXTableHeader' hasTableAncestor='0' role='tableheader' /&gt;&lt;java name='Kürzel' role='headercell' /&gt;" FuzzySelectorArgument="&lt;java hasTableAncestor='0' role='page tab list' /&gt;&lt;java name='Räume' role='page tab' /&gt;&lt;java cls='JXTableHeader' hasTableAncestor='0' role='tableheader' /&gt;&lt;java name='Kürzel' role='headercell' check:text='Kürzel' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAG4AAAAdCAYAAABL7VmUAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFNSURBVGhD7ZaBjYUgEAVpi4YohwauDwqwDAuwABvYYxEQUXO5/zHxJW+STQRBkx130azrKgy8SOKmaWKARRVH3s+yLPlKKA4JigOF4kChOFAoDhSKA4XiQAESF8QZK37OQ5nFWyPGhTx+gv6d7wFWXHBG7CGjm0j1eL73KRQ3gD2Js7cPV1qB4gaQk+idGOtjfbX0CW7H27VzUbZx8qPSTWyxJcoHMHuxdd7FXQrFDUCTuCX2XGx/ibtqnTp/Iyi4vL5/7nvAq7igldEns09wO75Ovp6D9QM4VFuOdJPiBtAkMVbE3s6Uf4rT/W3ZJnHt8woUN4BjEtMPSj3r9j/KRBJ7J07HvSSdu2unFPcl5yRqu6vykqzS5lyz9rgv7SnrNMr+vl2yVZInoDhQKA4UigOF4kChOFAoDpRLcTrJwAlWHBDqqkBxQOziRH4B6AwQDl3K3PQAAAAASUVORK5CYII=" SearchSteps="Selector, FuzzySelector, Image" />
-                                                      <uix:Target DesignTimeRectangle="125, 658, 105, 17" ElementType="Text" FriendlyName="'999'" FullSelectorArgument="&lt;java hasTableAncestor='0' idx='2' role='page tab list' /&gt;&lt;java name='Räume' role='page tab' /&gt;&lt;java cls='MyJXTable' role='table' /&gt;&lt;java role='label' tableCol='1' tableRow='0' /&gt;" FuzzySelectorArgument="&lt;java hasTableAncestor='0' role='page tab list' /&gt;&lt;java name='Räume' role='page tab' /&gt;&lt;java cls='MyJXTable' role='table' /&gt;&lt;java role='label' check:text='999' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAG0AAAAVCAYAAABMiWD6AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADaSURBVGhD7dfBDcMgDAVQr+WFGIdxGIYBMgALuBhC0/RAYoVDLP0nWU3+9cuQklTbtukPvNzoifQB42vappVSWoPwbqMnlOYISnMIpTl0XVoKQkRtOOY9rKw5LDMvLUdhCpLaS5JALK0Haw5LTUvLkU/bMt6tOayF0hyaltbvp3HcZYm831PWHJaal1bptvQPC5YQjs2x5rDOZWm/UiAJfY1OrDk8c780Pfo41kPvjzWHxy5K08/2/p/ruKuUNYeV7m8avAZKcwilOYTSHPqWpg8YX9M2DTwR+QAZWr1CiQoOnwAAAABJRU5ErkJggg==" SearchSteps="Selector, FuzzySelector, Image" />
-                                                      <uix:Target DesignTimeRectangle="125, 633, 106, 25" FriendlyName="'Name'" FullSelectorArgument="&lt;java hasTableAncestor='0' idx='2' role='page tab list' /&gt;&lt;java name='Räume' role='page tab' /&gt;&lt;java cls='JXTableHeader' hasTableAncestor='0' role='tableheader' /&gt;&lt;java name='Name' role='headercell' /&gt;" FuzzySelectorArgument="&lt;java hasTableAncestor='0' role='page tab list' /&gt;&lt;java name='Räume' role='page tab' /&gt;&lt;java cls='JXTableHeader' hasTableAncestor='0' role='tableheader' /&gt;&lt;java name='Name' role='headercell' check:text='Name' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAG4AAAAdCAYAAABL7VmUAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAE+SURBVGhD7ZrBbcMwDEW5lhbSOBpHA3gMD+ABvABLKpItqUmBFAWqj/wHEDFFxgc/kPEhcp6nMvBCtm1TBl6IGsdx+AdZnN4TxQFBcaBQHCgUBwrFgUJxoFAcKEDiskYRlZhr3vDzoGmv6YcAJi5oCKKjO4qDEJdyMnlJb08UhyHOBOUoGi5Tozivia/UYa120mvNS3sKV+99P2O/+0SifXs9IMW9vu6Ze0xCm9QcR1klb4Km+1ltkLoIoOI8tYddJurJ+TUtvbiu56d8mLYa316I/h9ccTY7qbyozA+9TY7XW/+74tZcjz3A4oxrOuq5T1tbh6XW+t8QV66n37wFwRZnPF4w2vljCst6C1HjbybOmdclVyX5KygOFIoDheJAoThQKA4UigNlEOcJAy/KxPlfmsn69J4oDojbk+oXlw8hkyuNM0gAAAAASUVORK5CYII=" SearchSteps="Selector, FuzzySelector, Image" />
+                                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                                      <uix:Target CvTextArgument="Kurzel" CvType="Text" DesignTimeRectangle="31, 646, 155, 34" FriendlyName="'Kürzel'" FullSelectorArgument="&lt;java hasTableAncestor='0' idx='2' role='page tab list' /&gt;&lt;java name='Räume' role='page tab' /&gt;&lt;java cls='JXTableHeader' hasTableAncestor='0' role='tableheader' /&gt;&lt;java name='Kürzel' role='headercell' /&gt;" FuzzySelectorArgument="&lt;java hasTableAncestor='0' role='page tab list' /&gt;&lt;java name='Räume' role='page tab' /&gt;&lt;java cls='JXTableHeader' hasTableAncestor='0' role='tableheader' /&gt;&lt;java name='Kürzel' role='headercell' check:text='Kürzel' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAJ8AAAAmCAYAAADa3kldAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAVfSURBVHhe7ZtbSFVdEMfPo/SYl3wywx7UJFIDE4MQTLygQaZmmiaIKKmIoqRGXoogQivBNERNQlNfFFMTDVSCyBIlMEszy2vlJdNM85IT/8nTtzt5iO/hsGE7fxgOzFp77c1eP2bWmrWPbnFxkcTE1DCBT0w10719+5bExNQw3YsXL0hMzNTW29tLfX19f/h0y8vLJCZmSkOKnZqaotnZ2T/8OhKJTKz19XUG7+vXr1ueXxL4RCaXwCdSTQKfSDUJfCLVJPCJVJPAJ1JNAp9INQl8ItUk8IlU046Fb3p6mgYHB2lubo5WV1f5RczMzNDk5CR9/PiR1tbW+KgHvpGRkd/9RkdHuc/CwgJtbGxsjWY6GT6nlrRj4SsqKiIvLy+qqamh9+/fM2SlpaWUk5NDN27cYABfvnzJvsjISLp//z6Dl5CQQBcvXqTW1lYG0NQyfE4tacfCB8hsbGyouLiYnj9/Tk+fPqXo6Gi6cOECPXz4kL58+cIR7vHjx1ReXk7Pnj3j6AMIGxoaGExERlNL+ZxDQ0NbXm1ox8N3+/Ztqq+v58kNDAykkpISWllZoR8/fhhNeYb+79+/05s3b/hbtImJCXr9+jXD2d/f/5ehDREU121ubvK1Hz58oOHhYRoYGOB2jIEvPpDWBT4NSj+phYWFlJmZSadOnaI7d+4wIAAPMpbyDP0AD+CGhYVRRkYGHTt2jA4ePEgHDhz4y44ePUrnz5//DSDWk9evX6egoCBydXXldozR2dnJAAp8GhQmdffu3RQREcHpFms5pFblOs7YxBv6ASzAOnz4MI9z6dIlys3N5X6wtLQ0OnPmDO3Zs4c8PT0Z+E+fPvF1SOnJycmUmprKfdPT0ykmJoZ9gDorK0vg05ow0WZmZmRvb89RJz8/nzcZShlCppehXw+fm5sbXb16ldOoUkjHlZWV5O7uzjAh2iHd1tbWcsQNDw/nsXp6eujBgwd0+vRpcnR0pI6ODkpJSRH4tCYAtGvXLnJ2diYfHx+e5LGxsa3WX/q/8J08eZKampp4s6IX1nXV1dUMWXx8PDU2NjJ48CPdWllZkbm5Oe3du5ccHBxo//79HJH37dtHd+/epXPnzgl8WhMAsrCw4BSHyBMaGkptbW2cDvVCH1tb2z8mHtBkZ2dvCx9Sq36tBi0tLVF3dzev4fz9/TnSKdeOly9fJktLS25Dusb99IZyDyJhYmKiwKc1YYIxqdg8AKaQkBC6cuUKPXnyhHeZgAxw2NnZUUFBAQMG/+fPn3kNZwy+rq4ufpl4se/eveMxzp49y3Bhk6HUtWvX+DqkaoCmv69S+ucU+DQk/aSi1IJUiYX/8ePHOeLoyxyAzsnJieLi4qi9vZ3TKdZkSK//gg/lmJaWFt69InqhjohIqNS9e/fI19eXd8oVFRU8Pu6rlMCnQSknFX/fQ6E5KiqKd51Yl83Pz1NzczOnZQCCX0QqwBoQEPBP+B49ekSxsbFkbW1NR44c4d0rTkZwX0RbwIm/DN68eZOCg4P53ij55OXl0a1bt7j2iGcQ+DQow1odjtfKysq4TIKNAHa+SJt1dXWckj08PMjPz4/7JCUlbVvnQ5kE6fPbt29UVVVF3t7edOjQIQZTaeiLa3BCgqIygDtx4gRvflxcXHgDhHUiis3Gao1a0I6Fz/CUAi/C8MMC+LHGQ6nk1atXDAz6YFe83QnH+Pg4g4ciNdoQqbY76UBfXIN+OE3Bf1fhQ1+ccuA6gIdnMHbKogXtWPhE6kvgE6kmgU+kmgQ+kWoS+ESqSeATqSaBT6SajMKHBjExUxpqnaib4jhT6deBSDExUxrAw1dEKKT/55+ln37Snln2G1L0AAAAAElFTkSuQmCC" SearchSteps="Selector, FuzzySelector, Image, CV" />
                                                     </scg:List>
                                                   </uix:TargetAnchorable.Anchors>
                                                 </uix:TargetAnchorable>
@@ -1408,6 +1487,47 @@
                                                 </uix:TargetAnchorable>
                                               </uix:NClick.Target>
                                             </uix:NClick>
+                                            <Assign sap:VirtualizedContainerService.HintSize="572,84.66666666666667" sap2010:WorkflowViewState.IdRef="Assign_5">
+                                              <Assign.To>
+                                                <OutArgument x:TypeArguments="x:Boolean">[BaumstrukturPressed]</OutArgument>
+                                              </Assign.To>
+                                              <Assign.Value>
+                                                <InArgument x:TypeArguments="x:Boolean">True</InArgument>
+                                              </Assign.Value>
+                                            </Assign>
+                                            <If Condition="[FachError=True]" sap:VirtualizedContainerService.HintSize="572,616" sap2010:WorkflowViewState.IdRef="If_6">
+                                              <If.Then>
+                                                <Sequence sap:VirtualizedContainerService.HintSize="300,80.66666666666667" sap2010:WorkflowViewState.IdRef="Sequence_49">
+                                                  <sap:WorkflowViewStateService.ViewState>
+                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                    </scg:Dictionary>
+                                                  </sap:WorkflowViewStateService.ViewState>
+                                                </Sequence>
+                                              </If.Then>
+                                              <If.Else>
+                                                <Sequence sap:VirtualizedContainerService.HintSize="476,352" sap2010:WorkflowViewState.IdRef="Sequence_48">
+                                                  <Sequence.Variables>
+                                                    <Variable x:TypeArguments="x:String" Name="variable2" />
+                                                    <Variable x:TypeArguments="x:String" Name="CurrentExcelRow" />
+                                                  </Sequence.Variables>
+                                                  <sap:WorkflowViewStateService.ViewState>
+                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                    </scg:Dictionary>
+                                                  </sap:WorkflowViewStateService.ViewState>
+                                                  <Assign sap:VirtualizedContainerService.HintSize="434,84.66666666666667" sap2010:WorkflowViewState.IdRef="Assign_6">
+                                                    <Assign.To>
+                                                      <OutArgument x:TypeArguments="x:String">[CurrentExcelRow]</OutArgument>
+                                                    </Assign.To>
+                                                    <Assign.Value>
+                                                      <InArgument x:TypeArguments="x:String">[CurrentRow.item("ID").ToString]</InArgument>
+                                                    </Assign.Value>
+                                                  </Assign>
+                                                  <ueab:DeleteRowsX DeleteRowsOption="Specific" DisplayName="Delete Rows" HasHeaders="True" sap:VirtualizedContainerService.HintSize="434,140" sap2010:WorkflowViewState.IdRef="DeleteRowsX_1" Range="[Excel.Sheet(&quot;Buchung&quot;)]" RowPositions="[CurrentExcelRow]" />
+                                                </Sequence>
+                                              </If.Else>
+                                            </If>
                                           </Sequence>
                                         </Sequence>
                                       </If.Else>
