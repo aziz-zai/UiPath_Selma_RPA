@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Splan_buchung" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1394,17238.666666666668" sap2010:WorkflowViewState.IdRef="Splan_buchung_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:p="http://schemas.uipath.com/workflow/activities/cv" xmlns:p1="http://schemas.uipath.com/workflow/activities/ocr" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd2="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:uc="clr-namespace:UiPath.CV;assembly=UiPath.CV" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Splan_buchung" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1394,17558" sap2010:WorkflowViewState.IdRef="Splan_buchung_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:p="http://schemas.uipath.com/workflow/activities/cv" xmlns:p1="http://schemas.uipath.com/workflow/activities/ocr" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd2="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:uc="clr-namespace:UiPath.CV;assembly=UiPath.CV" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -128,15 +128,11 @@
       <x:Boolean x:Key="ShouldCollapseAll">False</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence DisplayName="Splan_buchung" sap:VirtualizedContainerService.HintSize="1404,17174" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Splan_buchung" sap:VirtualizedContainerService.HintSize="1404,17493.333333333332" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:Boolean" Default="False" Name="FachError" />
       <Variable x:TypeArguments="x:Boolean" Default="False" Name="BaumstrukturPressed" />
-      <Variable x:TypeArguments="x:Boolean" Name="LehrveranstaltungError">
-        <Variable.Default>
-          <Literal x:TypeArguments="x:Boolean" />
-        </Variable.Default>
-      </Variable>
+      <Variable x:TypeArguments="x:Boolean" Default="False" Name="LehrveranstaltungError" />
       <Variable x:TypeArguments="sd:DataTable" Name="failedBuchung" />
       <Variable x:TypeArguments="sd:DataRow" Name="data_newRow" />
       <Variable x:TypeArguments="sd:DataTable" Name="Lehrveranstaltungen" />
@@ -146,13 +142,13 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="1342,17063.333333333332" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_2" ShowExcelWindow="False">
+    <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="1342,17382.666666666668" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_2" ShowExcelWindow="False">
       <ueab:ExcelProcessScopeX.Body>
         <ActivityAction x:TypeArguments="ui:IExcelProcess">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Ausführen" sap:VirtualizedContainerService.HintSize="1308,16976" sap2010:WorkflowViewState.IdRef="Sequence_19">
+          <Sequence DisplayName="Ausführen" sap:VirtualizedContainerService.HintSize="1308,17295.333333333332" sap2010:WorkflowViewState.IdRef="Sequence_19">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:String" Default="C:\Users\aziz-\Dropbox\Mein PC (LAPTOP-48RO2IT6)\Downloads\Splan_buchung1OG.xlsx" Name="exlFile" />
             </Sequence.Variables>
@@ -161,13 +157,13 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" CreateNewFile="False" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="1246,16865.333333333332" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_2" ResizeWindow="None" WorkbookPath="[exlFile]">
+            <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" CreateNewFile="False" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="1246,17184.666666666668" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_2" ResizeWindow="None" WorkbookPath="[exlFile]">
               <ueab:ExcelApplicationCard.Body>
                 <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Ausführen" sap:VirtualizedContainerService.HintSize="1212,16591.333333333332" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                  <Sequence DisplayName="Ausführen" sap:VirtualizedContainerService.HintSize="1212,16870.666666666668" sap2010:WorkflowViewState.IdRef="Sequence_18">
                     <Sequence.Variables>
                       <Variable x:TypeArguments="sd:DataTable" Name="Kurse" />
                     </Sequence.Variables>
@@ -177,13 +173,13 @@
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                     <ueab:ReadRangeX DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="1150,171.33333333333334" sap2010:WorkflowViewState.IdRef="ReadRangeX_2" Range="[Excel.Sheet(&quot;Buchung&quot;)]" SaveTo="[Kurse]" />
-                    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Öffne StarPlan " sap:VirtualizedContainerService.HintSize="1150,16269.333333333334" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" ScopeGuid="ad08872b-b465-48f0-a3f0-10ce604fc639" Version="V2">
+                    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Öffne StarPlan " sap:VirtualizedContainerService.HintSize="1150,16548.666666666668" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" ScopeGuid="ad08872b-b465-48f0-a3f0-10ce604fc639" Version="V2">
                       <uix:NApplicationCard.Body>
                         <ActivityAction x:TypeArguments="x:Object">
                           <ActivityAction.Argument>
                             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                           </ActivityAction.Argument>
-                          <Sequence DisplayName="Ausführen" sap:VirtualizedContainerService.HintSize="1116,15975.333333333334" sap2010:WorkflowViewState.IdRef="Sequence_32">
+                          <Sequence DisplayName="Ausführen" sap:VirtualizedContainerService.HintSize="1116,16254.666666666666" sap2010:WorkflowViewState.IdRef="Sequence_32">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -214,19 +210,19 @@
                                 </uix:TargetAnchorable>
                               </uix:NClick.Target>
                             </uix:NClick>
-                            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[Kurse]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="1054,15263.333333333334" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
+                            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[Kurse]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="1054,15542.666666666666" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
                               <ui:ForEachRow.Body>
                                 <ActivityAction x:TypeArguments="sd:DataRow">
                                   <ActivityAction.Argument>
                                     <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
                                   </ActivityAction.Argument>
-                                  <Sequence sap:VirtualizedContainerService.HintSize="1020,15144.666666666666" sap2010:WorkflowViewState.IdRef="Sequence_31">
+                                  <Sequence sap:VirtualizedContainerService.HintSize="1020,15424" sap2010:WorkflowViewState.IdRef="Sequence_31">
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
-                                    <If Condition="[String.IsNullOrEmpty(CurrentRow.item(&quot;ID&quot;).ToString()) = true]" sap:VirtualizedContainerService.HintSize="958,15028.666666666666" sap2010:WorkflowViewState.IdRef="If_1">
+                                    <If Condition="[String.IsNullOrEmpty(CurrentRow.item(&quot;ID&quot;).ToString()) = true]" sap:VirtualizedContainerService.HintSize="958,15308" sap2010:WorkflowViewState.IdRef="If_1">
                                       <If.Then>
                                         <Sequence sap:VirtualizedContainerService.HintSize="376,178.66666666666666" sap2010:WorkflowViewState.IdRef="Sequence_35">
                                           <sap:WorkflowViewStateService.ViewState>
@@ -238,13 +234,13 @@
                                         </Sequence>
                                       </If.Then>
                                       <If.Else>
-                                        <Sequence sap:VirtualizedContainerService.HintSize="924,14666.666666666666" sap2010:WorkflowViewState.IdRef="Sequence_36">
+                                        <Sequence sap:VirtualizedContainerService.HintSize="924,14946" sap2010:WorkflowViewState.IdRef="Sequence_36">
                                           <sap:WorkflowViewStateService.ViewState>
                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                             </scg:Dictionary>
                                           </sap:WorkflowViewStateService.ViewState>
-                                          <Sequence DisplayName="Text" sap:VirtualizedContainerService.HintSize="882,14579.333333333334" sap2010:WorkflowViewState.IdRef="Sequence_30">
+                                          <Sequence DisplayName="Text" sap:VirtualizedContainerService.HintSize="882,14858.666666666666" sap2010:WorkflowViewState.IdRef="Sequence_30">
                                             <Sequence.Variables>
                                               <Variable x:TypeArguments="x:String" Default="[CurrentRow.item(&quot;Raum&quot;).ToString]" Name="RaumNr" />
                                             </Sequence.Variables>
@@ -313,7 +309,7 @@
                                                 </uix:TargetAnchorable>
                                               </uix:NClick.Target>
                                             </uix:NClick>
-                                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Planungsgruppen und'" sap:VirtualizedContainerService.HintSize="572,158.66666666666666" sap2010:WorkflowViewState.IdRef="NClick_41" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ad08872b-b465-48f0-a3f0-10ce604fc639" Version="V3">
+                                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Planungsgruppen und'" sap:VirtualizedContainerService.HintSize="820,158.66666666666666" sap2010:WorkflowViewState.IdRef="NClick_41" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ad08872b-b465-48f0-a3f0-10ce604fc639" Version="V3">
                                               <uix:NClick.Target>
                                                 <uix:TargetAnchorable CvTextArgument="Planungsgruppen und Lehrveranstaltungen (0)" CvType="Text" DesignTimeRectangle="162, 717, 247, 15" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Planungsgruppen und'" Guid="bf33eb59-77d5-4a71-a2e1-3a61a114eb56" InformativeScreenshot="563d40c43185b1e1c7ca2fd24678596c.png" ScopeSelectorArgument="&lt;wnd app='java*.exe' cls='SunAwtFrame' title='StarPlan (Version 3.4.1.0)' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive">
                                                   <uix:TargetAnchorable.Anchors>
@@ -324,7 +320,7 @@
                                                 </uix:TargetAnchorable>
                                               </uix:NClick.Target>
                                             </uix:NClick>
-                                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Hinzufugen...'" sap:VirtualizedContainerService.HintSize="572,158.66666666666666" sap2010:WorkflowViewState.IdRef="NClick_32" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ad08872b-b465-48f0-a3f0-10ce604fc639" Version="V3">
+                                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Hinzufugen...'" sap:VirtualizedContainerService.HintSize="820,158.66666666666666" sap2010:WorkflowViewState.IdRef="NClick_32" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ad08872b-b465-48f0-a3f0-10ce604fc639" Version="V3">
                                               <uix:NClick.Target>
                                                 <uix:TargetAnchorable CvElementArea="1539, 964, 123, 24" CvTextArea="1574, 970, 72, 15" CvTextArgument="Hinzufugen..." CvType="Button" DesignTimeRectangle="1539, 964, 122, 24" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Hinzufugen...'" Guid="d3929830-9698-4945-b4bb-47c2037d3c63" InformativeScreenshot="a30d57e97a00c6d9b585b160baf8b4c5.png" ScopeSelectorArgument="&lt;wnd app='java*.exe' cls='SunAwtFrame' title='StarPlan (Version 3.4.1.0)' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive" />
                                               </uix:NClick.Target>
@@ -371,14 +367,14 @@
                                                 </Sequence>
                                               </If.Else>
                                             </If>
-                                            <p:CVScope ContinueOnError="{x:Null}" DelayBefore="{x:Null}" ScopeId="{x:Null}" Server="{x:Null}" CvMethod="ElementDetection, OCR" DesignTimeCacheId="b98ebd08-6e14-42e6-95b2-9024b4b77a12" DisplayName="CV Screen Scope 'table'" sap:VirtualizedContainerService.HintSize="820,556" sap2010:WorkflowViewState.IdRef="CVScope_2" SendOnPremData="False" Version="V6">
+                                            <p:CVScope ContinueOnError="{x:Null}" DelayBefore="{x:Null}" ScopeId="{x:Null}" Server="{x:Null}" CvMethod="ElementDetection, OCR" DesignTimeCacheId="b98ebd08-6e14-42e6-95b2-9024b4b77a12" DisplayName="CV Screen Scope 'table'" sap:VirtualizedContainerService.HintSize="820,758.6666666666666" sap2010:WorkflowViewState.IdRef="CVScope_2" SendOnPremData="False" Version="V6">
                                               <p:CVScope.Body>
                                                 <ActivityAction x:TypeArguments="x:Object">
                                                   <ActivityAction.Argument>
                                                     <DelegateInArgument x:TypeArguments="x:Object" Name="CVSessionData" />
                                                   </ActivityAction.Argument>
                                                   <Sequence DisplayName="Do" sap2010:WorkflowViewState.IdRef="Sequence_34">
-                                                    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="434,214.66666666666666" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+                                                    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="438.6666666666667,417.3333333333333" sap2010:WorkflowViewState.IdRef="TryCatch_1">
                                                       <TryCatch.Try>
                                                         <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'WI7 (3. Semester)'" sap:VirtualizedContainerService.HintSize="334,158.66666666666666" sap2010:WorkflowViewState.IdRef="NClick_56" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ad08872b-b465-48f0-a3f0-10ce604fc639" Version="V3">
                                                           <uix:NClick.Target>
@@ -387,7 +383,7 @@
                                                         </uix:NClick>
                                                       </TryCatch.Try>
                                                       <TryCatch.Catches>
-                                                        <Catch x:TypeArguments="ui:SelectorNotFoundException" sap:VirtualizedContainerService.HintSize="400,21.333333333333332" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+                                                        <Catch x:TypeArguments="ui:SelectorNotFoundException" sap:VirtualizedContainerService.HintSize="404.6666666666667,21.333333333333332" sap2010:WorkflowViewState.IdRef="Catch`1_1">
                                                           <sap:WorkflowViewStateService.ViewState>
                                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -425,7 +421,7 @@
                                                             </Sequence>
                                                           </ActivityAction>
                                                         </Catch>
-                                                        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="400,21.333333333333332" sap2010:WorkflowViewState.IdRef="Catch`1_2">
+                                                        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="404.6666666666667,21.333333333333332" sap2010:WorkflowViewState.IdRef="Catch`1_2">
                                                           <sap:WorkflowViewStateService.ViewState>
                                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -436,14 +432,14 @@
                                                             <ActivityAction.Argument>
                                                               <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
                                                             </ActivityAction.Argument>
-                                                            <Sequence sap:VirtualizedContainerService.HintSize="496,346" sap2010:WorkflowViewState.IdRef="Sequence_38">
+                                                            <Sequence sap:VirtualizedContainerService.HintSize="496,345.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_38">
                                                               <sap:WorkflowViewStateService.ViewState>
                                                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                                 </scg:Dictionary>
                                                               </sap:WorkflowViewStateService.ViewState>
                                                               <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,110.66666666666667" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Error" Message="[&quot;Es gab wohl einen Fehler beim hinzufügen des Faches zu der Buchung mit der ID:&quot; + CurrentRow.item(&quot;ID&quot;).ToString]" />
-                                                              <Assign sap:VirtualizedContainerService.HintSize="434,84" sap2010:WorkflowViewState.IdRef="Assign_4">
+                                                              <Assign sap:VirtualizedContainerService.HintSize="434,84.66666666666667" sap2010:WorkflowViewState.IdRef="Assign_4">
                                                                 <Assign.To>
                                                                   <OutArgument x:TypeArguments="x:Boolean">[FachError]</OutArgument>
                                                                 </Assign.To>
@@ -615,7 +611,7 @@
                                                 <InArgument x:TypeArguments="x:Boolean" />
                                               </p:CVScope.UseLocalServer>
                                             </p:CVScope>
-                                            <If Condition="[FachError=True]" sap:VirtualizedContainerService.HintSize="820,2875.3333333333335" sap2010:WorkflowViewState.IdRef="If_2">
+                                            <If Condition="[FachError=True]" sap:VirtualizedContainerService.HintSize="820,3078" sap2010:WorkflowViewState.IdRef="If_2">
                                               <If.Then>
                                                 <Sequence sap:VirtualizedContainerService.HintSize="376,246" sap2010:WorkflowViewState.IdRef="Sequence_39">
                                                   <sap:WorkflowViewStateService.ViewState>
@@ -637,25 +633,26 @@
                                                 </Sequence>
                                               </If.Then>
                                               <If.Else>
-                                                <Sequence sap:VirtualizedContainerService.HintSize="538,2446" sap2010:WorkflowViewState.IdRef="Sequence_40">
-                                                  <Sequence.Variables>
-                                                    <Variable x:TypeArguments="x:String" Default="[CurrentRow.item(&quot;Raum&quot;).ToString]" Name="RaumNr" />
-                                                  </Sequence.Variables>
+                                                <Sequence sap:VirtualizedContainerService.HintSize="542.6666666666666,2648.6666666666665" sap2010:WorkflowViewState.IdRef="Sequence_40">
                                                   <sap:WorkflowViewStateService.ViewState>
                                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                     </scg:Dictionary>
                                                   </sap:WorkflowViewStateService.ViewState>
-                                                  <Sequence sap:VirtualizedContainerService.HintSize="496,2358.6666666666665" sap2010:WorkflowViewState.IdRef="Sequence_41">
+                                                  <Sequence sap:VirtualizedContainerService.HintSize="500.6666666666667,2561.3333333333335" sap2010:WorkflowViewState.IdRef="Sequence_41">
                                                     <Sequence.Variables>
-                                                      <Variable x:TypeArguments="x:String" Default="[CurrentRow.item(&quot;HIS&quot;).ToString]" Name="HIS" />
+                                                      <Variable x:TypeArguments="x:String" Name="HIS">
+                                                        <Variable.Default>
+                                                          <Literal x:TypeArguments="x:String">CurrentRow.item("HIS)</Literal>
+                                                        </Variable.Default>
+                                                      </Variable>
                                                     </Sequence.Variables>
                                                     <sap:WorkflowViewStateService.ViewState>
                                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                       </scg:Dictionary>
                                                     </sap:WorkflowViewStateService.ViewState>
-                                                    <p:CVScope ContinueOnError="{x:Null}" DelayBefore="{x:Null}" ScopeId="{x:Null}" Server="{x:Null}" CvMethod="ElementDetection, OCR" DesignTimeCacheId="e0e25832-c544-4ba9-ae12-8585e5877347" DisplayName="CV Screen Scope 'panel'" sap:VirtualizedContainerService.HintSize="434,529.3333333333334" sap2010:WorkflowViewState.IdRef="CVScope_1" SendOnPremData="False" Version="V6">
+                                                    <p:CVScope ContinueOnError="{x:Null}" DelayBefore="{x:Null}" ScopeId="{x:Null}" Server="{x:Null}" CvMethod="ElementDetection, OCR" DesignTimeCacheId="e0e25832-c544-4ba9-ae12-8585e5877347" DisplayName="CV Screen Scope 'panel'" sap:VirtualizedContainerService.HintSize="438.6666666666667,529.3333333333334" sap2010:WorkflowViewState.IdRef="CVScope_1" SendOnPremData="False" Version="V6">
                                                       <p:CVScope.Body>
                                                         <ActivityAction x:TypeArguments="x:Object">
                                                           <ActivityAction.Argument>
@@ -1183,7 +1180,7 @@
                                                         <InArgument x:TypeArguments="x:Boolean" />
                                                       </p:CVScope.UseLocalServer>
                                                     </p:CVScope>
-                                                    <If Condition="[BaumstrukturPressed=True]" sap:VirtualizedContainerService.HintSize="434,510" sap2010:WorkflowViewState.IdRef="If_4">
+                                                    <If Condition="[BaumstrukturPressed=True]" sap:VirtualizedContainerService.HintSize="438.6666666666667,510" sap2010:WorkflowViewState.IdRef="If_4">
                                                       <If.Then>
                                                         <Sequence sap:VirtualizedContainerService.HintSize="300,80.66666666666667" sap2010:WorkflowViewState.IdRef="Sequence_44">
                                                           <sap:WorkflowViewStateService.ViewState>
@@ -1214,11 +1211,17 @@
                                                         </Sequence>
                                                       </If.Else>
                                                     </If>
-                                                    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="434,214.66666666666666" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+                                                    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="438.6666666666667,417.3333333333333" sap2010:WorkflowViewState.IdRef="TryCatch_2">
                                                       <TryCatch.Try>
-                                                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '123469a'" sap:VirtualizedContainerService.HintSize="334,158.66666666666666" sap2010:WorkflowViewState.IdRef="NClick_38" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ad08872b-b465-48f0-a3f0-10ce604fc639" Version="V3">
+                                                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '123459a'" sap:VirtualizedContainerService.HintSize="334,158.66666666666666" sap2010:WorkflowViewState.IdRef="NClick_38" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ad08872b-b465-48f0-a3f0-10ce604fc639" Version="V3">
                                                           <uix:NClick.Target>
-                                                            <uix:TargetAnchorable CvTextArgument="[HIS]" CvType="Text" DesignTimeRectangle="847, 598, 99, 26" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'123469a'" FullSelectorArgument="&lt;java hasTableAncestor='0' idx='2' role='page tab list' /&gt;&lt;java name='Lehrveranstaltungen' role='page tab' /&gt;&lt;java cls='MyJXTable' role='table' /&gt;&lt;java role='label' tableCol='7' tableRow='0' /&gt;" FuzzySelectorArgument="&lt;java hasTableAncestor='0' role='page tab list' /&gt;&lt;java name='Lehrveranstaltungen' role='page tab' /&gt;&lt;java cls='MyJXTable' role='table' /&gt;&lt;java role='label' check:text='123469a' /&gt;" Guid="09ce4b0d-6bea-4265-929b-e0e404907f76" ImageBase64="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" InformativeScreenshot="aa06c852f591abb957ccd1f4e9107151.png" ScopeSelectorArgument="&lt;wnd app='java*.exe' cls='SunAwtDialog' title='Planungsgruppe und Lehrveranstaltung auswählen ' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+                                                            <uix:TargetAnchorable CvTextArgument="[HIS]" CvType="Text" DesignTimeRectangle="847, 598, 99, 26" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'123459a'" FullSelectorArgument="&lt;java hasTableAncestor='0' idx='2' role='page tab list' /&gt;&lt;java name='Lehrveranstaltungen' role='page tab' /&gt;&lt;java cls='MyJXTable' role='table' /&gt;&lt;java role='label' tableCol='7' tableRow='0' /&gt;" FuzzySelectorArgument="&lt;java hasTableAncestor='0' role='page tab list' /&gt;&lt;java name='Lehrveranstaltungen' role='page tab' /&gt;&lt;java cls='MyJXTable' role='table' /&gt;&lt;java role='label' check:text='123459a' /&gt;" Guid="70fc59d7-feaf-43f4-919f-21a6676f13c5" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGcAAAAeCAYAAAAxbADwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAakSURBVGhD7Zj5S1VbFMf7K4QoIpVAKxC1CaNo0KwQJbNfmjAaKDONHCosc0ibaJ5sgMoGGjVKMyrNSBxD0wYbrWweLRtsdMVn5ZHjfb2HPOrd8+J8YXPv2WefdfZe373W+u7TQVrw9u1befHihXz58qWlx4YzAQ82ORaFkgMptFevXsmzZ8+ksbFRr+3m3AYPHYgW2vPnz5Ucfo0+uzmvwUMHwof24cMHZevTp096bTfnNnhorTkfP36Ud+/eybdv31p6bDgT8GCTY1HY5FgYNjkWhk2OhWGTY2G0m5zm5mb5/Pmz3Lt3TwoLC2Xz5s1SXFzccvcHmpqa5Pr165KVlSXLly/Xlp2dLbdu3VLbAPulpaWyc+dOSUtLkyVLlsihQ4fk6tWr+rwjkPYFBQVy+PBhycvLk9evX2s/vzk5ObJu3TpJSkrStnHjRjl16pS8efNGx7AODnPMMyMjQ9LT02XNmjVq6+HDhypVrYx2k4Pjbty4oQ5JTk6WHj16qPPNaGhokGPHjkl0dLT4+flJ7969ZfLkybJnzx55+fKljuFwtXv3bpk0aZL4+PhoGzt2rDqPA7AZaH2IjYmJkTFjxkhUVJTU19frvbt378rUqVOlX79+0r17d51PSEiIrFixQp48eaJj3r9/LxcvXpSlS5fKsGHDpFevXtK/f3+ZOHGikmiMsyraTQ4RM2vWLJk7d64sXrxYunTpIikpKS13fwByiJQTJ05odBw9elSfGT16tDoZ4HAIunPnjjru5MmTEhERIYGBgUq+GU+fPtX7OH3o0KFtyMEedhctWiRVVVVy6dIl7cPhRDi4f/++xMbGypw5c5T8srIy3Rhcs44zZ87oOKui3eSw8/fv3y/Hjx+XI0eOiLu7u6YSM4iu2tpaefDgge7aR48eyfz583V30+8IvkjU1NRIfHy8DB8+vJUcI4WePXtWoxRSJkyY0IYc0ieEESkQzjOOYExAQIDaN9ImBBLJwcHBsn37dv2eSJoj3bHpUlNTZceOHZoK8YUz0W5yzLh8+bKmEUdyzPj69avWBZw7YMAAuXbtmvZjG+LY1RcuXFDHLFy4UHczfYBaQGSx26dNm6ZOTExMbEMOzu7Tp4/Mnj1brly5okQQNRBgzJ8xvr6+smDBAq1DzIkadP78eU2n1CDeGRcXp2nP29tb18V/nmEOPOMs/DZyKOT5+fmadmbOnKlpEUAMpLCbe/bsqc4jukiDxk59/Pix1gl2MzWMaCWFOpKDgzt16qQ2cOjKlSvbCAsiccSIETJjxgxNYRAEkdh1c3PTKGEjQBBjSbPUoilTpijxPENkOQu/hRxSIPmd+8uWLVPnGioLZ1DMiZh58+ZJeHi47v5t27bpV1h2K4TgONInaQiSuTaTg3ggsiAtISFBHUrtgiCj0FOz1q5dq89Nnz5dowE7CJbOnTvrf9Inm4E0hoIkihEzrq6usnfv3tb3OQO/lByeo45UVlbK1q1b1SEskChyTA/UCAhjpyIaRo0apUSgBrnGkQcPHpTy8nLZtWuX9qGySkpKWokG2EGI5Obmqnoz1y7Ww//Vq1drZBFpqD4iuVu3brpxiCZEB+kXgUEKJhoRPBwXDFvOwC8lB2JQTZw3kL/kdnY4xPysYNOPc6gnpBFSEvLcxcVFOnbsqKnH09NTunbtqn04DII475iBHQiDUOQydgDrYE1EEk6mH7IRNihAalldXZ2MGzdOwsLCdB5EKXXujyMHJ6xatUodTEoiTf2TLUPdUZCHDBmiRR2Fhl2jUY84Ew0ePFgGDhwo69ev1w1ghrEpkM0oOOw4gnkgBk6fPq3pjJRK1PJ+0hhkbdmyReshUfrHkXPz5k0JCgrSMwQFHpnMWJxFHaLeGDUHpzCGuoEzIiMjW0WDGTj03Llzf6k5hqLDDqmOLwWkK+qJMQaJzXsZV11drZHMV4nx48ernGa+zA3iQ0NDtT5xTuP+H0cOaQPlREry8PBoPbn7+/trKoEUGrWIkzrSddCgQarocDDvdsTfkYPDERN9+/ZVO0QeY0hbhh2I2bdvn47z8vLS8xbnJYi8ffu2rpfPOKyDiGPu/B85cuT/lxzqCHWFFGQG/Zs2bdIFmhsFuaKiQr8M4DB2LcWYXbxhwwZ1PpL1Z2cKI9IYY/62hi3UFd/msMN7i4qK9L5hh7WgGhkHcaTbAwcOqGRG0htjiGAOnig9Ul1mZmabOTsL/4ocG/8NbHIsDJscC8Mmx8KwybEwlBxIoaFgkK4cDo0+uzmvNTU1yXfLhDQ59Ks+bgAAAABJRU5ErkJggg==" InformativeScreenshot="63ee58dedece967ce8848fab65845723.png" ScopeSelectorArgument="&lt;wnd app='java*.exe' cls='SunAwtDialog' title='Planungsgruppe und Lehrveranstaltung auswählen ' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
+                                                              <uix:TargetAnchorable.Anchors>
+                                                                <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                                                  <uix:Target CvTextArgument="ID in HIS" CvType="Text" DesignTimeRectangle="863, 574, 67, 15" ElementType="Text" FriendlyName="'ID in HIS'" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                                                                </scg:List>
+                                                              </uix:TargetAnchorable.Anchors>
+                                                            </uix:TargetAnchorable>
                                                           </uix:NClick.Target>
                                                         </uix:NClick>
                                                       </TryCatch.Try>
@@ -1240,7 +1243,7 @@
                                                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                                 </scg:Dictionary>
                                                               </sap:WorkflowViewStateService.ViewState>
-                                                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,110.66666666666667" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Warn" Message="[&quot;Die Lehrveranstaltung für die Buchung mit der der ID:&quot; + CurrentRow.item(&quot;ID&quot;).ToString +&#xD;&#xA;&quot;existiert noch nicht. Der Buchung wurde keine Lehrveranstaltung hinzugefügt.&#xD;&#xA;Die Buchung wurde dem Arbeitsblatt 'Buchung ohne Lehrveranstaltung' hinzugefügt &quot;]" />
+                                                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,110.66666666666667" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Warn" Message="[&quot;Die Lehrveranstaltung für die Buchung mit der der ID:&quot; + CurrentRow.item(&quot;ID&quot;).ToString +&#xA;&quot;existiert noch nicht. Der Buchung wurde keine Lehrveranstaltung hinzugefügt.&#xA;Die Buchung wurde dem Arbeitsblatt 'Buchung ohne Lehrveranstaltung' hinzugefügt &quot;]" />
                                                               <Assign sap:VirtualizedContainerService.HintSize="434,84" sap2010:WorkflowViewState.IdRef="Assign_15">
                                                                 <Assign.To>
                                                                   <OutArgument x:TypeArguments="x:Boolean">[LehrveranstaltungError]</OutArgument>
@@ -1283,7 +1286,7 @@
                                                         </Catch>
                                                       </TryCatch.Catches>
                                                     </TryCatch>
-                                                    <If Condition="[LehrveranstaltungError=True]" sap:VirtualizedContainerService.HintSize="434,874" sap2010:WorkflowViewState.IdRef="If_11">
+                                                    <If Condition="[LehrveranstaltungError=True]" sap:VirtualizedContainerService.HintSize="438.6666666666667,874" sap2010:WorkflowViewState.IdRef="If_11">
                                                       <If.Then>
                                                         <Sequence sap:VirtualizedContainerService.HintSize="376,246" sap2010:WorkflowViewState.IdRef="Sequence_61">
                                                           <sap:WorkflowViewStateService.ViewState>
@@ -1579,7 +1582,7 @@
                                                 <InArgument x:TypeArguments="x:Boolean">True</InArgument>
                                               </Assign.Value>
                                             </Assign>
-                                            <If Condition="[FachError = true]" sap:VirtualizedContainerService.HintSize="820,3987.3333333333335" sap2010:WorkflowViewState.IdRef="If_6">
+                                            <If Condition="[FachError = true]" sap:VirtualizedContainerService.HintSize="820,3861.3333333333335" sap2010:WorkflowViewState.IdRef="If_6">
                                               <If.Then>
                                                 <Sequence sap:VirtualizedContainerService.HintSize="548,1423.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_49">
                                                   <Sequence.Variables>
@@ -1647,7 +1650,7 @@
                                                 </Sequence>
                                               </If.Then>
                                               <If.Else>
-                                                <Sequence sap:VirtualizedContainerService.HintSize="786,2380.6666666666665" sap2010:WorkflowViewState.IdRef="Sequence_48">
+                                                <Sequence sap:VirtualizedContainerService.HintSize="686,2254.6666666666665" sap2010:WorkflowViewState.IdRef="Sequence_48">
                                                   <Sequence.Variables>
                                                     <Variable x:TypeArguments="x:String" Name="variable2" />
                                                     <Variable x:TypeArguments="x:String" Name="CurrentExcelRow" />
@@ -1657,50 +1660,43 @@
                                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                     </scg:Dictionary>
                                                   </sap:WorkflowViewStateService.ViewState>
-                                                  <If Condition="[LehrveranstaltungError=True]" sap:VirtualizedContainerService.HintSize="744,2293.3333333333335" sap2010:WorkflowViewState.IdRef="If_9">
+                                                  <If Condition="[LehrveranstaltungError=True]" sap:VirtualizedContainerService.HintSize="644,2167.3333333333335" sap2010:WorkflowViewState.IdRef="If_9">
                                                     <If.Then>
-                                                      <Sequence sap:VirtualizedContainerService.HintSize="710,1758" sap2010:WorkflowViewState.IdRef="Sequence_58">
+                                                      <Sequence sap:VirtualizedContainerService.HintSize="610,1632.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_58">
                                                         <sap:WorkflowViewStateService.ViewState>
                                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                           </scg:Dictionary>
                                                         </sap:WorkflowViewStateService.ViewState>
-                                                        <Sequence sap:VirtualizedContainerService.HintSize="668,1670.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_57">
+                                                        <Sequence sap:VirtualizedContainerService.HintSize="568,1545.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_57">
                                                           <sap:WorkflowViewStateService.ViewState>
                                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                             </scg:Dictionary>
                                                           </sap:WorkflowViewStateService.ViewState>
-                                                          <ueab:ReadRangeX DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="606,171.33333333333334" sap2010:WorkflowViewState.IdRef="ReadRangeX_3" Range="[Excel.Sheet(&quot;FailedBuchung&quot;)]" SaveTo="[failedBuchung]" />
-                                                          <ueab:ReadRangeX DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="606,171.33333333333334" sap2010:WorkflowViewState.IdRef="ReadRangeX_4" Range="[Excel.sheet(&quot;Lehrveranstaltungen&quot;)]" SaveTo="[Lehrveranstaltungen]" />
-                                                          <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[Lehrveranstaltungen]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="606,582" sap2010:WorkflowViewState.IdRef="ForEachRow_3">
+                                                          <ueab:ReadRangeX DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="506,171.33333333333334" sap2010:WorkflowViewState.IdRef="ReadRangeX_3" Range="[Excel.Sheet(&quot;FailedBuchung&quot;)]" SaveTo="[failedBuchung]" />
+                                                          <ueab:ReadRangeX DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="506,171.33333333333334" sap2010:WorkflowViewState.IdRef="ReadRangeX_4" Range="[Excel.sheet(&quot;Lehrveranstaltungen&quot;)]" SaveTo="[Lehrveranstaltungen]" />
+                                                          <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[Lehrveranstaltungen]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="506,686.6666666666666" sap2010:WorkflowViewState.IdRef="ForEachRow_3">
                                                             <ui:ForEachRow.Body>
                                                               <ActivityAction x:TypeArguments="sd:DataRow">
                                                                 <ActivityAction.Argument>
                                                                   <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentLehrveranstaltung" />
                                                                 </ActivityAction.Argument>
-                                                                <Sequence DisplayName="Text" sap:VirtualizedContainerService.HintSize="572,466" sap2010:WorkflowViewState.IdRef="Sequence_54">
+                                                                <Sequence DisplayName="Text" sap:VirtualizedContainerService.HintSize="472,570.6666666666666" sap2010:WorkflowViewState.IdRef="Sequence_54">
                                                                   <sap:WorkflowViewStateService.ViewState>
                                                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                                     </scg:Dictionary>
                                                                   </sap:WorkflowViewStateService.ViewState>
-                                                                  <If Condition="[CurrentLehrveranstaltung.item(&quot;ID in HIS&quot;).ToString = CurrentRow.item(&quot;HIS&quot;).ToString]" sap:VirtualizedContainerService.HintSize="510,355.3333333333333" sap2010:WorkflowViewState.IdRef="If_8">
+                                                                  <If Condition="[CurrentLehrveranstaltung.item(&quot;ID in HIS&quot;).ToString = CurrentRow.item(&quot;HIS&quot;).ToString]" sap:VirtualizedContainerService.HintSize="410,460" sap2010:WorkflowViewState.IdRef="If_8">
                                                                     <If.Then>
-                                                                      <Sequence sap:VirtualizedContainerService.HintSize="476,172" sap2010:WorkflowViewState.IdRef="Sequence_52">
+                                                                      <Sequence sap:VirtualizedContainerService.HintSize="376,276.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_52">
                                                                         <sap:WorkflowViewStateService.ViewState>
                                                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                                           </scg:Dictionary>
                                                                         </sap:WorkflowViewStateService.ViewState>
-                                                                        <Assign sap:VirtualizedContainerService.HintSize="434,84.66666666666667" sap2010:WorkflowViewState.IdRef="Assign_13">
-                                                                          <Assign.To>
-                                                                            <OutArgument x:TypeArguments="sd:DataRow">[data_newRow]</OutArgument>
-                                                                          </Assign.To>
-                                                                          <Assign.Value>
-                                                                            <InArgument x:TypeArguments="sd:DataRow">[CurrentLehrveranstaltung]</InArgument>
-                                                                          </Assign.Value>
-                                                                        </Assign>
+                                                                        <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[CurrentLehrveranstaltung.itemArray]" DataTable="[failedBuchung]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="334,189.33333333333334" sap2010:WorkflowViewState.IdRef="AddDataRow_1" />
                                                                       </Sequence>
                                                                     </If.Then>
                                                                     <If.Else>
@@ -1711,9 +1707,8 @@
                                                               </ActivityAction>
                                                             </ui:ForEachRow.Body>
                                                           </ui:ForEachRow>
-                                                          <ui:AddDataRow ArrayRow="{x:Null}" DataRow="[data_newRow]" DataTable="[failedBuchung]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="606,189.33333333333334" sap2010:WorkflowViewState.IdRef="AddDataRow_1" />
-                                                          <ueab:WriteRangeX Destination="[Excel.Sheet(&quot;FailedBuchung&quot;)]" DisplayName="Write DataTable to Excel" sap:VirtualizedContainerService.HintSize="606,161.33333333333334" sap2010:WorkflowViewState.IdRef="WriteRangeX_1" IgnoreEmptySource="False" Source="[failedBuchung]" />
-                                                          <Assign sap:VirtualizedContainerService.HintSize="606,84.66666666666667" sap2010:WorkflowViewState.IdRef="Assign_19">
+                                                          <ueab:WriteRangeX Destination="[Excel.Sheet(&quot;FailedBuchung&quot;)]" DisplayName="Write DataTable to Excel" sap:VirtualizedContainerService.HintSize="506,161.33333333333334" sap2010:WorkflowViewState.IdRef="WriteRangeX_1" IgnoreEmptySource="False" Source="[failedBuchung]" />
+                                                          <Assign sap:VirtualizedContainerService.HintSize="506,84" sap2010:WorkflowViewState.IdRef="Assign_19">
                                                             <Assign.To>
                                                               <OutArgument x:TypeArguments="x:Boolean">[LehrveranstaltungError]</OutArgument>
                                                             </Assign.To>
@@ -1725,13 +1720,13 @@
                                                       </Sequence>
                                                     </If.Then>
                                                     <If.Else>
-                                                      <Sequence sap:VirtualizedContainerService.HintSize="476,352" sap2010:WorkflowViewState.IdRef="Sequence_59">
+                                                      <Sequence sap:VirtualizedContainerService.HintSize="476,351.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_59">
                                                         <sap:WorkflowViewStateService.ViewState>
                                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                           </scg:Dictionary>
                                                         </sap:WorkflowViewStateService.ViewState>
-                                                        <Assign sap:VirtualizedContainerService.HintSize="434,84.66666666666667" sap2010:WorkflowViewState.IdRef="Assign_6">
+                                                        <Assign sap:VirtualizedContainerService.HintSize="434,84" sap2010:WorkflowViewState.IdRef="Assign_6">
                                                           <Assign.To>
                                                             <OutArgument x:TypeArguments="x:String">[CurrentExcelRow]</OutArgument>
                                                           </Assign.To>
