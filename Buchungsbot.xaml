@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Splan_buchung" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1394,17786.666666666668" sap2010:WorkflowViewState.IdRef="Splan_buchung_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:p="http://schemas.uipath.com/workflow/activities/cv" xmlns:p1="http://schemas.uipath.com/workflow/activities/ocr" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd2="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:uc="clr-namespace:UiPath.CV;assembly=UiPath.CV" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Splan_buchung" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1394,17238.666666666668" sap2010:WorkflowViewState.IdRef="Splan_buchung_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:p="http://schemas.uipath.com/workflow/activities/cv" xmlns:p1="http://schemas.uipath.com/workflow/activities/ocr" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd2="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:uc="clr-namespace:UiPath.CV;assembly=UiPath.CV" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -128,7 +128,7 @@
       <x:Boolean x:Key="ShouldCollapseAll">False</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence DisplayName="Splan_buchung" sap:VirtualizedContainerService.HintSize="1404,17722" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Splan_buchung" sap:VirtualizedContainerService.HintSize="1404,17174" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:Boolean" Default="False" Name="FachError" />
       <Variable x:TypeArguments="x:Boolean" Default="False" Name="BaumstrukturPressed" />
@@ -146,13 +146,13 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="1342,17611.333333333332" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_2" ShowExcelWindow="False">
+    <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="1342,17063.333333333332" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_2" ShowExcelWindow="False">
       <ueab:ExcelProcessScopeX.Body>
         <ActivityAction x:TypeArguments="ui:IExcelProcess">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Ausführen" sap:VirtualizedContainerService.HintSize="1308,17524" sap2010:WorkflowViewState.IdRef="Sequence_19">
+          <Sequence DisplayName="Ausführen" sap:VirtualizedContainerService.HintSize="1308,16976" sap2010:WorkflowViewState.IdRef="Sequence_19">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:String" Default="C:\Users\aziz-\Dropbox\Mein PC (LAPTOP-48RO2IT6)\Downloads\Splan_buchung1OG.xlsx" Name="exlFile" />
             </Sequence.Variables>
@@ -161,13 +161,13 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" CreateNewFile="False" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="1246,17413.333333333332" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_2" ResizeWindow="None" WorkbookPath="[exlFile]">
+            <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" CreateNewFile="False" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="1246,16865.333333333332" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_2" ResizeWindow="None" WorkbookPath="[exlFile]">
               <ueab:ExcelApplicationCard.Body>
                 <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Ausführen" sap:VirtualizedContainerService.HintSize="1212,17139.333333333332" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                  <Sequence DisplayName="Ausführen" sap:VirtualizedContainerService.HintSize="1212,16591.333333333332" sap2010:WorkflowViewState.IdRef="Sequence_18">
                     <Sequence.Variables>
                       <Variable x:TypeArguments="sd:DataTable" Name="Kurse" />
                     </Sequence.Variables>
@@ -177,13 +177,13 @@
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                     <ueab:ReadRangeX DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="1150,171.33333333333334" sap2010:WorkflowViewState.IdRef="ReadRangeX_2" Range="[Excel.Sheet(&quot;Buchung&quot;)]" SaveTo="[Kurse]" />
-                    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Öffne StarPlan " sap:VirtualizedContainerService.HintSize="1150,16817.333333333332" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" ScopeGuid="ad08872b-b465-48f0-a3f0-10ce604fc639" Version="V2">
+                    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Öffne StarPlan " sap:VirtualizedContainerService.HintSize="1150,16269.333333333334" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" ScopeGuid="ad08872b-b465-48f0-a3f0-10ce604fc639" Version="V2">
                       <uix:NApplicationCard.Body>
                         <ActivityAction x:TypeArguments="x:Object">
                           <ActivityAction.Argument>
                             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                           </ActivityAction.Argument>
-                          <Sequence DisplayName="Ausführen" sap:VirtualizedContainerService.HintSize="1116,16523.333333333332" sap2010:WorkflowViewState.IdRef="Sequence_32">
+                          <Sequence DisplayName="Ausführen" sap:VirtualizedContainerService.HintSize="1116,15975.333333333334" sap2010:WorkflowViewState.IdRef="Sequence_32">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -214,19 +214,19 @@
                                 </uix:TargetAnchorable>
                               </uix:NClick.Target>
                             </uix:NClick>
-                            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[Kurse]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="1054,15811.333333333334" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
+                            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[Kurse]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="1054,15263.333333333334" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
                               <ui:ForEachRow.Body>
                                 <ActivityAction x:TypeArguments="sd:DataRow">
                                   <ActivityAction.Argument>
                                     <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
                                   </ActivityAction.Argument>
-                                  <Sequence sap:VirtualizedContainerService.HintSize="1020,15692.666666666666" sap2010:WorkflowViewState.IdRef="Sequence_31">
+                                  <Sequence sap:VirtualizedContainerService.HintSize="1020,15144.666666666666" sap2010:WorkflowViewState.IdRef="Sequence_31">
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
-                                    <If Condition="[String.IsNullOrEmpty(CurrentRow.item(&quot;ID&quot;).ToString()) = true]" sap:VirtualizedContainerService.HintSize="958,15576.666666666666" sap2010:WorkflowViewState.IdRef="If_1">
+                                    <If Condition="[String.IsNullOrEmpty(CurrentRow.item(&quot;ID&quot;).ToString()) = true]" sap:VirtualizedContainerService.HintSize="958,15028.666666666666" sap2010:WorkflowViewState.IdRef="If_1">
                                       <If.Then>
                                         <Sequence sap:VirtualizedContainerService.HintSize="376,178.66666666666666" sap2010:WorkflowViewState.IdRef="Sequence_35">
                                           <sap:WorkflowViewStateService.ViewState>
@@ -238,13 +238,13 @@
                                         </Sequence>
                                       </If.Then>
                                       <If.Else>
-                                        <Sequence sap:VirtualizedContainerService.HintSize="924,15214.666666666666" sap2010:WorkflowViewState.IdRef="Sequence_36">
+                                        <Sequence sap:VirtualizedContainerService.HintSize="924,14666.666666666666" sap2010:WorkflowViewState.IdRef="Sequence_36">
                                           <sap:WorkflowViewStateService.ViewState>
                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                             </scg:Dictionary>
                                           </sap:WorkflowViewStateService.ViewState>
-                                          <Sequence DisplayName="Text" sap:VirtualizedContainerService.HintSize="882,15127.333333333334" sap2010:WorkflowViewState.IdRef="Sequence_30">
+                                          <Sequence DisplayName="Text" sap:VirtualizedContainerService.HintSize="882,14579.333333333334" sap2010:WorkflowViewState.IdRef="Sequence_30">
                                             <Sequence.Variables>
                                               <Variable x:TypeArguments="x:String" Default="[CurrentRow.item(&quot;Raum&quot;).ToString]" Name="RaumNr" />
                                             </Sequence.Variables>
@@ -371,14 +371,14 @@
                                                 </Sequence>
                                               </If.Else>
                                             </If>
-                                            <p:CVScope ContinueOnError="{x:Null}" DelayBefore="{x:Null}" ScopeId="{x:Null}" Server="{x:Null}" CvMethod="ElementDetection, OCR" DesignTimeCacheId="b98ebd08-6e14-42e6-95b2-9024b4b77a12" DisplayName="CV Screen Scope 'table'" sap:VirtualizedContainerService.HintSize="820,1226" sap2010:WorkflowViewState.IdRef="CVScope_2" SendOnPremData="False" Version="V6">
+                                            <p:CVScope ContinueOnError="{x:Null}" DelayBefore="{x:Null}" ScopeId="{x:Null}" Server="{x:Null}" CvMethod="ElementDetection, OCR" DesignTimeCacheId="b98ebd08-6e14-42e6-95b2-9024b4b77a12" DisplayName="CV Screen Scope 'table'" sap:VirtualizedContainerService.HintSize="820,556" sap2010:WorkflowViewState.IdRef="CVScope_2" SendOnPremData="False" Version="V6">
                                               <p:CVScope.Body>
                                                 <ActivityAction x:TypeArguments="x:Object">
                                                   <ActivityAction.Argument>
                                                     <DelegateInArgument x:TypeArguments="x:Object" Name="CVSessionData" />
                                                   </ActivityAction.Argument>
                                                   <Sequence DisplayName="Do" sap2010:WorkflowViewState.IdRef="Sequence_34">
-                                                    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="536,884.6666666666666" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+                                                    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="434,214.66666666666666" sap2010:WorkflowViewState.IdRef="TryCatch_1">
                                                       <TryCatch.Try>
                                                         <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'WI7 (3. Semester)'" sap:VirtualizedContainerService.HintSize="334,158.66666666666666" sap2010:WorkflowViewState.IdRef="NClick_56" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ad08872b-b465-48f0-a3f0-10ce604fc639" Version="V3">
                                                           <uix:NClick.Target>
@@ -387,10 +387,10 @@
                                                         </uix:NClick>
                                                       </TryCatch.Try>
                                                       <TryCatch.Catches>
-                                                        <Catch x:TypeArguments="ui:SelectorNotFoundException" sap:VirtualizedContainerService.HintSize="502,691.3333333333334" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+                                                        <Catch x:TypeArguments="ui:SelectorNotFoundException" sap:VirtualizedContainerService.HintSize="400,21.333333333333332" sap2010:WorkflowViewState.IdRef="Catch`1_1">
                                                           <sap:WorkflowViewStateService.ViewState>
                                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                                                               <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                                             </scg:Dictionary>
                                                           </sap:WorkflowViewStateService.ViewState>
@@ -398,14 +398,14 @@
                                                             <ActivityAction.Argument>
                                                               <DelegateInArgument x:TypeArguments="ui:SelectorNotFoundException" Name="exception" />
                                                             </ActivityAction.Argument>
-                                                            <Sequence sap:VirtualizedContainerService.HintSize="496,621.3333333333334" sap2010:WorkflowViewState.IdRef="Sequence_37">
+                                                            <Sequence sap:VirtualizedContainerService.HintSize="496,618" sap2010:WorkflowViewState.IdRef="Sequence_37">
                                                               <sap:WorkflowViewStateService.ViewState>
                                                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                                 </scg:Dictionary>
                                                               </sap:WorkflowViewStateService.ViewState>
                                                               <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,110.66666666666667" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Warn" Message="[&quot;Das Fach für die Buchung mit der der ID:&quot; + CurrentRow.item(&quot;ID&quot;).ToString +&#xA;&quot;existiert noch nicht. Der Buchung wurde keine Lehrveranstaltung hinzugefügt.&#xA;Die Buchung wurde dem Arbeitsblatt 'Buchung ohne Lehrveranstaltung' hinzugefügt &quot;]" />
-                                                              <Assign sap:VirtualizedContainerService.HintSize="434,84.66666666666667" sap2010:WorkflowViewState.IdRef="Assign_1">
+                                                              <Assign sap:VirtualizedContainerService.HintSize="434,84" sap2010:WorkflowViewState.IdRef="Assign_1">
                                                                 <Assign.To>
                                                                   <OutArgument x:TypeArguments="x:Boolean">[FachError]</OutArgument>
                                                                 </Assign.To>
@@ -414,7 +414,7 @@
                                                                 </Assign.Value>
                                                               </Assign>
                                                               <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,110.66666666666667" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Warn" Message="[&quot;Das Fach für die Buchung mit der der ID:&quot; + CurrentRow.item(&quot;ID&quot;).ToString +&#xA;&quot;existiert noch nicht. Der Buchung wurde keine Lehrveranstaltung hinzugefügt.&#xA;Die Buchung wurde dem Arbeitsblatt 'Buchung ohne Lehrveranstaltung' hinzugefügt &quot;]" />
-                                                              <Assign sap:VirtualizedContainerService.HintSize="434,84.66666666666667" sap2010:WorkflowViewState.IdRef="Assign_14">
+                                                              <Assign sap:VirtualizedContainerService.HintSize="434,84" sap2010:WorkflowViewState.IdRef="Assign_14">
                                                                 <Assign.To>
                                                                   <OutArgument x:TypeArguments="x:Boolean">[FachError]</OutArgument>
                                                                 </Assign.To>
@@ -425,7 +425,7 @@
                                                             </Sequence>
                                                           </ActivityAction>
                                                         </Catch>
-                                                        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="502,21.333333333333332" sap2010:WorkflowViewState.IdRef="Catch`1_2">
+                                                        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="400,21.333333333333332" sap2010:WorkflowViewState.IdRef="Catch`1_2">
                                                           <sap:WorkflowViewStateService.ViewState>
                                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -436,14 +436,14 @@
                                                             <ActivityAction.Argument>
                                                               <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
                                                             </ActivityAction.Argument>
-                                                            <Sequence sap:VirtualizedContainerService.HintSize="496,345.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_38">
+                                                            <Sequence sap:VirtualizedContainerService.HintSize="496,346" sap2010:WorkflowViewState.IdRef="Sequence_38">
                                                               <sap:WorkflowViewStateService.ViewState>
                                                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                                 </scg:Dictionary>
                                                               </sap:WorkflowViewStateService.ViewState>
                                                               <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,110.66666666666667" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Error" Message="[&quot;Es gab wohl einen Fehler beim hinzufügen des Faches zu der Buchung mit der ID:&quot; + CurrentRow.item(&quot;ID&quot;).ToString]" />
-                                                              <Assign sap:VirtualizedContainerService.HintSize="434,84.66666666666667" sap2010:WorkflowViewState.IdRef="Assign_4">
+                                                              <Assign sap:VirtualizedContainerService.HintSize="434,84" sap2010:WorkflowViewState.IdRef="Assign_4">
                                                                 <Assign.To>
                                                                   <OutArgument x:TypeArguments="x:Boolean">[FachError]</OutArgument>
                                                                 </Assign.To>
@@ -615,7 +615,7 @@
                                                 <InArgument x:TypeArguments="x:Boolean" />
                                               </p:CVScope.UseLocalServer>
                                             </p:CVScope>
-                                            <If Condition="[FachError=True]" sap:VirtualizedContainerService.HintSize="820,2753.3333333333335" sap2010:WorkflowViewState.IdRef="If_2">
+                                            <If Condition="[FachError=True]" sap:VirtualizedContainerService.HintSize="820,2875.3333333333335" sap2010:WorkflowViewState.IdRef="If_2">
                                               <If.Then>
                                                 <Sequence sap:VirtualizedContainerService.HintSize="376,246" sap2010:WorkflowViewState.IdRef="Sequence_39">
                                                   <sap:WorkflowViewStateService.ViewState>
@@ -637,7 +637,7 @@
                                                 </Sequence>
                                               </If.Then>
                                               <If.Else>
-                                                <Sequence sap:VirtualizedContainerService.HintSize="640,2324" sap2010:WorkflowViewState.IdRef="Sequence_40">
+                                                <Sequence sap:VirtualizedContainerService.HintSize="538,2446" sap2010:WorkflowViewState.IdRef="Sequence_40">
                                                   <Sequence.Variables>
                                                     <Variable x:TypeArguments="x:String" Default="[CurrentRow.item(&quot;Raum&quot;).ToString]" Name="RaumNr" />
                                                   </Sequence.Variables>
@@ -646,7 +646,7 @@
                                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                     </scg:Dictionary>
                                                   </sap:WorkflowViewStateService.ViewState>
-                                                  <Sequence sap:VirtualizedContainerService.HintSize="598,2236.6666666666665" sap2010:WorkflowViewState.IdRef="Sequence_41">
+                                                  <Sequence sap:VirtualizedContainerService.HintSize="496,2358.6666666666665" sap2010:WorkflowViewState.IdRef="Sequence_41">
                                                     <Sequence.Variables>
                                                       <Variable x:TypeArguments="x:String" Default="[CurrentRow.item(&quot;HIS&quot;).ToString]" Name="HIS" />
                                                     </Sequence.Variables>
@@ -655,7 +655,7 @@
                                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                       </scg:Dictionary>
                                                     </sap:WorkflowViewStateService.ViewState>
-                                                    <p:CVScope ContinueOnError="{x:Null}" DelayBefore="{x:Null}" ScopeId="{x:Null}" Server="{x:Null}" CvMethod="ElementDetection, OCR" DesignTimeCacheId="e0e25832-c544-4ba9-ae12-8585e5877347" DisplayName="CV Screen Scope 'panel'" sap:VirtualizedContainerService.HintSize="536,529.3333333333334" sap2010:WorkflowViewState.IdRef="CVScope_1" SendOnPremData="False" Version="V6">
+                                                    <p:CVScope ContinueOnError="{x:Null}" DelayBefore="{x:Null}" ScopeId="{x:Null}" Server="{x:Null}" CvMethod="ElementDetection, OCR" DesignTimeCacheId="e0e25832-c544-4ba9-ae12-8585e5877347" DisplayName="CV Screen Scope 'panel'" sap:VirtualizedContainerService.HintSize="434,529.3333333333334" sap2010:WorkflowViewState.IdRef="CVScope_1" SendOnPremData="False" Version="V6">
                                                       <p:CVScope.Body>
                                                         <ActivityAction x:TypeArguments="x:Object">
                                                           <ActivityAction.Argument>
@@ -1183,7 +1183,7 @@
                                                         <InArgument x:TypeArguments="x:Boolean" />
                                                       </p:CVScope.UseLocalServer>
                                                     </p:CVScope>
-                                                    <If Condition="[BaumstrukturPressed=True]" sap:VirtualizedContainerService.HintSize="536,510" sap2010:WorkflowViewState.IdRef="If_4">
+                                                    <If Condition="[BaumstrukturPressed=True]" sap:VirtualizedContainerService.HintSize="434,510" sap2010:WorkflowViewState.IdRef="If_4">
                                                       <If.Then>
                                                         <Sequence sap:VirtualizedContainerService.HintSize="300,80.66666666666667" sap2010:WorkflowViewState.IdRef="Sequence_44">
                                                           <sap:WorkflowViewStateService.ViewState>
@@ -1214,7 +1214,7 @@
                                                         </Sequence>
                                                       </If.Else>
                                                     </If>
-                                                    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="536,609.3333333333334" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+                                                    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="434,214.66666666666666" sap2010:WorkflowViewState.IdRef="TryCatch_2">
                                                       <TryCatch.Try>
                                                         <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '123469a'" sap:VirtualizedContainerService.HintSize="334,158.66666666666666" sap2010:WorkflowViewState.IdRef="NClick_38" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ad08872b-b465-48f0-a3f0-10ce604fc639" Version="V3">
                                                           <uix:NClick.Target>
@@ -1223,7 +1223,7 @@
                                                         </uix:NClick>
                                                       </TryCatch.Try>
                                                       <TryCatch.Catches>
-                                                        <Catch x:TypeArguments="ui:SelectorNotFoundException" sap:VirtualizedContainerService.HintSize="502,21.333333333333332" sap2010:WorkflowViewState.IdRef="Catch`1_3">
+                                                        <Catch x:TypeArguments="ui:SelectorNotFoundException" sap:VirtualizedContainerService.HintSize="400,21.333333333333332" sap2010:WorkflowViewState.IdRef="Catch`1_3">
                                                           <sap:WorkflowViewStateService.ViewState>
                                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1241,7 +1241,7 @@
                                                                 </scg:Dictionary>
                                                               </sap:WorkflowViewStateService.ViewState>
                                                               <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,110.66666666666667" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Warn" Message="[&quot;Die Lehrveranstaltung für die Buchung mit der der ID:&quot; + CurrentRow.item(&quot;ID&quot;).ToString +&#xD;&#xA;&quot;existiert noch nicht. Der Buchung wurde keine Lehrveranstaltung hinzugefügt.&#xD;&#xA;Die Buchung wurde dem Arbeitsblatt 'Buchung ohne Lehrveranstaltung' hinzugefügt &quot;]" />
-                                                              <Assign sap:VirtualizedContainerService.HintSize="434,84.66666666666667" sap2010:WorkflowViewState.IdRef="Assign_15">
+                                                              <Assign sap:VirtualizedContainerService.HintSize="434,84" sap2010:WorkflowViewState.IdRef="Assign_15">
                                                                 <Assign.To>
                                                                   <OutArgument x:TypeArguments="x:Boolean">[LehrveranstaltungError]</OutArgument>
                                                                 </Assign.To>
@@ -1252,10 +1252,10 @@
                                                             </Sequence>
                                                           </ActivityAction>
                                                         </Catch>
-                                                        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="502,416" sap2010:WorkflowViewState.IdRef="Catch`1_4">
+                                                        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="400,21.333333333333332" sap2010:WorkflowViewState.IdRef="Catch`1_4">
                                                           <sap:WorkflowViewStateService.ViewState>
                                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                                                               <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                                             </scg:Dictionary>
                                                           </sap:WorkflowViewStateService.ViewState>
@@ -1263,14 +1263,14 @@
                                                             <ActivityAction.Argument>
                                                               <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
                                                             </ActivityAction.Argument>
-                                                            <Sequence sap:VirtualizedContainerService.HintSize="496,346" sap2010:WorkflowViewState.IdRef="Sequence_56">
+                                                            <Sequence sap:VirtualizedContainerService.HintSize="496,342.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_56">
                                                               <sap:WorkflowViewStateService.ViewState>
                                                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                                 </scg:Dictionary>
                                                               </sap:WorkflowViewStateService.ViewState>
                                                               <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,110.66666666666667" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Warn" Message="[&quot;Die Lehrveranstaltung für die Buchung mit der der ID:&quot; + CurrentRow.item(&quot;ID&quot;).ToString +&#xA;&quot;existiert noch nicht. Der Buchung wurde keine Lehrveranstaltung hinzugefügt.&#xA;Die Buchung wurde dem Arbeitsblatt 'Buchung ohne Lehrveranstaltung' hinzugefügt &quot;]" />
-                                                              <Assign sap:VirtualizedContainerService.HintSize="434,84.66666666666667" sap2010:WorkflowViewState.IdRef="Assign_16">
+                                                              <Assign sap:VirtualizedContainerService.HintSize="434,84" sap2010:WorkflowViewState.IdRef="Assign_16">
                                                                 <Assign.To>
                                                                   <OutArgument x:TypeArguments="x:Boolean">[LehrveranstaltungError]</OutArgument>
                                                                 </Assign.To>
@@ -1283,16 +1283,47 @@
                                                         </Catch>
                                                       </TryCatch.Catches>
                                                     </TryCatch>
-                                                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'OK'" sap:VirtualizedContainerService.HintSize="536,158.66666666666666" sap2010:WorkflowViewState.IdRef="NClick_29" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ad08872b-b465-48f0-a3f0-10ce604fc639" Version="V3">
-                                                      <uix:NClick.Target>
-                                                        <uix:TargetAnchorable DesignTimeRectangle="662, 915, 108, 22" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'OK'" FullSelectorArgument="&lt;java hasTableAncestor='0' name='OK' role='push button' /&gt;" FuzzySelectorArgument="&lt;java hasTableAncestor='0' name='OK' role='push button' check:text='OK' /&gt;" Guid="520294c6-a1ad-40fd-9c5d-b1b78af13be1" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHAAAAAaCAYAAABvj9h3AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAPZSURBVGhD7ZrrTxNZGIf7v7hA9MNG45JNU0mj8cOyms2uCV5Zb9RxQYFSEISINUHsKtqCkWtjsNnoelkBV6YFQgqU1nKT1GKs1Bpoihojmm2jEVT8OedQ5DKV1U/OkXmSXzo5551PT94zczpHEYlEIIfdyAIZz0eB4XAYgUAALpcLDodDjgTjdDrh9/upK5FAIs/j8WBiYgIy0mRychJer5dKFAkknSfLkz5EIulEkUDSojJsQFwxJ/DpxCM0heqh609BaqcK2+0/IqM7GVcD1XjyKhitWhowJ7D/eSfSe35GnmMb/vJVoSFwkcZyrxIZrb8i5WYiukLWaPW3D1MC+8c7kNqdhPJBPWzBRpy/fxYlgwU05JoPNqCs5zBUlgTYR/joXd82zAh8+voROFcylUdEFQ1kIr8vA7qeP5An5JCQwt4DaB75Byed+VhnWY1Q+H+WUysHhULxMUqjPzpBsIJTKDE75IdRKdRx0upuZgReHzFD27GFdh6RR8Rp3fuQ5UpDlnMvcpxpsAtL51F3NnhB4s4rP+Fcjyl6dwyoPLGgWYnzBVq5hYKlATMCD7o2wOKrhNlXgfzedGTf0gji9iC7W4hjDzrHWmnd45ch1N4pw/nBMqhr19AxMdOyRM3kN0Kp4AR1hFmBfqNScp03AzMCf7N9jxsP/8axAR1y3ZzQiU2498ILbVcaOkIttObd1FvUek7jaFc6GnwWxB9fRsdFzBM1FyJ2puuiAo1CpyqNwow0YUZgclMCGgOXoO/T4lhfLsKT/9Hx56+f0V8ir+r2n8hp3YFi+340+i4gXr+IwJhS5nYmETj9bJRo81GYEfg7r0a9twJ1d88gr1sDQ28hXr6J0Lmp91Oo6j+BTNsW6ASB1QOlqHMboC5T0XkRX9KBVlI7MyY9mBFY7y2Hpmkjmh9eRWGXBjn2XSh1HcLw+F3U3j6Fg9bNyOK3Is+Wimb/JfxiXovydmP07oV82TNw+oUnlvCvDzMCxyJBrBe2BgaHDv8+uIyC9t3IbUuFtmUbsnkSIm8Hbg5fhL4lHYn6VQiOL7KNEEmZXjI/9RZKX2Qk+CxkRiCh7QGPFaY4lNgzwQsSawYMKG7ncKRNgxphCW0W5BXbOCTovoP1zmds5BfsA+d35HyBBLKVkJpEpgQSbMM8Ek2rsOnCOtT1GXBtyIxrXjOq3CXYWJ2EH46shNWzNP6FITAnkDD6YhQVnSaoz6iwvCgOywvioC5VoaLVhNFno9GqpQGTAmVmiSlQ/qDLBp/8oDtzpIIUyEgT4mZoaCj2kQr5UJP0s+ihJjlsRhbIdCL4AJX1CPTxS1yfAAAAAElFTkSuQmCC" InformativeScreenshot="19ac6a96cf665f4b1c053d32f89c5c6e.png" ScopeSelectorArgument="&lt;wnd app='java*.exe' cls='SunAwtDialog' title='Planungsgruppe und Lehrveranstaltung auswählen ' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Version="V2" Visibility="Interactive" />
-                                                      </uix:NClick.Target>
-                                                    </uix:NClick>
-                                                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Speichern'" sap:VirtualizedContainerService.HintSize="536,158.66666666666666" sap2010:WorkflowViewState.IdRef="NClick_30" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ad08872b-b465-48f0-a3f0-10ce604fc639" Version="V3">
-                                                      <uix:NClick.Target>
-                                                        <uix:TargetAnchorable CvElementArea="1669, 996, 123, 25" CvTextArea="1714, 1002, 53, 15" CvTextArgument="Speichern" CvType="Button" DesignTimeRectangle="1669, 996, 124, 25" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Speichern'" Guid="49d2531d-477c-49ff-a6b5-5b8c0bab82b9" InformativeScreenshot="69cd7db0c63982e5be6582fc9f7e5789.png" ScopeSelectorArgument="&lt;wnd app='java*.exe' cls='SunAwtFrame' title='StarPlan (Version 3.4.1.0)' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive" />
-                                                      </uix:NClick.Target>
-                                                    </uix:NClick>
+                                                    <If Condition="[LehrveranstaltungError=True]" sap:VirtualizedContainerService.HintSize="434,874" sap2010:WorkflowViewState.IdRef="If_11">
+                                                      <If.Then>
+                                                        <Sequence sap:VirtualizedContainerService.HintSize="376,246" sap2010:WorkflowViewState.IdRef="Sequence_61">
+                                                          <sap:WorkflowViewStateService.ViewState>
+                                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                            </scg:Dictionary>
+                                                          </sap:WorkflowViewStateService.ViewState>
+                                                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Abbrechen'" sap:VirtualizedContainerService.HintSize="334,158.66666666666666" sap2010:WorkflowViewState.IdRef="NClick_60" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ad08872b-b465-48f0-a3f0-10ce604fc639" Version="V3">
+                                                            <uix:NClick.Target>
+                                                              <uix:TargetAnchorable DesignTimeRectangle="1026, 881, 159, 37" DesignTimeScaleFactor="1.5" ElementType="Button" FriendlyName="'Abbrechen'" FullSelectorArgument="&lt;java hasTableAncestor='0' name='Abbrechen' role='push button' /&gt;" FuzzySelectorArgument="&lt;java hasTableAncestor='0' name='Abbrechen' role='push button' check:text='Abbrechen' /&gt;" Guid="8b2f9e7c-f17f-4e3c-a558-5a426d7cb586" ImageBase64="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" InformativeScreenshot="e3b685460943297abbc840699b04363f.png" ScopeSelectorArgument="&lt;wnd app='java*.exe' cls='SunAwtDialog' title='Planungsgruppe und Lehrveranstaltung auswählen ' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Version="V2" Visibility="Interactive">
+                                                                <uix:TargetAnchorable.Anchors>
+                                                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                                    <uix:Target DesignTimeRectangle="853, 878, 170, 39" ElementType="Button" FriendlyName="'OK'" FullSelectorArgument="&lt;java hasTableAncestor='0' name='OK' role='push button' /&gt;" FuzzySelectorArgument="&lt;java hasTableAncestor='0' name='OK' role='push button' check:text='OK' /&gt;" ImageBase64="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" SearchSteps="Selector, FuzzySelector, Image" />
+                                                                  </scg:List>
+                                                                </uix:TargetAnchorable.Anchors>
+                                                              </uix:TargetAnchorable>
+                                                            </uix:NClick.Target>
+                                                          </uix:NClick>
+                                                        </Sequence>
+                                                      </If.Then>
+                                                      <If.Else>
+                                                        <Sequence sap:VirtualizedContainerService.HintSize="376,444.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_62">
+                                                          <sap:WorkflowViewStateService.ViewState>
+                                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                            </scg:Dictionary>
+                                                          </sap:WorkflowViewStateService.ViewState>
+                                                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'OK'" sap:VirtualizedContainerService.HintSize="334,158.66666666666666" sap2010:WorkflowViewState.IdRef="NClick_29" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ad08872b-b465-48f0-a3f0-10ce604fc639" Version="V3">
+                                                            <uix:NClick.Target>
+                                                              <uix:TargetAnchorable DesignTimeRectangle="662, 915, 108, 22" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'OK'" FullSelectorArgument="&lt;java hasTableAncestor='0' name='OK' role='push button' /&gt;" FuzzySelectorArgument="&lt;java hasTableAncestor='0' name='OK' role='push button' check:text='OK' /&gt;" Guid="520294c6-a1ad-40fd-9c5d-b1b78af13be1" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHAAAAAaCAYAAABvj9h3AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAPZSURBVGhD7ZrrTxNZGIf7v7hA9MNG45JNU0mj8cOyms2uCV5Zb9RxQYFSEISINUHsKtqCkWtjsNnoelkBV6YFQgqU1nKT1GKs1Bpoihojmm2jEVT8OedQ5DKV1U/OkXmSXzo5551PT94zczpHEYlEIIfdyAIZz0eB4XAYgUAALpcLDodDjgTjdDrh9/upK5FAIs/j8WBiYgIy0mRychJer5dKFAkknSfLkz5EIulEkUDSojJsQFwxJ/DpxCM0heqh609BaqcK2+0/IqM7GVcD1XjyKhitWhowJ7D/eSfSe35GnmMb/vJVoSFwkcZyrxIZrb8i5WYiukLWaPW3D1MC+8c7kNqdhPJBPWzBRpy/fxYlgwU05JoPNqCs5zBUlgTYR/joXd82zAh8+voROFcylUdEFQ1kIr8vA7qeP5An5JCQwt4DaB75Byed+VhnWY1Q+H+WUysHhULxMUqjPzpBsIJTKDE75IdRKdRx0upuZgReHzFD27GFdh6RR8Rp3fuQ5UpDlnMvcpxpsAtL51F3NnhB4s4rP+Fcjyl6dwyoPLGgWYnzBVq5hYKlATMCD7o2wOKrhNlXgfzedGTf0gji9iC7W4hjDzrHWmnd45ch1N4pw/nBMqhr19AxMdOyRM3kN0Kp4AR1hFmBfqNScp03AzMCf7N9jxsP/8axAR1y3ZzQiU2498ILbVcaOkIttObd1FvUek7jaFc6GnwWxB9fRsdFzBM1FyJ2puuiAo1CpyqNwow0YUZgclMCGgOXoO/T4lhfLsKT/9Hx56+f0V8ir+r2n8hp3YFi+340+i4gXr+IwJhS5nYmETj9bJRo81GYEfg7r0a9twJ1d88gr1sDQ28hXr6J0Lmp91Oo6j+BTNsW6ASB1QOlqHMboC5T0XkRX9KBVlI7MyY9mBFY7y2Hpmkjmh9eRWGXBjn2XSh1HcLw+F3U3j6Fg9bNyOK3Is+Wimb/JfxiXovydmP07oV82TNw+oUnlvCvDzMCxyJBrBe2BgaHDv8+uIyC9t3IbUuFtmUbsnkSIm8Hbg5fhL4lHYn6VQiOL7KNEEmZXjI/9RZKX2Qk+CxkRiCh7QGPFaY4lNgzwQsSawYMKG7ncKRNgxphCW0W5BXbOCTovoP1zmds5BfsA+d35HyBBLKVkJpEpgQSbMM8Ek2rsOnCOtT1GXBtyIxrXjOq3CXYWJ2EH46shNWzNP6FITAnkDD6YhQVnSaoz6iwvCgOywvioC5VoaLVhNFno9GqpQGTAmVmiSlQ/qDLBp/8oDtzpIIUyEgT4mZoaCj2kQr5UJP0s+ihJjlsRhbIdCL4AJX1CPTxS1yfAAAAAElFTkSuQmCC" InformativeScreenshot="19ac6a96cf665f4b1c053d32f89c5c6e.png" ScopeSelectorArgument="&lt;wnd app='java*.exe' cls='SunAwtDialog' title='Planungsgruppe und Lehrveranstaltung auswählen ' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Version="V2" Visibility="Interactive" />
+                                                            </uix:NClick.Target>
+                                                          </uix:NClick>
+                                                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Speichern'" sap:VirtualizedContainerService.HintSize="334,158.66666666666666" sap2010:WorkflowViewState.IdRef="NClick_30" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ad08872b-b465-48f0-a3f0-10ce604fc639" Version="V3">
+                                                            <uix:NClick.Target>
+                                                              <uix:TargetAnchorable CvElementArea="1669, 996, 123, 25" CvTextArea="1714, 1002, 53, 15" CvTextArgument="Speichern" CvType="Button" DesignTimeRectangle="1669, 996, 124, 25" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Speichern'" Guid="49d2531d-477c-49ff-a6b5-5b8c0bab82b9" InformativeScreenshot="69cd7db0c63982e5be6582fc9f7e5789.png" ScopeSelectorArgument="&lt;wnd app='java*.exe' cls='SunAwtFrame' title='StarPlan (Version 3.4.1.0)' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive" />
+                                                            </uix:NClick.Target>
+                                                          </uix:NClick>
+                                                        </Sequence>
+                                                      </If.Else>
+                                                    </If>
                                                   </Sequence>
                                                 </Sequence>
                                               </If.Else>
