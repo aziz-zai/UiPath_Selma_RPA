@@ -269,13 +269,13 @@
                                   <ActivityAction.Argument>
                                     <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
                                   </ActivityAction.Argument>
-                                  <Sequence DisplayName="Single Buchung" sap:VirtualizedContainerService.HintSize="1254,17787" sap2010:WorkflowViewState.IdRef="Sequence_31">
+                                  <Sequence DisplayName="Single Buchung" sap:VirtualizedContainerService.HintSize="1020,13211" sap2010:WorkflowViewState.IdRef="Sequence_31">
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
-                                    <If Condition="[String.IsNullOrEmpty(CurrentRow.item(&quot;ID&quot;).ToString()) = true]" sap:VirtualizedContainerService.HintSize="1192,17676" sap2010:WorkflowViewState.IdRef="If_1">
+                                    <If Condition="[String.IsNullOrEmpty(CurrentRow.item(&quot;ID&quot;).ToString()) = true]" sap:VirtualizedContainerService.HintSize="958,13100" sap2010:WorkflowViewState.IdRef="If_1">
                                       <If.Then>
                                         <Sequence sap:VirtualizedContainerService.HintSize="376,179" sap2010:WorkflowViewState.IdRef="Sequence_35">
                                           <sap:WorkflowViewStateService.ViewState>
@@ -287,24 +287,24 @@
                                         </Sequence>
                                       </If.Then>
                                       <If.Else>
-                                        <Sequence sap:VirtualizedContainerService.HintSize="1158,17314" sap2010:WorkflowViewState.IdRef="Sequence_36">
+                                        <Sequence sap:VirtualizedContainerService.HintSize="924,12738" sap2010:WorkflowViewState.IdRef="Sequence_36">
                                           <sap:WorkflowViewStateService.ViewState>
                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                             </scg:Dictionary>
                                           </sap:WorkflowViewStateService.ViewState>
-                                          <Sequence DisplayName="Neue Buchung" sap:VirtualizedContainerService.HintSize="1116,17226" sap2010:WorkflowViewState.IdRef="Sequence_30">
+                                          <Sequence DisplayName="Neue Buchung" sap:VirtualizedContainerService.HintSize="882,12650" sap2010:WorkflowViewState.IdRef="Sequence_30">
                                             <sap:WorkflowViewStateService.ViewState>
                                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                               </scg:Dictionary>
                                             </sap:WorkflowViewStateService.ViewState>
-                                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Neu'" sap:VirtualizedContainerService.HintSize="1054,158" sap2010:WorkflowViewState.IdRef="NClick_43" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ad08872b-b465-48f0-a3f0-10ce604fc639" Version="V3">
+                                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Neu'" sap:VirtualizedContainerService.HintSize="820,158" sap2010:WorkflowViewState.IdRef="NClick_43" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ad08872b-b465-48f0-a3f0-10ce604fc639" Version="V3">
                                               <uix:NClick.Target>
                                                 <uix:TargetAnchorable CvElementArea="1543, 996, 123, 24" CvTextArea="1602, 1002, 24, 12" CvTextArgument="Neu" CvType="Button" DesignTimeRectangle="1543, 996, 123, 24" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Neu'" Guid="eb43282f-efc1-4afc-98fb-f69d3cb66fdc" InformativeScreenshot="db325a509b7e6606fd0bd0dded9907d8.png" ScopeSelectorArgument="&lt;wnd app='java*.exe' cls='SunAwtFrame' title='StarPlan (Version 3.4.1.0)' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive" />
                                               </uix:NClick.Target>
                                             </uix:NClick>
-                                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Neu'" sap:VirtualizedContainerService.HintSize="1054,158" sap2010:WorkflowViewState.IdRef="NClick_42" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ad08872b-b465-48f0-a3f0-10ce604fc639" Version="V3">
+                                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Neu'" sap:VirtualizedContainerService.HintSize="820,158" sap2010:WorkflowViewState.IdRef="NClick_42" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ad08872b-b465-48f0-a3f0-10ce604fc639" Version="V3">
                                               <uix:NClick.Target>
                                                 <uix:TargetAnchorable CvElementArea="1543, 996, 123, 24" CvTextArea="1602, 1002, 24, 12" CvTextArgument="Neu" CvType="Button" DesignTimeRectangle="1543, 996, 123, 24" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Neu'" Guid="49a96f1e-d704-42ea-ad89-85380f2209bf" InformativeScreenshot="8ca270ef17ebe9777d5e731fc1eb669f.png" ScopeSelectorArgument="&lt;wnd app='java*.exe' cls='SunAwtFrame' title='StarPlan (Version 3.4.1.0)' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive">
                                                   <uix:TargetAnchorable.Anchors>
@@ -315,7 +315,7 @@
                                                 </uix:TargetAnchorable>
                                               </uix:NClick.Target>
                                             </uix:NClick>
-                                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Allgemein'" sap:VirtualizedContainerService.HintSize="1054,158" sap2010:WorkflowViewState.IdRef="NClick_39" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ad08872b-b465-48f0-a3f0-10ce604fc639" Version="V3">
+                                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Allgemein'" sap:VirtualizedContainerService.HintSize="820,158" sap2010:WorkflowViewState.IdRef="NClick_39" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ad08872b-b465-48f0-a3f0-10ce604fc639" Version="V3">
                                               <uix:NClick.Target>
                                                 <uix:TargetAnchorable CvTextArgument="Allgemein" CvType="Text" DesignTimeRectangle="44, 717, 56, 15" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Allgemein'" Guid="db18c22f-9e78-4bdf-a1e5-9d9170b0e30e" InformativeScreenshot="258f94d2256af9c4503f1133b00ea798.png" ScopeSelectorArgument="&lt;wnd app='java*.exe' cls='SunAwtFrame' title='StarPlan (Version 3.4.1.0)' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive">
                                                   <uix:TargetAnchorable.Anchors>
@@ -326,7 +326,7 @@
                                                 </uix:TargetAnchorable>
                                               </uix:NClick.Target>
                                             </uix:NClick>
-                                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Kurzel'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="1054,219" sap2010:WorkflowViewState.IdRef="NTypeInto_23" ScopeIdentifier="ad08872b-b465-48f0-a3f0-10ce604fc639" Text="[CurrentRow.item(&quot;Kürzel&quot;).ToString]" Version="V3">
+                                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Kurzel'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="820,219" sap2010:WorkflowViewState.IdRef="NTypeInto_23" ScopeIdentifier="ad08872b-b465-48f0-a3f0-10ce604fc639" Text="[CurrentRow.item(&quot;Kürzel&quot;).ToString]" Version="V3">
                                               <uix:NTypeInto.Target>
                                                 <uix:TargetAnchorable CvType="InputBox" DesignTimeRectangle="169, 744, 289, 24" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'Kurzel'" Guid="9c5d0e5f-9508-4f41-9d92-2eaf4242a9e8" InformativeScreenshot="693c1fe04c2e525849df7045e4f4b68b.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='java*.exe' cls='SunAwtFrame' title='StarPlan (Version 3.4.1.0)' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive">
                                                   <uix:TargetAnchorable.Anchors>
@@ -337,7 +337,7 @@
                                                 </uix:TargetAnchorable>
                                               </uix:NTypeInto.Target>
                                             </uix:NTypeInto>
-                                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Name'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="1054,219" sap2010:WorkflowViewState.IdRef="NTypeInto_24" ScopeIdentifier="ad08872b-b465-48f0-a3f0-10ce604fc639" Text="[CurrentRow.item(&quot;Name&quot;).ToString]" Version="V3">
+                                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Name'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="820,219" sap2010:WorkflowViewState.IdRef="NTypeInto_24" ScopeIdentifier="ad08872b-b465-48f0-a3f0-10ce604fc639" Text="[CurrentRow.item(&quot;Name&quot;).ToString]" Version="V3">
                                               <uix:NTypeInto.Target>
                                                 <uix:TargetAnchorable CvType="InputBox" DesignTimeRectangle="650, 744, 237, 25" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'Name'" Guid="60878de3-4872-4b52-948f-e4e89b7860af" InformativeScreenshot="3ad6dfa28d77b1c483988750785c2419.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='java*.exe' cls='SunAwtFrame' title='StarPlan (Version 3.4.1.0)' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive">
                                                   <uix:TargetAnchorable.Anchors>
@@ -348,7 +348,7 @@
                                                 </uix:TargetAnchorable>
                                               </uix:NTypeInto.Target>
                                             </uix:NTypeInto>
-                                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Speichern'" sap:VirtualizedContainerService.HintSize="1054,158" sap2010:WorkflowViewState.IdRef="NClick_40" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ad08872b-b465-48f0-a3f0-10ce604fc639" Version="V3">
+                                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Speichern'" sap:VirtualizedContainerService.HintSize="820,158" sap2010:WorkflowViewState.IdRef="NClick_40" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ad08872b-b465-48f0-a3f0-10ce604fc639" Version="V3">
                                               <uix:NClick.Target>
                                                 <uix:TargetAnchorable CvElementArea="1670, 996, 123, 24" CvTextArea="1714, 1002, 53, 15" CvTextArgument="Speichern" CvType="Button" DesignTimeRectangle="1670, 996, 123, 25" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Speichern'" Guid="51268763-ef49-4796-85ce-77aad5ea2977" InformativeScreenshot="e460818e93c19515a6dc92e9e2bcf17a.png" ScopeSelectorArgument="&lt;wnd app='java*.exe' cls='SunAwtFrame' title='StarPlan (Version 3.4.1.0)' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive">
                                                   <uix:TargetAnchorable.Anchors>
@@ -359,7 +359,7 @@
                                                 </uix:TargetAnchorable>
                                               </uix:NClick.Target>
                                             </uix:NClick>
-                                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'PG und LV'" sap:VirtualizedContainerService.HintSize="1054,158" sap2010:WorkflowViewState.IdRef="NClick_41" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ad08872b-b465-48f0-a3f0-10ce604fc639" Version="V3">
+                                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'PG und LV'" sap:VirtualizedContainerService.HintSize="820,158" sap2010:WorkflowViewState.IdRef="NClick_41" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ad08872b-b465-48f0-a3f0-10ce604fc639" Version="V3">
                                               <uix:NClick.Target>
                                                 <uix:TargetAnchorable CvTextArgument="Planungsgruppen und Lehrveranstaltungen (0)" CvType="Text" DesignTimeRectangle="162, 717, 247, 15" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Planungsgruppen und'" Guid="bf33eb59-77d5-4a71-a2e1-3a61a114eb56" InformativeScreenshot="563d40c43185b1e1c7ca2fd24678596c.png" ScopeSelectorArgument="&lt;wnd app='java*.exe' cls='SunAwtFrame' title='StarPlan (Version 3.4.1.0)' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive">
                                                   <uix:TargetAnchorable.Anchors>
@@ -370,7 +370,7 @@
                                                 </uix:TargetAnchorable>
                                               </uix:NClick.Target>
                                             </uix:NClick>
-                                            <Sequence DisplayName="PG und LV" sap:VirtualizedContainerService.HintSize="1054,7926" sap2010:WorkflowViewState.IdRef="Sequence_63">
+                                            <Sequence DisplayName="PG und LV" sap:VirtualizedContainerService.HintSize="820,2896" sap2010:WorkflowViewState.IdRef="Sequence_63">
                                               <Sequence.Variables>
                                                 <Variable x:TypeArguments="sd:DataTable" Name="Buchung_PG_LV" />
                                               </Sequence.Variables>
@@ -379,33 +379,33 @@
                                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                 </scg:Dictionary>
                                               </sap:WorkflowViewStateService.ViewState>
-                                              <ueab:ReadRangeX DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="992,171" sap2010:WorkflowViewState.IdRef="ReadRangeX_6" Range="[Excel.Sheet(&quot;Buchung_PG_LV&quot;)]" SaveTo="[Buchung_PG_LV]" />
-                                              <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[Buchung_PG_LV]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="992,7604" sap2010:WorkflowViewState.IdRef="ForEachRow_4">
+                                              <ueab:ReadRangeX DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="610,171" sap2010:WorkflowViewState.IdRef="ReadRangeX_6" Range="[Excel.Sheet(&quot;Buchung_PG_LV&quot;)]" SaveTo="[Buchung_PG_LV]" />
+                                              <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[Buchung_PG_LV]" DisplayName="For Each Row in Buchung_PG_LV" sap:VirtualizedContainerService.HintSize="610,2574" sap2010:WorkflowViewState.IdRef="ForEachRow_4">
                                                 <ui:ForEachRow.Body>
                                                   <ActivityAction x:TypeArguments="sd:DataRow">
                                                     <ActivityAction.Argument>
                                                       <DelegateInArgument x:TypeArguments="sd:DataRow" Name="Current_Buchung_PG_LV_Row" />
                                                     </ActivityAction.Argument>
-                                                    <Sequence DisplayName="PG und LV hinzufügen" sap:VirtualizedContainerService.HintSize="958,7488" sap2010:WorkflowViewState.IdRef="Sequence_64">
+                                                    <Sequence DisplayName="PG und LV hinzufügen" sap:VirtualizedContainerService.HintSize="576,2458" sap2010:WorkflowViewState.IdRef="Sequence_64">
                                                       <sap:WorkflowViewStateService.ViewState>
                                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                         </scg:Dictionary>
                                                       </sap:WorkflowViewStateService.ViewState>
-                                                      <If Condition="[Current_Buchung_PG_LV_Row.Item(&quot;BuchungsID&quot;).ToString = CurrentRow.Item(&quot;ID&quot;).ToString]" DisplayName="If PG_LV_BuchungsID =  Current_BuchungsID" sap:VirtualizedContainerService.HintSize="896,7377" sap2010:WorkflowViewState.IdRef="If_12">
+                                                      <If Condition="[Current_Buchung_PG_LV_Row.Item(&quot;BuchungsID&quot;).ToString = CurrentRow.Item(&quot;ID&quot;).ToString]" DisplayName="If PG_LV_BuchungsID =  Current_BuchungsID" sap:VirtualizedContainerService.HintSize="514,2347" sap2010:WorkflowViewState.IdRef="If_12">
                                                         <If.Then>
-                                                          <Sequence sap:VirtualizedContainerService.HintSize="862,7113" sap2010:WorkflowViewState.IdRef="Sequence_65">
+                                                          <Sequence sap:VirtualizedContainerService.HintSize="480,2083" sap2010:WorkflowViewState.IdRef="Sequence_65">
                                                             <sap:WorkflowViewStateService.ViewState>
                                                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                               </scg:Dictionary>
                                                             </sap:WorkflowViewStateService.ViewState>
-                                                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Hinzufugen...'" sap:VirtualizedContainerService.HintSize="820,158" sap2010:WorkflowViewState.IdRef="NClick_32" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ad08872b-b465-48f0-a3f0-10ce604fc639" Version="V3">
+                                                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Hinzufugen...'" sap:VirtualizedContainerService.HintSize="438,158" sap2010:WorkflowViewState.IdRef="NClick_32" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ad08872b-b465-48f0-a3f0-10ce604fc639" Version="V3">
                                                               <uix:NClick.Target>
                                                                 <uix:TargetAnchorable CvElementArea="1539, 964, 123, 24" CvTextArea="1574, 970, 72, 15" CvTextArgument="Hinzufugen..." CvType="Button" DesignTimeRectangle="1539, 964, 122, 24" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Hinzufugen...'" Guid="d3929830-9698-4945-b4bb-47c2037d3c63" InformativeScreenshot="a30d57e97a00c6d9b585b160baf8b4c5.png" ScopeSelectorArgument="&lt;wnd app='java*.exe' cls='SunAwtFrame' title='StarPlan (Version 3.4.1.0)' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive" />
                                                               </uix:NClick.Target>
                                                             </uix:NClick>
-                                                            <Assign DisplayName="Assign Planungsgruppe" sap:VirtualizedContainerService.HintSize="820,81" sap2010:WorkflowViewState.IdRef="Assign_48">
+                                                            <Assign DisplayName="Assign Planungsgruppe" sap:VirtualizedContainerService.HintSize="438,83" sap2010:WorkflowViewState.IdRef="Assign_48">
                                                               <Assign.To>
                                                                 <OutArgument x:TypeArguments="x:String">[Planungsgruppe]</OutArgument>
                                                               </Assign.To>
@@ -413,7 +413,7 @@
                                                                 <InArgument x:TypeArguments="x:String">[Current_Buchung_PG_LV_Row.Item("PG").ToString]</InArgument>
                                                               </Assign.Value>
                                                             </Assign>
-                                                            <p:CVScope ContinueOnError="{x:Null}" DelayBefore="{x:Null}" ScopeId="{x:Null}" Server="{x:Null}" CvMethod="ElementDetection, OCR" DesignTimeCacheId="82b2aea2-e493-44cc-a6cb-dce3d5bdfc0d" DisplayName="CV PG List Filter" sap:VirtualizedContainerService.HintSize="820,286" sap2010:WorkflowViewState.IdRef="CVScope_1" SendOnPremData="False" Version="V6">
+                                                            <p:CVScope ContinueOnError="{x:Null}" DelayBefore="{x:Null}" ScopeId="{x:Null}" Server="{x:Null}" CvMethod="ElementDetection, OCR" DesignTimeCacheId="82b2aea2-e493-44cc-a6cb-dce3d5bdfc0d" DisplayName="CV PG List Filter" sap:VirtualizedContainerService.HintSize="438,751" sap2010:WorkflowViewState.IdRef="CVScope_1" SendOnPremData="False" Version="V6">
                                                               <p:CVScope.Body>
                                                                 <ActivityAction x:TypeArguments="x:Object">
                                                                   <ActivityAction.Argument>
@@ -899,7 +899,7 @@
                                                                 <InArgument x:TypeArguments="x:Boolean" />
                                                               </p:CVScope.UseLocalServer>
                                                             </p:CVScope>
-                                                            <TryCatch DisplayName="Try Catch PG" sap:VirtualizedContainerService.HintSize="820,414" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+                                                            <TryCatch DisplayName="Try Catch PG" sap:VirtualizedContainerService.HintSize="438,414" sap2010:WorkflowViewState.IdRef="TryCatch_1">
                                                               <TryCatch.Try>
                                                                 <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Planungsgruppe'" sap:VirtualizedContainerService.HintSize="334,158" sap2010:WorkflowViewState.IdRef="NClick_56" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ad08872b-b465-48f0-a3f0-10ce604fc639" Version="V3">
                                                                   <uix:NClick.Target>
@@ -1028,15 +1028,15 @@
                                                                 </Catch>
                                                               </TryCatch.Catches>
                                                             </TryCatch>
-                                                            <If Condition="[PGError = True]" DisplayName="If PGError" sap:VirtualizedContainerService.HintSize="820,5680" sap2010:WorkflowViewState.IdRef="If_16">
+                                                            <If Condition="[PGError = True]" DisplayName="If PGError" sap:VirtualizedContainerService.HintSize="438,183" sap2010:WorkflowViewState.IdRef="If_16">
                                                               <If.Then>
-                                                                <Sequence sap:VirtualizedContainerService.HintSize="548,1985" sap2010:WorkflowViewState.IdRef="Sequence_82">
+                                                                <Sequence sap:VirtualizedContainerService.HintSize="548,1982" sap2010:WorkflowViewState.IdRef="Sequence_82">
                                                                   <sap:WorkflowViewStateService.ViewState>
                                                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                                     </scg:Dictionary>
                                                                   </sap:WorkflowViewStateService.ViewState>
-                                                                  <Sequence DisplayName="PG Errorhandling" sap:VirtualizedContainerService.HintSize="506,1897" sap2010:WorkflowViewState.IdRef="Sequence_60">
+                                                                  <Sequence DisplayName="PG Errorhandling" sap:VirtualizedContainerService.HintSize="506,1896" sap2010:WorkflowViewState.IdRef="Sequence_60">
                                                                     <Sequence.Variables>
                                                                       <Variable x:TypeArguments="sd:DataTable" Name="failedPG" />
                                                                       <Variable x:TypeArguments="sd:DataRow" Name="failedPGRow" />
@@ -1118,13 +1118,13 @@
                                                                 </Sequence>
                                                               </If.Then>
                                                               <If.Else>
-                                                                <Sequence sap:VirtualizedContainerService.HintSize="786,5497" sap2010:WorkflowViewState.IdRef="Sequence_83">
+                                                                <Sequence sap:VirtualizedContainerService.HintSize="586,2047" sap2010:WorkflowViewState.IdRef="Sequence_83">
                                                                   <sap:WorkflowViewStateService.ViewState>
                                                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                                     </scg:Dictionary>
                                                                   </sap:WorkflowViewStateService.ViewState>
-                                                                  <Assign DisplayName="Assign LV_HIS" sap:VirtualizedContainerService.HintSize="744,83" sap2010:WorkflowViewState.IdRef="Assign_49">
+                                                                  <Assign DisplayName="Assign LV_HIS" sap:VirtualizedContainerService.HintSize="544,83" sap2010:WorkflowViewState.IdRef="Assign_49">
                                                                     <Assign.To>
                                                                       <OutArgument x:TypeArguments="x:String">[LV_HIS]</OutArgument>
                                                                     </Assign.To>
@@ -1132,7 +1132,7 @@
                                                                       <InArgument x:TypeArguments="x:String">[Current_Buchung_PG_LV_Row.Item("LV_HIS").ToString]</InArgument>
                                                                     </Assign.Value>
                                                                   </Assign>
-                                                                  <p:CVScope ContinueOnError="{x:Null}" DelayBefore="{x:Null}" ScopeId="{x:Null}" Server="{x:Null}" CvMethod="ElementDetection, OCR" DesignTimeCacheId="4496d840-fc9c-4b7e-80e9-e587f2ed974f" DisplayName="CV LV List Filter" sap:VirtualizedContainerService.HintSize="744,1270" sap2010:WorkflowViewState.IdRef="CVScope_2" SendOnPremData="False" Version="V6">
+                                                                  <p:CVScope ContinueOnError="{x:Null}" DelayBefore="{x:Null}" ScopeId="{x:Null}" Server="{x:Null}" CvMethod="ElementDetection, OCR" DesignTimeCacheId="4496d840-fc9c-4b7e-80e9-e587f2ed974f" DisplayName="CV LV List Filter" sap:VirtualizedContainerService.HintSize="544,1230" sap2010:WorkflowViewState.IdRef="CVScope_2" SendOnPremData="False" Version="V6">
                                                                     <p:CVScope.Body>
                                                                       <ActivityAction x:TypeArguments="x:Object">
                                                                         <ActivityAction.Argument>
@@ -1718,7 +1718,7 @@
                                                                       <InArgument x:TypeArguments="x:Boolean" />
                                                                     </p:CVScope.UseLocalServer>
                                                                   </p:CVScope>
-                                                                  <TryCatch DisplayName="Try Catch LV hinzufügen" sap:VirtualizedContainerService.HintSize="744,414" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+                                                                  <TryCatch DisplayName="Try Catch LV hinzufügen" sap:VirtualizedContainerService.HintSize="544,343" sap2010:WorkflowViewState.IdRef="TryCatch_2">
                                                                     <TryCatch.Try>
                                                                       <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Lehrveranstaltung'" sap:VirtualizedContainerService.HintSize="334,158" sap2010:WorkflowViewState.IdRef="NClick_38" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ad08872b-b465-48f0-a3f0-10ce604fc639" Version="V3">
                                                                         <uix:NClick.Target>
@@ -1733,7 +1733,7 @@
                                                                       </uix:NClick>
                                                                     </TryCatch.Try>
                                                                     <TryCatch.Catches>
-                                                                      <Catch x:TypeArguments="ui:SelectorNotFoundException" sap:VirtualizedContainerService.HintSize="404,22" sap2010:WorkflowViewState.IdRef="Catch`1_3">
+                                                                      <Catch x:TypeArguments="ui:SelectorNotFoundException" sap:VirtualizedContainerService.HintSize="456,22" sap2010:WorkflowViewState.IdRef="Catch`1_3">
                                                                         <sap:WorkflowViewStateService.ViewState>
                                                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1789,10 +1789,10 @@
                                                                           </Sequence>
                                                                         </ActivityAction>
                                                                       </Catch>
-                                                                      <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="404,22" sap2010:WorkflowViewState.IdRef="Catch`1_4">
+                                                                      <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="456,153" sap2010:WorkflowViewState.IdRef="Catch`1_4">
                                                                         <sap:WorkflowViewStateService.ViewState>
                                                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                                             <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                                                           </scg:Dictionary>
                                                                         </sap:WorkflowViewStateService.ViewState>
@@ -1800,10 +1800,10 @@
                                                                           <ActivityAction.Argument>
                                                                             <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
                                                                           </ActivityAction.Argument>
-                                                                          <Sequence sap:VirtualizedContainerService.HintSize="496,772" sap2010:WorkflowViewState.IdRef="Sequence_56">
+                                                                          <Sequence DisplayName="Catch Exception LV" sap:VirtualizedContainerService.HintSize="450,83" sap2010:WorkflowViewState.IdRef="Sequence_56">
                                                                             <sap:WorkflowViewStateService.ViewState>
                                                                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                                                                                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                                                               </scg:Dictionary>
                                                                             </sap:WorkflowViewStateService.ViewState>
@@ -1818,7 +1818,7 @@
                                                                                 </uix:TargetAnchorable>
                                                                               </uix:NClick.Target>
                                                                             </uix:NClick>
-                                                                            <Assign sap:VirtualizedContainerService.HintSize="434,83" sap2010:WorkflowViewState.IdRef="Assign_38">
+                                                                            <Assign DisplayName="Assign LVErrorMessage" sap:VirtualizedContainerService.HintSize="434,83" sap2010:WorkflowViewState.IdRef="Assign_38">
                                                                               <Assign.To>
                                                                                 <OutArgument x:TypeArguments="x:String">[LehrveranstaltungErrorMessage]</OutArgument>
                                                                               </Assign.To>
@@ -1826,8 +1826,8 @@
                                                                                 <InArgument x:TypeArguments="x:String">["LV Failed"]</InArgument>
                                                                               </Assign.Value>
                                                                             </Assign>
-                                                                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,94" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Error" Message="[LehrveranstaltungErrorMessage]" />
-                                                                            <Assign sap:VirtualizedContainerService.HintSize="434,83" sap2010:WorkflowViewState.IdRef="Assign_16">
+                                                                            <ui:LogMessage DisplayName="LV Failed Log" sap:VirtualizedContainerService.HintSize="434,94" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Error" Message="[LehrveranstaltungErrorMessage]" />
+                                                                            <Assign DisplayName="Assign LVError" sap:VirtualizedContainerService.HintSize="434,83" sap2010:WorkflowViewState.IdRef="Assign_16">
                                                                               <Assign.To>
                                                                                 <OutArgument x:TypeArguments="x:Boolean">[LehrveranstaltungError]</OutArgument>
                                                                               </Assign.To>
@@ -1848,7 +1848,7 @@
                                                                       </Catch>
                                                                     </TryCatch.Catches>
                                                                   </TryCatch>
-                                                                  <If Condition="[LehrveranstaltungError = True]" sap:VirtualizedContainerService.HintSize="744,3522" sap2010:WorkflowViewState.IdRef="If_17">
+                                                                  <If Condition="[LehrveranstaltungError = True]" DisplayName="If LVError" sap:VirtualizedContainerService.HintSize="544,183" sap2010:WorkflowViewState.IdRef="If_17">
                                                                     <If.Then>
                                                                       <Sequence sap:VirtualizedContainerService.HintSize="710,2448" sap2010:WorkflowViewState.IdRef="Sequence_84">
                                                                         <sap:WorkflowViewStateService.ViewState>
@@ -1856,7 +1856,7 @@
                                                                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                                           </scg:Dictionary>
                                                                         </sap:WorkflowViewStateService.ViewState>
-                                                                        <Sequence sap:VirtualizedContainerService.HintSize="668,2360" sap2010:WorkflowViewState.IdRef="Sequence_57">
+                                                                        <Sequence DisplayName="LV Errorhandling" sap:VirtualizedContainerService.HintSize="668,2360" sap2010:WorkflowViewState.IdRef="Sequence_57">
                                                                           <sap:WorkflowViewStateService.ViewState>
                                                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1864,19 +1864,19 @@
                                                                           </sap:WorkflowViewStateService.ViewState>
                                                                           <ueab:ReadRangeX DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="606,171" sap2010:WorkflowViewState.IdRef="ReadRangeX_3" Range="[Excel.Sheet(&quot;FailedBuchungLV&quot;)]" SaveTo="[failedBuchung]" />
                                                                           <ueab:ReadRangeX DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="606,171" sap2010:WorkflowViewState.IdRef="ReadRangeX_4" Range="[Excel.sheet(&quot;Lehrveranstaltungen&quot;)]" SaveTo="[Lehrveranstaltungen]" />
-                                                                          <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[Lehrveranstaltungen]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="606,1179" sap2010:WorkflowViewState.IdRef="ForEachRow_3">
+                                                                          <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[Lehrveranstaltungen]" DisplayName="For Each Row in Lehrveranstaltungen" sap:VirtualizedContainerService.HintSize="606,1179" sap2010:WorkflowViewState.IdRef="ForEachRow_3">
                                                                             <ui:ForEachRow.Body>
                                                                               <ActivityAction x:TypeArguments="sd:DataRow">
                                                                                 <ActivityAction.Argument>
                                                                                   <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentLehrveranstaltung" />
                                                                                 </ActivityAction.Argument>
-                                                                                <Sequence DisplayName="Text" sap:VirtualizedContainerService.HintSize="572,1063" sap2010:WorkflowViewState.IdRef="Sequence_54">
+                                                                                <Sequence DisplayName="Copy Lehrveranstaltung Row to failedBuchungLV" sap:VirtualizedContainerService.HintSize="572,1063" sap2010:WorkflowViewState.IdRef="Sequence_54">
                                                                                   <sap:WorkflowViewStateService.ViewState>
                                                                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                                                     </scg:Dictionary>
                                                                                   </sap:WorkflowViewStateService.ViewState>
-                                                                                  <If Condition="[CurrentLehrveranstaltung.item(&quot;ID in HIS&quot;).ToString = Current_Buchung_PG_LV_Row.Item(&quot;LV_HIS&quot;).ToString]" sap:VirtualizedContainerService.HintSize="510,952" sap2010:WorkflowViewState.IdRef="If_8">
+                                                                                  <If Condition="[CurrentLehrveranstaltung.item(&quot;ID in HIS&quot;).ToString = Current_Buchung_PG_LV_Row.Item(&quot;LV_HIS&quot;).ToString]" DisplayName="If CurrentLehrveranstaltung" sap:VirtualizedContainerService.HintSize="510,952" sap2010:WorkflowViewState.IdRef="If_8">
                                                                                     <If.Then>
                                                                                       <Sequence sap:VirtualizedContainerService.HintSize="476,769" sap2010:WorkflowViewState.IdRef="Sequence_52">
                                                                                         <Sequence.Variables>
@@ -1889,7 +1889,7 @@
                                                                                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                                                           </scg:Dictionary>
                                                                                         </sap:WorkflowViewStateService.ViewState>
-                                                                                        <Assign sap:VirtualizedContainerService.HintSize="434,83" sap2010:WorkflowViewState.IdRef="Assign_24">
+                                                                                        <Assign DisplayName="Assign new ItemArayLV" sap:VirtualizedContainerService.HintSize="434,83" sap2010:WorkflowViewState.IdRef="Assign_24">
                                                                                           <Assign.To>
                                                                                             <OutArgument x:TypeArguments="s:Object[]">[itemArrayLV]</OutArgument>
                                                                                           </Assign.To>
@@ -1897,7 +1897,7 @@
                                                                                             <InArgument x:TypeArguments="s:Object[]">[CurrentLehrveranstaltung.ItemArray]</InArgument>
                                                                                           </Assign.Value>
                                                                                         </Assign>
-                                                                                        <Assign sap:VirtualizedContainerService.HintSize="434,83" sap2010:WorkflowViewState.IdRef="Assign_46">
+                                                                                        <Assign DisplayName="Assign BuchungsID" sap:VirtualizedContainerService.HintSize="434,83" sap2010:WorkflowViewState.IdRef="Assign_46">
                                                                                           <Assign.To>
                                                                                             <OutArgument x:TypeArguments="s:Object[]">[itemArrayLV]</OutArgument>
                                                                                           </Assign.To>
@@ -1905,7 +1905,7 @@
                                                                                             <InArgument x:TypeArguments="s:Object[]">[itemArrayLV.Concat({Current_Buchung_PG_LV_Row.Item("BuchungsID").ToString}).ToArray]</InArgument>
                                                                                           </Assign.Value>
                                                                                         </Assign>
-                                                                                        <Assign sap:VirtualizedContainerService.HintSize="434,83" sap2010:WorkflowViewState.IdRef="Assign_36">
+                                                                                        <Assign DisplayName="Assign LehrveranstaltungError" sap:VirtualizedContainerService.HintSize="434,83" sap2010:WorkflowViewState.IdRef="Assign_36">
                                                                                           <Assign.To>
                                                                                             <OutArgument x:TypeArguments="s:Object[]">[itemArrayLV]</OutArgument>
                                                                                           </Assign.To>
@@ -1913,7 +1913,7 @@
                                                                                             <InArgument x:TypeArguments="s:Object[]">[itemArrayLV.Concat({LehrveranstaltungErrorMessage}).ToArray]</InArgument>
                                                                                           </Assign.Value>
                                                                                         </Assign>
-                                                                                        <Assign sap:VirtualizedContainerService.HintSize="434,83" sap2010:WorkflowViewState.IdRef="Assign_40">
+                                                                                        <Assign DisplayName="Assign Datum" sap:VirtualizedContainerService.HintSize="434,83" sap2010:WorkflowViewState.IdRef="Assign_40">
                                                                                           <Assign.To>
                                                                                             <OutArgument x:TypeArguments="s:Object[]">[itemArrayLV]</OutArgument>
                                                                                           </Assign.To>
@@ -1938,8 +1938,8 @@
                                                                               </ActivityAction>
                                                                             </ui:ForEachRow.Body>
                                                                           </ui:ForEachRow>
-                                                                          <ueab:WriteRangeX Destination="[Excel.Sheet(&quot;FailedBuchungLV&quot;)]" DisplayName="Write DataTable to Excel" sap:VirtualizedContainerService.HintSize="606,161" sap2010:WorkflowViewState.IdRef="WriteRangeX_1" IgnoreEmptySource="False" Source="[failedBuchung]" />
-                                                                          <Assign sap:VirtualizedContainerService.HintSize="606,83" sap2010:WorkflowViewState.IdRef="Assign_50">
+                                                                          <ueab:WriteRangeX Destination="[Excel.Sheet(&quot;FailedBuchungLV&quot;)]" DisplayName="Write failedBuchung to Excel" sap:VirtualizedContainerService.HintSize="606,161" sap2010:WorkflowViewState.IdRef="WriteRangeX_1" IgnoreEmptySource="False" Source="[failedBuchung]" />
+                                                                          <Assign DisplayName="Assign Buchung_PG_LV Status" sap:VirtualizedContainerService.HintSize="606,83" sap2010:WorkflowViewState.IdRef="Assign_50">
                                                                             <Assign.To>
                                                                               <OutArgument x:TypeArguments="x:Object">[Current_Buchung_PG_LV_Row("Status")]</OutArgument>
                                                                             </Assign.To>
@@ -1947,7 +1947,7 @@
                                                                               <InArgument x:TypeArguments="x:String">[LehrveranstaltungErrorMessage]</InArgument>
                                                                             </Assign.Value>
                                                                           </Assign>
-                                                                          <Assign sap:VirtualizedContainerService.HintSize="606,83" sap2010:WorkflowViewState.IdRef="Assign_51">
+                                                                          <Assign DisplayName="Assign Buchung_PG_LV Datum" sap:VirtualizedContainerService.HintSize="606,83" sap2010:WorkflowViewState.IdRef="Assign_51">
                                                                             <Assign.To>
                                                                               <OutArgument x:TypeArguments="x:Object">[Current_Buchung_PG_LV_Row("Datum")]</OutArgument>
                                                                             </Assign.To>
@@ -1955,7 +1955,7 @@
                                                                               <InArgument x:TypeArguments="x:String">[System.DateTime.Now.ToString("dd-mm-yyyy hh:mm:ss")]</InArgument>
                                                                             </Assign.Value>
                                                                           </Assign>
-                                                                          <ueab:WriteRangeX Destination="[Excel.Sheet(&quot;Buchung_PG_LV&quot;)]" DisplayName="Write DataTable to Excel" sap:VirtualizedContainerService.HintSize="606,161" sap2010:WorkflowViewState.IdRef="WriteRangeX_5" IgnoreEmptySource="False" Source="[Buchung_PG_LV]" />
+                                                                          <ueab:WriteRangeX Destination="[Excel.Sheet(&quot;Buchung_PG_LV&quot;)]" DisplayName="Write Buchung_PG_LV to Excel" sap:VirtualizedContainerService.HintSize="606,161" sap2010:WorkflowViewState.IdRef="WriteRangeX_5" IgnoreEmptySource="False" Source="[Buchung_PG_LV]" />
                                                                         </Sequence>
                                                                       </Sequence>
                                                                     </If.Then>
@@ -1976,7 +1976,7 @@
                                                                             <uix:TargetAnchorable CvElementArea="1669, 996, 123, 25" CvTextArea="1714, 1002, 53, 15" CvTextArgument="Speichern" CvType="Button" DesignTimeRectangle="1669, 996, 124, 25" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Speichern'" Guid="49d2531d-477c-49ff-a6b5-5b8c0bab82b9" InformativeScreenshot="69cd7db0c63982e5be6582fc9f7e5789.png" ScopeSelectorArgument="&lt;wnd app='java*.exe' cls='SunAwtFrame' title='StarPlan (Version 3.4.1.0)' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive" />
                                                                           </uix:NClick.Target>
                                                                         </uix:NClick>
-                                                                        <Assign sap:VirtualizedContainerService.HintSize="434,83" sap2010:WorkflowViewState.IdRef="Assign_6">
+                                                                        <Assign DisplayName="Assign Buchung_PG_LV Status" sap:VirtualizedContainerService.HintSize="434,83" sap2010:WorkflowViewState.IdRef="Assign_6">
                                                                           <Assign.To>
                                                                             <OutArgument x:TypeArguments="x:Object">[Current_Buchung_PG_LV_Row("Status")]</OutArgument>
                                                                           </Assign.To>
@@ -1984,7 +1984,7 @@
                                                                             <InArgument x:TypeArguments="x:String">["Success"]</InArgument>
                                                                           </Assign.Value>
                                                                         </Assign>
-                                                                        <Assign sap:VirtualizedContainerService.HintSize="434,83" sap2010:WorkflowViewState.IdRef="Assign_47">
+                                                                        <Assign DisplayName="Assign Buchung_PG_LV Datum" sap:VirtualizedContainerService.HintSize="434,83" sap2010:WorkflowViewState.IdRef="Assign_47">
                                                                           <Assign.To>
                                                                             <OutArgument x:TypeArguments="x:Object">[Current_Buchung_PG_LV_Row("Datum")]</OutArgument>
                                                                           </Assign.To>
@@ -1992,14 +1992,14 @@
                                                                             <InArgument x:TypeArguments="x:String">[System.DateTime.Now.ToString("dd-mm-yyyy hh:mm:ss")]</InArgument>
                                                                           </Assign.Value>
                                                                         </Assign>
-                                                                        <ueab:WriteRangeX Destination="[Excel.Sheet(&quot;Buchung_PG_LV&quot;)]" DisplayName="Write DataTable to Excel" sap:VirtualizedContainerService.HintSize="434,161" sap2010:WorkflowViewState.IdRef="WriteRangeX_3" IgnoreEmptySource="False" Source="[Buchung_PG_LV]" />
+                                                                        <ueab:WriteRangeX Destination="[Excel.Sheet(&quot;Buchung_PG_LV&quot;)]" DisplayName="Write Buchung_PG_LV to Excel" sap:VirtualizedContainerService.HintSize="434,161" sap2010:WorkflowViewState.IdRef="WriteRangeX_3" IgnoreEmptySource="False" Source="[Buchung_PG_LV]" />
                                                                       </Sequence>
                                                                     </If.Else>
                                                                   </If>
                                                                 </Sequence>
                                                               </If.Else>
                                                             </If>
-                                                            <Assign sap:VirtualizedContainerService.HintSize="820,83" sap2010:WorkflowViewState.IdRef="Assign_125">
+                                                            <Assign sap:VirtualizedContainerService.HintSize="438,83" sap2010:WorkflowViewState.IdRef="Assign_125">
                                                               <Assign.To>
                                                                 <OutArgument x:TypeArguments="x:Boolean">[PGError]</OutArgument>
                                                               </Assign.To>
@@ -2007,7 +2007,7 @@
                                                                 <InArgument x:TypeArguments="x:Boolean">[False]</InArgument>
                                                               </Assign.Value>
                                                             </Assign>
-                                                            <Assign sap:VirtualizedContainerService.HintSize="820,83" sap2010:WorkflowViewState.IdRef="Assign_126">
+                                                            <Assign sap:VirtualizedContainerService.HintSize="438,83" sap2010:WorkflowViewState.IdRef="Assign_126">
                                                               <Assign.To>
                                                                 <OutArgument x:TypeArguments="x:Boolean">[LehrveranstaltungError]</OutArgument>
                                                               </Assign.To>
@@ -2032,7 +2032,7 @@
                                                 </ui:ForEachRow.Body>
                                               </ui:ForEachRow>
                                             </Sequence>
-                                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Beteiligte Dozenten (0)'" sap:VirtualizedContainerService.HintSize="1054,158" sap2010:WorkflowViewState.IdRef="NClick_44" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ad08872b-b465-48f0-a3f0-10ce604fc639" Version="V3">
+                                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Beteiligte Dozenten (0)'" sap:VirtualizedContainerService.HintSize="820,158" sap2010:WorkflowViewState.IdRef="NClick_44" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ad08872b-b465-48f0-a3f0-10ce604fc639" Version="V3">
                                               <uix:NClick.Target>
                                                 <uix:TargetAnchorable CvTextArgument="Beteiligte Dozenten (0)" CvType="Text" DesignTimeRectangle="452, 713, 120, 15" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Beteiligte Dozenten (0)'" Guid="3d3d2cdf-4c96-4124-ba20-f963e5187699" InformativeScreenshot="2ae5f48771965038773a9bd4cdafddff.png" ScopeSelectorArgument="&lt;wnd app='java*.exe' cls='SunAwtFrame' title='StarPlan (Version 3.4.5.0)' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive">
                                                   <uix:TargetAnchorable.Anchors>
@@ -2043,7 +2043,7 @@
                                                 </uix:TargetAnchorable>
                                               </uix:NClick.Target>
                                             </uix:NClick>
-                                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Hinzufügen…'" sap:VirtualizedContainerService.HintSize="1054,158" sap2010:WorkflowViewState.IdRef="NClick_45" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ad08872b-b465-48f0-a3f0-10ce604fc639" Version="V3">
+                                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Hinzufügen…'" sap:VirtualizedContainerService.HintSize="820,158" sap2010:WorkflowViewState.IdRef="NClick_45" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ad08872b-b465-48f0-a3f0-10ce604fc639" Version="V3">
                                               <uix:NClick.Target>
                                                 <uix:TargetAnchorable CvElementArea="1539, 964, 122, 24" CvTextArea="1574, 970, 72, 15" CvTextArgument="Hinzufugen..." CvType="Button" DesignTimeRectangle="1540, 965, 121, 22" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Hinzufügen…'" FullSelectorArgument="&lt;java hasTableAncestor='0' idx='14' role='page tab list' /&gt;&lt;java name='  Buchungen ' role='page tab' /&gt;&lt;java hasTableAncestor='0' idx='7' role='page tab list' /&gt;&lt;java hasTableAncestor='0' name='Beteiligte Dozenten (0)' role='page tab' /&gt;&lt;java hasTableAncestor='0' name='Hinzufügen…' role='push button' /&gt;" FuzzySelectorArgument="&lt;java hasTableAncestor='0' role='page tab list' /&gt;&lt;java name='  Buchungen ' role='page tab' /&gt;&lt;java hasTableAncestor='0' role='page tab list' /&gt;&lt;java hasTableAncestor='0' name='Beteiligte Dozenten (0)' role='page tab' /&gt;&lt;java hasTableAncestor='0' name='Hinzufügen…' role='push button' check:text='Hinzufügen…' /&gt;" Guid="f3c448ef-40c4-4580-b51b-5337dcb087f2" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAH0AAAAaCAYAAACacVPHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAR3SURBVGhD7Zr9T1NXGMfvP7VlzbYsuplsyZYsMUw2zF4yVhxsqHtR6qhMHEwKLYnagvEl7IVuK2TNlJYWsUptRUYRbIvKtVWm84X4srVLFvjpu3tuz+3L6b2tWTio7f0kT3rPeZ5zevN873nObXOEdDoN3arLdNGr0LKip1IpJBIJhMNhBINB3SrEQqEQRFGU9S0SnQg+NzeH5eVl6FQOKysriEajsvBFopMVrgtemRDhyYovEp2UAp3KhejLVfS//r2PcNIP+5l2dI5uR7unGRa/CWOXfsO9f5ZolM5awlX0haWLOHC6DT9eOIjp22cRvzeLC0tT8CXdaPN/ipZft2BmcZJG66wV3EQngvec3IGTCTcW0wmc+tOLwauHMbDggPv6IMJ3z8ASNMH4fS1+vxamo3TWAi6ik5JOVvio6EIidQVHr+zHgZl9sEW+gSPeDXvcAlt0L0YX3TD7m9DwQx3upm7T0SxeGAUDbCJtZsnrF20wqMasAl4jBEGAYLCBx/SPAy6ihxI+9E124PLDqLSy7TgYs6DrfBv1Ah0zJrSebcLuya3wXB/GpmMb8NPUd9TL8giic4N8hwCjlzZlRNgMmT6vUYCB7w1wgYvo9tPt8CaHpTLuRM/0HnROtcJ0qpl6gcbhOuwcfx+fj23GoYvd2B/+Gh8cq6VelsctOu/vWHu4iL5XekMP3PCib75bEnwX7S1mm+9t7J74GK74UbzW+xLtZXkU0VWubbQsS6asRtFmyPbJJi9hdv5M27pAPnOxmTnUY7NteZtR4m2aPkEwSiMJdLzKvfKEi+htxxtxIvkLLLNm7Il8SXuLIaKbAw0Yih/BKz3P016WwuQXmpLU/OTTeKUmy3uykmQFEsMkPptrdi4tH4GNzW0FmQdMYx7pnnIPUbl7XX24iL7PtxP9EQscsS7sOteEbRMf4qOhGurNiE3sM38d+iIdsAa+Qo3jDeplYROtwCZcI8Eq48lerOS5dHy5ufLaZCUXvOwxvuyDSq1Elcm1+cBFdN+8G1uGNmIk6YJpoh7bA+/Je7gCEbzZU4svRjdjRHTi5d7ncHiij3pZtBKR3691TWDaZDXlFJcoFV9mrvx2WdHVVnC5+fnARXTyT9uO4Qbp51gjjl/9OfvSRsTe6iFGBK/DiYVBfOJ6R9rP1+Pmwxt0NItWIvL7ta4JrI9Nfu5tXEYusVpzlYstVd7V9mt2/rx2/oOidf0/4SI6IbJ4DvUDNWgZqYdHEr4/8i3M40a0jtWjf7oTI5LgTa5avNj5DMbn/XSUGmxiFPL7ta4JuTYp6wUlVlmZsni0z2gsMZeEZmyhr/SLHBlLZNO+16dSdMLUtZAk/Ca8eWgdeoNmOOcccM460BVowXrrs3jVuq6M4E8xqyAOL7iKTrjz9y04zw/g3SNvyT/LNlhfwEb769Ie3o+bD/6gUZWHXFWe0H/xuItePWT2+2z5fkJXOUFVdP0QReWieYhCOS5FAnQqB6JnLBZTPy6lH4ysTCt5MFK36jFd9KqzNP4DGknaD4ZC8VIAAAAASUVORK5CYII=" InformativeScreenshot="93668b9dbb355197202fbbb93e9cc018.png" ScopeSelectorArgument="&lt;wnd app='java*.exe' cls='SunAwtFrame' title='StarPlan (Version 3.4.5.0)' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
                                                   <uix:TargetAnchorable.Anchors>
@@ -2054,7 +2054,7 @@
                                                 </uix:TargetAnchorable>
                                               </uix:NClick.Target>
                                             </uix:NClick>
-                                            <Assign sap:VirtualizedContainerService.HintSize="1054,83" sap2010:WorkflowViewState.IdRef="Assign_56">
+                                            <Assign sap:VirtualizedContainerService.HintSize="820,83" sap2010:WorkflowViewState.IdRef="Assign_56">
                                               <Assign.To>
                                                 <OutArgument x:TypeArguments="x:String">[Dozent]</OutArgument>
                                               </Assign.To>
@@ -2062,7 +2062,7 @@
                                                 <InArgument x:TypeArguments="x:String">[CurrentRow.item("Dozent").ToString]</InArgument>
                                               </Assign.Value>
                                             </Assign>
-                                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Filter'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="1054,219" sap2010:WorkflowViewState.IdRef="NTypeInto_25" ScopeIdentifier="ad08872b-b465-48f0-a3f0-10ce604fc639" Text="[Dozent]" Version="V3">
+                                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Filter'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="820,219" sap2010:WorkflowViewState.IdRef="NTypeInto_25" ScopeIdentifier="ad08872b-b465-48f0-a3f0-10ce604fc639" Text="[Dozent]" Version="V3">
                                               <uix:NTypeInto.Target>
                                                 <uix:TargetAnchorable DesignTimeRectangle="46, 36, 165, 22" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'text'" FullSelectorArgument="&lt;java cls='JTextField' role='text' /&gt;" FuzzySelectorArgument="&lt;java cls='JTextField' role='text' /&gt;" Guid="8ef6d180-9bae-4a99-a4e8-e6b9688f9827" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAKkAAAAaCAYAAADMi3z0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACPSURBVHhe7duhDQJBFEVR2qcbQhs4QgN0QCZBDxmDWVi7V5yTPPfltf80xphm5YnU8vtGer48zFL7Gen1/pq359vs0K0O/0a6DuBoq0ORkiZS8kRKnkjJEyl5IiVPpOSJlDyRkidS8kRKnkjJEyl5IiVPpOSJlDyRkrcbqfcRK2z3fcSstE2kZtWJ1OIb8wOtgRUnToIIDgAAAABJRU5ErkJggg==" InformativeScreenshot="0cf572319b7cad96ca36b69669ac43f8.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='java*.exe' cls='SunAwtDialog' title='Beteiligte Dozenten mit Lehranteil auswählen' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Version="V2" Visibility="Interactive">
                                                   <uix:TargetAnchorable.Anchors>
@@ -2073,9 +2073,9 @@
                                                 </uix:TargetAnchorable>
                                               </uix:NTypeInto.Target>
                                             </uix:NTypeInto>
-                                            <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="820,385" sap2010:WorkflowViewState.IdRef="TryCatch_3">
+                                            <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="820,391" sap2010:WorkflowViewState.IdRef="TryCatch_3">
                                               <TryCatch.Try>
-                                                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'engstler'" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="NClick_63" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ad08872b-b465-48f0-a3f0-10ce604fc639" Version="V3">
+                                                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'engstler'" sap:VirtualizedContainerService.HintSize="334,158" sap2010:WorkflowViewState.IdRef="NClick_63" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ad08872b-b465-48f0-a3f0-10ce604fc639" Version="V3">
                                                   <uix:NClick.Target>
                                                     <uix:TargetAnchorable CvTextArgument="[Dozent]" CvType="Text" DesignTimeRectangle="12, 87, 58, 21" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'engstler'" FullSelectorArgument="&lt;java cls='MyJXTable' role='table' /&gt;&lt;java role='label' tableCol='0' tableRow='0' /&gt;" FuzzySelectorArgument="[string.Format(&quot;&lt;java cls='MyJXTable' role='table' /&gt;&lt;java role='label' check:text='{0}' /&gt;&quot;, Dozent)]" Guid="f816934e-c462-4042-b6a8-bf2e79be5c91" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADoAAAAVCAYAAAAXQf3LAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAErSURBVFhH7ZWBDYQgDEW7FgMd47DNOYBjOIADuEDPYtGCSknuOA3xJcRQpO2nFWGaJuz7HltlHEf/XIWSoeXRfEVJH/EIbYVH6HV0aMGgG3j6I24gNBX2CP0KXejg0AAg+GHnNAhOxlm2AxqZmdhjnBOJD+hM8AX4epOfbQ6WvCdCM/GtNcKWRxGaBO0sC+IEfWKLPU4CMCwNjpJhH/ReWFhJYkTzfPzocBXyQqPT5HF06nJOe4ybaxdI1nYJKr6K4usUCD1qDSW5M6HMUuVQdcVXUXydvFDv8KhFMsnxnsPWFZB9a8O8Lz2+jiJ0Jm0frXX9VF5S4jISdnmJdDbjuyi+ji70W07b779UF+qrFX2z11BBaPyvLP3P1aZ6Re/CTig9Wx7NV3QB8QO4qXfZYLnIuQAAAABJRU5ErkJggg==" InformativeScreenshot="5b01eda3c6de90e057601a7a95251f3e.png" ScopeSelectorArgument="&lt;wnd app='java*.exe' cls='SunAwtDialog' title='Beteiligte Dozenten mit Lehranteil auswählen' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
                                                       <uix:TargetAnchorable.Anchors>
@@ -2088,7 +2088,7 @@
                                                 </uix:NClick>
                                               </TryCatch.Try>
                                               <TryCatch.Catches>
-                                                <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="404,21" sap2010:WorkflowViewState.IdRef="Catch`1_6">
+                                                <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="404,22" sap2010:WorkflowViewState.IdRef="Catch`1_6">
                                                   <sap:WorkflowViewStateService.ViewState>
                                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                       <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -2200,7 +2200,7 @@
                                                 </Catch>
                                               </TryCatch.Catches>
                                             </TryCatch>
-                                            <If Condition="[DozentError = True]" sap:VirtualizedContainerService.HintSize="820,354" sap2010:WorkflowViewState.IdRef="If_18">
+                                            <If Condition="[DozentError = True]" sap:VirtualizedContainerService.HintSize="820,798" sap2010:WorkflowViewState.IdRef="If_18">
                                               <If.Then>
                                                 <Sequence sap:VirtualizedContainerService.HintSize="476,171" sap2010:WorkflowViewState.IdRef="Sequence_86">
                                                   <sap:WorkflowViewStateService.ViewState>
@@ -2317,7 +2317,7 @@
                                                 </uix:TargetAnchorable>
                                               </uix:NTypeInto.Target>
                                             </uix:NTypeInto>
-                                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Bis'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="820,218" sap2010:WorkflowViewState.IdRef="NTypeInto_30" ScopeIdentifier="ad08872b-b465-48f0-a3f0-10ce604fc639" Text="[CurrentRow.item(&quot;BisZeit2&quot;).ToString + &quot;[k(Tab)]&quot;]" Version="V3">
+                                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Bis'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="820,219" sap2010:WorkflowViewState.IdRef="NTypeInto_30" ScopeIdentifier="ad08872b-b465-48f0-a3f0-10ce604fc639" Text="[CurrentRow.item(&quot;BisZeit2&quot;).ToString + &quot;[k(Tab)]&quot;]" Version="V3">
                                               <uix:NTypeInto.Target>
                                                 <uix:TargetAnchorable DesignTimeRectangle="317, 476, 50, 20" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'30'" FullSelectorArgument="&lt;java role='page tab list' /&gt;&lt;java name='Termine' role='page tab' /&gt;&lt;java cls='SPlanComboBox' hasTableAncestor='0' idx='5' role='combo box' /&gt;&lt;java role='text' /&gt;" FuzzySelectorArgument="&lt;java role='page tab list' /&gt;&lt;java name='Termine' role='page tab' /&gt;&lt;java cls='SPlanComboBox' hasTableAncestor='0' role='combo box' /&gt;&lt;java role='text' /&gt;" Guid="a137704a-2927-4dcb-8126-8bdda3b7005c" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADYAAAAYCAYAAACx4w6bAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADuSURBVFhH7ZixCsIwEIbzWnmhvItLFh/AJxCcgnMFQVwFIQriILgJEZcuZy+tNbagJEtzZz84KDf14y5/IMI5BxzLix0vN5guDzBZ7NiUF0Op2foK2/ODfM1Xe9ic7rUYGmKTA0VRQFmWoxgZRjFqRIhZ0FKAEHUp07QRo9q+1LZpDkuEmAHzkrEapFBVBzGgPr4l5OCWuIqBDE4rGJ/VMouppYkFMj2RjuhQRImhhD9L3yZEUazFh0V9lniJVRjVJGNHhN4ZqyLx/ftB+vUSkloqeoHf91gGW+hJXsXcGcWo8R9ibJ8G2D7m8CsHT+/DAzs/6ofaAAAAAElFTkSuQmCC" InformativeScreenshot="888cf223a67a8ccfc9fb2f1c367d3d00.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='java*.exe' cls='SunAwtDialog' title='Termin und Raum zuordnen' /&gt;" SearchSteps="FuzzySelector, Image" Version="V2" Visibility="Interactive">
                                                   <uix:TargetAnchorable.Anchors>
@@ -2329,7 +2329,7 @@
                                                 </uix:TargetAnchorable>
                                               </uix:NTypeInto.Target>
                                             </uix:NTypeInto>
-                                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Einheit'" EmptyFieldMode="None" sap:VirtualizedContainerService.HintSize="820,218" sap2010:WorkflowViewState.IdRef="NTypeInto_31" ScopeIdentifier="ad08872b-b465-48f0-a3f0-10ce604fc639" Text="[CurrentRow.item(&quot;Einheit&quot;).ToString + &quot;[k(Tab)]&quot;]" Version="V3">
+                                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Einheit'" EmptyFieldMode="None" sap:VirtualizedContainerService.HintSize="820,219" sap2010:WorkflowViewState.IdRef="NTypeInto_31" ScopeIdentifier="ad08872b-b465-48f0-a3f0-10ce604fc639" Text="[CurrentRow.item(&quot;Einheit&quot;).ToString + &quot;[k(Tab)]&quot;]" Version="V3">
                                               <uix:NTypeInto.Target>
                                                 <uix:TargetAnchorable DesignTimeRectangle="233, 502, 182, 22" DesignTimeScaleFactor="1" ElementType="DropDown" FriendlyName="'WEEK'" FullSelectorArgument="&lt;java role='page tab list' /&gt;&lt;java name='Termine' role='page tab' /&gt;&lt;java cls='SPlanComboBox' hasTableAncestor='0' idx='6' role='combo box' /&gt;" FuzzySelectorArgument="&lt;java role='page tab list' /&gt;&lt;java name='Termine' role='page tab' /&gt;&lt;java cls='SPlanComboBox' hasTableAncestor='0' role='combo box' /&gt;" Guid="68ab1cdb-62dd-41ff-b7fe-465c5179b44c" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAALoAAAAaCAYAAAAAEkYfAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJhSURBVHhe7Zu7TsMwFIbzWn6hvAuLJcTUKUh9AabAE2RhZSHAEKkgmECRGDoZH8dO7FzcxG1pm/yfdER8O7HEF+eoUqKyLAUCMfeA6IhFRC366/u3uHl4EVd3TwjExcf1/bN4+/jpik6SJ9mneCx+EYiLj9vsS8neEZ2eApoAwBwgl8lpiA5mDUQHiwCig0UA0cEiCBI9jSMRp7qhSEUcMcFz3STSWETupAn05DsoVv6cC7bzXsfeDzg2YSd6W2IlSySYZULOmdXOBWfVw0EPiT2vn0OL1c43NT9EPye2262+6qdvPEx0Eptxqa9pMhFz2VfLT2LvIwZEB/2QxOv1WhRFoXtcNpuNGm/LHia6I7K5JhliqQRhX0v0iR/pcCua6rR3x7RYabPOeQs4+ex7yjVcvm2cNdRv5spQN9BzVUr7mgjYD/hXSOYkSTqyD/UTgaLLf31dp0sJ9OmexloYp7SpRKubTk1cSdWVploTmbcG5WsLbZbIMUdocyPfGqdtX4fsB5yCttQ+yYlg0WuZzV+Jqcud+lyJ7UpRPyQ9YxUeMVtvBxUqmWfN2LGQ/YCTYeTOsswrOREuOkkhT7iU6nNjBvXFXJcyVt/BRZ8q48ixoNzglJDsq9XKKzkRLrp+zUcdAajPlqXqcx6GetxXKgyJVeWbvmbMWMh+wKnZ9SsMsYfo5Cxr6lYNndZNfa5RcusyoyMISWPGrLrfJ5aTT4Za5F+j9tU7t29dk3vUfsDZs5foAFwKEB0sAogOFgFEB4tgUHR8SoeYUwx+SoePoxFzisGPoxGIOQdERywgSvEHQVS88KbCWE0AAAAASUVORK5CYII=" InformativeScreenshot="9cc49dff838335cb03bfb65d4d184623.png" ScopeSelectorArgument="&lt;wnd app='java*.exe' cls='SunAwtDialog' title='Termin und Raum zuordnen' /&gt;" SearchSteps="FuzzySelector, Image" Version="V2" Visibility="Interactive">
                                                   <uix:TargetAnchorable.Anchors>
@@ -2340,7 +2340,7 @@
                                                 </uix:TargetAnchorable>
                                               </uix:NTypeInto.Target>
                                             </uix:NTypeInto>
-                                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'push button'" sap:VirtualizedContainerService.HintSize="820,157" sap2010:WorkflowViewState.IdRef="NClick_51" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ad08872b-b465-48f0-a3f0-10ce604fc639" Version="V3">
+                                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'push button'" sap:VirtualizedContainerService.HintSize="820,158" sap2010:WorkflowViewState.IdRef="NClick_51" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ad08872b-b465-48f0-a3f0-10ce604fc639" Version="V3">
                                               <uix:NClick.Target>
                                                 <uix:TargetAnchorable DesignTimeRectangle="155, 502, 22, 22" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'push button'" FullSelectorArgument="&lt;java role='page tab list' /&gt;&lt;java name='Termine' role='page tab' /&gt;&lt;java cls='SPJButton' hasTableAncestor='0' idx='2' role='push button' /&gt;" FuzzySelectorArgument="&lt;java role='page tab list' /&gt;&lt;java name='Termine' role='page tab' /&gt;&lt;java cls='SPJButton' hasTableAncestor='0' role='push button' /&gt;" Guid="a93cb254-b4f4-4c50-8fbf-50790455fdc2" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALRSURBVEhLvZbZTxNRFMb9v4wvvvjkC8EdqQsmBIWK0ARIUGMIGEAgAhUhiAgqYCmFUlGQJdDSNgUsLcpWRCpbZ0A6A9KFh8+7TB8MJI6A/ZKTe8/kfOeXc2eSOydkWUY8Iv4gSZLg8/lgs9kwPDx8pLBarZibm2M994EoxO12IxwO46iKRCLweDwMtg9EJzkOSEwURifbB6IjH7doz7+CPEshGBwSGoY2UT8govaTCH1vAJU9a6iwrKK0axmPO/woMHzHw9YF5L/2Qf/er7i5VIFaRrewE9r7p8hpmlHcXKpALwY3mBnNt4CmFODlNfLwKvD8IqBPBCrOAiVngILTwINTrFZbN6W4uVSB6vpFBUQg/blAnw74mAl8SAfMqYDpOvDuMvCWQPNPstq0Z5OKm0sVqIa8jz8menUDaCTNGzRAfRJQSyA1F4BqAqpKYLUplROKm0sVqIq8dGp+MxJgeat1na1tozw32HlucvBVlELQlLvYPiZVoPLuFci7UdbYQMMuoN0egNEZgIlEpukOMjrSkN6eCsvYOr6tybhU7FDcXKpApZ0/IBGQ0Smw3KSsZhefKKtTi2pPGbQdt1k+vyLhXOEo28ekClRkXEJwJ4oulwDzmIA8iw65lmzkdGehZ0KAznwX2V1a3OvMgJEcn3NaQGKhVXFzqQI9alvE1naENaWioLqpKgaj6v0skKPdQ3A7CteMiIVVGZonhzi6+y0LDNTrFtFHgoJi0T8pwjIusInHZkXML0uQyD6p+BBHl9c8i58ENOARWT7o5euQsraTj2N8doNBgqRuS45AU3oIkK5xGptyGEIwhNXNXfiFHfJlbbPGM/4gHF8F+FbIPUYmoSD5VxTJJTbFzaUKVNm9iOz6L0jVT+Lm0wkkl7lwpdiJ80V2JBSMHBj5jW7FzaUKdBw6EBS3iy92ldOCo4r28Hq9B1/lcfs5+d8RJ5CM36u5p/uRUdK/AAAAAElFTkSuQmCC" InformativeScreenshot="81e9f2f3e6d73ac51af8bd8dadc5dd90.png" ScopeSelectorArgument="&lt;wnd app='java*.exe' cls='SunAwtDialog' title='Termin und Raum zuordnen' /&gt;" SearchSteps="FuzzySelector, Image" Version="V2" Visibility="Interactive">
                                                   <uix:TargetAnchorable.Anchors>
@@ -2352,7 +2352,7 @@
                                                 </uix:TargetAnchorable>
                                               </uix:NClick.Target>
                                             </uix:NClick>
-                                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Filter'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="820,218" sap2010:WorkflowViewState.IdRef="NTypeInto_32" ScopeIdentifier="ad08872b-b465-48f0-a3f0-10ce604fc639" Text="[CurrentRow.item(&quot;Raum&quot;).ToString]" Version="V3">
+                                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Filter'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="820,219" sap2010:WorkflowViewState.IdRef="NTypeInto_32" ScopeIdentifier="ad08872b-b465-48f0-a3f0-10ce604fc639" Text="[CurrentRow.item(&quot;Raum&quot;).ToString]" Version="V3">
                                               <uix:NTypeInto.Target>
                                                 <uix:TargetAnchorable DesignTimeRectangle="51, 605, 724, 22" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'text'" FullSelectorArgument="&lt;java hasTableAncestor='0' idx='2' role='page tab list' /&gt;&lt;java name='Räume' role='page tab' /&gt;&lt;java cls='JTextField' role='text' /&gt;" FuzzySelectorArgument="&lt;java hasTableAncestor='0' role='page tab list' /&gt;&lt;java name='Räume' role='page tab' /&gt;&lt;java cls='JTextField' role='text' /&gt;" Guid="64b8f39f-3608-40b1-b1ab-7693d26fce8d" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAtgAAAAaCAYAAACNbCuTAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAC0SURBVHhe7dYxEYAwAMBA/MuqpBooGwswUDL+38VDjjnnkiRJktRksCVJkqSwa7DHGJIkSZI2exxsAADgO4MNAAAhgw0AACGDDQAAIYMNAAAhgw0AACGDDQAAIYMNAAAhgw0AACGDDQAAIYMNAAAhgw0AACGDDQAAIYMNAAAhgw0AACGDDQAAIYMNAAAhgw0AACGDDQAAIYMNAACh18GWJEmStNdtsCVJkiT9z2BLkiRJWXOd3lS4aVYcweoAAAAASUVORK5CYII=" InformativeScreenshot="e213399ef774d7465726b4a15ed2727c.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='java*.exe' cls='SunAwtDialog' title='Termin und Raum zuordnen' /&gt;" SearchSteps="FuzzySelector, Image" Version="V2" Visibility="Interactive">
                                                   <uix:TargetAnchorable.Anchors>
